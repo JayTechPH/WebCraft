@@ -1,0 +1,161 @@
+body {
+    font-size: 1.2vw;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5vw;
+    margin-bottom: 0.5vw;
+}
+
+h2 {
+    font-size: 2vw;
+    margin-top: 2vw; /* Adjusted for consistency in vw scale */
+}
+
+h3 {
+    font-size: 1.8vw;
+}
+
+.w3-image {
+    width: 40vw;
+}
+.intro {
+    font-size: 1.3vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1vw 0;
+    font-size: 1vw;
+}
+
+table th, table td {
+    padding: 0.5vw;
+    text-align: left;
+    border: 0.2vw solid #444;
+}
+
+table th {
+    background-color: #333;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+table tr:nth-child(odd) {
+    background-color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #444;
+}
+
+.code-container {
+    background-color: #1e1e1e;
+    padding: 0.8vw;
+    border-radius: 0.8vw;
+    margin-top: 0.8vw;
+    overflow-x: auto;
+}
+
+.code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #363636;
+    color: #dcdcdc;
+    padding: 1vw;
+    font-size: 1vw;
+    line-height: 1.5;
+    border-radius: 0.4vw;
+}
+
+.codespan {
+    background-color: #1e1e1e;
+    color: #569cd6;
+}
+
+.deprecated {
+    color: crimson;
+}
+
+.notsupported {
+    color: crimson;
+}
+
+.nextprev {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note {
+    background-color: #454545;
+    border-left: 0.5vw solid #ff9800;
+    padding: 1.5vw;
+    margin: 2vw 0;
+    border-radius: 0.5vw;
+    
+}
+
+.note p {
+    font-weight: 0.5vw;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.spes_tagname {
+    color: #569cd6;
+}
+
+.spes_tag {
+    color: #c5c5c5;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.table th, .table td {
+    padding: 1vw;
+    border: 0.2vw solid #444;
+    text-align: left;
+}
+
+.table th {
+    background-color: #333;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.w3-row-padding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.w3-third {
+    padding: 0 2vw;
+}
+
+.bigbtn {
+    display: block;
+    padding: 2vw;
+    background-color: #556391;
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    text-decoration: none;
+}
+
+.ws-grey {
+    background-color: #5e606c;
+}
+
+.ws-hover-black:hover {
+    background-color: #8b8b8b;
+}
