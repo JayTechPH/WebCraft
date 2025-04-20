@@ -8,46 +8,47 @@
   <title>
    HTML Form Attributes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -361,7 +362,7 @@
       HTML Forms
      </p>
     </a>
-    <a href="html_forms_attributes.html" class="selected">
+    <a class="selected" href="html_forms_attributes.html">
      <p>
       HTML Form Attributes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -475,23 +475,26 @@ This file contains a server-side script that handles the form data:
      <p>
       On submit, send form data to "action_page.php":
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -590,9 +593,18 @@ the response will open in the current window.
      <p>
       Here, the submitted result will open in a new browser tab:
      </p>
-     <div class="code">
-      &lt;form  target="_blank"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  target="_blank"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -628,9 +640,18 @@ or as HTTP post transaction (with
      <p>
       This example uses the GET method when submitting the form data:
      </p>
-     <div class="code">
-      &lt;form  method="get"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  method="get"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -639,9 +660,18 @@ or as HTTP post transaction (with
      <p>
       This example uses the POST method when submitting the form data:
      </p>
-     <div class="code">
-      &lt;form  method="post"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  method="post"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -712,9 +742,18 @@ a form should have autocomplete on or off.
      <p>
       A form with autocomplete on:
      </p>
-     <div class="code">
-      &lt;form  autocomplete="on"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  autocomplete="on"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -737,9 +776,18 @@ a form should have autocomplete on or off.
      <p>
       A form with a novalidate attribute:
      </p>
-     <div class="code">
-      &lt;form  novalidate&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  novalidate&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -863,8 +911,10 @@ a form should have autocomplete on or off.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

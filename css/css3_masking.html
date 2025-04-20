@@ -9,6 +9,7 @@
   <title>
    CSS Masking - The mask-image Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -581,7 +582,7 @@
       CSS object-position
      </p>
     </a>
-    <a href="css3_masking.html" class="selected">
+    <a class="selected" href="css3_masking.html">
      <p>
       CSS Masking
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -891,18 +891,23 @@ Terre, Italy:
      <p>
       Here is the source code:
      </p>
-     <div class="code">
-      .mask1 {
-      <br/>
-      -webkit-mask-image: url(w3logo.png);
-      <br/>
-      mask-image: 
-  url(w3logo.png);
-      <br/>
-      mask-repeat: no-repeat;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask1 {
+-webkit-mask-image: url(w3logo.png);
+mask-image:
+url(w3logo.png);
+mask-repeat: no-repeat;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -921,7 +926,7 @@ to be used as a mask layer for an element.
       mask-repeat
      </code>
      property specifies if or how 
-a mask image will be repeated. The
+a mask image will be repeated.&nbsp;The
      <code class="codespan">
       no-repeat
      </code>
@@ -949,16 +954,22 @@ image from Cinque Terre, Italy:
      <p>
       Here is the source code:
      </p>
-     <div class="code">
-      .mask1 {
-      <br/>
-      -webkit-mask-image: url(w3logo.png);
-      <br/>
-      mask-image: 
-  url(w3logo.png);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask1 {
+-webkit-mask-image: url(w3logo.png);
+mask-image:
+url(w3logo.png);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -985,16 +996,22 @@ gradient goes from top (black) to bottom (transparent):
      <p>
       Use a linear gradient as a mask layer:
      </p>
-     <div class="code">
-      .mask1 {
-      <br/>
-      -webkit-mask-image: linear-gradient(black, transparent);
-      <br/>
-      mask-image: linear-gradient(black, 
-    transparent);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask1 {
+-webkit-mask-image: linear-gradient(black, transparent);
+mask-image: linear-gradient(black,
+transparent);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Here, we use a linear-gradient along with text masking as the mask layer for 
@@ -1018,23 +1035,25 @@ our image:
      <p>
       Use a linear gradient along with text masking as a mask layer:
      </p>
-     <div class="code">
-      .mask1 {
-      <br/>
-      max-width: 600px;
-      <br/>
-      height: 350px;
-      <br/>
-      overflow-y: scroll;
-      <br/>
-      background: url(img_5terre.jpg) no-repeat;
-      <br/>
-      -webkit-mask-image: linear-gradient(black, transparent);
-      <br/>
-      mask-image: linear-gradient (black, transparent);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask1 {
+max-width: 600px;
+height: 350px;
+overflow-y: scroll;
+background: url(img_5terre.jpg) no-repeat;
+-webkit-mask-image: linear-gradient(black, transparent);
+mask-image: linear-gradient (black, transparent);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3>
      Radial Gradient Examples
@@ -1052,16 +1071,22 @@ our image:
      <p>
       Use a radial gradient as a mask layer (a circle):
      </p>
-     <div class="code">
-      .mask2 {
-      <br/>
-      -webkit-mask-image: 
-    radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
-      <br/>
-      mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask2 {
+-webkit-mask-image:
+radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Here, we use a radial-gradient (shaped as an ellipse) as the mask layer for 
@@ -1077,17 +1102,23 @@ our image:
      <p>
       Use another radial gradient as a mask layer (an ellipse):
      </p>
-     <div class="code">
-      .mask3 {
-      <br/>
-      -webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0, 
-    0, 0, 0.5) 50%);
-      <br/>
-      mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0, 
-    0, 0.5) 50%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.mask3 {
+-webkit-mask-image: radial-gradient(ellipse, black 50%, rgba(0,
+0, 0, 0.5) 50%);
+mask-image: radial-gradient(ellipse, black 50%, rgba(0, 0,
+0, 0.5) 50%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1124,20 +1155,24 @@ our image:
      <p>
       An SVG mask layer (formed as a triangle):
      </p>
-     <div class="code">
-      &lt;svg width="600" height="400"&gt;
-      <br/>
-      &lt;mask id="svgmask1"&gt;
-      <br/>
-      &lt;polygon fill="#ffffff" points="200 0, 400 400, 0 400"&gt;&lt;/polygon&gt;
-      <br/>
-      &lt;/mask&gt;
-      <br/>
-      &lt;image xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xlink:href="img_5terre.jpg" mask="url(#svgmask1)"&gt;&lt;/image&gt;
-      <br/>
-      &lt;/svg&gt;
-     </div>
+     <pre><code class="code language-css">&lt;svg width="600" height="400"&gt;
+&lt;mask id="svgmask1"&gt;
+&lt;polygon fill="#ffffff" points="200 0, 400 400, 0 400"&gt;&lt;/polygon&gt;
+&lt;/mask&gt;
+&lt;image xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="img_5terre.jpg" mask="url(#svgmask1)"&gt;&lt;/image&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <svg height="400" width="600">
      <mask id="svgmask2">
@@ -1154,21 +1189,25 @@ our image:
      <p>
       An SVG mask layer (formed as a star):
      </p>
-     <div class="code">
-      &lt;svg width="600" height="400"&gt;
-      <br/>
-      &lt;mask id="svgmask2"&gt;
-      <br/>
-      &lt;polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 
-    160,198"&gt;&lt;/polygon&gt;
-      <br/>
-      &lt;/mask&gt;
-      <br/>
-      &lt;image xmlns:xlink="http://www.w3.org/1999/xlink" 
-    xlink:href="img_5terre.jpg" mask="url(#svgmask2)"&gt;&lt;/image&gt;
-      <br/>
-      &lt;/svg&gt;
-     </div>
+     <pre><code class="code language-css">&lt;svg width="600" height="400"&gt;
+&lt;mask id="svgmask2"&gt;
+&lt;polygon fill="#ffffff" points="100,10 40,198 190,78 10,78
+160,198"&gt;&lt;/polygon&gt;
+&lt;/mask&gt;
+&lt;image xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="img_5terre.jpg" mask="url(#svgmask2)"&gt;&lt;/image&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <svg height="400" width="600">
      <mask id="svgmask3">
@@ -1189,29 +1228,31 @@ our image:
      <p>
       An SVG mask layer (formed as circles):
      </p>
-     <div class="code">
-      &lt;svg width="600" height="400"&gt;
-      <br/>
-      &lt;mask 
-    id="svgmask3"&gt;
-      <br/>
-      &lt;circle fill="#ffffff" cx="75" cy="75" 
-    r="75"&gt;&lt;/circle&gt;
-      <br/>
-      &lt;circle fill="#ffffff" cx="80" 
-    cy="260" r="75"&gt;&lt;/circle&gt;
-      <br/>
-      &lt;circle fill="#ffffff" 
-    cx="270" cy="160" r="75"&gt;&lt;/circle&gt;
-      <br/>
-      &lt;/mask&gt;
-      <br/>
-      &lt;image 
-    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg" 
-    mask="url(#svgmask3)"&gt;&lt;/image&gt;
-      <br/>
-      &lt;/svg&gt;
-     </div>
+     <pre><code class="code language-css">&lt;svg width="600" height="400"&gt;
+&lt;mask
+id="svgmask3"&gt;
+&lt;circle fill="#ffffff" cx="75" cy="75"
+r="75"&gt;&lt;/circle&gt;
+&lt;circle fill="#ffffff" cx="80"
+cy="260" r="75"&gt;&lt;/circle&gt;
+&lt;circle fill="#ffffff"
+cx="270" cy="160" r="75"&gt;&lt;/circle&gt;
+&lt;/mask&gt;
+&lt;image
+xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img_5terre.jpg"
+mask="url(#svgmask3)"&gt;&lt;/image&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1231,7 +1272,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-clip
+       mask-clip
       </td>
       <td>
        Specifies which area is affected by a mask image
@@ -1239,7 +1280,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-composite
+       mask-composite
       </td>
       <td>
        Specifies a compositing operation used on the current mask layer with 
@@ -1248,7 +1289,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-image
+       mask-image
       </td>
       <td>
        Specifies an image to be used as a mask layer for an element
@@ -1256,7 +1297,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-mode
+       mask-mode
       </td>
       <td>
        Specifies whether the mask layer image is treated as a luminance mask or 
@@ -1265,7 +1306,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-origin
+       mask-origin
       </td>
       <td>
        Specifies the origin position (the mask position area) of a mask layer 
@@ -1274,7 +1315,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-position
+       mask-position
       </td>
       <td>
        Sets the starting position of a mask layer image (relative to the mask 
@@ -1283,7 +1324,7 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-repeat
+       mask-repeat
       </td>
       <td>
        Specifies how the mask layer image is repeated
@@ -1291,16 +1332,16 @@ our image:
      </tr>
      <tr>
       <td>
-        mask-size
+       mask-size
       </td>
       <td>
        Specifies the size of a mask layer image
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_object-position.html">
       ❮ Previous
      </a>
@@ -1312,8 +1353,12 @@ our image:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

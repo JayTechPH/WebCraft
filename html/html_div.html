@@ -8,46 +8,47 @@
   <title>
    HTML Div Tutorial
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -133,7 +134,7 @@
       HTML Block &amp; Inline
      </p>
     </a>
-    <a href="html_div.html" class="selected">
+    <a class="selected" href="html_div.html">
      <p>
       HTML Div
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -470,10 +470,19 @@ breaks before and after.
      <p>
       A &lt;div&gt; element takes up all available width:
      </p>
-     <div class="code">
-      Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt;
-  dolor sit amet.
-     </div>
+     <pre><code class="code language-html">Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt;
+dolor sit amet.</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -523,17 +532,22 @@ breaks before and after.
      <p>
       A &lt;div&gt; element with HTML elements:
      </p>
-     <div class="code">
-      &lt;div&gt;
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital city of England.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;London has over 9 million inhabitants.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-html">&lt;div&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital city of England.&lt;/p&gt;
+&lt;p&gt;London has over 9 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -576,19 +590,23 @@ not 100% wide, and you want to center-align it, set the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      div {
-      <br/>
-      width:300px;
-      <br/>
-      margin:auto;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+div {
+width:300px;
+margin:auto;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -622,41 +640,34 @@ not 100% wide, and you want to center-align it, set the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;div&gt;
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital city of England.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;London has over 9 million inhabitants.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div&gt;
-      <br/>
-      &lt;h2&gt;Oslo&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Oslo is the capital city of 
-  Norway.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;Oslo has over 700,000 inhabitants.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div&gt;
-      <br/>
-      &lt;h2&gt;Rome&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Rome is the capital city of 
-  Italy.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;Rome has over 4 million inhabitants.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-html">&lt;div&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital city of England.&lt;/p&gt;
+&lt;p&gt;London has over 9 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2&gt;Oslo&lt;/h2&gt;
+&lt;p&gt;Oslo is the capital city of
+Norway.&lt;/p&gt;
+&lt;p&gt;Oslo has over 700,000 inhabitants.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h2&gt;Rome&lt;/h2&gt;
+&lt;p&gt;Rome is the capital city of
+Italy.&lt;/p&gt;
+&lt;p&gt;Rome has over 4 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -778,27 +789,27 @@ and allows elements to be positioned horizontally, rather than vertically.
      <p>
       How to use float to align div elements side by side:
      </p>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      .mycontainer {
-      <br/>
-      width:100%;
-      <br/>
-      overflow:auto;
-      <br/>
-      }
-      <br/>
-      .mycontainer div {
-      <br/>
-      width:33%;
-      <br/>
-      float:left;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+.mycontainer {
+width:100%;
+overflow:auto;
+}
+.mycontainer div {
+width:33%;
+float:left;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -882,20 +893,24 @@ and will be displayed side by side instead of on top of each other.
      <p>
       How to use display: inline-block to align div elements side by side:
      </p>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      div {
-      <br/>
-      width: 30%;
-      <br/>
-      display: 
-  inline-block;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+div {
+width: 30%;
+display:
+inline-block;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -963,24 +978,26 @@ it the status as a flex container.
      <p>
       How to use flex to align div elements side by side:
      </p>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      .mycontainer {
-      <br/>
-      display: flex;
-      <br/>
-      }
-      <br/>
-      .mycontainer 
-  &gt; div {
-      <br/>
-      width:33%;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+.mycontainer {
+display: flex;
+}
+.mycontainer
+&gt; div {
+width:33%;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -1062,19 +1079,23 @@ the status as a grid container, and you must specify the width of each column.
      <p>
       How to use grid to align &lt;div&gt; elements side by side:
      </p>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-columns: 33% 33% 33%;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+.grid-container {
+display: grid;
+grid-template-columns: 33% 33% 33%;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Result
      </h3>
@@ -1139,14 +1160,14 @@ the status as a grid container, and you must specify the width of each column.
      </tr>
      <tr>
       <td>
-        &lt;div&gt;
+       &lt;div&gt;
       </td>
       <td>
        Defines a section in a document (block-level)
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_blocks.html">
@@ -1160,8 +1181,10 @@ the status as a grid container, and you must specify the width of each column.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

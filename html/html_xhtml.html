@@ -8,46 +8,47 @@
   <title>
    HTML Versus XHTML
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -218,7 +219,7 @@
       HTML URL Encode
      </p>
     </a>
-    <a href="html_xhtml.html" class="selected">
+    <a class="selected" href="html_xhtml.html">
      <p>
       HTML vs. XHTML
      </p>
@@ -664,31 +665,27 @@ must specify the xml namespace for the document.
      <p>
       Here is an XHTML document with a minimum of required tags:
      </p>
-     <div class="code">
-      &lt;!DOCTYPE html PUBLIC "-//WebCraft//DTD XHTML 1.1//EN"
-      <br/>
-      "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
-      <br/>
-      &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;title&gt;Title of document&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      <em>
-       some content here...
-      </em>
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html PUBLIC "-//WebCraft//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;title&gt;Title of document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+some content here...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -701,19 +698,37 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;b&gt;&lt;i&gt;Some 
-  text&lt;/i&gt;&lt;/b&gt;
-     </div>
+     <pre><code class="code language-html">&lt;b&gt;&lt;i&gt;Some
+text&lt;/i&gt;&lt;/b&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;b&gt;&lt;i&gt;Some 
-  text&lt;/b&gt;&lt;/i&gt;
-     </div>
+     <pre><code class="code language-html">&lt;b&gt;&lt;i&gt;Some
+text&lt;/b&gt;&lt;/i&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -726,21 +741,37 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;p&gt;This is a paragraph&lt;/p&gt;
-      <br/>
-      &lt;p&gt;This is another paragraph&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;p&gt;This is another paragraph&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;p&gt;This is a paragraph
-      <br/>
-      &lt;p&gt;This is another paragraph
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This is a paragraph
+&lt;p&gt;This is another paragraph</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -753,25 +784,39 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      A break: &lt;br /&gt;
-      <br/>
-      A horizontal rule: &lt;hr /&gt;
-      <br/>
-      An image: &lt;img src="happy.gif" alt="Happy face" /&gt;
-     </div>
+     <pre><code class="code language-html">A break: &lt;br /&gt;
+A horizontal rule: &lt;hr /&gt;
+An image: &lt;img src="happy.gif" alt="Happy face" /&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      A break: &lt;br&gt;
-      <br/>
-      A horizontal rule: &lt;hr&gt;
-      <br/>
-      An image: &lt;img src="happy.gif" alt="Happy face"&gt;
-     </div>
+     <pre><code class="code language-html">A break: &lt;br&gt;
+A horizontal rule: &lt;hr&gt;
+An image: &lt;img src="happy.gif" alt="Happy face"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -784,25 +829,39 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;body&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph&lt;/p&gt;
-      <br/>
-      &lt;/body&gt;
-     </div>
+     <pre><code class="code language-html">&lt;body&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;BODY&gt;
-      <br/>
-      &lt;P&gt;This is a paragraph&lt;/P&gt;
-      <br/>
-      &lt;/BODY&gt;
-     </div>
+     <pre><code class="code language-html">&lt;BODY&gt;
+&lt;P&gt;This is a paragraph&lt;/P&gt;
+&lt;/BODY&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -815,17 +874,35 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;a HREF="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a HREF="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -838,17 +915,35 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -861,21 +956,37 @@ must specify the xml namespace for the document.
      <h3>
       Correct:
      </h3>
-     <div class="code">
-      &lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;
-      <br/>
-      &lt;input type="text" name="lastname" disabled="disabled" /&gt;
-     </div>
+     <pre><code class="code language-html">&lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;
+&lt;input type="text" name="lastname" disabled="disabled" /&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Wrong:
      </h3>
-     <div class="code">
-      &lt;input type="checkbox" name="vehicle" value="car" checked /&gt;
-      <br/>
-      &lt;input type="text" name="lastname" disabled /&gt;
-     </div>
+     <pre><code class="code language-html">&lt;input type="checkbox" name="vehicle" value="car" checked /&gt;
+&lt;input type="text" name="lastname" disabled /&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -906,8 +1017,10 @@ must specify the xml namespace for the document.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

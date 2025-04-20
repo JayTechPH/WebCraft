@@ -9,6 +9,7 @@
   <title>
    CSS Multiple Columns
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -596,7 +597,7 @@
       CSS Pagination
      </p>
     </a>
-    <a href="css3_multiple_columns.html" class="selected">
+    <a class="selected" href="css3_multiple_columns.html">
      <p>
       CSS Multiple Columns
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -875,14 +875,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-count: 3;
-      <br/>
-      }
-     </div>
+column-count: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -902,14 +909,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-gap: 40px;
-      <br/>
-      }
-     </div>
+column-gap: 40px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -927,14 +941,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-rule-style: solid;
-      <br/>
-      }
-     </div>
+column-rule-style: solid;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The
@@ -947,14 +968,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-rule-width: 1px;
-      <br/>
-      }
-     </div>
+column-rule-width: 1px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The
@@ -967,14 +995,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-rule-color: lightblue;
-      <br/>
-      }
-     </div>
+column-rule-color: lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The
@@ -990,14 +1025,21 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      column-rule: 1px solid lightblue;
-      <br/>
-      }
-     </div>
+column-rule: 1px solid lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1017,13 +1059,20 @@ columns:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h2 {
-      <br/>
-      column-span: all;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h2 {
+column-span: all;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1044,13 +1093,20 @@ should be 100px:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      column-width: 100px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+column-width: 100px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1070,7 +1126,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-count
+       column-count
       </td>
       <td>
        Specifies the number of columns an element should be divided into
@@ -1078,7 +1134,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-fill
+       column-fill
       </td>
       <td>
        Specifies how to fill columns
@@ -1086,7 +1142,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-gap
+       column-gap
       </td>
       <td>
        Specifies the gap between the columns
@@ -1094,7 +1150,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-rule
+       column-rule
       </td>
       <td>
        A shorthand property for setting all the column-rule-* properties
@@ -1102,7 +1158,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-rule-color
+       column-rule-color
       </td>
       <td>
        Specifies the color of the rule between columns
@@ -1110,7 +1166,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-rule-style
+       column-rule-style
       </td>
       <td>
        Specifies the style of the rule between columns
@@ -1118,7 +1174,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-rule-width
+       column-rule-width
       </td>
       <td>
        Specifies the width of the rule between columns
@@ -1126,7 +1182,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-span
+       column-span
       </td>
       <td>
        Specifies how many columns an element should span across
@@ -1134,7 +1190,7 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        column-width
+       column-width
       </td>
       <td>
        Specifies a suggested, optimal width for the columns
@@ -1142,16 +1198,16 @@ should be 100px:
      </tr>
      <tr>
       <td>
-        columns
+       columns
       </td>
       <td>
        A shorthand property for setting column-width and column-count
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_pagination.html">
       ❮ Previous
      </a>
@@ -1163,8 +1219,12 @@ should be 100px:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

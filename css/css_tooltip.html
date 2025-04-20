@@ -9,6 +9,7 @@
   <title>
    CSS Tooltip
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -546,7 +547,7 @@
       CSS Animations
      </p>
     </a>
-    <a href="css_tooltip.html" class="selected">
+    <a class="selected" href="css_tooltip.html">
      <p>
       CSS Tooltips
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -838,82 +838,54 @@ user moves the mouse pointer over an element:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      /* Tooltip container */
-      <br/>
-      .tooltip {
-      <br/>
-      position: relative;
-      <br/>
-      display: inline-block;
-      <br/>
-      border-bottom: 1px dotted 
+     <pre><code class="code language-css">&lt;style&gt;
+/* Tooltip container */
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted
 black; /* If you want dots under the hoverable text */
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Tooltip text 
+}
+/* Tooltip text
 */
-      <br/>
-      .tooltip .tooltiptext {
-      <br/>
-      visibility: hidden;
-      <br/>
-      width: 120px;
-      <br/>
-      background-color: black;
-      <br/>
-      color: #fff;
-      <br/>
-      text-align: center;
-      <br/>
-      padding: 5px 0;
-      <br/>
-      border-radius: 6px;
-      <br/>
-      <br/>
-      /* Position the tooltip text - see examples below! */
-      <br/>
-      position: absolute;
-      <br/>
-      z-index: 1;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Show 
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+/* Position the tooltip text - see examples below! */
+position: absolute;
+z-index: 1;
+}
+/* Show
 the tooltip text when you mouse over the tooltip container */
-      <br/>
-      .tooltip:hover 
+.tooltip:hover
 .tooltiptext {
-      <br/>
-      visibility: visible;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      <br/>
-      <span class="htmlHigh">
-       &lt;div class="tooltip"&gt;
-       <span style="color:black !important">
-        Hover 
+visibility: visible;
+}
+&lt;/style&gt;
+&lt;div class="tooltip"&gt;
+Hover
 over me
-       </span>
-       <br/>
-       &lt;span class="tooltiptext"&gt;
-       <span style="color:black;">
-        Tooltip 
+&lt;span class="tooltiptext"&gt;
+Tooltip
 text
-       </span>
-       &lt;/span&gt;
-       <br/>
-       &lt;/div&gt;
+&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
       </span>
-     </div>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -1022,16 +994,22 @@ applies if you want the tooltip placed to the left.
      <h3>
       Right Tooltip
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext {
-      <br/>
-      top: -5px;
-      <br/>
-      left: 
+     <pre><code class="code language-css">.tooltip .tooltiptext {
+top: -5px;
+left:
 105%;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1048,16 +1026,22 @@ applies if you want the tooltip placed to the left.
      <h3>
       Left Tooltip
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext {
-      <br/>
-      top: -5px;
-      <br/>
-      right: 
+     <pre><code class="code language-css">.tooltip .tooltiptext {
+top: -5px;
+right:
 105%;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1084,21 +1068,25 @@ to the half of the tooltip's width (120/2 = 60).
      <h3>
       Top Tooltip
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext {
-      <br/>
-      width: 120px;
-      <br/>
-      bottom: 100%;
-      <br/>
-      left: 
+     <pre><code class="code language-css">.tooltip .tooltiptext {
+width: 120px;
+bottom: 100%;
+left:
 50%;
-      <br/>
-      margin-left: -60px; /* Use half of the width 
+margin-left: -60px; /* Use half of the width
 (120/2 = 60), to center the tooltip */
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1115,21 +1103,25 @@ to the half of the tooltip's width (120/2 = 60).
      <h3>
       Bottom Tooltip
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext {
-      <br/>
-      width: 120px;
-      <br/>
-      top: 100%;
-      <br/>
-      left: 
+     <pre><code class="code language-css">.tooltip .tooltiptext {
+width: 120px;
+top: 100%;
+left:
 50%;
-      <br/>
-      margin-left: -60px; /* Use half of the width 
+margin-left: -60px; /* Use half of the width
 (120/2 = 60), to center the tooltip */
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1167,28 +1159,28 @@ look like a speech bubble.
      <h3>
       Bottom Arrow
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext::after {
-      <br/>
-      content: " ";
-      <br/>
-      position: absolute;
-      <br/>
-      top: 100%; 
+     <pre><code class="code language-css">.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+top: 100%;
 /* At the bottom of the tooltip */
-      <br/>
-      left: 50%;
-      <br/>
-      margin-left: -5px;
-      <br/>
-      border-width: 5px;
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: black transparent transparent transparent;
-      <br/>
-      }
-     </div>
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: black transparent transparent transparent;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1249,27 +1241,27 @@ Notice that we set the bottom border color this time:
      <h3>
       Top Arrow
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext::after {
-      <br/>
-      content: " ";
-      <br/>
-      position: absolute;
-      <br/>
-      bottom: 100%;  /* At the top of the tooltip */
-      <br/>
-      left: 50%;
-      <br/>
-      margin-left: -5px;
-      <br/>
-      border-width: 5px;
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: transparent transparent black transparent;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+bottom: 100%;&nbsp; /* At the top of the tooltip */
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent black transparent;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1289,28 +1281,28 @@ Notice that we set the bottom border color this time:
      <h3>
       Left Arrow
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext::after {
-      <br/>
-      content: " ";
-      <br/>
-      position: absolute;
-      <br/>
-      top: 50%;
-      <br/>
-      right: 100%; /* To the left of the tooltip 
+     <pre><code class="code language-css">.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+top: 50%;
+right: 100%; /* To the left of the tooltip
 */
-      <br/>
-      margin-top: -5px;
-      <br/>
-      border-width: 5px;
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: transparent black transparent transparent;
-      <br/>
-      }
-     </div>
+margin-top: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent black transparent transparent;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1330,28 +1322,28 @@ Notice that we set the bottom border color this time:
      <h3>
       Right Arrow
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext::after {
-      <br/>
-      content: " ";
-      <br/>
-      position: absolute;
-      <br/>
-      top: 50%;
-      <br/>
-      left: 100%; /* To the right of the 
+     <pre><code class="code language-css">.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+top: 50%;
+left: 100%; /* To the right of the
 tooltip */
-      <br/>
-      margin-top: -5px;
-      <br/>
-      border-width: 5px;
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: transparent transparent transparent black;
-      <br/>
-      }
-     </div>
+margin-top: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent transparent black;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1385,23 +1377,25 @@ can use the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      .tooltip .tooltiptext {
-      <br/>
-      opacity: 0;
-      <br/>
-      transition: opacity 1s;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .tooltip:hover 
+     <pre><code class="code language-css">.tooltip .tooltiptext {
+opacity: 0;
+transition: opacity 1s;
+}
+.tooltip:hover
 .tooltiptext {
-      <br/>
-      opacity: 1;
-      <br/>
-      }
-     </div>
+opacity: 1;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <br/>
     <div class="nextprev">
@@ -1416,8 +1410,12 @@ can use the CSS
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Layout - The z-index Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -128,7 +129,7 @@
       CSS Position
      </p>
     </a>
-    <a href="css_z-index.html" class="selected">
+    <a class="selected" href="css_z-index.html">
      <p>
       CSS Z-index
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -819,20 +819,24 @@ stack order of an element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      img
+     <pre><code class="code language-css">img
 {
-      <br/>
-      position: absolute;
-      <br/>
-      left: 0px;
-      <br/>
-      top: 0px;
-      <br/>
-      z-index: -1;
-      <br/>
-      }
-     </div>
+position: absolute;
+left: 0px;
+top: 0px;
+z-index: -1;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -863,97 +867,61 @@ position: relative, position: fixed, or position: sticky) and
      <p>
       Here we see that an element with greater stack order is always above an element with a lower stack order:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .container {
-      <br/>
-      position: relative;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .black-box {
-      <br/>
-      position: relative;
-      <br/>
-      z-index: 1;
-      <br/>
-      border: 2px solid black;
-      <br/>
-      height: 100px;
-      <br/>
-      margin: 30px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .gray-box {
-      <br/>
-      position: absolute;
-      <br/>
-      z-index: 3;
-      <br/>
-      background: lightgray;
-      <br/>
-      height: 60px;
-      <br/>
-      width: 70%;
-      <br/>
-      left: 50px;
-      <br/>
-      top: 50px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .green-box {
-      <br/>
-      position: absolute;
-      <br/>
-      z-index: 2;
-      <br/>
-      background: lightgreen;
-      <br/>
-      width: 35%;
-      <br/>
-      left: 270px;
-      <br/>
-      top: -15px;
-      <br/>
-      height: 
-  100px;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;div class="container"&gt;
-      <br/>
-      &lt;div 
-  class="black-box"&gt;Black box&lt;/div&gt;
-      <br/>
-      &lt;div class="gray-box"&gt;Gray 
-  box&lt;/div&gt;
-      <br/>
-      &lt;div class="green-box"&gt;Green box&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.container {
+position: relative;
+}
+.black-box {
+position: relative;
+z-index: 1;
+border: 2px solid black;
+height: 100px;
+margin: 30px;
+}
+.gray-box {
+position: absolute;
+z-index: 3;
+background: lightgray;
+height: 60px;
+width: 70%;
+left: 50px;
+top: 50px;
+}
+.green-box {
+position: absolute;
+z-index: 2;
+background: lightgreen;
+width: 35%;
+left: 270px;
+top: -15px;
+height:
+100px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;div
+class="black-box"&gt;Black box&lt;/div&gt;
+&lt;div class="gray-box"&gt;Gray
+box&lt;/div&gt;
+&lt;div class="green-box"&gt;Green box&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -977,91 +945,58 @@ position: relative, position: fixed, or position: sticky) and
      <p>
       Same example as above, but here with no z-index specified:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .container {
-      <br/>
-      position: relative;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .black-box {
-      <br/>
-      position: relative;
-      <br/>
-      border: 2px solid black;
-      <br/>
-      height: 100px;
-      <br/>
-      margin: 30px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .gray-box {
-      <br/>
-      position: absolute;
-      <br/>
-      background: lightgray;
-      <br/>
-      height: 60px;
-      <br/>
-      width: 70%;
-      <br/>
-      left: 50px;
-      <br/>
-      top: 50px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .green-box {
-      <br/>
-      position: absolute;
-      <br/>
-      background: lightgreen;
-      <br/>
-      width: 35%;
-      <br/>
-      left: 270px;
-      <br/>
-      top: -15px;
-      <br/>
-      height: 
-  100px;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;div class="container"&gt;
-      <br/>
-      &lt;div 
-  class="black-box"&gt;Black box&lt;/div&gt;
-      <br/>
-      &lt;div class="gray-box"&gt;Gray 
-  box&lt;/div&gt;
-      <br/>
-      &lt;div class="green-box"&gt;Green box&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.container {
+position: relative;
+}
+.black-box {
+position: relative;
+border: 2px solid black;
+height: 100px;
+margin: 30px;
+}
+.gray-box {
+position: absolute;
+background: lightgray;
+height: 60px;
+width: 70%;
+left: 50px;
+top: 50px;
+}
+.green-box {
+position: absolute;
+background: lightgreen;
+width: 35%;
+left: 270px;
+top: -15px;
+height:
+100px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+&lt;div
+class="black-box"&gt;Black box&lt;/div&gt;
+&lt;div class="gray-box"&gt;Gray
+box&lt;/div&gt;
+&lt;div class="green-box"&gt;Green box&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1078,16 +1013,16 @@ position: relative, position: fixed, or position: sticky) and
      </tr>
      <tr>
       <td>
-        z-index
+       z-index
       </td>
       <td>
        Sets the stack order of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_positioning.html">
       ❮ Previous
      </a>
@@ -1099,8 +1034,12 @@ position: relative, position: fixed, or position: sticky) and
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

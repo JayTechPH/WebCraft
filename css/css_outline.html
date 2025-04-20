@@ -9,6 +9,7 @@
   <title>
    CSS Outline Properties
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -323,7 +324,7 @@
     <p>
      CSS Outline
     </p>
-    <a href="css_outline.html" class="selected">
+    <a class="selected" href="css_outline.html">
      <p>
       Outline
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -936,23 +936,25 @@ and can have one of the following values:
      <p>
       Demonstration of the different outline styles:
      </p>
-     <div class="code">
-      p.dotted {outline-style: dotted;}
-      <br/>
-      p.dashed {outline-style: dashed;}
-      <br/>
-      p.solid {outline-style: solid;}
-      <br/>
-      p.double {outline-style: double;}
-      <br/>
-      p.groove {outline-style: groove;}
-      <br/>
-      p.ridge {outline-style: ridge;}
-      <br/>
-      p.inset {outline-style: inset;}
-      <br/>
-      p.outset {outline-style: outset;}
-     </div>
+     <pre><code class="code language-css">p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1009,8 +1011,12 @@ and can have one of the following values:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

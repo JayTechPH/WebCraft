@@ -1,153 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="src/css/style.css" rel="stylesheet" />
-    <link href="src/css/codestyle.css" rel="stylesheet">
-    <link href="src/css/homepage.css" rel="stylesheet">
-    <title>
-        WebCraft | Homepage
-    </title>
-    <link rel="shortcut icon" href="src/img/icon.ico" type="image/x-icon">
-</head>
-
-<body>
-    <header>
-        <div class="header-title">
-            <img alt="logo" src="src/img/icon.png" />
-            <p style="color: white;">
-                WebCraft
-            </p>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a class="selected" href="#home">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        ABOUT
-                    </a>
-                </li>
-                <li>
-                    <a href="#services">
-                        SERVICES
-                    </a>
-                </li>
-                <li>
-                    <a href="html/index.html">
-                        HTML
-                    </a>
-                </li>
-                <li>
-                    <a href="css/index.html">
-                        CSS
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="main1">
-            <div class="text">
-                <h1>Learn and create websites on a single, all-in-one platform.</h1>
-                <p>Try it now for free: Start learning HTML and CSS!</p>
-            </div>
-            <div class="buttons">
-                <a class="btn1" href="html/index.html">Learn HTML</a>
-                <a class="btn1" href="css/index.html">Learn CSS</a>
-            </div>
-            <img src="src/img/glow.png">
-            <div class="video-container">
-                <video controls src="src/video/advertisment.mp4"></video>
-            </div>
-        </section>
-        <section id="about" class="main2">
-            <div class="sec-title block">
-                <img src="src/img/notebook.png">
-                <h2>What will you learn?</h2>
-            </div>
-            <div class="context block">
-                <div class="text">
-                    <h2>At WebCraft, you'll learn HTML and CSS to build and style websites. From basic page structure to
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="src/css/style.css" rel="stylesheet"/>
+  <link href="src/css/codestyle.css" rel="stylesheet"/>
+  <link href="src/css/homepage.css" rel="stylesheet"/>
+  <title>
+   WebCraft | Homepage
+  </title>
+  <link href="src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <div class="header-title">
+    <img alt="logo" src="src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a class="selected" href="#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main>
+   <section class="main1" id="home">
+    <div class="text">
+     <h1>
+      Learn and create websites on a single, all-in-one platform.
+     </h1>
+     <p>
+      Try it now for free: Start learning HTML and CSS!
+     </p>
+    </div>
+    <div class="buttons">
+     <a class="btn1" href="html/index.html">
+      Learn HTML
+     </a>
+     <a class="btn1" href="css/index.html">
+      Learn CSS
+     </a>
+    </div>
+    <img src="src/img/glow.png"/>
+    <div class="video-container">
+     <video id="advertisment" src="src/video/advertisment.mp4">
+     </video>
+     <button class="playbutton" onclick="togglePlay()">
+      <svg fill="none" id="play" role="presentation" style="display: block;" viewbox="0 0 20 20">
+       <path d="M6.24905 3.69194C5.82218 3.45967 5.30225 3.76868 5.30225 4.25466V15.7452C5.30225 16.2312 5.82218 16.5402 6.24906 16.3079L16.8079 10.5626C17.2538 10.32 17.2538 9.67983 16.8079 9.4372L6.24905 3.69194ZM4.021 4.25466C4.021 2.79672 5.58078 1.86969 6.86142 2.56651L17.4203 8.31176C18.758 9.03966 18.758 10.9602 17.4203 11.6881L6.86143 17.4333C5.58079 18.1301 4.021 17.2031 4.021 15.7452V4.25466Z" fill="currentColor">
+       </path>
+      </svg>
+      <svg fill="none" id="pause" role="presentation" style="display: none;" viewbox="0 0 20 20">
+       <path d="M4.66148 2.3125C3.83593 2.3125 3.16669 2.98174 3.16669 3.80729V16.1927C3.16669 17.0183 3.83593 17.6875 4.66148 17.6875H7.65106C8.47662 17.6875 9.14586 17.0183 9.14586 16.1927V3.80729C9.14586 2.98174 8.47662 2.3125 7.65106 2.3125H4.66148ZM4.44794 3.80729C4.44794 3.68936 4.54355 3.59375 4.66148 3.59375H7.65106C7.769 3.59375 7.86461 3.68936 7.86461 3.80729V16.1927C7.86461 16.3106 7.769 16.4062 7.65106 16.4062H4.66148C4.54355 16.4062 4.44794 16.3106 4.44794 16.1927V3.80729ZM12.349 2.3125C11.5235 2.3125 10.8542 2.98174 10.8542 3.80729V16.1927C10.8542 17.0183 11.5235 17.6875 12.349 17.6875H15.3386C16.1642 17.6875 16.8334 17.0183 16.8334 16.1927V3.80729C16.8334 2.98174 16.1642 2.3125 15.3386 2.3125H12.349ZM12.1355 3.80729C12.1355 3.68936 12.2311 3.59375 12.349 3.59375H15.3386C15.4565 3.59375 15.5521 3.68936 15.5521 3.80729V16.1927C15.5521 16.3106 15.4565 16.4062 15.3386 16.4062H12.349C12.2311 16.4062 12.1355 16.3106 12.1355 16.1927V3.80729Z" fill="currentColor">
+       </path>
+      </svg>
+     </button>
+    </div>
+   </section>
+   <section class="main2" id="about">
+    <div class="sec-title block">
+     <img src="src/img/notebook.png"/>
+     <h2>
+      What will you learn?
+     </h2>
+    </div>
+    <div class="context block">
+     <div class="text">
+      <h2>
+       At WebCraft, you'll learn HTML and CSS to build and style websites. From basic page structure to
                         advanced responsive design, our tutorials will help you create professional, user-friendly
-                        websites.</h2>
-                </div>
-                <img src="src/img/webcraft.png">
-            </div>
-        </section>
-        <section id="services" class="main3">
-            <div class="sec-title block">
-                <img src="src/img/comp.png">
-                <h2>Pick your perfect plan today</h2>
-            </div>
-            <div class="subscription-group block">
-                <div class="subscriptionplan">
-                    <h1>Basic Plan</h1>
-                    <p>Beginner learners</p>
-                    <h1>Price: Free</h1>
-                    <a href="#contact">Choose Plan</a>
-                    <br>
-                    <h1>Features</h1>
-                    <ul>
-                        <li>Introductory tutorials</li>
-                        <li>Limited exercises</li>
-                        <li>2 free course</li>
-                    </ul>
-                    <h1>Limitations</h1>
-                    <ul>
-                        <li>Limited tutorials</li>
-                        <li>No premium content</li>
-                        <li>No certificate</li>
-                    </ul>
-                </div>
+                        websites.
+      </h2>
+     </div>
+     <img src="src/img/webcraft.png"/>
+    </div>
+   </section>
+   <section class="main3" id="services">
+    <div class="sec-title block">
+     <img src="src/img/comp.png"/>
+     <h2>
+      Pick your perfect plan today
+     </h2>
+    </div>
+    <div class="subscription-group block">
+     <div class="subscriptionplan">
+      <h1>
+       Basic Plan
+      </h1>
+      <p>
+       Beginner learners
+      </p>
+      <h1>
+       Price:
+       <br/>
+       Free
+      </h1>
+      <a href="#contact">
+       Choose Plan
+      </a>
+      <br/>
+      <h1>
+       Features
+      </h1>
+      <ul>
+       <li>
+        Introductory tutorials
+       </li>
+       <li>
+        Limited exercises
+       </li>
+       <li>
+        2 free course
+       </li>
+      </ul>
+      <h1>
+       Limitations
+      </h1>
+      <ul>
+       <li>
+        Limited tutorials
+       </li>
+       <li>
+        No premium content
+       </li>
+       <li>
+        No certificate
+       </li>
+      </ul>
+     </div>
+     <div class="subscriptionplan popular">
+      <h1>
+       Standard Plan
+      </h1>
+      <p>
+       Intermediate learners
+      </p>
+      <h1>
+       Price: $9.99/month
+      </h1>
+      <a href="#contact">
+       Choose Plan
+      </a>
+      <br/>
+      <h1>
+       Features
+      </h1>
+      <ul>
+       <li>
+        All beginner &amp; intermediate tutorials
+       </li>
+       <li>
+        Interactive quizzes
+       </li>
+       <li>
+        Weekly webinars
+       </li>
+       <li>
+        Premium tutorials
+       </li>
+       <li>
+        Certificate of completion
+       </li>
+      </ul>
+     </div>
+     <div class="subscriptionplan">
+      <h1>
+       Premium Plan
+      </h1>
+      <p>
+       Advanced learners
+      </p>
+      <h1>
+       Price: $19.99/month
+      </h1>
+      <a href="#contact">
+       Choose Plan
+      </a>
+      <br/>
+      <h1>
+       Features
+      </h1>
+      <ul>
+       <li>
+        All tutorials (beginner to advanced)
+       </li>
+       <li>
+        Coding challenges
+       </li>
+       <li>
+        One-on-one mentoring
+       </li>
+       <li>
+        Exclusive masterclasses
+       </li>
+       <li>
+        Priority support
+       </li>
+       <li>
+        Early course access
+       </li>
+       <li>
+        Verified certificate
+       </li>
+       <li>
+        Offline materials
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <p>
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+   </p>
+  </footer>
+  <script>
+   const video = document.getElementById("advertisment");
+        const playIcon = document.getElementById("play");
+        const pauseIcon = document.getElementById("pause");
+        
+        function togglePlay() {
+            if (video.paused) {
+                video.play();
+                playIcon.style.display = "none";
+                pauseIcon.style.display = "block";
+            } else {
+                video.pause();
+                playIcon.style.display = "block";
+                pauseIcon.style.display = "none";
+            }
+        }
 
-                <div class="subscriptionplan popular">
-                    <h1>Standard Plan</h1>
-                    <p>Intermediate learners</p>
-                    <h1>Price: $9.99/month</h1>
-                    <a href="#contact">Choose Plan</a>
-                    <br>
-                    <h1>Features</h1>
-                    <ul>
-                        <li>All beginner & intermediate tutorials</li>
-                        <li>Interactive quizzes</li>
-                        <li>Weekly webinars</li>
-                        <li>Premium tutorials</li>
-                        <li>Certificate of completion</li>
-                    </ul>
-                </div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play();
+                    playIcon.style.display = "none";
+                    pauseIcon.style.display = "block";
+                    
+                } else {
+                    video.pause();
+                    playIcon.style.display = "block";
+                    pauseIcon.style.display = "none";
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
 
-                <div class="subscriptionplan">
-                    <h1>Premium Plan</h1>
-                    <p>Advanced learners</p>
-                    <h1>Price: $19.99/month</h1>
-                    <a href="#contact">Choose Plan</a>
-                    <br>
-                    <h1>Features</h1>
-                    <ul>
-                        <li>All tutorials (beginner to advanced)</li>
-                        <li>Coding challenges</li>
-                        <li>One-on-one mentoring</li>
-                        <li>Exclusive masterclasses</li>
-                        <li>Priority support</li>
-                        <li>Early course access</li>
-                        <li>Verified certificate</li>
-                        <li>Offline materials</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>
-            © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
-        </p>
-    </footer>
-</body>
-
+        observer.observe(video);
+  </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
+ </body>
 </html>

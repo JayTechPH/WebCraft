@@ -8,46 +8,47 @@
   <title>
    HTML Styles CSS
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -113,7 +114,7 @@
       HTML Comments
      </p>
     </a>
-    <a href="html_css.html" class="selected">
+    <a class="selected" href="html_css.html">
      <p>
       HTML CSS
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -579,13 +579,20 @@ and the text color of the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;p 
-  style="color:red;"&gt;A red paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
+&lt;p
+style="color:red;"&gt;A red paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -624,38 +631,32 @@ color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      body {background-color: powderblue;}
-      <br/>
-      h1   {color: blue;}
-      <br/>
-      p    {color: red;}
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a 
- heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {background-color: powderblue;}
+h1&nbsp;&nbsp; {color: blue;}
+p&nbsp;&nbsp;&nbsp; {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a
+heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -675,29 +676,27 @@ color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;link rel="stylesheet" href="styles.css"&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The external style sheet can be written in any text editor. The file must not contain any 
@@ -710,25 +709,26 @@ HTML code, and must be saved with a .css extension.
      <h3>
       "styles.css":
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      background-color: powderblue;
-      <br/>
-      }
-      <br/>
-      h1 {
-      <br/>
-      color: blue;
-      <br/>
-      }
-      <br/>
-      p {
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">body {
+background-color: powderblue;
+}
+h1 {
+color: blue;
+}
+p {
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -774,51 +774,38 @@ more about them later.
      <p>
       Use of CSS color, font-family and font-size properties:
      </p>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      h1 {
-      <br/>
-      color: blue;
-      <br/>
-      font-family: verdana;
-      <br/>
-      font-size: 300%;
-      <br/>
-      }
-      <br/>
-      p {
-      <br/>
-      color: red;
-      <br/>
-      font-family: courier;
-      <br/>
-      font-size: 160%;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 {
+color: blue;
+font-family: verdana;
+font-size: 300%;
+}
+p&nbsp;{
+color: red;
+font-family: courier;
+font-size: 160%;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -845,15 +832,21 @@ around an HTML element.
      <p>
       Use of CSS border property:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      border: 2px 
+     <pre><code class="code language-html">p {
+border: 2px
 solid powderblue;
-      <br/>
-      }
-      <br/>
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -874,16 +867,22 @@ solid powderblue;
      <p>
       Use of CSS border and padding properties:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      border: 2px 
+     <pre><code class="code language-html">p {
+border: 2px
 solid powderblue;
-      <br/>
-      padding: 30px;
-      <br/>
-      }
-     </div>
+padding: 30px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -904,16 +903,22 @@ solid powderblue;
      <p>
       Use of CSS border and margin properties:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      border: 2px 
+     <pre><code class="code language-html">p {
+border: 2px
 solid powderblue;
-      <br/>
-      margin: 50px;
-      <br/>
-      }
-     </div>
+margin: 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -929,10 +934,18 @@ solid powderblue;
      <p>
       This example uses a full URL to link to a style sheet:
      </p>
-     <div class="code">
-      &lt;link rel="stylesheet" href="https://www.webcraft.com/html/styles.css"&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="https://www.webcraft.com/html/styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -941,10 +954,18 @@ solid powderblue;
      <p>
       This example links to a style sheet located in the html folder on the current web site:
      </p>
-     <div class="code">
-      &lt;link rel="stylesheet" href="/html/styles.css"&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="/html/styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -953,10 +974,18 @@ solid powderblue;
      <p>
       This example links to a style sheet located in the same folder as the current page:
      </p>
-     <div class="code">
-      &lt;link rel="stylesheet" href="styles.css"&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -1071,7 +1100,7 @@ File Paths
      </tr>
      <tr>
       <td>
-        &lt;style&gt;
+       &lt;style&gt;
       </td>
       <td>
        Defines style information for an HTML document
@@ -1079,14 +1108,13 @@ File Paths
      </tr>
      <tr>
       <td>
-        &lt;link&gt;
+       &lt;link&gt;
       </td>
       <td>
        Defines a link between a document and an external resource
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_comments.html">
@@ -1100,8 +1128,10 @@ File Paths
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

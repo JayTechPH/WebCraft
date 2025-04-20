@@ -8,46 +8,47 @@
   <title>
    HTML Classes - The Class Attribute
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -138,7 +139,7 @@
       HTML Div
      </p>
     </a>
-    <a href="html_classes.html" class="selected">
+    <a class="selected" href="html_classes.html">
      <p>
       HTML Classes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -492,67 +492,45 @@ with a
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .city {
-      <br/>
-      background-color: tomato;
-      <br/>
-      color: white;
-      <br/>
-      border: 2px solid black;
-      <br/>
-      margin: 20px;
-      <br/>
-      padding: 20px;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;div class="city"&gt;
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital of England.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="city"&gt;
-      <br/>
-      &lt;h2&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="city"&gt;
-      <br/>
-      &lt;h2&gt;Tokyo&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.city {
+background-color: tomato;
+color: white;
+border: 2px solid black;
+margin: 20px;
+padding: 20px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="city"&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="city"&gt;
+&lt;h2&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="city"&gt;
+&lt;h2&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      In the following example we have two
@@ -579,39 +557,32 @@ with a
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .note {
-      <br/>
-      font-size: 120%;
-      <br/>
-      color: red;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.note {
+font-size: 120%;
+color: red;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;My &lt;span class="note"&gt;Important&lt;/span&gt; Heading&lt;/h1&gt;
+&lt;p&gt;This is some &lt;span class="note"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -661,52 +632,37 @@ Then, define the CSS properties within curly braces {}:
      <p>
       Create a class named "city":
      </p>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .city {
-      <br/>
-      background-color: tomato;
-      <br/>
-      color: white;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h2 class="city"&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital of England.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2 class="city"&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.city {
+background-color: tomato;
+color: white;
+padding: 10px;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -740,16 +696,22 @@ and will get the CSS styles from both of the classes:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h2 
-  class="city main"&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;h2 class="city"&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;h2 
-  class="city"&gt;Tokyo&lt;/h2&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;h2
+class="city main"&gt;London&lt;/h2&gt;
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;h2
+class="city"&gt;Tokyo&lt;/h2&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -774,13 +736,20 @@ and will share the same style:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h2 class="city"&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;p 
-  class="city"&gt;Paris is the capital of France&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p
+class="city"&gt;Paris is the capital of France&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -805,28 +774,28 @@ specific elements.
       Click on a button to hide all elements with the class name 
   "city":
      </p>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      function myFunction() {
-      <br/>
-      var x =
-      <b>
-       document.getElementsByClassName("city")
-      </b>
-      ;
-      <br/>
-      for (var i = 0; i &lt; x.length; 
-  i++) {
-      <br/>
-      x[i].style.display = "none";
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script&gt;
+function myFunction() {
+var x =
+document.getElementsByClassName("city")
+;
+for (var i = 0; i &lt; x.length;
+i++) {
+x[i].style.display = "none";
+}
+}
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -896,8 +865,10 @@ more class names for an element
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

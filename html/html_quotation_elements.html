@@ -8,46 +8,47 @@
   <title>
    HTML Quotation Elements
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -103,7 +104,7 @@
       HTML Formatting
      </p>
     </a>
-    <a href="html_quotation_elements.html" class="selected">
+    <a class="selected" href="html_quotation_elements.html">
      <p>
       HTML Quotations
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -512,19 +512,25 @@ is quoted from another source.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
-      <br/>
-      &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
-      <br/>
-      For 60 years, WWF has worked to help people and nature thrive. As the world's 
-  leading conservation organization, WWF works in nearly 100 countries. At every 
-  level, we collaborate with people around the world to develop and deliver 
-  innovative solutions that protect communities, wildlife, and the places in 
-  which they live.
-      <br/>
-      &lt;/blockquote&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;
+&lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+For 60 years, WWF has worked to help people and nature thrive. As the world's
+leading conservation organization, WWF works in nearly 100 countries. At every
+level, we collaborate with people around the world to develop and deliver
+innovative solutions that protect communities, wildlife, and the places in
+which they live.
+&lt;/blockquote&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -544,10 +550,19 @@ is quoted from another source.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with 
- nature.&lt;/q&gt;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with
+nature.&lt;/q&gt;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -578,10 +593,19 @@ abbreviation/acronym when you mouse over the element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 
- 1948.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in
+1948.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -619,21 +643,24 @@ always add a line break before and after the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;address&gt;
-      <br/>
-      Written by John Doe.&lt;br&gt;
-      <br/>
-      Visit us at:&lt;br&gt;
-      <br/>
-      Example.com&lt;br&gt;
-      <br/>
-      Box 564, Disneyland&lt;br&gt;
-      <br/>
-      USA
-      <br/>
-      &lt;/address&gt;
-     </div>
+     <pre><code class="code language-html">&lt;address&gt;
+Written by John Doe.&lt;br&gt;
+Visit us at:&lt;br&gt;
+Example.com&lt;br&gt;
+Box 564, Disneyland&lt;br&gt;
+USA
+&lt;/address&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -668,9 +695,18 @@ creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, et
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -691,9 +727,18 @@ the current text direction:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
-     </div>
+     <pre><code class="code language-html">&lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -710,54 +755,54 @@ the current text direction:
      </tr>
      <tr>
       <td>
-        &lt;abbr&gt;
-       </td>
+       &lt;abbr&gt;
+      </td>
       <td>
        Defines an abbreviation or acronym
       </td>
      </tr>
      <tr>
       <td>
-        &lt;address&gt;
-       </td>
+       &lt;address&gt;
+      </td>
       <td>
        Defines contact information for the author/owner of a document
       </td>
      </tr>
      <tr>
       <td>
-        &lt;bdo&gt;
-       </td>
+       &lt;bdo&gt;
+      </td>
       <td>
        Defines the text direction
       </td>
      </tr>
      <tr>
       <td>
-        &lt;blockquote&gt;
-       </td>
+       &lt;blockquote&gt;
+      </td>
       <td>
        Defines a section that is quoted from another source
       </td>
      </tr>
      <tr>
       <td>
-        &lt;cite&gt;
-       </td>
+       &lt;cite&gt;
+      </td>
       <td>
        Defines the title of a work
       </td>
      </tr>
      <tr>
       <td>
-        &lt;q&gt;
-       </td>
+       &lt;q&gt;
+      </td>
       <td>
        Defines a short inline quotation
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_formatting.html">
@@ -771,8 +816,10 @@ the current text direction:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Input Types
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -371,7 +372,7 @@
       HTML Form Elements
      </p>
     </a>
-    <a href="html_form_input_types.html" class="selected">
+    <a class="selected" href="html_form_input_types.html">
      <p>
       HTML Input Types
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -601,21 +601,25 @@ is
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="text" id="fname" name="fname"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -646,20 +650,24 @@ is
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" 
-  id="username" name="username"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="pwd"&gt;Password:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="password" id="pwd" name="pwd"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text"
+id="username" name="username"&gt;&lt;br&gt;
+&lt;label for="pwd"&gt;Password:&lt;/label&gt;&lt;br&gt;
+&lt;input type="password" id="pwd" name="pwd"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -709,28 +717,31 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
     </p>
-    <form  target="_blank">
+    <form target="_blank">
      First name:
      <br/>
      <input name="firstname" type="text" value="John"/>
@@ -749,23 +760,26 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -785,31 +799,33 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;input type="reset" 
-  value="Reset"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="reset"
+value="Reset"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
     </p>
-    <form  target="_blank">
+    <form target="_blank">
      First name:
      <br/>
      <input name="firstname0" type="text" value="John"/>
@@ -848,30 +864,30 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;Choose your favorite Web language:&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;form&gt;
-      <br/>
-      &lt;input type="radio" id="html" name="fav_language" 
-  value="HTML"&gt;
-      <br/>
-      &lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="radio" id="css" name="fav_language" value="CSS"&gt;
-      <br/>
-      &lt;label 
-  for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="radio" id="javascript" 
-  name="fav_language" value="JavaScript"&gt;
-      <br/>
-      &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Choose your favorite Web language:&lt;/p&gt;
+&lt;form&gt;
+&lt;input type="radio" id="html" name="fav_language"
+value="HTML"&gt;
+&lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="radio" id="css" name="fav_language" value="CSS"&gt;
+&lt;label
+for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="javascript"
+name="fav_language" value="JavaScript"&gt;
+&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -911,27 +927,29 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
-      <br/>
-      &lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
-      <br/>
-      &lt;label for="vehicle2"&gt; 
-  I have a car&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="checkbox" 
-  id="vehicle3" name="vehicle3" 
-  value="Boat"&gt;
-      <br/>
-      &lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+&lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+&lt;label for="vehicle2"&gt;
+I have a car&lt;/label&gt;&lt;br&gt;
+&lt;input type="checkbox"
+id="vehicle3" name="vehicle3"
+value="Boat"&gt;
+&lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -968,9 +986,18 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;input type="button" onclick="alert('Hello World!')" value="Click Me!"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;input type="button" onclick="alert('Hello World!')" value="Click Me!"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -994,16 +1021,22 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="favcolor"&gt;Select your favorite 
-  color:&lt;/label&gt;
-      <br/>
-      &lt;input type="color" id="favcolor" name="favcolor"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="favcolor"&gt;Select your favorite
+color:&lt;/label&gt;
+&lt;input type="color" id="favcolor" name="favcolor"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1023,16 +1056,22 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="birthday"&gt;Birthday:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="date" id="birthday" name="birthday"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="birthday"&gt;Birthday:&lt;/label&gt;
+&lt;input
+type="date" id="birthday" name="birthday"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You can also use the
@@ -1049,23 +1088,27 @@ input data.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="datemax"&gt;Enter a date before 
-  1980-01-01:&lt;/label&gt;
-      <br/>
-      &lt;input type="date" id="datemax" name="datemax" 
-  max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="datemin"&gt;Enter a date after 
-  2000-01-01:&lt;/label&gt;
-      <br/>
-      &lt;input type="date" id="datemin" name="datemin" 
-  min="2000-01-02"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="datemax"&gt;Enter a date before
+1980-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemax" name="datemax"
+max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="datemin"&gt;Enter a date after
+2000-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemin" name="datemin"
+min="2000-01-02"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1086,16 +1129,22 @@ a date and time input field, with no time zone.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="birthdaytime"&gt;Birthday (date and 
-  time):&lt;/label&gt;
-      <br/>
-      &lt;input type="datetime-local" id="birthdaytime" name="birthdaytime"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="birthdaytime"&gt;Birthday (date and
+time):&lt;/label&gt;
+&lt;input type="datetime-local" id="birthdaytime" name="birthdaytime"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1118,15 +1167,21 @@ a date and time input field, with no time zone.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="email"&gt;Enter your email:&lt;/label&gt;
-      <br/>
-      &lt;input type="email" id="email" name="email"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="email"&gt;Enter your email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1150,14 +1205,21 @@ a date and time input field, with no time zone.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;input type="image" src="img_submit.gif" alt="Submit" 
-  width="48" height="48"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;input type="image" src="img_submit.gif" alt="Submit"
+width="48" height="48"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1174,15 +1236,21 @@ a date and time input field, with no time zone.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="myfile"&gt;Select a file:&lt;/label&gt;
-      <br/>
-      &lt;input type="file" id="myfile" name="myfile"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="myfile"&gt;Select a file:&lt;/label&gt;
+&lt;input type="file" id="myfile" name="myfile"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1216,21 +1284,25 @@ security!
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="hidden" id="custId" name="custId" value="3487"&gt;
-      <br/>
-      &lt;input 
-  type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input
+type="hidden" id="custId" name="custId" value="3487"&gt;
+&lt;input
+type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1250,16 +1322,22 @@ security!
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="bdaymonth"&gt;Birthday (month and 
-  year):&lt;/label&gt;
-      <br/>
-      &lt;input type="month" id="bdaymonth" name="bdaymonth"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="bdaymonth"&gt;Birthday (month and
+year):&lt;/label&gt;
+&lt;input type="month" id="bdaymonth" name="bdaymonth"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1286,17 +1364,23 @@ security!
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="quantity"&gt;Quantity (between 1 and 
-  5):&lt;/label&gt;
-      <br/>
-      &lt;input type="number" id="quantity" name="quantity" 
-  min="1" max="5"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="quantity"&gt;Quantity (between 1 and
+5):&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity"
+min="1" max="5"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1414,17 +1498,23 @@ value from 0 to 100, in steps of 10. The default value is 30:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="quantity"&gt;Quantity:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="number" id="quantity" name="quantity" min="0" max="100" step="10" 
-  value="30"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="quantity"&gt;Quantity:&lt;/label&gt;
+&lt;input
+type="number" id="quantity" name="quantity" min="0" max="100" step="10"
+value="30"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1455,15 +1545,21 @@ numbers are accepted with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="vol"&gt;Volume (between 0 and 50):&lt;/label&gt;
-      <br/>
-      &lt;input type="range" id="vol" name="vol" min="0" max="50"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="vol"&gt;Volume (between 0 and 50):&lt;/label&gt;
+&lt;input type="range" id="vol" name="vol" min="0" max="50"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1480,15 +1576,21 @@ numbers are accepted with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="gsearch"&gt;Search Google:&lt;/label&gt;
-      <br/>
-      &lt;input type="search" id="gsearch" name="gsearch"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="gsearch"&gt;Search Google:&lt;/label&gt;
+&lt;input type="search" id="gsearch" name="gsearch"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1505,16 +1607,22 @@ numbers are accepted with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="phone"&gt;Enter your phone number:&lt;/label&gt;
-      <br/>
-      &lt;input type="tel" id="phone" name="phone" 
-    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="phone"&gt;Enter your phone number:&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone"
+pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1534,15 +1642,21 @@ numbers are accepted with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="appt"&gt;Select a time:&lt;/label&gt;
-      <br/>
-      &lt;input type="time" id="appt" name="appt"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="appt"&gt;Select a time:&lt;/label&gt;
+&lt;input type="time" id="appt" name="appt"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1567,15 +1681,21 @@ url input.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="homepage"&gt;Add your homepage:&lt;/label&gt;
-      <br/>
-      &lt;input type="url" id="homepage" name="homepage"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="homepage"&gt;Add your homepage:&lt;/label&gt;
+&lt;input type="url" id="homepage" name="homepage"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1595,15 +1715,21 @@ url input.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="week"&gt;Select a week:&lt;/label&gt;
-      <br/>
-      &lt;input type="week" id="week" name="week"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="week"&gt;Select a week:&lt;/label&gt;
+&lt;input type="week" id="week" name="week"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1620,16 +1746,16 @@ url input.
      </tr>
      <tr>
       <td>
-        &lt;input type=""&gt;
-       </td>
+       &lt;input type=""&gt;
+      </td>
       <td>
        Specifies the input type to display
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="html_form_elements.html">
       ❮ Previous
      </a>
@@ -1641,8 +1767,10 @@ url input.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

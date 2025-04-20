@@ -9,6 +9,7 @@
   <title>
    CSS Counters
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -193,7 +194,7 @@
       CSS Forms
      </p>
     </a>
-    <a href="css_counters.html" class="selected">
+    <a class="selected" href="css_counters.html">
      <p>
       CSS Counters
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -862,22 +862,24 @@ to the beginning of each &lt;h2&gt; element:
      <h3>
       Example
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      counter-reset: section;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2::before {
-      <br/>
-      counter-increment: section;
-      <br/>
-      content: "Section " counter(section) ": ";
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+counter-reset: section;
+}
+h2::before {
+counter-increment: section;
+content: "Section " counter(section) ": ";
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -907,40 +909,33 @@ subsection counter
      <h3>
       Example
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      counter-reset: section;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1 {
-      <br/>
-      counter-reset: subsection;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1::before {
-      <br/>
-      counter-increment: 
+     <pre><code class="code language-css">body {
+counter-reset: section;
+}
+h1 {
+counter-reset: subsection;
+}
+h1::before {
+counter-increment:
 section;
-      <br/>
-      content: "Section " counter(section) ". ";
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2::before {
-      <br/>
-      counter-increment: subsection;
-      <br/>
-      content: 
+content: "Section " counter(section) ". ";
+}
+h2::before {
+counter-increment: subsection;
+content:
 counter(section) "." counter(subsection) " ";
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      A counter can also be useful to make outlined lists because a new 
@@ -955,24 +950,25 @@ counters:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ol {
-      <br/>
-      counter-reset: section;
-      <br/>
-      list-style-type: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li::before {
-      <br/>
-      counter-increment: section;
-      <br/>
-      content: counters(section,".") " ";
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">ol {
+counter-reset: section;
+list-style-type: none;
+}
+li::before {
+counter-increment: section;
+content: counters(section,".") " ";
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -989,7 +985,7 @@ counters:
      </tr>
      <tr>
       <td>
-        content
+       content
       </td>
       <td>
        Used with the ::before and ::after pseudo-elements, to insert generated content
@@ -997,7 +993,7 @@ counters:
      </tr>
      <tr>
       <td>
-        counter-increment
+       counter-increment
       </td>
       <td>
        Increments one or more counter values
@@ -1005,7 +1001,7 @@ counters:
      </tr>
      <tr>
       <td>
-        counter-reset
+       counter-reset
       </td>
       <td>
        Creates or resets one or more counters
@@ -1013,7 +1009,7 @@ counters:
      </tr>
      <tr>
       <td>
-        counter()
+       counter()
       </td>
       <td>
        Returns the current value of the named counter
@@ -1021,16 +1017,16 @@ counters:
      </tr>
      <tr>
       <td>
-        counters()
+       counters()
       </td>
       <td>
        Returns the current values of the named and nested counters
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_form.html">
       ❮ Previous
      </a>
@@ -1042,8 +1038,12 @@ counters:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

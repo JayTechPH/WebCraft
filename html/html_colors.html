@@ -8,46 +8,47 @@
   <title>
    HTML Colors
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -226,7 +227,7 @@
     <p>
      HTML Colors
     </p>
-    <a href="html_colors.html" class="selected">
+    <a class="selected" href="html_colors.html">
      <p>
       Colors
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -525,12 +525,20 @@ RGB, HEX, HSL, RGBA, or HSLA values.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
-      <br/>
-      &lt;p style="background-color:Tomato;"&gt;Lorem 
-  ipsum...&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="background-color:Tomato;"&gt;Lorem
+ipsum...&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -552,16 +560,23 @@ RGB, HEX, HSL, RGBA, or HSLA values.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 style="color:Tomato;"&gt;Hello 
-  World&lt;/h1&gt;
-      <br/>
-      &lt;p style="color:DodgerBlue;"&gt;Lorem 
-  ipsum...&lt;/p&gt;
-      <br/>
-      &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi 
-  enim...&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1 style="color:Tomato;"&gt;Hello
+World&lt;/h1&gt;
+&lt;p style="color:DodgerBlue;"&gt;Lorem
+ipsum...&lt;/p&gt;
+&lt;p style="color:MediumSeaGreen;"&gt;Ut wisi
+enim...&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -583,19 +598,26 @@ RGB, HEX, HSL, RGBA, or HSLA values.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 style="border:2px 
-  solid Tomato;"&gt;Hello 
-  World&lt;/h1&gt;
-      <br/>
-      &lt;h1 style="border:2px 
-  solid DodgerBlue;"&gt;Hello 
-  World&lt;/h1&gt;
-      <br/>
-      &lt;h1 style="border:2px 
-  solid Violet;"&gt;Hello 
-  World&lt;/h1&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1 style="border:2px
+solid Tomato;"&gt;Hello
+World&lt;/h1&gt;
+&lt;h1 style="border:2px
+solid DodgerBlue;"&gt;Hello
+World&lt;/h1&gt;
+&lt;h1 style="border:2px
+solid Violet;"&gt;Hello
+World&lt;/h1&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -637,22 +659,26 @@ transparency):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 style="background-color:rgb(255, 
-  99, 71);"&gt;...&lt;/h1&gt;
-      <br/>
-      &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
-      <br/>
-      &lt;h1 style="background-color:hsl(9, 
-  100%, 64%);"&gt;...&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;h1 style="background-color:rgba(255, 
-  99, 71, 0.5);"&gt;...&lt;/h1&gt;
-      <br/>
-      &lt;h1 style="background-color:hsla(9, 
-  100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1 style="background-color:rgb(255,
+99, 71);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsl(9,
+100%, 64%);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:rgba(255,
+99, 71, 0.5);"&gt;...&lt;/h1&gt;
+&lt;h1 style="background-color:hsla(9,
+100%, 64%, 0.5);"&gt;...&lt;/h1&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <div class="note">
@@ -688,8 +714,10 @@ transparency):
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

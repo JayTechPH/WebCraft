@@ -9,6 +9,7 @@
   <title>
    CSS Background Image Repeat
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -259,7 +260,7 @@
       Background Image
      </p>
     </a>
-    <a href="css_background_repeat.html" class="selected">
+    <a class="selected" href="css_background_repeat.html">
      <p>
       Background Repeat
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -797,14 +797,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      body
+     <pre><code class="code language-css">body
 {
-      <br/>
-      background-image: url("gradient_bg.png");
-      <br/>
-      }
-     </div>
+background-image: url("gradient_bg.png");
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the image above is repeated only horizontally (
@@ -818,16 +825,22 @@ better:
      <h3>
       Example
      </h3>
-     <div class="code">
-      body
+     <pre><code class="code language-css">body
 {
-      <br/>
-      background-image: url("gradient_bg.png");
-      <br/>
-      background-repeat: repeat-x;
-      <br/>
-      }
-     </div>
+background-image: url("gradient_bg.png");
+background-repeat: repeat-x;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -858,16 +871,22 @@ better:
      <p>
       Show the background image only once:
      </p>
-     <div class="code">
-      body
+     <pre><code class="code language-css">body
 {
-      <br/>
-      background-image: url("img_tree.png");
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      }
-     </div>
+background-image: url("img_tree.png");
+background-repeat: no-repeat;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not 
@@ -892,18 +911,23 @@ specify the position of the background image.
      <p>
       Position the background image in the top-right corner:
      </p>
-     <div class="code">
-      body
+     <pre><code class="code language-css">body
 {
-      <br/>
-      background-image: url("img_tree.png");
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      background-position: right top;
-      <br/>
-      }
-     </div>
+background-image: url("img_tree.png");
+background-repeat: no-repeat;
+background-position: right top;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -920,7 +944,7 @@ specify the position of the background image.
      </tr>
      <tr>
       <td>
-        background-position
+       background-position
       </td>
       <td>
        Sets the starting position of a background image
@@ -928,14 +952,14 @@ specify the position of the background image.
      </tr>
      <tr>
       <td>
-        background-repeat
+       background-repeat
       </td>
       <td>
        Sets how a background image will be repeated
       </td>
      </tr>
     </table>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_background_image.html">
       ❮ Previous
@@ -948,8 +972,12 @@ specify the position of the background image.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

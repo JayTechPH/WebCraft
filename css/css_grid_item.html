@@ -9,6 +9,7 @@
   <title>
    CSS Grid Item
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -721,7 +722,7 @@
       Grid Container
      </p>
     </a>
-    <a href="css_grid_item.html" class="selected">
+    <a class="selected" href="css_grid_item.html">
      <p>
       Grid Item
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -841,17 +841,21 @@ end a grid item.
      <p>
       Place the first grid item at column-line 1, and let it end on column-line 3:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-column-start: 1;
-      <br/>
-      grid-column-end: 3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-column-start: 1;
+grid-column-end: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -918,16 +922,21 @@ define how many columns the item will span.
      <p>
       Place the first grid item at column-line 1, and let it span 2 columns:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-column: 1 / span 
-  2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-column: 1 / span
+2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -967,13 +976,20 @@ define how many columns the item will span.
      <p>
       Make "item1" start on column 1 and end before column 4:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      grid-column: 1 / 4;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-column: 1 / 4;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1013,13 +1029,20 @@ define how many columns the item will span.
      <p>
       Make "item2" start on column 2 and span 2 columns:
      </p>
-     <div class="code">
-      .item2 {
-      <br/>
-      grid-column: 2 / span 2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item2 {
+grid-column: 2 / span 2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1079,17 +1102,21 @@ end a grid item.
      <p>
       Place the first grid item at row line 1, and let it end on row line 3:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-row-start: 1;
-      <br/>
-      grid-row-end: 3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-row-start: 1;
+grid-row-end: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1156,15 +1183,20 @@ define how many rows the item will span:
      <p>
       Place the first grid item at row-line 1, and let it span 2 rows:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-row: 1 / span 2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-row: 1 / span 2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1204,13 +1236,20 @@ define how many rows the item will span:
      <p>
       Make "item1" start on row-line 1 and end before row-line 4:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      grid-row: 1 / 4;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-row: 1 / 4;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1280,13 +1319,20 @@ define how many rows the item will span:
      <p>
       Make "item4" start on row-line 1 and column-line 2, and end on row-line 3 and column line 2:
      </p>
-     <div class="code">
-      .item4 {
-      <br/>
-      grid-area: 1 / 2 / 3 / 2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item4 {
+grid-area: 1 / 2 / 3 / 2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1326,13 +1372,20 @@ define how many rows the item will span:
      <p>
       Make "item4" start on row-line 1 and column-line 1, and span 4 rows and 1 column:
      </p>
-     <div class="code">
-      .item8 {
-      <br/>
-      grid-area: 1 / 1 / span 4 / span 1;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item8 {
+grid-area: 1 / 1 / span 4 / span 1;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1411,23 +1464,25 @@ of the grid container.
      <p>
       Item1 gets the name "myArea" and spans all five columns in a five columns grid layout:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      grid-area: 
-  myArea;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .grid-container {
-      <br/>
-      grid-template-areas: 'myArea myArea 
-  myArea myArea myArea';
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-area:
+myArea;
+}
+.grid-container {
+grid-template-areas: 'myArea myArea
+myArea myArea myArea';
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1468,23 +1523,25 @@ of the grid container.
       Let "myArea" span three columns in a five columns grid layout (period signs 
   represent items with no name):
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      grid-area: 
-  myArea;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .grid-container {
-      <br/>
-      grid-template-areas: 'myArea myArea 
-  myArea . .';
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-area:
+myArea;
+}
+.grid-container {
+grid-template-areas: 'myArea myArea
+myArea . .';
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1533,27 +1590,27 @@ of the grid container.
       </em>
       two rows:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      grid-area: 
-  myArea;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .grid-container {
-      <br/>
-      grid-template-areas:
-      <br/>
-      'myArea myArea 
-  . . .'
-      <br/>
-      'myArea myArea . . .';
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-area:
+myArea;
+}
+.grid-container {
+grid-template-areas:
+'myArea myArea
+. . .'
+'myArea myArea . . .';
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1587,35 +1644,32 @@ of the grid container.
      <p>
       Name all grid items, and make a ready-to-use webpage template:
      </p>
-     <div class="code">
-      .item1 { grid-area: header; }
-      <br/>
-      .item2 { grid-area: menu; }
-      <br/>
-      .item3 { 
-  grid-area: main; }
-      <br/>
-      .item4 { grid-area: right; }
-      <br/>
-      .item5 { grid-area: 
-  footer; }
-      <br/>
-      <br/>
-      .grid-container {
-      <br/>
-      grid-template-areas:
-      <br/>
-      'header header header header header header'
-      <br/>
-      'menu main 
-  main main main right'
-      <br/>
-      'menu footer footer footer footer 
-  footer';
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 {
+grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area:
+footer; }
+.grid-container {
+grid-template-areas:
+'header header header header header header'
+'menu main
+main main main right'
+'menu footer footer footer footer
+footer';
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1666,40 +1720,33 @@ define the order of the grid items.
      <p>
       Define the order of the grid items:
      </p>
-     <div class="code">
-      /* place in row 1 column 3 */
-      <br/>
-      .item1 {grid-area: 1 / 3;}
-      <br/>
-      <br/>
-      /* place in 
-  row 2 column 3 */
-      <br/>
-      .item2 {grid-area: 2 / 3;}
-      <br/>
-      <br/>
-      /* place in row 1 
-  column 1 */
-      <br/>
-      .item3 {grid-area: 1 / 1;}
-      <br/>
-      <br/>
-      /* place in row 1 column 2 */
-      <br/>
-      .item4 {grid-area: 1 / 2;}
-      <br/>
-      <br/>
-      /* place in row 2 column 1 */
-      <br/>
-      .item5 
-  {grid-area: 2 / 1;}
-      <br/>
-      <br/>
-      /* place in row 2 column 2 */
-      <br/>
-      .item6 {grid-area: 
-  2 / 2;}
-     </div>
+     <pre><code class="code language-css">/* place in row 1 column 3 */
+.item1 {grid-area: 1 / 3;}
+/* place in
+row 2 column 3 */
+.item2 {grid-area: 2 / 3;}
+/* place in row 1
+column 1 */
+.item3 {grid-area: 1 / 1;}
+/* place in row 1 column 2 */
+.item4 {grid-area: 1 / 2;}
+/* place in row 2 column 1 */
+.item5
+{grid-area: 2 / 1;}
+/* place in row 2 column 2 */
+.item6 {grid-area:
+2 / 2;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1736,26 +1783,28 @@ define the order of the grid items.
      <p>
       Re-arrange order on small devices:
      </p>
-     <div class="code">
-      @media only screen and (max-width: 500px) {
-      <br/>
-      .item1 {grid-area: 1 / 
-  span 3;}
-      <br/>
-      .item2 {grid-area: 3 / 3;}
-      <br/>
-      .item3 {grid-area: 2 / 
-  1;}
-      <br/>
-      .item4 {grid-area: 2 / 2 / span 2;}
-      <br/>
-      .item5 {grid-area: 
-  3 / 1;}
-      <br/>
-      .item6 {grid-area: 2 / 3;}
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">@media only screen and (max-width: 500px) {
+.item1 {grid-area: 1 /
+span 3;}
+.item2 {grid-area: 3 / 3;}
+.item3 {grid-area: 2 /
+1;}
+.item4 {grid-area: 2 / 2 / span 2;}
+.item5 {grid-area:
+3 / 1;}
+.item6 {grid-area: 2 / 3;}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1773,21 +1822,24 @@ of a grid item along the row axis.
      <h3>
       Example
      </h3>
-     <div class="code">
-      .item1 {
-      <br/>
-      justify-self: right;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item6 {
-      <br/>
-      justify-self: 
-  center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+justify-self: right;
+}
+.item6 {
+justify-self:
+center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1830,20 +1882,23 @@ content of a grid item along the column axis.
      <h3>
       Example
      </h3>
-     <div class="code">
-      .item1 {
-      <br/>
-      align-self: start;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item6 {
-      <br/>
-      align-self: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+align-self: start;
+}
+.item6 {
+align-self: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1885,7 +1940,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        align-self
+       align-self
       </td>
       <td>
        Aligns the content for a specific grid item along the column axis
@@ -1893,7 +1948,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-area
+       grid-area
       </td>
       <td>
        A shorthand property for the
@@ -1913,7 +1968,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-column
+       grid-column
       </td>
       <td>
        A shorthand property for the
@@ -1929,7 +1984,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-column-end
+       grid-column-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1937,7 +1992,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-column-start
+       grid-column-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1945,7 +2000,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-row
+       grid-row
       </td>
       <td>
        A shorthand property for the
@@ -1961,7 +2016,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-row-end
+       grid-row-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1969,7 +2024,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        grid-row-start
+       grid-row-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1977,7 +2032,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        justify-self
+       justify-self
       </td>
       <td>
        Aligns the content for a specific grid item along the row axis
@@ -1985,7 +2040,7 @@ content of a grid item along the column axis.
      </tr>
      <tr>
       <td>
-        place-self
+       place-self
       </td>
       <td>
        A shorthand property for the
@@ -2000,9 +2055,9 @@ content of a grid item along the column axis.
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_grid_container.html">
       ❮ Previous
      </a>
@@ -2014,8 +2069,12 @@ content of a grid item along the column axis.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

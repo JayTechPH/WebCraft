@@ -9,6 +9,7 @@
   <title>
    CSS Multiple Backgrounds
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -501,7 +502,7 @@
       CSS Border Images
      </p>
     </a>
-    <a href="css3_backgrounds.html" class="selected">
+    <a class="selected" href="css3_backgrounds.html">
      <p>
       CSS Backgrounds
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -829,17 +829,22 @@ stacked on top of each other, where the first image is closest to the viewer.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #example1 {
-      <br/>
-      background-image: url(img_flwr.gif), url(paper.gif);
-      <br/>
-      background-position: right bottom, left top;
-      <br/>
-      background-repeat: no-repeat, repeat;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#example1 {
+background-image: url(img_flwr.gif), url(paper.gif);
+background-position: right bottom, left top;
+background-repeat: no-repeat, repeat;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Multiple background images can be specified using either the individual 
@@ -861,14 +866,21 @@ example above):
      <h3>
       Example
      </h3>
-     <div class="code">
-      #example1 {
-      <br/>
-      background: url(img_flwr.gif) right bottom 
+     <pre><code class="code language-css">#example1 {
+background: url(img_flwr.gif) right bottom
 no-repeat, url(paper.gif) left top repeat;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -908,18 +920,23 @@ keywords: contain or cover.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #div1
+     <pre><code class="code language-css">#div1
 {
-      <br/>
-      background: url(img_flower.jpg);
-      <br/>
-      background-size: 100px 80px;
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      }
-     </div>
+background: url(img_flower.jpg);
+background-size: 100px 80px;
+background-repeat: no-repeat;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The two other possible values for
@@ -971,30 +988,29 @@ visible in the background positioning area.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #div1
+     <pre><code class="code language-css">#div1
 {
-      <br/>
-      background: url(img_flower.jpg);
-      <br/>
-      background-size: contain;
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #div2
+background: url(img_flower.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+}
+#div2
 {
-      <br/>
-      background: url(img_flower.jpg);
-      <br/>
-      background-size: cover;
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      }
-     </div>
+background: url(img_flower.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1016,17 +1032,23 @@ background-size value for each image:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #example1 {
-      <br/>
-      background: url(img_tree.gif) left top 
-no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top 
+     <pre><code class="code language-css">#example1 {
+background: url(img_tree.gif) left top
+no-repeat, url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top
 repeat;
-      <br/>
-      background-size: 50px, 130px, auto;
-      <br/>
-      }
-     </div>
+background-size: 50px, 130px, auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1063,16 +1085,22 @@ background-size property:
      <h3>
       Example
      </h3>
-     <div class="code">
-      html {
-      <br/>
-      background: url(img_man.jpg) no-repeat 
+     <pre><code class="code language-css">html {
+background: url(img_man.jpg) no-repeat
 center fixed;
-      <br/>
-      background-size: cover;
-      <br/>
-      }
-     </div>
+background-size: cover;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1085,20 +1113,24 @@ center fixed;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .hero-image {
-      <br/>
-      background: url(img_man.jpg) no-repeat center;
-      <br/>
-      background-size: cover;
-      <br/>
-      height: 500px;
-      <br/>
-      position: 
-   relative;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.hero-image {
+background: url(img_man.jpg) no-repeat center;
+background-size: cover;
+height: 500px;
+position:
+relative;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1137,22 +1169,25 @@ positioned.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #example1
+     <pre><code class="code language-css">#example1
 {
-      <br/>
-      border: 10px solid black;
-      <br/>
-      padding: 35px;
-      <br/>
-      background: url(img_flwr.gif);
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      background-origin: content-box;
-      <br/>
-      }
-     </div>
+border: 10px solid black;
+padding: 35px;
+background: url(img_flwr.gif);
+background-repeat: no-repeat;
+background-origin: content-box;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1190,20 +1225,24 @@ positioned.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #example1
+     <pre><code class="code language-css">#example1
 {
-      <br/>
-      border: 10px dotted black;
-      <br/>
-      padding: 35px;
-      <br/>
-      background: yellow;
-      <br/>
-      background-clip: content-box;
-      <br/>
-      }
-     </div>
+border: 10px dotted black;
+padding: 35px;
+background: yellow;
+background-clip: content-box;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1220,7 +1259,7 @@ positioned.
      </tr>
      <tr>
       <td>
-        background
+       background
       </td>
       <td>
        A shorthand property for setting all the background properties in one declaration
@@ -1228,7 +1267,7 @@ positioned.
      </tr>
      <tr>
       <td>
-        background-clip
+       background-clip
       </td>
       <td>
        Specifies the painting area of the background
@@ -1236,7 +1275,7 @@ positioned.
      </tr>
      <tr>
       <td>
-        background-image
+       background-image
       </td>
       <td>
        Specifies one or more background images for an element
@@ -1244,7 +1283,7 @@ positioned.
      </tr>
      <tr>
       <td>
-        background-origin
+       background-origin
       </td>
       <td>
        Specifies where the background image(s) is/are positioned
@@ -1252,16 +1291,16 @@ positioned.
      </tr>
      <tr>
       <td>
-        background-size
+       background-size
       </td>
       <td>
        Specifies the size of the background image(s)
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_border_images.html">
       ❮ Previous
      </a>
@@ -1273,8 +1312,12 @@ positioned.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

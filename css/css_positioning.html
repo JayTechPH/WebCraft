@@ -9,6 +9,7 @@
   <title>
    CSS Layout - The position Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -123,7 +124,7 @@
       CSS Max-width
      </p>
     </a>
-    <a href="css_positioning.html" class="selected">
+    <a class="selected" href="css_positioning.html">
      <p>
       CSS Position
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -868,15 +868,21 @@ always positioned according to the normal flow of the page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.static {
-      <br/>
-      position: static;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div.static {
+position: static;
+border: 3px solid #73AD21;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -904,17 +910,22 @@ element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.relative {
-      <br/>
-      position: relative;
-      <br/>
-      left: 30px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div.relative {
+position: relative;
+left: 30px;
+border: 3px solid #73AD21;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -939,22 +950,25 @@ right, bottom, and left properties are used to position the element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.fixed {
-      <br/>
-      position: fixed;
-      <br/>
-      bottom: 0;
-      <br/>
-      right: 0;
-      <br/>
-      width: 
+     <pre><code class="code language-css">div.fixed {
+position: fixed;
+bottom: 0;
+right: 0;
+width:
 300px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      }
-     </div>
+border: 3px solid #73AD21;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -994,36 +1008,31 @@ it uses the document body, and moves along with page scrolling.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.relative {
-      <br/>
-      position: relative;
-      <br/>
-      width: 400px;
-      <br/>
-      height: 200px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div.absolute {
-      <br/>
-      position: absolute;
-      <br/>
-      top: 80px;
-      <br/>
-      right: 0;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 100px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div.relative {
+position: relative;
+width: 400px;
+height: 200px;
+border: 3px solid #73AD21;
+}
+div.absolute {
+position: absolute;
+top: 80px;
+right: 0;
+width: 200px;
+height: 100px;
+border: 3px solid #73AD21;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1083,20 +1092,24 @@ sticky positioning to work.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.sticky {
-      <br/>
-      position: 
-  sticky;
-      <br/>
-      top: 0;
-      <br/>
-      background-color: green;
-      <br/>
-      border: 2px solid #4CAF50;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div.sticky {
+position:
+sticky;
+top: 0;
+background-color: green;
+border: 2px solid #4CAF50;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1148,7 +1161,7 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        bottom
+       bottom
       </td>
       <td>
        Sets the bottom margin edge for a positioned box
@@ -1156,7 +1169,7 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        clip
+       clip
       </td>
       <td>
        Clips an absolutely positioned element
@@ -1164,7 +1177,7 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        left
+       left
       </td>
       <td>
        Sets the left margin edge for a positioned box
@@ -1172,7 +1185,7 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        position
+       position
       </td>
       <td>
        Specifies the type of positioning for an element
@@ -1180,7 +1193,7 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        right
+       right
       </td>
       <td>
        Sets the right margin edge for a positioned box
@@ -1188,16 +1201,16 @@ sticky positioning to work.
      </tr>
      <tr>
       <td>
-        top
+       top
       </td>
       <td>
        Sets the top margin edge for a positioned box
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_max-width.html">
       ❮ Previous
      </a>
@@ -1209,8 +1222,12 @@ sticky positioning to work.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

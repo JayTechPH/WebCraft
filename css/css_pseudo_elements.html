@@ -9,6 +9,7 @@
   <title>
    CSS Pseudo-elements
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -158,7 +159,7 @@
       CSS Pseudo-classes
      </p>
     </a>
-    <a href="css_pseudo_elements.html" class="selected">
+    <a class="selected" href="css_pseudo_elements.html">
      <p>
       CSS Pseudo-elements
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -811,13 +811,20 @@
      The syntax of pseudo-elements:
     </p>
     <div class="code-container">
-     <div class="code">
-      selector::pseudo-element {
-      <br/>
-      property: value;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">selector::pseudo-element {
+property: value;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -839,16 +846,22 @@ elements:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p::first-line 
+     <pre><code class="code language-css">p::first-line
 {
-      <br/>
-      color: #ff0000;
-      <br/>
-      font-variant: small-caps;
-      <br/>
-      }
-     </div>
+color: #ff0000;
+font-variant: small-caps;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -956,16 +969,22 @@ elements:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p::first-letter 
+     <pre><code class="code language-css">p::first-letter
 {
-      <br/>
-      color: #ff0000;
-      <br/>
-      font-size: xx-large;
-      <br/>
-      }
-     </div>
+color: #ff0000;
+font-size: xx-large;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1030,15 +1049,21 @@ elements.
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.intro::first-letter {
-      <br/>
-      color: #ff0000;
-      <br/>
-      font-size: 200%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.intro::first-letter {
+color: #ff0000;
+font-size: 200%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The example above will display the first letter of paragraphs with class="intro", in 
@@ -1060,26 +1085,27 @@ small-caps. The rest of the paragraph will be the default font size and color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p::first-letter
+     <pre><code class="code language-css">p::first-letter
 {
-      <br/>
-      color: #ff0000;
-      <br/>
-      font-size: xx-large;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p::first-line 
+color: #ff0000;
+font-size: xx-large;
+}
+p::first-line
 {
-      <br/>
-      color: #0000ff;
-      <br/>
-      font-variant: small-caps;
-      <br/>
-      }
-     </div>
+color: #0000ff;
+font-variant: small-caps;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1099,14 +1125,21 @@ small-caps. The rest of the paragraph will be the default font size and color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1::before 
+     <pre><code class="code language-css">h1::before
 {
-      <br/>
-      content: url(smiley.gif);
-      <br/>
-      }
-     </div>
+content: url(smiley.gif);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1126,14 +1159,21 @@ small-caps. The rest of the paragraph will be the default font size and color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1::after
+     <pre><code class="code language-css">h1::after
 {
-      <br/>
-      content: url(smiley.gif);
-      <br/>
-      }
-     </div>
+content: url(smiley.gif);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1154,15 +1194,21 @@ markers of list items.
      <h3>
       Example
      </h3>
-     <div class="code">
-      ::marker {
-      <br/>
-      color: red;
-      <br/>
-      font-size: 23px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">::marker {
+color: red;
+font-size: 23px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1206,15 +1252,21 @@ selected by a user.
      <h3>
       Example
      </h3>
-     <div class="code">
-      ::selection {
-      <br/>
-      color: red;
-      <br/>
-      background: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">::selection {
+color: red;
+background: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1230,8 +1282,12 @@ selected by a user.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

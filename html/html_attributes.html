@@ -8,46 +8,47 @@
   <title>
    HTML Attributes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -78,7 +79,7 @@
       HTML Elements
      </p>
     </a>
-    <a href="html_attributes.html" class="selected">
+    <a class="selected" href="html_attributes.html">
      <p>
       HTML Attributes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -497,9 +497,18 @@ the link goes to:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com"&gt;Visit WebCraft&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com"&gt;Visit WebCraft&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You will learn more about links in our
@@ -530,9 +539,18 @@ specifies the path to the image to be displayed:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      There are two ways to specify the URL in the
@@ -601,9 +619,18 @@ height of the image (in pixels):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg" width="500" height="600"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -632,10 +659,19 @@ reader.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg" alt="Girl 
-  with a jacket"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg" alt="Girl
+with a jacket"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -644,10 +680,19 @@ reader.
      <p>
       See what happens if we try to display an image that does not exist:
      </p>
-     <div class="code">
-      &lt;img src="img_typo.jpg" alt="Girl 
-  with a jacket"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_typo.jpg" alt="Girl
+with a jacket"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You will learn more about images in our
@@ -672,9 +717,18 @@ an element, such as color, font, size, and more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You will learn more about styles in our
@@ -704,19 +758,23 @@ language of the Web page. This is meant to assist search engines and browsers.
      The following example specifies English as the language:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html lang="en"&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      ...
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Country codes can also be added to the language code in the
@@ -731,19 +789,23 @@ and the last two characters define the country.
 the country:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html lang="en-US"&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      ...
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -766,9 +828,18 @@ you mouse over the element:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -828,17 +899,35 @@ stricter document types like XHTML.
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;a href=https://www.webcraft.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href=https://www.webcraft.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Sometimes you have to use quotes. This example will not display 
@@ -848,10 +937,19 @@ the title attribute correctly, because it contains a space:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p
- title=Description of WebCraft&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p
+title=Description of WebCraft&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -870,17 +968,35 @@ quotes can also be used.
      In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;p title='John "ShotGun" Nelson'&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p title='John "ShotGun" Nelson'&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Or vice versa:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;p title="John 'ShotGun' Nelson"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p title="John 'ShotGun' Nelson"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -985,8 +1101,10 @@ quotes can also be used.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

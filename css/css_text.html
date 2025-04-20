@@ -9,6 +9,7 @@
   <title>
    CSS Text
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -351,7 +352,7 @@
     <p>
      CSS Text
     </p>
-    <a href="css_text.html" class="selected">
+    <a class="selected" href="css_text.html">
      <p>
       Text Color
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -829,20 +829,23 @@ The color is specified by:
      <h3>
       Example
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      color: blue;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1 {
-      <br/>
-      color: green;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+color: blue;
+}
+h1 {
+color: green;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -863,33 +866,29 @@ The color is specified by:
      <h3>
       Example
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      background-color: lightgrey;
-      <br/>
-      color: blue;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1 {
-      <br/>
-      background-color: black;
-      <br/>
-      color: white;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div {
-      <br/>
-      background-color: blue;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-color: lightgrey;
+color: blue;
+}
+h1 {
+background-color: black;
+color: white;
+}
+div {
+background-color: blue;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -916,16 +915,16 @@ between the text color and the background color (or background image) is good!
      </tr>
      <tr>
       <td>
-        color
+       color
       </td>
       <td>
        Specifies the color of text
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_outline_offset.html">
       ❮ Previous
      </a>
@@ -937,8 +936,12 @@ between the text color and the background color (or background image) is good!
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

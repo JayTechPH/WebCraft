@@ -8,46 +8,47 @@
   <title>
    HTML Text Formatting
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -98,7 +99,7 @@
       HTML Styles
      </p>
     </a>
-    <a href="html_formatting.html" class="selected">
+    <a class="selected" href="html_formatting.html">
      <p>
       HTML Formatting
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -559,9 +559,18 @@ without any extra importance.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;b&gt;This text is bold&lt;/b&gt;
-     </div>
+     <pre><code class="code language-html">&lt;b&gt;This text is bold&lt;/b&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The HTML
@@ -575,10 +584,19 @@ with strong importance. The content inside is typically displayed in bold.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;strong&gt;This text is 
-     important!&lt;/strong&gt;
-     </div>
+     <pre><code class="code language-html">&lt;strong&gt;This text is
+important!&lt;/strong&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -608,9 +626,18 @@ a phrase from another language, a thought, a ship name, etc.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;i&gt;This text is italic&lt;/i&gt;
-     </div>
+     <pre><code class="code language-html">&lt;i&gt;This text is italic&lt;/i&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The HTML
@@ -634,10 +661,19 @@ emphasized text. The content inside is typically displayed in italic.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;em&gt;This text is 
- emphasized&lt;/em&gt;
-     </div>
+     <pre><code class="code language-html">&lt;em&gt;This text is
+emphasized&lt;/em&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -655,10 +691,18 @@ smaller text:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;small&gt;This is some smaller text.&lt;/small&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;small&gt;This is some smaller text.&lt;/small&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -676,10 +720,18 @@ that should be marked or highlighted:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -698,10 +750,18 @@ through deleted text:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -720,10 +780,18 @@ text:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -747,11 +815,19 @@ chemical formulas, like H
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;This 
- is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This
+is &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -775,11 +851,19 @@ for footnotes, like WWW
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;This 
- is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This
+is &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -796,86 +880,85 @@ for footnotes, like WWW
      </tr>
      <tr>
       <td>
-        &lt;b&gt;
-       </td>
+       &lt;b&gt;
+      </td>
       <td>
        Defines bold text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;em&gt;
-       </td>
+       &lt;em&gt;
+      </td>
       <td>
        Defines emphasized text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;i&gt;
-       </td>
+       &lt;i&gt;
+      </td>
       <td>
        Defines a part of text in an alternate voice or mood
       </td>
      </tr>
      <tr>
       <td>
-        &lt;small&gt;
-       </td>
+       &lt;small&gt;
+      </td>
       <td>
        Defines smaller text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;strong&gt;
-       </td>
+       &lt;strong&gt;
+      </td>
       <td>
        Defines important text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;sub&gt;
-       </td>
+       &lt;sub&gt;
+      </td>
       <td>
        Defines subscripted text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;sup&gt;
-       </td>
+       &lt;sup&gt;
+      </td>
       <td>
        Defines superscripted text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;ins&gt;
-       </td>
+       &lt;ins&gt;
+      </td>
       <td>
        Defines inserted text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;del&gt;
-       </td>
+       &lt;del&gt;
+      </td>
       <td>
        Defines deleted text
       </td>
      </tr>
      <tr>
       <td>
-        &lt;mark&gt;
-       </td>
+       &lt;mark&gt;
+      </td>
       <td>
        Defines marked/highlighted text
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_styles.html">
@@ -889,8 +972,10 @@ for footnotes, like WWW
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

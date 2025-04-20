@@ -9,6 +9,7 @@
   <title>
    CSS Font Style
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -399,7 +400,7 @@
       Font Fallbacks
      </p>
     </a>
-    <a href="css_font_style.html" class="selected">
+    <a class="selected" href="css_font_style.html">
      <p>
       Font Style
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -809,27 +809,26 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.normal {
-      <br/>
-      font-style: normal;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.italic {
-      <br/>
-      font-style: italic;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.oblique {
-      <br/>
-      font-style: oblique;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.normal {
+font-style: normal;
+}
+p.italic {
+font-style: italic;
+}
+p.oblique {
+font-style: oblique;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -846,20 +845,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.normal {
-      <br/>
-      font-weight: normal;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.thick {
-      <br/>
-      font-weight: bold;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.normal {
+font-weight: normal;
+}
+p.thick {
+font-weight: bold;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -882,20 +884,23 @@ than the original uppercase letters in the text.
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.normal {
-      <br/>
-      font-variant: normal;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.small {
-      <br/>
-      font-variant: small-caps;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.normal {
+font-variant: normal;
+}
+p.small {
+font-variant: small-caps;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -911,8 +916,12 @@ than the original uppercase letters in the text.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

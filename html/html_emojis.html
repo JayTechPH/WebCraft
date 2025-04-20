@@ -8,46 +8,47 @@
   <title>
    HTML Emojis
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -203,7 +204,7 @@
       HTML Symbols
      </p>
     </a>
-    <a href="html_emojis.html" class="selected">
+    <a class="selected" href="html_emojis.html">
      <p>
       HTML Emojis
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -556,7 +556,7 @@
      </div>
     </div>
     <p>
-      HTML Emoji Transport Symbols
+     HTML Emoji Transport Symbols
     </p>
     <div class="code-container">
      <div class="w3-code notranslate htmlHigh w3-xxlarge">
@@ -564,7 +564,7 @@
      </div>
     </div>
     <p>
-      HTML Emoji Office Symbols
+     HTML Emoji Office Symbols
     </p>
     <div class="code-container">
      <div class="w3-code notranslate htmlHigh w3-xxlarge">
@@ -572,7 +572,7 @@
      </div>
     </div>
     <p>
-      HTML Emoji People Symbols
+     HTML Emoji People Symbols
     </p>
     <div class="code-container">
      <div class="w3-code notranslate htmlHigh w3-xxlarge">
@@ -580,7 +580,7 @@
      </div>
     </div>
     <p>
-      HTML Emoji Animals Symbols
+     HTML Emoji Animals Symbols
     </p>
     <hr/>
     <h2>
@@ -612,9 +612,18 @@
      tag:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;meta charset="UTF-8"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="UTF-8"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -644,25 +653,25 @@ but they can always be displayed using numbers (called entity numbers):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;meta charset="UTF-8"&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;I will display A B C&lt;/p&gt;
-      <br/>
-      &lt;p&gt;I will display &amp;#65; &amp;#66; &amp;#67;&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;body&gt;
+&lt;p&gt;I will display A B C&lt;/p&gt;
+&lt;p&gt;I will display &amp;#65; &amp;#66; &amp;#67;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -703,26 +712,25 @@ with &amp;# and end it with ; (semicolon).
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;meta charset="UTF-8"&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;My First Emoji&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;&amp;#128512;&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Emoji&lt;/h1&gt;
+&lt;p&gt;&amp;#128512;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Since Emojis are characters, they can be copied, displayed,
@@ -732,30 +740,27 @@ and sized just like any other character in HTML.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;meta charset="UTF-8"&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;Sized Emojis&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;p style="font-size:48px"&gt;
-      <br/>
-      &amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;
-      <br/>
-      &lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;body&gt;
+&lt;h1&gt;Sized Emojis&lt;/h1&gt;
+&lt;p style="font-size:48px"&gt;
+&amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <div class="nextprev">
@@ -770,8 +775,10 @@ and sized just like any other character in HTML.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

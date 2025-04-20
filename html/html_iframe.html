@@ -8,46 +8,47 @@
   <title>
    HTML Iframes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -148,7 +149,7 @@
       HTML Id
      </p>
     </a>
-    <a href="html_iframe.html" class="selected">
+    <a class="selected" href="html_iframe.html">
      <p>
       HTML Iframes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -470,17 +470,22 @@ inline frame.
      <h3>
       Syntax
      </h3>
-     <div class="code">
-      &lt;iframe src="
-      <i>
-       url
-      </i>
-      " title="
-      <em>
-       description
-      </em>
-      "&gt;&lt;/iframe&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="
+url
+" title="
+description
+"&gt;&lt;/iframe&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -520,10 +525,19 @@ size of the iframe.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;iframe src="demo_iframe.htm" height="200" width="300" 
-  title="Iframe Example"&gt;&lt;/iframe&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="demo_iframe.htm" height="200" width="300"
+title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Or you can add the
@@ -545,10 +559,19 @@ the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;" 
-  title="Iframe Example"&gt;&lt;/iframe&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;"
+title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -572,10 +595,19 @@ the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;iframe src="demo_iframe.htm" style="border:none;" 
-  title="Iframe Example"&gt;&lt;/iframe&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="demo_iframe.htm" style="border:none;"
+title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      With CSS, you can also change the size, style and color of the iframe's border:
@@ -584,10 +616,19 @@ the CSS
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;iframe src="demo_iframe.htm" style="border:2px solid red;" 
-  title="Iframe Example"&gt;&lt;/iframe&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="demo_iframe.htm" style="border:2px solid red;"
+title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -612,13 +653,20 @@ of the link must refer to the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe 
-  Example"&gt;&lt;/iframe&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;&lt;a href="https://www.webcraft.com" target="iframe_a"&gt;WebCraft.com&lt;/a&gt;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe
+Example"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://www.webcraft.com" target="iframe_a"&gt;WebCraft.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -683,29 +731,31 @@ size of the iframe
      </tr>
      <tr>
       <td>
-        &lt;iframe&gt;
-       </td>
+       &lt;iframe&gt;
+      </td>
       <td>
        Defines an inline frame
       </td>
      </tr>
     </table>
     <hr/>
-    <br>
+    <br/>
     <div class="nextprev">
-        <a class="btn" href="html_id.html">
-         ❮ Previous
-        </a>
-        <a class="btn" href="html_scripts.html">
-         Next ❯
-        </a>
+     <a class="btn" href="html_id.html">
+      ❮ Previous
+     </a>
+     <a class="btn" href="html_scripts.html">
+      Next ❯
+     </a>
     </div>
    </div>
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

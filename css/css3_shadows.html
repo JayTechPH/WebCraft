@@ -9,6 +9,7 @@
   <title>
    CSS Shadow Effects
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -647,7 +648,7 @@
     <p>
      CSS Shadows
     </p>
-    <a href="css3_shadows.html" class="selected">
+    <a class="selected" href="css3_shadows.html">
      <p>
       Shadow Effects
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -843,14 +843,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-shadow: 2px 2px;
-      <br/>
-      }
-     </div>
+text-shadow: 2px 2px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Next, add a color to the shadow:
@@ -862,14 +869,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-shadow: 2px 2px red;
-      <br/>
-      }
-     </div>
+text-shadow: 2px 2px red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Then, add a blur effect to the shadow:
@@ -881,14 +895,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-shadow: 2px 2px 5px red;
-      <br/>
-      }
-     </div>
+text-shadow: 2px 2px 5px red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows a white text with black shadow:
@@ -900,16 +921,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      color: white;
-      <br/>
-      text-shadow: 2px 2px 4px #000000;
-      <br/>
-      }
-     </div>
+color: white;
+text-shadow: 2px 2px 4px #000000;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows a red neon glow shadow:
@@ -921,14 +948,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-shadow: 0 0 3px #FF0000;
-      <br/>
-      }
-     </div>
+text-shadow: 0 0 3px #FF0000;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -947,14 +981,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-      <br/>
-      }
-     </div>
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows a white text with black, blue, and darkblue shadow:
@@ -966,16 +1007,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      color: white;
-      <br/>
-      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-      <br/>
-      }
-     </div>
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You can also use the text-shadow property to create a plain border around 
@@ -988,17 +1035,23 @@ some text (without shadows):
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      color: coral;
-      <br/>
-      text-shadow: -1px 0 black, 0 1px 
-    black, 1px 0 black, 0 -1px black;
-      <br/>
-      }
-     </div>
+color: coral;
+text-shadow: -1px 0 black, 0 1px
+black, 1px 0 black, 0 -1px black;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1014,8 +1067,12 @@ some text (without shadows):
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

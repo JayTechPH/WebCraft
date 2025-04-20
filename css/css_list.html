@@ -9,6 +9,7 @@
   <title>
    CSS Styling Lists
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -108,7 +109,7 @@
       CSS Links
      </p>
     </a>
-    <a href="css_list.html" class="selected">
+    <a class="selected" href="css_list.html">
      <p>
       CSS Lists
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -887,34 +887,29 @@ marker.
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul.a {
-      <br/>
-      list-style-type: circle;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ul.b {
-      <br/>
-      list-style-type: square;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ol.c {
-      <br/>
-      list-style-type: upper-roman;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ol.d {
-      <br/>
-      list-style-type: lower-alpha;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">ul.a {
+list-style-type: circle;
+}
+ul.b {
+list-style-type: square;
+}
+ol.c {
+list-style-type: upper-roman;
+}
+ol.d {
+list-style-type: lower-alpha;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Note: Some of the values are for unordered lists, and some for ordered lists.
@@ -935,14 +930,21 @@ item marker:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul
+     <pre><code class="code language-css">ul
 {
-      <br/>
-      list-style-image: url('sqpurple.gif');
-      <br/>
-      }
-     </div>
+list-style-image: url('sqpurple.gif');
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -994,20 +996,23 @@ A brewed drink prepared from roasted coffee beans...
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul.a {
-      <br/>
-      list-style-position: outside;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ul.b {
-      <br/>
-      list-style-position: inside;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">ul.a {
+list-style-position: outside;
+}
+ul.b {
+list-style-position: inside;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1034,18 +1039,23 @@ and padding. To remove this, add
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul
+     <pre><code class="code language-css">ul
 {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      }
-     </div>
+list-style-type: none;
+margin: 0;
+padding: 0;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1063,14 +1073,21 @@ list properties in one declaration:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul
+     <pre><code class="code language-css">ul
 {
-      <br/>
-      list-style: square inside url("sqpurple.gif");
-      <br/>
-      }
-     </div>
+list-style: square inside url("sqpurple.gif");
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      When using the shorthand property, the order of the property values are:
@@ -1118,50 +1135,38 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ol {
-      <br/>
-      background: #ff9999;
-      <br/>
-      padding: 20px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ul {
-      <br/>
-      background: #3399ff;
-      <br/>
-      padding: 20px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ol li {
-      <br/>
-      background: 
+     <pre><code class="code language-css">ol {
+background: #ff9999;
+padding: 20px;
+}
+ul {
+background: #3399ff;
+padding: 20px;
+}
+ol li {
+background:
 #ffe5e5;
-      <br/>
-      color: darkred;
-      <br/>
-      padding: 5px;
-      <br/>
-      margin-left: 35px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ul li {
-      <br/>
-      background: 
+color: darkred;
+padding: 5px;
+margin-left: 35px;
+}
+ul li {
+background:
 #cce5ff;
-      <br/>
-      color: darkblue;
-      <br/>
-      margin: 5px;
-      <br/>
-      }
-     </div>
+color: darkblue;
+margin: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1205,7 +1210,7 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
      </tr>
      <tr>
       <td>
-        list-style
+       list-style
       </td>
       <td>
        Sets all the properties for a list in one declaration
@@ -1213,7 +1218,7 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
      </tr>
      <tr>
       <td>
-        list-style-image
+       list-style-image
       </td>
       <td>
        Specifies an image as the list-item marker
@@ -1221,7 +1226,7 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
      </tr>
      <tr>
       <td>
-        list-style-position
+       list-style-position
       </td>
       <td>
        Specifies the position of the list-item markers (bullet points)
@@ -1229,16 +1234,16 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
      </tr>
      <tr>
       <td>
-        list-style-type
+       list-style-type
       </td>
       <td>
        Specifies the type of list-item marker
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_link.html">
       ❮ Previous
      </a>
@@ -1250,8 +1255,12 @@ properties added to the &lt;li&gt; tag will affect the individual list items:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

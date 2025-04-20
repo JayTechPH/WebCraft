@@ -8,46 +8,47 @@
   <title>
    HTML Tables
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -267,7 +268,7 @@
     <p>
      HTML Tables
     </p>
-    <a href="html_tables.html" class="selected">
+    <a class="selected" href="html_tables.html">
      <p>
       HTML Tables
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -548,44 +548,37 @@ columns.
      <p>
       A simple HTML table:
      </p>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;Company&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Contact&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Country&lt;/th&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Maria 
-  Anders&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Germany&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Centro 
-  comercial Moctezuma&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Francisco 
-  Chang&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Mexico&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Company&lt;/th&gt;
+&lt;th&gt;Contact&lt;/th&gt;
+&lt;th&gt;Country&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+&lt;td&gt;Maria
+Anders&lt;/td&gt;
+&lt;td&gt;Germany&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Centro
+comercial Moctezuma&lt;/td&gt;
+&lt;td&gt;Francisco
+Chang&lt;/td&gt;
+&lt;td&gt;Mexico&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -625,21 +618,24 @@ columns.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Emil&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Tobias&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Linus&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;td&gt;Linus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -677,31 +673,29 @@ all sorts of HTML elements: text, images, lists, links, other tables, etc.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Emil&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Tobias&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Linus&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;16&lt;/td&gt;
-      <br/>
-      &lt;td&gt;14&lt;/td&gt;
-      <br/>
-      &lt;td&gt;10&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;td&gt;Linus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.
@@ -744,42 +738,35 @@ all sorts of HTML elements: text, images, lists, links, other tables, etc.
      <p>
       Let the first row be table header cells:
      </p>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;Person 1&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Person 2&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Person 
-  3&lt;/th&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Emil&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Tobias&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Linus&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;16&lt;/td&gt;
-      <br/>
-      &lt;td&gt;14&lt;/td&gt;
-      <br/>
-      &lt;td&gt;10&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Person 1&lt;/th&gt;
+&lt;th&gt;Person 2&lt;/th&gt;
+&lt;th&gt;Person
+3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Emil&lt;/td&gt;
+&lt;td&gt;Tobias&lt;/td&gt;
+&lt;td&gt;Linus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;14&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      By default, the text in
@@ -804,85 +791,84 @@ are bold and centered, but you can change that with CSS.
      </tr>
      <tr>
       <td>
-        &lt;table&gt;
-       </td>
+       &lt;table&gt;
+      </td>
       <td>
        Defines a table
       </td>
      </tr>
      <tr>
       <td>
-        &lt;th&gt;
-       </td>
+       &lt;th&gt;
+      </td>
       <td>
        Defines a header cell in a table
       </td>
      </tr>
      <tr>
       <td>
-        &lt;tr&gt;
-       </td>
+       &lt;tr&gt;
+      </td>
       <td>
        Defines a row in a table
       </td>
      </tr>
      <tr>
       <td>
-        &lt;td&gt;
-       </td>
+       &lt;td&gt;
+      </td>
       <td>
       </td>
      </tr>
      <tr>
       <td>
-        &lt;caption&gt;
-       </td>
+       &lt;caption&gt;
+      </td>
       <td>
        Defines a table caption
       </td>
      </tr>
      <tr>
       <td>
-        &lt;colgroup&gt;
-       </td>
+       &lt;colgroup&gt;
+      </td>
       <td>
        Specifies a group of one or more columns in a table for formatting
       </td>
      </tr>
      <tr>
       <td>
-        &lt;col&gt;
-       </td>
+       &lt;col&gt;
+      </td>
       <td>
        Specifies column properties for each column within a &lt;colgroup&gt; element
       </td>
      </tr>
      <tr>
       <td>
-        &lt;thead&gt;
-       </td>
+       &lt;thead&gt;
+      </td>
       <td>
        Groups the header content in a table
       </td>
      </tr>
      <tr>
       <td>
-        &lt;tbody&gt;
-       </td>
+       &lt;tbody&gt;
+      </td>
       <td>
        Groups the body content in a table
       </td>
      </tr>
      <tr>
       <td>
-        &lt;tfoot&gt;
-       </td>
+       &lt;tfoot&gt;
+      </td>
       <td>
        Groups the footer content in a table
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_links_bookmarks.html">
@@ -896,8 +882,10 @@ are bold and centered, but you can change that with CSS.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

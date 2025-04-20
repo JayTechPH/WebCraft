@@ -8,46 +8,47 @@
   <title>
    HTML Comments
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -108,7 +109,7 @@
       HTML Quotations
      </p>
     </a>
-    <a href="html_comments.html" class="selected">
+    <a class="selected" href="html_comments.html">
      <p>
       HTML Comments
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -455,9 +455,18 @@ help document your HTML source code.
      You can add comments to your HTML source by using the following syntax:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!-- Write your comments here --&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!-- Write your comments here --&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Notice that there is an exclamation point (!) in the start tag, but not in the 
@@ -482,15 +491,20 @@ end tag.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!-- This is a comment --&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;!-- Remember to add more information here --&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!-- This is a comment --&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!-- Remember to add more information here --&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -506,16 +520,21 @@ end tag.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;!-- &lt;p&gt;This is another paragraph 
-  &lt;/p&gt; --&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;This is a paragraph too.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!-- &lt;p&gt;This is another paragraph
+&lt;/p&gt; --&gt;
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You can also hide more than one line. Everything between the
@@ -535,21 +554,25 @@ end tag.
      <p>
       Hide a section of HTML code:
      </p>
-     <div class="code">
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      &lt;!--
-      <br/>
-      &lt;p&gt;Look at this cool 
-  image:&lt;/p&gt;
-      <br/>
-      &lt;img border="0" src="pic_trulli.jpg" 
+     <pre><code class="code language-html">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!--
+&lt;p&gt;Look at this cool
+image:&lt;/p&gt;
+&lt;img border="0" src="pic_trulli.jpg"
 alt="Trulli"&gt;
-      <br/>
-      --&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph too.&lt;/p&gt;
-     </div>
+--&gt;
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Comments are also great for debugging HTML, because you can 
@@ -569,9 +592,18 @@ comment out HTML lines of code, one at a time, to search for errors.
      <p>
       Hide a part of a paragraph:
      </p>
-     <div class="code">
-      &lt;p&gt;This &lt;!-- great text --&gt; is a paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This &lt;!-- great text --&gt; is a paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <div class="nextprev">
@@ -586,8 +618,10 @@ comment out HTML lines of code, one at a time, to search for errors.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

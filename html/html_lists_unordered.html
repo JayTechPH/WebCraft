@@ -8,46 +8,47 @@
   <title>
    HTML Unordered Lists
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -315,7 +316,7 @@
       Lists
      </p>
     </a>
-    <a href="html_lists_unordered.html" class="selected">
+    <a class="selected" href="html_lists_unordered.html">
      <p>
       Unordered Lists
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -473,18 +473,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;ul&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -548,17 +552,22 @@ list item marker. It can have one of the following values:
      <h3>
       Example - Disc
      </h3>
-     <div class="code">
-      &lt;ul style="list-style-type:disc;"&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul style="list-style-type:disc;"&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h3>
@@ -568,17 +577,22 @@ list item marker. It can have one of the following values:
      <h3>
       Example - Circle
      </h3>
-     <div class="code">
-      &lt;ul style="list-style-type:circle;"&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul style="list-style-type:circle;"&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h3>
@@ -588,17 +602,22 @@ list item marker. It can have one of the following values:
      <h3>
       Example - Square
      </h3>
-     <div class="code">
-      &lt;ul style="list-style-type:square;"&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul style="list-style-type:square;"&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h3>
@@ -608,17 +627,22 @@ list item marker. It can have one of the following values:
      <h3>
       Example - None
      </h3>
-     <div class="code">
-      &lt;ul style="list-style-type:none;"&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul style="list-style-type:none;"&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -631,27 +655,27 @@ list item marker. It can have one of the following values:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;Coffee&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tea
-      <br/>
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;Black tea&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Green tea&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-      <br/>
-      &lt;/li&gt;
-      <br/>
-      &lt;li&gt;Milk&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul&gt;
+&lt;li&gt;Coffee&lt;/li&gt;
+&lt;li&gt;Tea
+&lt;ul&gt;
+&lt;li&gt;Black tea&lt;/li&gt;
+&lt;li&gt;Green tea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -680,82 +704,52 @@ list item marker. It can have one of the following values:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      ul {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      overflow: hidden;
-      <br/>
-      background-color: #333333;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li {
-      <br/>
-      float: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li a {
-      <br/>
-      display: block;
-      <br/>
-      color: white;
-      <br/>
-      text-align: center;
-      <br/>
-      padding: 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li a:hover {
-      <br/>
-      background-color: #111111;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333333;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: #111111;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -824,54 +818,54 @@ list item marker. It can have one of the following values:
      </tr>
      <tr>
       <td>
-        &lt;ul&gt;
-       </td>
+       &lt;ul&gt;
+      </td>
       <td>
        Defines an unordered list
       </td>
      </tr>
      <tr>
       <td>
-        &lt;ol&gt;
-       </td>
+       &lt;ol&gt;
+      </td>
       <td>
        Defines an ordered list
       </td>
      </tr>
      <tr>
       <td>
-        &lt;li&gt;
-       </td>
+       &lt;li&gt;
+      </td>
       <td>
        Defines a list item
       </td>
      </tr>
      <tr>
       <td>
-        &lt;dl&gt;
-       </td>
+       &lt;dl&gt;
+      </td>
       <td>
        Defines a description list
       </td>
      </tr>
      <tr>
       <td>
-        &lt;dt&gt;
-       </td>
+       &lt;dt&gt;
+      </td>
       <td>
        Defines a term in a description list
       </td>
      </tr>
      <tr>
       <td>
-        &lt;dd&gt;
-       </td>
+       &lt;dd&gt;
+      </td>
       <td>
        Describes the term in a description list
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_lists.html">
@@ -885,8 +879,10 @@ list item marker. It can have one of the following values:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

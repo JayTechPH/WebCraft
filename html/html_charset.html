@@ -8,46 +8,47 @@
   <title>
    HTML Charset
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -208,7 +209,7 @@
       HTML Emojis
      </p>
     </a>
-    <a href="html_charset.html" class="selected">
+    <a class="selected" href="html_charset.html">
      <p>
       HTML Charsets
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -461,9 +461,18 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;meta charset="UTF-8"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="UTF-8"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The HTML5 specification encourages web developers to use the UTF-8 character set.
@@ -517,9 +526,18 @@ It defined 128 different characters that could be used on the internet:
      </li>
     </ul>
     <div class="code-container">
-     <div class="code">
-      &lt;meta charset="Windows-1252"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="Windows-1252"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -550,9 +568,18 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
      <h3>
       HTML 5 Example
      </h3>
-     <div class="code">
-      &lt;meta charset="ISO-8859-1"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="ISO-8859-1"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -573,9 +600,18 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
      </li>
     </ul>
     <div class="code-container">
-     <div class="code">
-      &lt;meta charset="UTF-8"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="UTF-8"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <a href="/charsets/index.html">
@@ -2531,7 +2567,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        €
+        &euro;
        </td>
        <td>
        </td>
@@ -2567,7 +2603,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ‚
+        &sbquo;
        </td>
        <td>
        </td>
@@ -2584,7 +2620,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ƒ
+        &fnof;
        </td>
        <td>
        </td>
@@ -2601,7 +2637,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        „
+        &bdquo;
        </td>
        <td>
        </td>
@@ -2618,7 +2654,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        …
+        &hellip;
        </td>
        <td>
        </td>
@@ -2635,7 +2671,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        †
+        &dagger;
        </td>
        <td>
        </td>
@@ -2652,7 +2688,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ‡
+        &Dagger;
        </td>
        <td>
        </td>
@@ -2669,7 +2705,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ˆ
+        &circ;
        </td>
        <td>
        </td>
@@ -2686,7 +2722,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ‰
+        &permil;
        </td>
        <td>
        </td>
@@ -2703,7 +2739,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Š
+        &Scaron;
        </td>
        <td>
        </td>
@@ -2720,7 +2756,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ‹
+        &lsaquo;
        </td>
        <td>
        </td>
@@ -2737,7 +2773,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Œ
+        &OElig;
        </td>
        <td>
        </td>
@@ -2773,7 +2809,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ž
+        &Zcaron;
        </td>
        <td>
        </td>
@@ -2828,7 +2864,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ‘
+        &lsquo;
        </td>
        <td>
        </td>
@@ -2845,7 +2881,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ’
+        &rsquo;
        </td>
        <td>
        </td>
@@ -2862,7 +2898,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        “
+        &ldquo;
        </td>
        <td>
        </td>
@@ -2879,7 +2915,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ”
+        &rdquo;
        </td>
        <td>
        </td>
@@ -2896,7 +2932,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        •
+        &bull;
        </td>
        <td>
        </td>
@@ -2913,7 +2949,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        –
+        &ndash;
        </td>
        <td>
        </td>
@@ -2930,7 +2966,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        —
+        &mdash;
        </td>
        <td>
        </td>
@@ -2947,7 +2983,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ˜
+        &tilde;
        </td>
        <td>
        </td>
@@ -2964,7 +3000,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ™
+        &trade;
        </td>
        <td>
        </td>
@@ -2981,7 +3017,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        š
+        &scaron;
        </td>
        <td>
        </td>
@@ -2998,7 +3034,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ›
+        &rsaquo;
        </td>
        <td>
        </td>
@@ -3015,7 +3051,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        œ
+        &oelig;
        </td>
        <td>
        </td>
@@ -3051,7 +3087,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ž
+        &zcaron;
        </td>
        <td>
        </td>
@@ -3068,7 +3104,7 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ÿ
+        &Yuml;
        </td>
        <td>
        </td>
@@ -3101,13 +3137,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¡
+        &iexcl;
        </td>
        <td>
-        ¡
+        &iexcl;
        </td>
        <td>
-        ¡
+        &iexcl;
        </td>
        <td>
         inverted exclamation mark
@@ -3120,13 +3156,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¢
+        &cent;
        </td>
        <td>
-        ¢
+        &cent;
        </td>
        <td>
-        ¢
+        &cent;
        </td>
        <td>
         cent sign
@@ -3139,13 +3175,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        £
+        &pound;
        </td>
        <td>
-        £
+        &pound;
        </td>
        <td>
-        £
+        &pound;
        </td>
        <td>
         pound sign
@@ -3158,13 +3194,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¤
+        &curren;
        </td>
        <td>
-        ¤
+        &curren;
        </td>
        <td>
-        ¤
+        &curren;
        </td>
        <td>
         currency sign
@@ -3177,13 +3213,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¥
+        &yen;
        </td>
        <td>
-        ¥
+        &yen;
        </td>
        <td>
-        ¥
+        &yen;
        </td>
        <td>
         yen sign
@@ -3196,13 +3232,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¦
+        &brvbar;
        </td>
        <td>
-        ¦
+        &brvbar;
        </td>
        <td>
-        ¦
+        &brvbar;
        </td>
        <td>
         broken bar
@@ -3215,13 +3251,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        §
+        &sect;
        </td>
        <td>
-        §
+        &sect;
        </td>
        <td>
-        §
+        &sect;
        </td>
        <td>
         section sign
@@ -3234,13 +3270,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¨
+        &uml;
        </td>
        <td>
-        ¨
+        &uml;
        </td>
        <td>
-        ¨
+        &uml;
        </td>
        <td>
         diaeresis
@@ -3253,13 +3289,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ©
+        &copy;
        </td>
        <td>
-        ©
+        &copy;
        </td>
        <td>
-        ©
+        &copy;
        </td>
        <td>
         copyright sign
@@ -3272,13 +3308,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ª
+        &ordf;
        </td>
        <td>
-        ª
+        &ordf;
        </td>
        <td>
-        ª
+        &ordf;
        </td>
        <td>
         feminine ordinal indicator
@@ -3291,13 +3327,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        «
+        &laquo;
        </td>
        <td>
-        «
+        &laquo;
        </td>
        <td>
-        «
+        &laquo;
        </td>
        <td>
         left-pointing double angle quotation mark
@@ -3310,13 +3346,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¬
+        &not;
        </td>
        <td>
-        ¬
+        &not;
        </td>
        <td>
-        ¬
+        &not;
        </td>
        <td>
         not sign
@@ -3329,13 +3365,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ­
+        &shy;
        </td>
        <td>
-        ­
+        &shy;
        </td>
        <td>
-        ­
+        &shy;
        </td>
        <td>
         soft hyphen
@@ -3348,13 +3384,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ®
+        &reg;
        </td>
        <td>
-        ®
+        &reg;
        </td>
        <td>
-        ®
+        &reg;
        </td>
        <td>
         registered sign
@@ -3367,13 +3403,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¯
+        &macr;
        </td>
        <td>
-        ¯
+        &macr;
        </td>
        <td>
-        ¯
+        &macr;
        </td>
        <td>
         macron
@@ -3386,13 +3422,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        °
+        &deg;
        </td>
        <td>
-        °
+        &deg;
        </td>
        <td>
-        °
+        &deg;
        </td>
        <td>
         degree sign
@@ -3405,13 +3441,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ±
+        &plusmn;
        </td>
        <td>
-        ±
+        &plusmn;
        </td>
        <td>
-        ±
+        &plusmn;
        </td>
        <td>
         plus-minus sign
@@ -3424,13 +3460,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ²
+        &sup2;
        </td>
        <td>
-        ²
+        &sup2;
        </td>
        <td>
-        ²
+        &sup2;
        </td>
        <td>
         superscript two
@@ -3443,13 +3479,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ³
+        &sup3;
        </td>
        <td>
-        ³
+        &sup3;
        </td>
        <td>
-        ³
+        &sup3;
        </td>
        <td>
         superscript three
@@ -3462,13 +3498,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ´
+        &acute;
        </td>
        <td>
-        ´
+        &acute;
        </td>
        <td>
-        ´
+        &acute;
        </td>
        <td>
         acute accent
@@ -3481,13 +3517,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        µ
+        &micro;
        </td>
        <td>
-        µ
+        &micro;
        </td>
        <td>
-        µ
+        &micro;
        </td>
        <td>
         micro sign
@@ -3500,13 +3536,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¶
+        &para;
        </td>
        <td>
-        ¶
+        &para;
        </td>
        <td>
-        ¶
+        &para;
        </td>
        <td>
         pilcrow sign
@@ -3519,13 +3555,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ·
+        &middot;
        </td>
        <td>
-        ·
+        &middot;
        </td>
        <td>
-        ·
+        &middot;
        </td>
        <td>
         middle dot
@@ -3538,13 +3574,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¸
+        &cedil;
        </td>
        <td>
-        ¸
+        &cedil;
        </td>
        <td>
-        ¸
+        &cedil;
        </td>
        <td>
         cedilla
@@ -3557,13 +3593,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¹
+        &sup1;
        </td>
        <td>
-        ¹
+        &sup1;
        </td>
        <td>
-        ¹
+        &sup1;
        </td>
        <td>
         superscript one
@@ -3576,13 +3612,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        º
+        &ordm;
        </td>
        <td>
-        º
+        &ordm;
        </td>
        <td>
-        º
+        &ordm;
        </td>
        <td>
         masculine ordinal indicator
@@ -3595,13 +3631,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        »
+        &raquo;
        </td>
        <td>
-        »
+        &raquo;
        </td>
        <td>
-        »
+        &raquo;
        </td>
        <td>
         right-pointing double angle quotation mark
@@ -3614,13 +3650,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¼
+        &frac14;
        </td>
        <td>
-        ¼
+        &frac14;
        </td>
        <td>
-        ¼
+        &frac14;
        </td>
        <td>
         vulgar fraction one quarter
@@ -3633,13 +3669,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ½
+        &frac12;
        </td>
        <td>
-        ½
+        &frac12;
        </td>
        <td>
-        ½
+        &frac12;
        </td>
        <td>
         vulgar fraction one half
@@ -3652,13 +3688,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¾
+        &frac34;
        </td>
        <td>
-        ¾
+        &frac34;
        </td>
        <td>
-        ¾
+        &frac34;
        </td>
        <td>
         vulgar fraction three quarters
@@ -3671,13 +3707,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ¿
+        &iquest;
        </td>
        <td>
-        ¿
+        &iquest;
        </td>
        <td>
-        ¿
+        &iquest;
        </td>
        <td>
         inverted question mark
@@ -3690,13 +3726,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        À
+        &Agrave;
        </td>
        <td>
-        À
+        &Agrave;
        </td>
        <td>
-        À
+        &Agrave;
        </td>
        <td>
         Latin A with grave
@@ -3709,13 +3745,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Á
+        &Aacute;
        </td>
        <td>
-        Á
+        &Aacute;
        </td>
        <td>
-        Á
+        &Aacute;
        </td>
        <td>
         Latin A with acute
@@ -3728,13 +3764,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Â
+        &Acirc;
        </td>
        <td>
-        Â
+        &Acirc;
        </td>
        <td>
-        Â
+        &Acirc;
        </td>
        <td>
         Latin A with circumflex
@@ -3747,13 +3783,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ã
+        &Atilde;
        </td>
        <td>
-        Ã
+        &Atilde;
        </td>
        <td>
-        Ã
+        &Atilde;
        </td>
        <td>
         Latin A with tilde
@@ -3766,13 +3802,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ä
+        &Auml;
        </td>
        <td>
-        Ä
+        &Auml;
        </td>
        <td>
-        Ä
+        &Auml;
        </td>
        <td>
         Latin A with diaeresis
@@ -3785,13 +3821,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Å
+        &Aring;
        </td>
        <td>
-        Å
+        &Aring;
        </td>
        <td>
-        Å
+        &Aring;
        </td>
        <td>
         Latin A with ring above
@@ -3804,13 +3840,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Æ
+        &AElig;
        </td>
        <td>
-        Æ
+        &AElig;
        </td>
        <td>
-        Æ
+        &AElig;
        </td>
        <td>
         Latin AE
@@ -3823,13 +3859,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ç
+        &Ccedil;
        </td>
        <td>
-        Ç
+        &Ccedil;
        </td>
        <td>
-        Ç
+        &Ccedil;
        </td>
        <td>
         Latin C with cedilla
@@ -3842,13 +3878,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        È
+        &Egrave;
        </td>
        <td>
-        È
+        &Egrave;
        </td>
        <td>
-        È
+        &Egrave;
        </td>
        <td>
         Latin E with grave
@@ -3861,13 +3897,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        É
+        &Eacute;
        </td>
        <td>
-        É
+        &Eacute;
        </td>
        <td>
-        É
+        &Eacute;
        </td>
        <td>
         Latin E with acute
@@ -3880,13 +3916,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ê
+        &Ecirc;
        </td>
        <td>
-        Ê
+        &Ecirc;
        </td>
        <td>
-        Ê
+        &Ecirc;
        </td>
        <td>
         Latin E with circumflex
@@ -3899,13 +3935,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ë
+        &Euml;
        </td>
        <td>
-        Ë
+        &Euml;
        </td>
        <td>
-        Ë
+        &Euml;
        </td>
        <td>
         Latin E with diaeresis
@@ -3918,13 +3954,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ì
+        &Igrave;
        </td>
        <td>
-        Ì
+        &Igrave;
        </td>
        <td>
-        Ì
+        &Igrave;
        </td>
        <td>
         Latin I with grave
@@ -3937,13 +3973,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Í
+        &Iacute;
        </td>
        <td>
-        Í
+        &Iacute;
        </td>
        <td>
-        Í
+        &Iacute;
        </td>
        <td>
         Latin I with acute
@@ -3956,13 +3992,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Î
+        &Icirc;
        </td>
        <td>
-        Î
+        &Icirc;
        </td>
        <td>
-        Î
+        &Icirc;
        </td>
        <td>
         Latin I with circumflex
@@ -3975,13 +4011,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ï
+        &Iuml;
        </td>
        <td>
-        Ï
+        &Iuml;
        </td>
        <td>
-        Ï
+        &Iuml;
        </td>
        <td>
         Latin I with diaeresis
@@ -3994,13 +4030,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ð
+        &ETH;
        </td>
        <td>
-        Ð
+        &ETH;
        </td>
        <td>
-        Ð
+        &ETH;
        </td>
        <td>
         Latin Eth
@@ -4013,13 +4049,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ñ
+        &Ntilde;
        </td>
        <td>
-        Ñ
+        &Ntilde;
        </td>
        <td>
-        Ñ
+        &Ntilde;
        </td>
        <td>
         Latin N with tilde
@@ -4032,13 +4068,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ò
+        &Ograve;
        </td>
        <td>
-        Ò
+        &Ograve;
        </td>
        <td>
-        Ò
+        &Ograve;
        </td>
        <td>
         Latin O with grave
@@ -4051,13 +4087,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ó
+        &Oacute;
        </td>
        <td>
-        Ó
+        &Oacute;
        </td>
        <td>
-        Ó
+        &Oacute;
        </td>
        <td>
         Latin O with acute
@@ -4070,13 +4106,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ô
+        &Ocirc;
        </td>
        <td>
-        Ô
+        &Ocirc;
        </td>
        <td>
-        Ô
+        &Ocirc;
        </td>
        <td>
         Latin O with circumflex
@@ -4089,13 +4125,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Õ
+        &Otilde;
        </td>
        <td>
-        Õ
+        &Otilde;
        </td>
        <td>
-        Õ
+        &Otilde;
        </td>
        <td>
         Latin O with tilde
@@ -4108,13 +4144,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ö
+        &Ouml;
        </td>
        <td>
-        Ö
+        &Ouml;
        </td>
        <td>
-        Ö
+        &Ouml;
        </td>
        <td>
         Latin O with diaeresis
@@ -4127,13 +4163,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ×
+        &times;
        </td>
        <td>
-        ×
+        &times;
        </td>
        <td>
-        ×
+        &times;
        </td>
        <td>
         multiplication sign
@@ -4146,13 +4182,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ø
+        &Oslash;
        </td>
        <td>
-        Ø
+        &Oslash;
        </td>
        <td>
-        Ø
+        &Oslash;
        </td>
        <td>
         Latin O with stroke
@@ -4165,13 +4201,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ù
+        &Ugrave;
        </td>
        <td>
-        Ù
+        &Ugrave;
        </td>
        <td>
-        Ù
+        &Ugrave;
        </td>
        <td>
         Latin U with grave
@@ -4184,13 +4220,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ú
+        &Uacute;
        </td>
        <td>
-        Ú
+        &Uacute;
        </td>
        <td>
-        Ú
+        &Uacute;
        </td>
        <td>
         Latin U with acute
@@ -4203,13 +4239,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Û
+        &Ucirc;
        </td>
        <td>
-        Û
+        &Ucirc;
        </td>
        <td>
-        Û
+        &Ucirc;
        </td>
        <td>
         Latin U with circumflex
@@ -4222,13 +4258,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ü
+        &Uuml;
        </td>
        <td>
-        Ü
+        &Uuml;
        </td>
        <td>
-        Ü
+        &Uuml;
        </td>
        <td>
         Latin U with diaeresis
@@ -4241,13 +4277,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Ý
+        &Yacute;
        </td>
        <td>
-        Ý
+        &Yacute;
        </td>
        <td>
-        Ý
+        &Yacute;
        </td>
        <td>
         Latin Y with acute
@@ -4260,13 +4296,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        Þ
+        &THORN;
        </td>
        <td>
-        Þ
+        &THORN;
        </td>
        <td>
-        Þ
+        &THORN;
        </td>
        <td>
         Latin Thorn
@@ -4279,13 +4315,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ß
+        &szlig;
        </td>
        <td>
-        ß
+        &szlig;
        </td>
        <td>
-        ß
+        &szlig;
        </td>
        <td>
         Latin small sharp s
@@ -4298,13 +4334,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        à
+        &agrave;
        </td>
        <td>
-        à
+        &agrave;
        </td>
        <td>
-        à
+        &agrave;
        </td>
        <td>
         Latin small a with grave
@@ -4317,13 +4353,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        á
+        &aacute;
        </td>
        <td>
-        á
+        &aacute;
        </td>
        <td>
-        á
+        &aacute;
        </td>
        <td>
         Latin small a with acute
@@ -4336,13 +4372,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        â
+        &acirc;
        </td>
        <td>
-        â
+        &acirc;
        </td>
        <td>
-        â
+        &acirc;
        </td>
        <td>
         Latin small a with circumflex
@@ -4355,13 +4391,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ã
+        &atilde;
        </td>
        <td>
-        ã
+        &atilde;
        </td>
        <td>
-        ã
+        &atilde;
        </td>
        <td>
         Latin small a with tilde
@@ -4374,13 +4410,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ä
+        &auml;
        </td>
        <td>
-        ä
+        &auml;
        </td>
        <td>
-        ä
+        &auml;
        </td>
        <td>
         Latin small a with diaeresis
@@ -4393,13 +4429,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        å
+        &aring;
        </td>
        <td>
-        å
+        &aring;
        </td>
        <td>
-        å
+        &aring;
        </td>
        <td>
         Latin small a with ring above
@@ -4412,13 +4448,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        æ
+        &aelig;
        </td>
        <td>
-        æ
+        &aelig;
        </td>
        <td>
-        æ
+        &aelig;
        </td>
        <td>
         Latin small ae
@@ -4431,13 +4467,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ç
+        &ccedil;
        </td>
        <td>
-        ç
+        &ccedil;
        </td>
        <td>
-        ç
+        &ccedil;
        </td>
        <td>
         Latin small c with cedilla
@@ -4450,13 +4486,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        è
+        &egrave;
        </td>
        <td>
-        è
+        &egrave;
        </td>
        <td>
-        è
+        &egrave;
        </td>
        <td>
         Latin small e with grave
@@ -4469,13 +4505,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        é
+        &eacute;
        </td>
        <td>
-        é
+        &eacute;
        </td>
        <td>
-        é
+        &eacute;
        </td>
        <td>
         Latin small e with acute
@@ -4488,13 +4524,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ê
+        &ecirc;
        </td>
        <td>
-        ê
+        &ecirc;
        </td>
        <td>
-        ê
+        &ecirc;
        </td>
        <td>
         Latin small e with circumflex
@@ -4507,13 +4543,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ë
+        &euml;
        </td>
        <td>
-        ë
+        &euml;
        </td>
        <td>
-        ë
+        &euml;
        </td>
        <td>
         Latin small e with diaeresis
@@ -4526,13 +4562,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ì
+        &igrave;
        </td>
        <td>
-        ì
+        &igrave;
        </td>
        <td>
-        ì
+        &igrave;
        </td>
        <td>
         Latin small i with grave
@@ -4545,13 +4581,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        í
+        &iacute;
        </td>
        <td>
-        í
+        &iacute;
        </td>
        <td>
-        í
+        &iacute;
        </td>
        <td>
         Latin small i with acute
@@ -4564,13 +4600,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        î
+        &icirc;
        </td>
        <td>
-        î
+        &icirc;
        </td>
        <td>
-        î
+        &icirc;
        </td>
        <td>
         Latin small i with circumflex
@@ -4583,13 +4619,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ï
+        &iuml;
        </td>
        <td>
-        ï
+        &iuml;
        </td>
        <td>
-        ï
+        &iuml;
        </td>
        <td>
         Latin small i with diaeresis
@@ -4602,13 +4638,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ð
+        &eth;
        </td>
        <td>
-        ð
+        &eth;
        </td>
        <td>
-        ð
+        &eth;
        </td>
        <td>
         Latin small eth
@@ -4621,13 +4657,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ñ
+        &ntilde;
        </td>
        <td>
-        ñ
+        &ntilde;
        </td>
        <td>
-        ñ
+        &ntilde;
        </td>
        <td>
         Latin small n with tilde
@@ -4640,13 +4676,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ò
+        &ograve;
        </td>
        <td>
-        ò
+        &ograve;
        </td>
        <td>
-        ò
+        &ograve;
        </td>
        <td>
         Latin small o with grave
@@ -4659,13 +4695,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ó
+        &oacute;
        </td>
        <td>
-        ó
+        &oacute;
        </td>
        <td>
-        ó
+        &oacute;
        </td>
        <td>
         Latin small o with acute
@@ -4678,13 +4714,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ô
+        &ocirc;
        </td>
        <td>
-        ô
+        &ocirc;
        </td>
        <td>
-        ô
+        &ocirc;
        </td>
        <td>
         Latin small o with circumflex
@@ -4697,13 +4733,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        õ
+        &otilde;
        </td>
        <td>
-        õ
+        &otilde;
        </td>
        <td>
-        õ
+        &otilde;
        </td>
        <td>
         Latin small o with tilde
@@ -4716,13 +4752,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ö
+        &ouml;
        </td>
        <td>
-        ö
+        &ouml;
        </td>
        <td>
-        ö
+        &ouml;
        </td>
        <td>
         Latin small o with diaeresis
@@ -4735,13 +4771,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ÷
+        &divide;
        </td>
        <td>
-        ÷
+        &divide;
        </td>
        <td>
-        ÷
+        &divide;
        </td>
        <td>
         division sign
@@ -4754,13 +4790,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ø
+        &oslash;
        </td>
        <td>
-        ø
+        &oslash;
        </td>
        <td>
-        ø
+        &oslash;
        </td>
        <td>
         Latin small o with stroke
@@ -4773,13 +4809,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ù
+        &ugrave;
        </td>
        <td>
-        ù
+        &ugrave;
        </td>
        <td>
-        ù
+        &ugrave;
        </td>
        <td>
         Latin small u with grave
@@ -4792,13 +4828,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ú
+        &uacute;
        </td>
        <td>
-        ú
+        &uacute;
        </td>
        <td>
-        ú
+        &uacute;
        </td>
        <td>
         Latin small u with acute
@@ -4811,13 +4847,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        û
+        &ucirc;
        </td>
        <td>
-        û
+        &ucirc;
        </td>
        <td>
-        û
+        &ucirc;
        </td>
        <td>
         Latin small with circumflex
@@ -4830,13 +4866,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ü
+        &uuml;
        </td>
        <td>
-        ü
+        &uuml;
        </td>
        <td>
-        ü
+        &uuml;
        </td>
        <td>
         Latin small u with diaeresis
@@ -4849,13 +4885,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ý
+        &yacute;
        </td>
        <td>
-        ý
+        &yacute;
        </td>
        <td>
-        ý
+        &yacute;
        </td>
        <td>
         Latin small y with acute
@@ -4868,13 +4904,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        þ
+        &thorn;
        </td>
        <td>
-        þ
+        &thorn;
        </td>
        <td>
-        þ
+        &thorn;
        </td>
        <td>
         Latin small thorn
@@ -4887,13 +4923,13 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
        <td>
        </td>
        <td>
-        ÿ
+        &yuml;
        </td>
        <td>
-        ÿ
+        &yuml;
        </td>
        <td>
-        ÿ
+        &yuml;
        </td>
        <td>
         Latin small y with diaeresis
@@ -4914,8 +4950,10 @@ supported 256 different character codes. HTML 4 also supported UTF-8.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

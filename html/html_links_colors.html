@@ -8,46 +8,47 @@
   <title>
    HTML Link Colors
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -254,7 +255,7 @@
       Links
      </p>
     </a>
-    <a href="html_links_colors.html" class="selected">
+    <a class="selected" href="html_links_colors.html">
      <p>
       Link Colors
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -477,54 +477,39 @@ whether it has been visited, is unvisited, or is active.
 will be pink with no underline. An active link will be yellow and underlined. 
 In addition, when mousing over a link (a:hover) it will become red and underlined:
      </p>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      a:link {
-      <br/>
-      color: green;
-      <br/>
-      background-color: transparent;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:visited {
-      <br/>
-      color: pink;
-      <br/>
-      background-color: transparent;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover {
-      <br/>
-      color: red;
-      <br/>
-      background-color: transparent;
-      <br/>
-      text-decoration: underline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:active {
-      <br/>
-      color: yellow;
-      <br/>
-      background-color: transparent;
-      <br/>
-      text-decoration: underline;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+a:link {
+color: green;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+color: pink;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -540,34 +525,30 @@ In addition, when mousing over a link (a:hover) it will become red and underline
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      a:link, a:visited {
-      <br/>
-      background-color: #f44336;
-      <br/>
-      color: white;
-      <br/>
-      padding: 15px 25px;
-      <br/>
-      text-align: center;
-      <br/>
-      text-decoration: none;
-      <br/>
-      display: inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover, a:active {
-      <br/>
-      background-color: red;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+a:link, a:visited {
+background-color: #f44336;
+color: white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover, a:active {
+background-color: red;
+}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -593,14 +574,13 @@ In addition, when mousing over a link (a:hover) it will become red and underline
      </tr>
      <tr>
       <td>
-        &lt;a&gt;
-       </td>
+       &lt;a&gt;
+      </td>
       <td>
        Defines a hyperlink
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_links.html">
@@ -614,8 +594,10 @@ In addition, when mousing over a link (a:hover) it will become red and underline
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

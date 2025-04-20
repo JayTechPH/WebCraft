@@ -9,6 +9,7 @@
   <title>
    CSS Selectors
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -68,7 +69,7 @@
       CSS Syntax
      </p>
     </a>
-    <a href="css_selectors.html" class="selected">
+    <a class="selected" href="css_selectors.html">
      <p>
       CSS Selectors
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -845,16 +845,22 @@ want to style.
       Here, all &lt;p&gt; elements on the page will be 
 center-aligned, with a red text color:
      </p>
-     <div class="code">
-      p
+     <pre><code class="code language-css">p
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -879,16 +885,22 @@ the id of the element.
      <p>
       The CSS rule below will be applied to the HTML element with id="para1":
      </p>
-     <div class="code">
-      #para1
+     <pre><code class="code language-css">#para1
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -916,15 +928,21 @@ class name.
      <p>
       In this example all HTML elements with class="center" will be red and center-aligned:
      </p>
-     <div class="code">
-      .center {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.center {
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You can also specify that only specific HTML elements should be affected by a class.
@@ -937,15 +955,21 @@ class name.
       In this example only &lt;p&gt; elements with class="center" will be 
 red and center-aligned:
      </p>
-     <div class="code">
-      p.center {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.center {
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      HTML elements 
@@ -959,9 +983,18 @@ can also refer to more than one class.
       In this example the &lt;p&gt; element will be styled according to class="center" 
 and to class="large":
      </p>
-     <div class="code">
-      &lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-css">&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -986,16 +1019,22 @@ elements on the page.
      <p>
       The CSS rule below will affect every HTML element on the page:
      </p>
-     <div class="code">
-      *
+     <pre><code class="code language-css">*
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: blue;
-      <br/>
-      }
-     </div>
+text-align: center;
+color: blue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1010,36 +1049,32 @@ definitions.
 style definitions):
     </p>
     <div class="code-container">
-     <div class="code">
-      h1
+     <pre><code class="code language-css">h1
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2
+text-align: center;
+color: red;
+}
+h2
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p
+text-align: center;
+color: red;
+}
+p
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      It will be better to group the selectors, to minimize the code.
@@ -1054,16 +1089,22 @@ style definitions):
      <p>
       In this example we have grouped the selectors from the code above:
      </p>
-     <div class="code">
-      h1, h2, p
+     <pre><code class="code language-css">h1, h2, p
 {
-      <br/>
-      text-align: center;
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+text-align: center;
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1084,10 +1125,10 @@ style definitions):
       </tr>
       <tr>
        <td>
-         #
-         <i>
-          id
-         </i>
+        #
+        <i>
+         id
+        </i>
        </td>
        <td class="notranslate">
         #firstname
@@ -1098,10 +1139,10 @@ style definitions):
       </tr>
       <tr>
        <td>
-         .
-         <i>
-          class
-         </i>
+        .
+        <i>
+         class
+        </i>
        </td>
        <td class="notranslate">
         .intro
@@ -1112,7 +1153,7 @@ style definitions):
       </tr>
       <tr>
        <td>
-         *
+        *
        </td>
        <td class="notranslate">
         *
@@ -1124,8 +1165,7 @@ style definitions):
       <tr>
        <td>
         <i>
-          element
-         </a>
+         element
         </i>
        </td>
        <td class="notranslate">
@@ -1138,8 +1178,7 @@ style definitions):
       <tr>
        <td>
         <i>
-          element,element,..
-         </a>
+         element,element,..
         </i>
        </td>
        <td class="notranslate">
@@ -1151,7 +1190,7 @@ style definitions):
       </tr>
      </table>
     </div>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_syntax.html">
       ❮ Previous
@@ -1164,8 +1203,12 @@ style definitions):
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

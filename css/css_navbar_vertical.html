@@ -9,6 +9,7 @@
   <title>
    CSS Vertical Navigation Bar
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -478,7 +479,7 @@
       Navbar
      </p>
     </a>
-    <a href="css_navbar_vertical.html" class="selected">
+    <a class="selected" href="css_navbar_vertical.html">
      <p>
       Vertical Navbar
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -813,16 +813,22 @@ inside the list, in addition to the code from the previous page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      li a
+     <pre><code class="code language-css">li a
 {
-      <br/>
-      display: block;
-      <br/>
-      width: 60px;
-      <br/>
-      }
-     </div>
+display: block;
+width: 60px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Example explained:
@@ -852,29 +858,29 @@ This will produce the same result as our previous example:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul
+     <pre><code class="code language-css">ul
 {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      width: 60px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 60px;
+}
+li
 a
 {
-      <br/>
-      display: block;
-      <br/>
-      }
-     </div>
+display: block;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -911,48 +917,38 @@ them:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      width: 
+     <pre><code class="code language-css">ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width:
 200px;
-      <br/>
-      background-color: #f1f1f1;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li a {
-      <br/>
-      display: 
+background-color: #f1f1f1;
+}
+li a {
+display:
 block;
-      <br/>
-      color: #000;
-      <br/>
-      padding: 8px 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* 
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+/*
 Change the link color on hover */
-      <br/>
-      li a:hover {
-      <br/>
-      background-color: #555;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+li a:hover {
+background-color: #555;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Active/Current Navigation Link
@@ -986,15 +982,21 @@ Change the link color on hover */
      <h3>
       Example
      </h3>
-     <div class="code">
-      .active {
-      <br/>
-      background-color: #04AA6D;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.active {
+background-color: #04AA6D;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Center Links &amp; Add Borders
@@ -1045,29 +1047,27 @@ last one:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      border: 1px solid #555;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li {
-      <br/>
-      text-align: center;
-      <br/>
-      border-bottom: 1px solid #555;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li:last-child {
-      <br/>
-      border-bottom: none;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">ul {
+border: 1px solid #555;
+}
+li {
+text-align: center;
+border-bottom: 1px solid #555;
+}
+li:last-child {
+border-bottom: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Full-height Fixed Vertical Navbar
@@ -1081,29 +1081,29 @@ last one:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      width: 
+     <pre><code class="code language-css">ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width:
 25%;
-      <br/>
-      background-color: #f1f1f1;
-      <br/>
-      height: 100%; /* Full height */
-      <br/>
-      position: fixed; /* 
+background-color: #f1f1f1;
+height: 100%; /* Full height */
+position: fixed; /*
 Make it stick, even on scroll */
-      <br/>
-      overflow: auto; /* Enable scrolling if the sidenav has too much content */
-      <br/>
-      }
-     </div>
+overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1124,8 +1124,12 @@ Make it stick, even on scroll */
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

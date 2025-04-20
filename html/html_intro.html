@@ -8,46 +8,47 @@
   <title>
    Introduction to HTML
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -58,7 +59,7 @@
       HTML HOME
      </p>
     </a>
-    <a href="html_intro.html" class="selected">
+    <a class="selected" href="html_intro.html">
      <p>
       HTML Introduction
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -479,29 +479,27 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;title&gt;Page Title&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;My First Heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;My first paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -570,7 +568,7 @@ page
     <p>
      An HTML element is defined by a start tag, some content, and an end tag:
     </p>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -598,7 +596,7 @@ page
      </b>
      is everything from the start tag to the end tag:
     </p>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -620,7 +618,7 @@ page
       </span>
      </span>
     </div>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -842,7 +840,7 @@ shown in the browser's title bar or in the page's tab.
        2012
       </td>
       <td>
-        WHATWG HTML5 Living Standard
+       WHATWG HTML5 Living Standard
       </td>
      </tr>
      <tr>
@@ -850,7 +848,7 @@ shown in the browser's title bar or in the page's tab.
        2014
       </td>
       <td>
-        WebCraft Recommendation: HTML5
+       WebCraft Recommendation: HTML5
       </td>
      </tr>
      <tr>
@@ -866,7 +864,7 @@ shown in the browser's title bar or in the page's tab.
        2017
       </td>
       <td>
-        WebCraft Recommendation: HTML5.1 2nd Edition
+       WebCraft Recommendation: HTML5.1 2nd Edition
       </td>
      </tr>
      <tr>
@@ -874,7 +872,7 @@ shown in the browser's title bar or in the page's tab.
        2017
       </td>
       <td>
-        WebCraft Recommendation: HTML5.2
+       WebCraft Recommendation: HTML5.2
       </td>
      </tr>
     </table>
@@ -896,8 +894,10 @@ shown in the browser's title bar or in the page's tab.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

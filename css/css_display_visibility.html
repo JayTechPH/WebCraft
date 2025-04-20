@@ -9,6 +9,7 @@
   <title>
    CSS Layout - The display Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -113,7 +114,7 @@
       CSS Lists
      </p>
     </a>
-    <a href="css_display_visibility.html" class="selected">
+    <a class="selected" href="css_display_visibility.html">
      <p>
       CSS Display
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -1157,13 +1157,20 @@ making the page look a specific way, and still follow the web standards.
      <h3>
       Example
      </h3>
-     <div class="code">
-      li {
-      <br/>
-      display: inline;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">li {
+display: inline;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -1190,13 +1197,20 @@ to have other block elements inside it.
      <h3>
       Example
      </h3>
-     <div class="code">
-      span {
-      <br/>
-      display: block;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">span {
+display: block;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example displays &lt;a&gt; elements as block elements:
@@ -1205,13 +1219,20 @@ to have other block elements inside it.
      <h3>
       Example
      </h3>
-     <div class="code">
-      a {
-      <br/>
-      display: block;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a {
+display: block;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1289,13 +1310,20 @@ there:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1.hidden {
-      <br/>
-      display: none;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1.hidden {
+display: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <code class="codespan">
@@ -1311,15 +1339,22 @@ as before. The element will be hidden, but still affect the layout:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1.hidden {
-      <br/>
-      visibility: hidden;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1.hidden {
+visibility: hidden;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
-    <hr>
+    <hr/>
     <h2>
      CSS Display/Visibility Properties
     </h2>
@@ -1334,7 +1369,7 @@ as before. The element will be hidden, but still affect the layout:
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies how an element should be displayed
@@ -1342,16 +1377,16 @@ as before. The element will be hidden, but still affect the layout:
      </tr>
      <tr>
       <td>
-        visibility
+       visibility
       </td>
       <td>
        Specifies whether or not an element should be visible
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_list.html">
       ❮ Previous
      </a>
@@ -1363,8 +1398,12 @@ as before. The element will be hidden, but still affect the layout:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

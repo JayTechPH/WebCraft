@@ -8,46 +8,47 @@
   <title>
    HTML Headings
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -83,7 +84,7 @@
       HTML Attributes
      </p>
     </a>
-    <a href="html_headings.html" class="selected">
+    <a class="selected" href="html_headings.html">
      <p>
       HTML Headings
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -501,19 +501,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1&gt;Heading 1&lt;/h1&gt;
-      <br/>
-      &lt;h2&gt;Heading 2&lt;/h2&gt;
-      <br/>
-      &lt;h3&gt;Heading 3&lt;/h3&gt;
-      <br/>
-      &lt;h4&gt;Heading 4&lt;/h4&gt;
-      <br/>
-      &lt;h5&gt;Heading 5&lt;/h5&gt;
-      <br/>
-      &lt;h6&gt;Heading 6&lt;/h6&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -583,11 +587,19 @@ with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h1 
-  style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;h1
+style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -607,30 +619,29 @@ with the
      </tr>
      <tr>
       <td>
-        &lt;html&gt;
-       </td>
+       &lt;html&gt;
+      </td>
       <td>
        Defines the root of an HTML document
       </td>
      </tr>
      <tr>
       <td>
-        &lt;body&gt;
-       </td>
+       &lt;body&gt;
+      </td>
       <td>
        Defines the document's body
       </td>
      </tr>
      <tr>
       <td>
-        &lt;h1&gt; to &lt;h6&gt;
-       </td>
+       &lt;h1&gt; to &lt;h6&gt;
+      </td>
       <td>
        Defines HTML headings
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_attributes.html">
@@ -644,8 +655,10 @@ with the
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Margin Collapse
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -315,7 +316,7 @@
       Margins
      </p>
     </a>
-    <a href="css_margin_collapse.html" class="selected">
+    <a class="selected" href="css_margin_collapse.html">
      <p>
       Margin Collapse
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -804,20 +804,23 @@ margin that is equal to the largest of the two margins.
      <p>
       Demonstration of margin collapse:
      </p>
-     <div class="code">
-      h1 {
-      <br/>
-      margin: 0 0 50px 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      margin: 20px 0 0 0;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+margin: 0 0 50px 0;
+}
+h2 {
+margin: 20px 0 0 0;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      In the example above, the &lt;h1&gt; element has a bottom margin of 50px and 
@@ -844,7 +847,7 @@ the actual margin ends up being 50px.
      </tr>
      <tr>
       <td>
-        margin
+       margin
       </td>
       <td>
        A shorthand property for setting all the margin properties in one declaration
@@ -852,7 +855,7 @@ the actual margin ends up being 50px.
      </tr>
      <tr>
       <td>
-        margin-bottom
+       margin-bottom
       </td>
       <td>
        Sets the bottom margin of an element
@@ -860,7 +863,7 @@ the actual margin ends up being 50px.
      </tr>
      <tr>
       <td>
-        margin-left
+       margin-left
       </td>
       <td>
        Sets the left margin of an element
@@ -868,7 +871,7 @@ the actual margin ends up being 50px.
      </tr>
      <tr>
       <td>
-        margin-right
+       margin-right
       </td>
       <td>
        Sets the right margin of an element
@@ -876,16 +879,16 @@ the actual margin ends up being 50px.
      </tr>
      <tr>
       <td>
-        margin-top
+       margin-top
       </td>
       <td>
        Sets the top margin of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_margin.html">
       ❮ Previous
      </a>
@@ -897,8 +900,12 @@ the actual margin ends up being 50px.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

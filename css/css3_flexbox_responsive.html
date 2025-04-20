@@ -9,6 +9,7 @@
   <title>
    CSS Flexbox Responsive
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -698,7 +699,7 @@
       Flex Items
      </p>
     </a>
-    <a href="css3_flexbox_responsive.html" class="selected">
+    <a class="selected" href="css3_flexbox_responsive.html">
      <p>
       Flex Responsive
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -850,29 +850,28 @@ and tablets), you can change the
      <h3>
       Example
      </h3>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-direction: row;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Responsive layout - makes a one column layout instead of a two-column 
-  layout */
-      <br/>
-      @media (max-width: 800px) {
-      <br/>
-      .flex-container {
-      <br/>
-      flex-direction: column;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-direction: row;
+}
+/* Responsive layout - makes a one column layout instead of a two-column
+layout */
+@media (max-width: 800px) {
+.flex-container {
+flex-direction: column;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Another way is to change the percentage of the
@@ -892,44 +891,35 @@ work:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .flex-item-left {
-      <br/>
-      flex: 50%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .flex-item-right {
-      <br/>
-      flex: 50%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Responsive layout - makes a one column layout instead of a two-column 
-  layout */
-      <br/>
-      @media (max-width: 800px) {
-      <br/>
-      .flex-item-right, 
-  .flex-item-left {
-      <br/>
-      flex: 100%;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-wrap: wrap;
+}
+.flex-item-left {
+flex: 50%;
+}
+.flex-item-right {
+flex: 50%;
+}
+/* Responsive layout - makes a one column layout instead of a two-column
+layout */
+@media (max-width: 800px) {
+.flex-item-right,
+.flex-item-left {
+flex: 100%;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -965,8 +955,12 @@ two or full-width images, depending on screen size:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS HEX Colors
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -236,7 +237,7 @@
       RGB
      </p>
     </a>
-    <a href="css_colors_hex.html" class="selected">
+    <a class="selected" href="css_colors_hex.html">
      <p>
       HEX
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -974,27 +974,26 @@ each component. So, if we have #ff00cc, it can be written like this: #f0c.
      <h3>
       Example
      </h3>
-     <div class="code">
-      body {
-      <br/>
-      background-color: #fc9; /* same as #ffcc99 */
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1 {
-      <br/>
-      color: #f0f; /* same as #ff00ff */
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      color: #b58; /* same as #bb5588 */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-color: #fc9; /* same as #ffcc99 */
+}
+h1 {
+color: #f0f; /* same as #ff00ff */
+}
+p {
+color: #b58; /* same as #bb5588 */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <script>
      //changeRed(255)
@@ -1019,7 +1018,7 @@ function changeHex(x) {
   }
 }
     </script>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_colors_rgb.html">
       ❮ Previous
@@ -1032,8 +1031,12 @@ function changeHex(x) {
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Input Attributes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -376,7 +377,7 @@
       HTML Input Types
      </p>
     </a>
-    <a href="html_form_attributes.html" class="selected">
+    <a class="selected" href="html_form_attributes.html">
      <p>
       HTML Input Attributes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -468,22 +468,26 @@
      <p>
       Input fields with initial (default) values:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" 
-  id="fname" name="fname" value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" 
-  value="Doe"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text"
+id="fname" name="fname" value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"
+value="Doe"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -509,22 +513,26 @@
      <p>
       A read-only input field:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" 
-  id="fname" name="fname" value="John" readonly&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" 
-  value="Doe"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text"
+id="fname" name="fname" value="John" readonly&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"
+value="Doe"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -550,22 +558,26 @@
      <p>
       A disabled input field:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" 
-  id="fname" name="fname" value="John" disabled&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" 
-  value="Doe"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text"
+id="fname" name="fname" value="John" disabled&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"
+value="Doe"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -605,22 +617,26 @@ password.
      <p>
       Set a width for an input field:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
-      <br/>
-      &lt;label 
-  for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="pin" name="pin" 
-  size="4"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
+&lt;label
+for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="pin" name="pin"
+size="4"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -653,22 +669,26 @@ you must write JavaScript code.
      <p>
       Set a maximum length for an input field:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
-      <br/>
-      &lt;label 
-  for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="pin" name="pin" 
-  maxlength="4" size="4"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
+&lt;label
+for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="pin" name="pin"
+maxlength="4" size="4"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -711,31 +731,31 @@ range of legal values.
      <p>
       Set a max date, a min date, and a range of legal values:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="datemax"&gt;Enter a date before 
-  1980-01-01:&lt;/label&gt;
-      <br/>
-      &lt;input type="date" id="datemax" name="datemax" 
-  max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      <br/>
-      &lt;label for="datemin"&gt;Enter a date 
-  after 2000-01-01:&lt;/label&gt;
-      <br/>
-      &lt;input type="date" id="datemin" name="datemin" 
-  min="2000-01-02"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      <br/>
-      &lt;label for="quantity"&gt;Quantity 
-  (between 1 and 5):&lt;/label&gt;
-      <br/>
-      &lt;input type="number" id="quantity" 
-  name="quantity" min="1" max="5"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="datemax"&gt;Enter a date before
+1980-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemax" name="datemax"
+max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="datemin"&gt;Enter a date
+after 2000-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemin" name="datemin"
+min="2000-01-02"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="quantity"&gt;Quantity
+(between 1 and 5):&lt;/label&gt;
+&lt;input type="number" id="quantity"
+name="quantity" min="1" max="5"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -763,16 +783,22 @@ an input field.
      <p>
       A file upload field that accepts multiple values:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="files"&gt;Select files:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="file" id="files" name="files" multiple&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="files"&gt;Select files:&lt;/label&gt;
+&lt;input
+type="file" id="files" name="files" multiple&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -801,7 +827,6 @@ date, search, url, tel, email, and password.
      Use the global
      
       title
-     </a>
      attribute to describe the pattern to help the user.
     </p>
     <p>
@@ -811,7 +836,6 @@ date, search, url, tel, email, and password.
      Learn more about
      
       regular expressions
-     </a>
      in our JavaScript tutorial.
     </p>
     <div class="code-container">
@@ -822,17 +846,22 @@ date, search, url, tel, email, and password.
       An input field that can contain only three letters (no numbers or special 
 characters):
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="country_code"&gt;Country code:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="country_code" name="country_code"
-      <br/>
-      pattern="[A-Za-z]{3}" title="Three letter country code"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="country_code"&gt;Country code:&lt;/label&gt;
+&lt;input type="text" id="country_code" name="country_code"
+pattern="[A-Za-z]{3}" title="Three letter country code"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -866,19 +895,23 @@ number, tel, email, and password.
      <p>
       An input field with a placeholder text:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="phone"&gt;Enter a phone number:&lt;/label&gt;
-      <br/>
-      &lt;input type="tel" id="phone" name="phone"
-      <br/>
-      placeholder="123-45-678"
-      <br/>
-      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="phone"&gt;Enter a phone number:&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone"
+placeholder="123-45-678"
+pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -905,16 +938,22 @@ number, tel, email, and password.
      <p>
       A required input field:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="username"&gt;Username:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="text" id="username" name="username" required&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input
+type="text" id="username" name="username" required&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -951,16 +990,22 @@ input field.
      <p>
       An input field with a specified legal number intervals:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="points"&gt;Points:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="number" id="points" name="points" step="3"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="points"&gt;Points:&lt;/label&gt;
+&lt;input
+type="number" id="points" name="points" step="3"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -991,21 +1036,25 @@ an input field should automatically get focus when the page loads.
      <p>
       Let the "First name" input field automatically get focus when the page loads:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname" autofocus&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="text" id="fname" name="fname" autofocus&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1047,23 +1096,26 @@ load).
      <p>
       Define an image as the submit button, with height and width attributes:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;
+&lt;input
+type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;
+&lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1087,27 +1139,27 @@ load).
      <p>
       An &lt;input&gt; element with pre-defined values in a &lt;datalist&gt;:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;input list="browsers"&gt;
-      <br/>
-      &lt;datalist id="browsers"&gt;
-      <br/>
-      &lt;option value="Edge"&gt;
-      <br/>
-      &lt;option value="Firefox"&gt;
-      <br/>
-      &lt;option value="Chrome"&gt;
-      <br/>
-      &lt;option value="Opera"&gt;
-      <br/>
-      &lt;option value="Safari"&gt;
-      <br/>
-      &lt;/datalist&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+&lt;option value="Edge"&gt;
+&lt;option value="Firefox"&gt;
+&lt;option value="Chrome"&gt;
+&lt;option value="Opera"&gt;
+&lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1149,27 +1201,28 @@ following
      <p>
       An HTML form with autocomplete on, and off for one input field:
      </p>
-     <div class="code">
-      &lt;form  autocomplete="on"&gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" 
-    name="lname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="email"&gt;Email:&lt;/label&gt;
-      <br/>
-      &lt;input type="email" id="email" name="email" autocomplete="off"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  autocomplete="on"&gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname"
+name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" autocomplete="off"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -1194,24 +1247,22 @@ browser's menu).
      </tr>
      <tr>
       <td>
-       
-        &lt;form&gt;
-       </td>
+       &lt;form&gt;
+      </td>
       <td>
        Defines an HTML form for user input
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;input&gt;
-       </td>
+       &lt;input&gt;
+      </td>
       <td>
        Defines an input control
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_form_input_types.html">
@@ -1225,8 +1276,10 @@ browser's menu).
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Table Style
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -442,7 +443,7 @@
       Table Alignment
      </p>
     </a>
-    <a href="css_table_style.html" class="selected">
+    <a class="selected" href="css_table_style.html">
      <p>
       Table Style
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -845,16 +845,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      th, td
+     <pre><code class="code language-css">th, td
 {
-      <br/>
-      padding: 15px;
-      <br/>
-      text-align: left;
-      <br/>
-      }
-     </div>
+padding: 15px;
+text-align: left;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -921,13 +927,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      th, td {
-      <br/>
-      border-bottom: 1px solid #ddd;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">th, td {
+border-bottom: 1px solid #ddd;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -991,9 +1004,18 @@ over:
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr:hover {background-color: coral;}
-     </div>
+     <pre><code class="code language-css">tr:hover {background-color: coral;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1060,9 +1082,18 @@ over:
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr:nth-child(even) {background-color: #f2f2f2;}
-     </div>
+     <pre><code class="code language-css">tr:nth-child(even) {background-color: #f2f2f2;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1123,15 +1154,21 @@ and text color of
      <h3>
       Example
      </h3>
-     <div class="code">
-      th {
-      <br/>
-      background-color: #04AA6D;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">th {
+background-color: #04AA6D;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1147,8 +1184,12 @@ and text color of
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

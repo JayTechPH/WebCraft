@@ -8,46 +8,47 @@
   <title>
    HTML head Elements
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -163,7 +164,7 @@
       HTML File Paths
      </p>
     </a>
-    <a href="html_head.html" class="selected">
+    <a class="selected" href="html_head.html">
      <p>
       HTML Head
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -555,28 +555,27 @@ when listing pages in search results.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;title&gt;A Meaningful Page 
- Title&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      The content of the document......
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;A Meaningful Page
+Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+The content of the document......
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -594,17 +593,22 @@ single HTML page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      body {background-color: powderblue;}
-      <br/>
-      h1 {color: red;}
-      <br/>
-      p {color: blue;}
-      <br/>
-      &lt;/style&gt;
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+body {background-color: powderblue;}
+h1 {color: red;}
+p {color: blue;}
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -629,9 +633,18 @@ relationship between the current document and an external resource.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;link rel="stylesheet" href="mystyle.css"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="mystyle.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -737,17 +750,22 @@ by search engines (keywords), and other web services.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;meta charset="UTF-8"&gt;
-      <br/>
-      &lt;meta name="description" content="Free Web tutorials"&gt;
-      <br/>
-      &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
-      <br/>
-      &lt;meta name="author" content="John 
-  Doe"&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Free Web tutorials"&gt;
+&lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+&lt;meta name="author" content="John
+Doe"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -853,17 +871,22 @@ viewport meta tag
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      function myFunction() {
-      <br/>
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
-      <br/>
-      }
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script&gt;
+function myFunction() {
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -910,24 +933,25 @@ href or a target attribute present, or both.
      <p>
       Specify a default URL and a default target for all links on a page:
      </p>
-     <div class="code">
-      &lt;head&gt;
-      <br/>
-      &lt;base href="https://www.webcraft.com/" target="_blank"&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      <br/>
-      &lt;body&gt;
-      <br/>
-      &lt;img src="images/stickman.gif" width="24" height="39" 
-   alt="Stickman"&gt;
-      <br/>
-      &lt;a href="tags/tag_base.asp"&gt;HTML base Tag&lt;/a&gt;
-      <br/>
-      &lt;/body&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;head&gt;
+&lt;base href="https://www.webcraft.com/" target="_blank"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="images/stickman.gif" width="24" height="39"
+alt="Stickman"&gt;
+&lt;a href="tags/tag_base.asp"&gt;HTML base Tag&lt;/a&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1020,62 +1044,61 @@ about data)
      </tr>
      <tr>
       <td>
-        &lt;head&gt;
-       </td>
+       &lt;head&gt;
+      </td>
       <td>
        Defines information about the document
       </td>
      </tr>
      <tr>
       <td>
-        &lt;title&gt;
-       </td>
+       &lt;title&gt;
+      </td>
       <td>
        Defines the title of a document
       </td>
      </tr>
      <tr>
       <td>
-        &lt;base&gt;
-       </td>
+       &lt;base&gt;
+      </td>
       <td>
        Defines a default address or a default target for all links on a page
       </td>
      </tr>
      <tr>
       <td>
-        &lt;link&gt;
-       </td>
+       &lt;link&gt;
+      </td>
       <td>
        Defines the relationship between a document and an external resource
       </td>
      </tr>
      <tr>
       <td>
-        &lt;meta&gt;
-       </td>
+       &lt;meta&gt;
+      </td>
       <td>
        Defines metadata about an HTML document
       </td>
      </tr>
      <tr>
       <td>
-        &lt;script&gt;
-       </td>
+       &lt;script&gt;
+      </td>
       <td>
        Defines a client-side script
       </td>
      </tr>
      <tr>
       <td>
-        &lt;style&gt;
-       </td>
+       &lt;style&gt;
+      </td>
       <td>
        Defines style information for a document
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_filepaths.html">
@@ -1089,8 +1112,10 @@ about data)
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

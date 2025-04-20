@@ -8,46 +8,47 @@
   <title>
    HTML Form Elements
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -366,7 +367,7 @@
       HTML Form Attributes
      </p>
     </a>
-    <a href="html_form_elements.html" class="selected">
+    <a class="selected" href="html_form_elements.html">
      <p>
       HTML Form Elements
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -540,11 +540,19 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;label for="fname"&gt;First name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      All the different values of the
@@ -628,21 +636,24 @@ be equal to the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
-      <br/>
-      &lt;select id="cars" name="cars"&gt;
-      <br/>
-      &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
-      <br/>
-      &lt;option value="saab"&gt;Saab&lt;/option&gt;
-      <br/>
-      &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
-      <br/>
-      &lt;option value="audi"&gt;Audi&lt;/option&gt;
-      <br/>
-      &lt;/select&gt;
-     </div>
+     <pre><code class="code language-html">&lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
+&lt;select id="cars" name="cars"&gt;
+&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+&lt;option value="saab"&gt;Saab&lt;/option&gt;
+&lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+&lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -667,9 +678,18 @@ to the option:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;option value="fiat" selected&gt;Fiat&lt;/option&gt;
-     </div>
+     <pre><code class="code language-html">&lt;option value="fiat" selected&gt;Fiat&lt;/option&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <h3>
      Visible Values:
@@ -685,21 +705,24 @@ to the option:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
-      <br/>
-      &lt;select id="cars" name="cars" size="3"&gt;
-      <br/>
-      &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
-      <br/>
-      &lt;option value="saab"&gt;Saab&lt;/option&gt;
-      <br/>
-      &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
-      <br/>
-      &lt;option value="audi"&gt;Audi&lt;/option&gt;
-      <br/>
-      &lt;/select&gt;
-     </div>
+     <pre><code class="code language-html">&lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
+&lt;select id="cars" name="cars" size="3"&gt;
+&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+&lt;option value="saab"&gt;Saab&lt;/option&gt;
+&lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+&lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <h3>
      Allow Multiple Selections:
@@ -715,24 +738,25 @@ to the option:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
-      <br/>
-      &lt;select id="cars" name="cars" size="4"
-      <b>
-      </b>
-      multiple&gt;
-      <br/>
-      &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
-      <br/>
-      &lt;option value="saab"&gt;Saab&lt;/option&gt;
-      <br/>
-      &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
-      <br/>
-      &lt;option value="audi"&gt;Audi&lt;/option&gt;
-      <br/>
-      &lt;/select&gt;
-     </div>
+     <pre><code class="code language-html">&lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
+&lt;select id="cars" name="cars" size="4"
+multiple&gt;
+&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+&lt;option value="saab"&gt;Saab&lt;/option&gt;
+&lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+&lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -749,13 +773,20 @@ to the option:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;textarea name="message" rows="10" cols="30"&gt;
-      <br/>
-      The cat was playing in the garden.
-      <br/>
-      &lt;/textarea&gt;
-     </div>
+     <pre><code class="code language-html">&lt;textarea name="message" rows="10" cols="30"&gt;
+The cat was playing in the garden.
+&lt;/textarea&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -786,14 +817,21 @@ The cat was playing in the garden.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;textarea name="message" 
-  style="width:200px; height:600px;"&gt;
-      <br/>
-      The cat was playing in the garden.
-      <br/>
-      &lt;/textarea&gt;
-     </div>
+     <pre><code class="code language-html">&lt;textarea name="message"
+style="width:200px; height:600px;"&gt;
+The cat was playing in the garden.
+&lt;/textarea&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -811,10 +849,19 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;button type="button" 
- onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;
-     </div>
+     <pre><code class="code language-html">&lt;button type="button"
+onclick="alert('Hello World!')"&gt;Click Me!&lt;/button&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -861,34 +908,34 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;fieldset&gt;
-      <br/>
-      &lt;legend&gt;Personalia:&lt;/legend&gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/fieldset&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Personalia:&lt;/legend&gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
     </p>
-    <form  target="_blank">
+    <form target="_blank">
      <fieldset>
       <legend>
        Personalia:
@@ -946,27 +993,27 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;input list="browsers"&gt;
-      <br/>
-      &lt;datalist id="browsers"&gt;
-      <br/>
-      &lt;option value="Edge"&gt;
-      <br/>
-      &lt;option value="Firefox"&gt;
-      <br/>
-      &lt;option value="Chrome"&gt;
-      <br/>
-      &lt;option value="Opera"&gt;
-      <br/>
-      &lt;option value="Safari"&gt;
-      <br/>
-      &lt;/datalist&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+&lt;option value="Edge"&gt;
+&lt;option value="Firefox"&gt;
+&lt;option value="Chrome"&gt;
+&lt;option value="Opera"&gt;
+&lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -991,29 +1038,28 @@ performed by a script).
       </code>
       element:
      </p>
-     <div class="code">
-      &lt;form 
-      <br/>
-      oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
-      <br/>
-      0
-      <br/>
-      &lt;input type="range"  id="a" name="a" value="50"&gt;
-      <br/>
-      100 +
-      <br/>
-      &lt;input type="number" id="b" name="b" value="50"&gt;
-      <br/>
-      =
-      <br/>
-      &lt;output name="x" for="a b"&gt;&lt;/output&gt;
-      <br/>
-      &lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form
+oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+0
+&lt;input type="range"&nbsp; id="a" name="a" value="50"&gt;
+100 +
+&lt;input type="number" id="b" name="b" value="50"&gt;
+=
+&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1030,111 +1076,102 @@ performed by a script).
      </tr>
      <tr>
       <td>
-       
-        &lt;form&gt;
-       </td>
+       &lt;form&gt;
+      </td>
       <td>
        Defines an HTML form for user input
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;input&gt;
-       </td>
+       &lt;input&gt;
+      </td>
       <td>
        Defines an input control
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;textarea&gt;
-       </td>
+       &lt;textarea&gt;
+      </td>
       <td>
        Defines a multiline input control (text area)
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;label&gt;
-       </td>
+       &lt;label&gt;
+      </td>
       <td>
        Defines a label for an &lt;input&gt; element
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;fieldset&gt;
-       </td>
+       &lt;fieldset&gt;
+      </td>
       <td>
        Groups related elements in a form
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;legend&gt;
-       </td>
+       &lt;legend&gt;
+      </td>
       <td>
        Defines a caption for a &lt;fieldset&gt; element
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;select&gt;
-       </td>
+       &lt;select&gt;
+      </td>
       <td>
        Defines a drop-down list
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;optgroup&gt;
-       </td>
+       &lt;optgroup&gt;
+      </td>
       <td>
        Defines a group of related options in a drop-down list
       </td>
      </tr>
      <tr>
       <td>
-        &lt;option&gt;
-       </td>
+       &lt;option&gt;
+      </td>
       <td>
        Defines an option in a drop-down list
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;button&gt;
-       </td>
+       &lt;button&gt;
+      </td>
       <td>
        Defines a clickable button
       </td>
      </tr>
      <tr>
       <td>
-        &lt;datalist&gt;
-       </td>
+       &lt;datalist&gt;
+      </td>
       <td>
        Specifies a list of pre-defined options for input controls
       </td>
      </tr>
      <tr>
       <td>
-        &lt;output&gt;
-       </td>
+       &lt;output&gt;
+      </td>
       <td>
        Defines the result of a calculation
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_forms_attributes.html">
@@ -1148,8 +1185,10 @@ performed by a script).
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

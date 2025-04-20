@@ -9,6 +9,7 @@
   <title>
    CSS Layout - inline-block
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -138,7 +139,7 @@
       CSS Overflow
      </p>
     </a>
-    <a href="css_inline-block.html" class="selected">
+    <a class="selected" href="css_inline-block.html">
      <p>
       CSS Inline-block
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -841,61 +841,45 @@ elements.
      <h3>
       Example
      </h3>
-     <div class="code">
-      span.a {
-      <br/>
-      display: inline; /* the default for span */
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      padding: 5px;
-      <br/>
-      border: 1px solid blue;
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-      <br/>
-      <br/>
-      span.b {
-      <br/>
-      display: 
-  inline-block;
-      <br/>
-      width: 100px;
-      <br/>
-      height: 
-  100px;
-      <br/>
-      padding: 5px;
-      <br/>
-      border: 1px 
-  solid blue;
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-      <br/>
-      <br/>
-      span.c {
-      <br/>
-      display: block;
-      <br/>
-      width: 
-  100px;
-      <br/>
-      height: 100px;
-      <br/>
-      padding: 5px;
-      <br/>
-      border: 1px solid blue;
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">span.a {
+display: inline; /* the default for span */
+width: 100px;
+height: 100px;
+padding: 5px;
+border: 1px solid blue;
+background-color: yellow;
+}
+span.b {
+display:
+inline-block;
+width: 100px;
+height:
+100px;
+padding: 5px;
+border: 1px
+solid blue;
+background-color: yellow;
+}
+span.c {
+display: block;
+width:
+100px;
+height: 100px;
+padding: 5px;
+border: 1px solid blue;
+background-color: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -913,34 +897,31 @@ example creates horizontal navigation links:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .nav {
-      <br/>
-      background-color: yellow;
-      <br/>
-      list-style-type: none;
-      <br/>
-      text-align: 
-  center;
-      <br/>
-      padding: 0;
-      <br/>
-      margin: 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .nav li {
-      <br/>
-      display: inline-block;
-      <br/>
-      font-size: 20px;
-      <br/>
-      padding: 
-  20px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.nav {
+background-color: yellow;
+list-style-type: none;
+text-align:
+center;
+padding: 0;
+margin: 0;
+}
+.nav li {
+display: inline-block;
+font-size: 20px;
+padding:
+20px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -957,16 +938,16 @@ example creates horizontal navigation links:
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies the display behavior (the type of rendering box) of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_overflow.html">
       ❮ Previous
      </a>
@@ -978,8 +959,12 @@ example creates horizontal navigation links:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

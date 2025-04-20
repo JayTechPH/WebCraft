@@ -9,6 +9,7 @@
   <title>
    CSS Text Alignment and Text Direction
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -356,7 +357,7 @@
       Text Color
      </p>
     </a>
-    <a href="css_text_align.html" class="selected">
+    <a class="selected" href="css_text_align.html">
      <p>
       Text Alignment
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -836,27 +836,26 @@ alignment is default if text direction is right-to-left):
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-align: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-align: right;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-align: center;
+}
+h2 {
+text-align: left;
+}
+h3 {
+text-align: right;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      When the
@@ -871,13 +870,20 @@ straight (like in magazines and newspapers):
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      text-align: justify;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+text-align: justify;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -897,30 +903,29 @@ straight (like in magazines and newspapers):
      <p>
       Align the last line of text in three &lt;p&gt; elements:
      </p>
-     <div class="code">
-      p.a
+     <pre><code class="code language-css">p.a
 {
-      <br/>
-      text-align-last: right;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.b
+text-align-last: right;
+}
+p.b
 {
-      <br/>
-      text-align-last: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.c
+text-align-last: center;
+}
+p.c
 {
-      <br/>
-      text-align-last: justify;
-      <br/>
-      }
-     </div>
+text-align-last: justify;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -941,15 +946,21 @@ straight (like in magazines and newspapers):
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      direction: rtl;
-      <br/>
-      unicode-bidi: bidi-override;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+direction: rtl;
+unicode-bidi: bidi-override;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -969,42 +980,33 @@ straight (like in magazines and newspapers):
      <p>
       Set the vertical alignment of an image in a text:
      </p>
-     <div class="code">
-      img.a {
-      <br/>
-      vertical-align: baseline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img.b {
-      <br/>
-      vertical-align: text-top;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img.c {
-      <br/>
-      vertical-align: 
-  text-bottom;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img.d {
-      <br/>
-      vertical-align: sub;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img.e {
-      <br/>
-      vertical-align: super;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img.a {
+vertical-align: baseline;
+}
+img.b {
+vertical-align: text-top;
+}
+img.c {
+vertical-align:
+text-bottom;
+}
+img.d {
+vertical-align: sub;
+}
+img.e {
+vertical-align: super;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1021,7 +1023,7 @@ straight (like in magazines and newspapers):
      </tr>
      <tr>
       <td>
-        direction
+       direction
       </td>
       <td>
        Specifies the text direction/writing direction
@@ -1029,7 +1031,7 @@ straight (like in magazines and newspapers):
      </tr>
      <tr>
       <td>
-        text-align
+       text-align
       </td>
       <td>
        Specifies the horizontal alignment of text
@@ -1037,7 +1039,7 @@ straight (like in magazines and newspapers):
      </tr>
      <tr>
       <td>
-        text-align-last
+       text-align-last
       </td>
       <td>
        Specifies how to align the last line of a text
@@ -1045,27 +1047,26 @@ straight (like in magazines and newspapers):
      </tr>
      <tr>
       <td>
-        unicode-bidi
+       unicode-bidi
       </td>
       <td>
        Used together with the
         direction
-       </a>
        property to set or return whether the text should be overridden to support multiple languages in the same document
       </td>
      </tr>
      <tr>
       <td>
-        vertical-align
+       vertical-align
       </td>
       <td>
        Sets the vertical alignment of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_text.html">
       ❮ Previous
      </a>
@@ -1077,8 +1078,12 @@ straight (like in magazines and newspapers):
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

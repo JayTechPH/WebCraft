@@ -9,6 +9,7 @@
   <title>
    CSS Specificity
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -208,7 +209,7 @@
       CSS Units
      </p>
     </a>
-    <a href="css_specificity.html" class="selected">
+    <a class="selected" href="css_specificity.html">
      <p>
       CSS Specificity
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -807,29 +807,28 @@ for this element.
       </b>
       The text will be red:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      p {color: red;}
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;Hello World!&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>s
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
+     s
     </div>
     <p>
      Now, look at example 2:
@@ -851,31 +850,28 @@ color for the element selector "p"). This is because the class selector
 has 
 higher priority:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      .test {color: green;}
-      <br/>
-      p {color: red;}
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p class="test"&gt;Hello World!&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.test {color: green;}
+p {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p class="test"&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Now, look at example 3:
@@ -892,34 +888,30 @@ higher priority:
       The text will be 
 blue, because the id selector has higher priority:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      #demo {color: blue;}
-      <br/>
-      .test {color: green;}
-      <br/>
-      p {color: red;}
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p id="demo" class="test"&gt;Hello 
-  World!&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#demo {color: blue;}
+.test {color: green;}
+p {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p id="demo" class="test"&gt;Hello
+World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Now, look at example 4:
@@ -936,34 +928,30 @@ blue, because the id selector has higher priority:
       The 
 text will be pink, because the inline style has highest priority:
      </p>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      #demo {color: blue;}
-      <br/>
-      .test {color: green;}
-      <br/>
-      p {color: red;}
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p id="demo" class="test" 
-  style="color: pink;"&gt;Hello World!&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#demo {color: blue;}
+.test {color: green;}
+p {color: red;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p id="demo" class="test"
+style="color: pink;"&gt;Hello World!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1057,11 +1045,19 @@ the latest rule wins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {background-color: yellow;}
-      <br/>
-      h1 {background-color: red;}
-     </div>
+     <pre><code class="code language-css">h1 {background-color: yellow;}
+h1 {background-color: red;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <p>
@@ -1074,13 +1070,20 @@ the latest rule wins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div#myDiv {background-color: green;}
-      <br/>
-      #myDiv {background-color: yellow;}
-      <br/>
-      div[id=myDiv] {background-color: blue;}
-     </div>
+     <pre><code class="code language-css">div#myDiv {background-color: green;}
+#myDiv {background-color: yellow;}
+div[id=myDiv] {background-color: blue;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      the first rule is more specific than the other two, and will therefore be applied.
@@ -1098,21 +1101,24 @@ following situation
      <h3>
       Example
      </h3>
-     <div class="code">
-      /*From external CSS file:*/
-      <br/>
-      #content h1 {background-color: red;}
-      <br/>
-      <br/>
-      /*In HTML file:*/
-      <br/>
-      &lt;style&gt;
-      <br/>
-      #content h1 {background-color: 
+     <pre><code class="code language-css">/*From external CSS file:*/
+#content h1 {background-color: red;}
+/*In HTML file:*/
+&lt;style&gt;
+#content h1 {background-color:
 yellow;}
-      <br/>
-      &lt;/style&gt;
-     </div>
+&lt;/style&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      the last rule will be applied.
@@ -1128,12 +1134,20 @@ yellow;}
      <h3>
       Example
      </h3>
-     <div class="code">
-      .intro {background-color: yellow;}
-      <br/>
-      h1 {background-color: 
-  red;}
-     </div>
+     <pre><code class="code language-css">.intro {background-color: yellow;}
+h1 {background-color:
+red;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <p>
@@ -1148,11 +1162,19 @@ weight value:
      <h3>
       Example
      </h3>
-     <div class="code">
-      * {background-color: yellow;}
-      <br/>
-      h1 {background-color: red;}
-     </div>
+     <pre><code class="code language-css">* {background-color: yellow;}
+h1 {background-color: red;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1168,8 +1190,12 @@ weight value:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

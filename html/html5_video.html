@@ -8,46 +8,47 @@
   <title>
    HTML Video
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -407,7 +408,7 @@
       HTML Media
      </p>
     </a>
-    <a href="html5_video.html" class="selected">
+    <a class="selected" href="html5_video.html">
      <p>
       HTML Video
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -491,17 +491,22 @@ show a video on a web page.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;video width="320" height="240" controls&gt;
-      <br/>
-      &lt;source src="movie.mp4" type="video/mp4"&gt;
-      <br/>
-      &lt;source src="movie.ogg" type="video/ogg"&gt;
-      <br/>
-      Your browser does not support the video tag.
-      <br/>
-      &lt;/video&gt;
-     </div>
+     <pre><code class="code language-html">&lt;video width="320" height="240" controls&gt;
+&lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;source src="movie.ogg" type="video/ogg"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -566,17 +571,22 @@ support the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;video width="320" height="240" autoplay&gt;
-      <br/>
-      &lt;source src="movie.mp4" type="video/mp4"&gt;
-      <br/>
-      &lt;source src="movie.ogg" type="video/ogg"&gt;
-      <br/>
-      Your browser does not support the video tag.
-      <br/>
-      &lt;/video&gt;
-     </div>
+     <pre><code class="code language-html">&lt;video width="320" height="240" autoplay&gt;
+&lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;source src="movie.ogg" type="video/ogg"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -602,17 +612,22 @@ allow autoplay in most cases. However, muted autoplay is always allowed.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;video width="320" height="240" autoplay muted&gt;
-      <br/>
-      &lt;source src="movie.mp4" type="video/mp4"&gt;
-      <br/>
-      &lt;source src="movie.ogg" type="video/ogg"&gt;
-      <br/>
-      Your browser does not support the video tag.
-      <br/>
-      &lt;/video&gt;
-     </div>
+     <pre><code class="code language-html">&lt;video width="320" height="240" autoplay muted&gt;
+&lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;source src="movie.ogg" type="video/ogg"&gt;
+Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -887,32 +902,32 @@ function makeNormal() {
      </tr>
      <tr>
       <td>
-        &lt;video&gt;
-       </td>
+       &lt;video&gt;
+      </td>
       <td>
        Defines a video or movie
       </td>
      </tr>
      <tr>
       <td>
-        &lt;source&gt;
-       </td>
+       &lt;source&gt;
+      </td>
       <td>
        Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;
       </td>
      </tr>
      <tr>
       <td>
-        &lt;track&gt;
-       </td>
+       &lt;track&gt;
+      </td>
       <td>
        Defines text tracks in media players
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="html_media.html">
       ❮ Previous
      </a>
@@ -924,8 +939,10 @@ function makeNormal() {
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS object-fit Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -571,7 +572,7 @@
       CSS Image Shapes
      </p>
     </a>
-    <a href="css3_object-fit.html" class="selected">
+    <a class="selected" href="css3_object-fit.html">
      <p>
       CSS object-fit
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -818,16 +818,22 @@ same height (300 pixels), it will look like this:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      We see that the image is being squished to fit the container of 200x300 pixels 
@@ -906,18 +912,23 @@ and fills the given dimension. The image will be clipped to fit:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      object-fit: cover;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+object-fit: cover;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -936,18 +947,23 @@ keeps its aspect ratio, but is resized to fit within the given dimension:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      object-fit: contain;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+object-fit: contain;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -967,18 +983,23 @@ stretched or squished to fit:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      object-fit: fill;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+object-fit: fill;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -997,18 +1018,23 @@ resized:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      object-fit: none;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+object-fit: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1035,18 +1061,23 @@ scaled down to the smallest version of
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 200px;
-      <br/>
-      height: 
-  300px;
-      <br/>
-      object-fit: scale-down;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 200px;
+height:
+300px;
+object-fit: scale-down;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1110,17 +1141,22 @@ in one example:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .fill {object-fit: fill;}
-      <br/>
-      .contain {object-fit: contain;}
-      <br/>
-      .cover {object-fit: cover;}
-      <br/>
-      .scale-down {object-fit: scale-down;}
-      <br/>
-      .none {object-fit: none;}
-     </div>
+     <pre><code class="code language-css">.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1140,7 +1176,7 @@ in one example:
      </tr>
      <tr>
       <td>
-        object-fit
+       object-fit
       </td>
       <td>
        Specifies how an &lt;img&gt; or &lt;video&gt; should be resized to fit its container
@@ -1148,7 +1184,7 @@ in one example:
      </tr>
      <tr>
       <td>
-        object-position
+       object-position
       </td>
       <td>
        Specifies how an &lt;img&gt; or &lt;video&gt; should be positioned with x/y 
@@ -1156,9 +1192,9 @@ in one example:
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_image_shapes.html">
       ❮ Previous
      </a>
@@ -1170,8 +1206,12 @@ in one example:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

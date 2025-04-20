@@ -9,6 +9,7 @@
   <title>
    CSS Box Shadow
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -652,7 +653,7 @@
       Shadow Effects
      </p>
     </a>
-    <a href="css3_shadows_box.html" class="selected">
+    <a class="selected" href="css3_shadows_box.html">
      <p>
       Box Shadow
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -809,14 +809,21 @@ default color of the shadow is the current text-color.
      <p>
       Specify a horizontal and a vertical shadow:
      </p>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 10px 10px;
-      <br/>
-      }
-     </div>
+box-shadow: 10px 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -840,14 +847,21 @@ shadow.
      <p>
       Specify a color for the shadow:
      </p>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 10px 10px lightblue;
-      <br/>
-      }
-     </div>
+box-shadow: 10px 10px lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -871,14 +885,21 @@ blurred the shadow will be.
      <p>
       Add a blur effect to the shadow:
      </p>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 10px 10px 5px lightblue;
-      <br/>
-      }
-     </div>
+box-shadow: 10px 10px 5px lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -903,14 +924,21 @@ the size of the shadow, a negative value decreases the size of the shadow.
      <p>
       Set the spread radius of the shadow:
      </p>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 10px 10px 5px 12px lightblue;
-      <br/>
-      }
-     </div>
+box-shadow: 10px 10px 5px 12px lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -934,14 +962,21 @@ an outer shadow (outset) to an inner shadow.
      <p>
       Add the inset parameter:
      </p>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 10px 10px 5px lightblue inset;
-      <br/>
-      }
-     </div>
+box-shadow: 10px 10px 5px lightblue inset;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -954,14 +989,21 @@ an outer shadow (outset) to an inner shadow.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
-      <br/>
-      }
-     </div>
+box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1004,20 +1046,25 @@ an outer shadow (outset) to an inner shadow.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.card
+     <pre><code class="code language-css">div.card
 {
-      <br/>
-      width: 250px;
-      <br/>
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 
+width: 250px;
+box-shadow: 0 4px 8px 0 rgba(0, 0,
 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      <br/>
-      text-align: 
+text-align:
 center;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1037,7 +1084,7 @@ center;
      </tr>
      <tr>
       <td>
-        box-shadow
+       box-shadow
       </td>
       <td>
        Adds one or more shadows to an element
@@ -1045,16 +1092,16 @@ center;
      </tr>
      <tr>
       <td>
-        text-shadow
+       text-shadow
       </td>
       <td>
        Adds one or more shadows to a text
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_shadows.html">
       ❮ Previous
      </a>
@@ -1066,8 +1113,12 @@ center;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

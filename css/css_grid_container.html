@@ -9,6 +9,7 @@
   <title>
    CSS Grid Container
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -716,7 +717,7 @@
       Grid Columns/Rows
      </p>
     </a>
-    <a href="css_grid_container.html" class="selected">
+    <a class="selected" href="css_grid_container.html">
      <p>
       Grid Container
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -887,15 +887,21 @@ of the respective column.
      <p>
       Make a grid with 4 columns of equal width:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-columns: auto auto auto auto;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -943,15 +949,21 @@ exact size (width) of the columns, or a mix of fixed size and auto.
      <p>
       Set a fixed size for column 1, 2, and 4, and keep column 3 as auto size:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-columns: 80px 200px auto 40px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+grid-template-columns: 80px 200px auto 40px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1024,15 +1036,21 @@ This unit automatically divides the available space into fractions.
      <p>
       Here, each column will take up 25% of the container width, splitting it equally:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1072,15 +1090,21 @@ This unit automatically divides the available space into fractions.
      <p>
       Here, the second column will be twice as big as the others:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-columns: 1fr 2fr 1fr 1fr;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+grid-template-columns: 1fr 2fr 1fr 1fr;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1131,15 +1155,21 @@ This unit automatically divides the available space into fractions.
      <h3>
       Example
      </h3>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-rows: 80px 200px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+grid-template-rows: 80px 200px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1252,15 +1282,21 @@ align the grid items when they do not use all available space on the main-axis (
       </code>
       value displays the grid items with equal space around them:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: space-evenly;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: space-evenly;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1305,15 +1341,21 @@ align the grid items when they do not use all available space on the main-axis (
       value displays the grid items with space 
 around them:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: space-around;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: space-around;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1357,15 +1399,21 @@ around them:
       </code>
       value displays the grid items with space between them:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: space-between;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: space-between;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1409,15 +1457,21 @@ around them:
       </code>
       value positions the grid items in the center of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1462,15 +1516,21 @@ around them:
       value positions the grid items at the 
   start of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: start;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: start;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1514,15 +1574,21 @@ around them:
       </code>
       value positions the grid items at the end of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      justify-content: end;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+justify-content: end;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1636,17 +1702,22 @@ align the grid items when they do not use all available space on the cross-axis 
       </code>
       value positions the grid items in the middle of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1692,17 +1763,22 @@ align the grid items when they do not use all available space on the cross-axis 
   grid container, with equal space 
 on top, bottom and between:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: space-evenly;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: space-evenly;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1749,17 +1825,22 @@ on top, bottom and between:
 equal, but the space before the first grid item and after the last grid item is set to 
 half of the space between the grid lines:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: space-around;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: space-around;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1806,17 +1887,22 @@ half of the space between the grid lines:
 equal, but the first grid item is flush with the start edge of the container, and the 
 last grid item is flush with the end edge of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: space-between;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: space-between;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1861,17 +1947,22 @@ last grid item is flush with the end edge of the container:
       value positions the grid items 
   at the start of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: start;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: start;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1916,17 +2007,22 @@ last grid item is flush with the end edge of the container:
       value positions the grid items at 
   the end of the container:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      align-content: end;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+align-content: end;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2051,17 +2147,22 @@ and width for the
       value positions the grid items in the middle of the container 
   (both vertically and horizontally):
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      place-content: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+place-content: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2106,17 +2207,22 @@ and width for the
       value aligns the grid lines towards the bottom of the grid container, 
   and aligns the grid items with the same space between them horizontally:
      </p>
-     <div class="code">
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      height: 400px;
-      <br/>
-      place-content: end space-between;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.grid-container {
+display: grid;
+height: 400px;
+place-content: end space-between;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2164,7 +2270,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        align-content
+       align-content
       </td>
       <td>
        Vertically aligns the whole grid inside the container (when total grid 
@@ -2173,7 +2279,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        align-items
+       align-items
       </td>
       <td>
        Aligns content in a grid item along the column axis
@@ -2181,7 +2287,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies the display behavior (the type of rendering box) of an element
@@ -2189,7 +2295,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        column-gap
+       column-gap
       </td>
       <td>
        Specifies the gap between the columns
@@ -2197,7 +2303,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        gap
+       gap
       </td>
       <td>
        A shorthand property for the
@@ -2213,7 +2319,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid
+       grid
       </td>
       <td>
        A shorthand property for the
@@ -2231,7 +2337,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-auto-columns
+       grid-auto-columns
       </td>
       <td>
        Specifies a default column size
@@ -2239,7 +2345,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-auto-flow
+       grid-auto-flow
       </td>
       <td>
        Specifies how auto-placed items are inserted in the grid
@@ -2247,7 +2353,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-auto-rows
+       grid-auto-rows
       </td>
       <td>
        Specifies a default row size
@@ -2255,7 +2361,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-template
+       grid-template
       </td>
       <td>
        A shorthand property for the
@@ -2275,7 +2381,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-template-areas
+       grid-template-areas
       </td>
       <td>
        Specifies how to display columns and rows, using named grid items
@@ -2283,7 +2389,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-template-columns
+       grid-template-columns
       </td>
       <td>
        Specifies the size of the columns, and how many columns in a grid layout
@@ -2291,7 +2397,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        grid-template-rows
+       grid-template-rows
       </td>
       <td>
        Specifies the size of the rows in a grid layout
@@ -2299,7 +2405,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        justify-content
+       justify-content
       </td>
       <td>
        Horizontally aligns the whole grid inside the container (when total grid 
@@ -2308,7 +2414,7 @@ and width for the
      </tr>
      <tr>
       <td>
-        place-content
+       place-content
       </td>
       <td>
        A shorthand property for the
@@ -2324,16 +2430,16 @@ and width for the
      </tr>
      <tr>
       <td>
-        row-gap
+       row-gap
       </td>
       <td>
        Specifies the gap between the grid rows
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_grid_columns_rows.html">
       ❮ Previous
      </a>
@@ -2345,8 +2451,12 @@ and width for the
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Font Shorthand Property
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -419,7 +420,7 @@
       Font Pairings
      </p>
     </a>
-    <a href="css_font_shorthand.html" class="selected">
+    <a class="selected" href="css_font_shorthand.html">
      <p>
       Font Shorthand
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -846,22 +846,25 @@
       to set several font properties in 
 one declaration:
      </p>
-     <div class="code">
-      p.a
- {
-      <br/>
-      font: 20px Arial, sans-serif;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.b
- {
-      <br/>
-      font: italic small-caps bold 12px/30px Georgia, serif;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.a
+{
+font: 20px Arial, sans-serif;
+}
+p.b
+{
+font: italic small-caps bold 12px/30px Georgia, serif;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -878,7 +881,7 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font
+       font
       </td>
       <td>
        Sets all the font properties in one declaration
@@ -886,7 +889,7 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font-family
+       font-family
       </td>
       <td>
        Specifies the font family for text
@@ -894,7 +897,7 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font-size
+       font-size
       </td>
       <td>
        Specifies the font size of text
@@ -902,7 +905,7 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font-style
+       font-style
       </td>
       <td>
        Specifies the font style for text
@@ -910,7 +913,7 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font-variant
+       font-variant
       </td>
       <td>
        Specifies whether or not a text should be displayed in a small-caps font
@@ -918,16 +921,16 @@ one declaration:
      </tr>
      <tr>
       <td>
-        font-weight
+       font-weight
       </td>
       <td>
        Specifies the weight of a font
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_font_pairings.html">
       ❮ Previous
      </a>
@@ -939,8 +942,12 @@ one declaration:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

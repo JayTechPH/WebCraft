@@ -9,6 +9,7 @@
   <title>
    CSS Overriding Variables
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -665,7 +666,7 @@
       The var() Function
      </p>
     </a>
-    <a href="css3_variables_overriding.html" class="selected">
+    <a class="selected" href="css3_variables_overriding.html">
      <p>
       Overriding Variables
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -793,54 +793,39 @@ local variables can be used only inside the selector where it is declared.
      <h3>
       Example
      </h3>
-     <div class="code">
-      :root {
-      <br/>
-      --blue: #1e90ff;
-      <br/>
-      --white: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body {
-      <br/>
-      background-color: var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      border-bottom: 2px solid var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: var(--blue);
-      <br/>
-      background-color: var(--white);
-      <br/>
-      padding: 
-  15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      background-color: var(--white);
-      <br/>
-      color: var(--blue);
-      <br/>
-      border: 1px solid var(--blue);
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">:root {
+--blue: #1e90ff;
+--white: #ffffff;
+}
+body {
+background-color: var(--blue);
+}
+h2 {
+border-bottom: 2px solid var(--blue);
+}
+.container {
+color: var(--blue);
+background-color: var(--white);
+padding:
+15px;
+}
+button {
+background-color: var(--white);
+color: var(--blue);
+border: 1px solid var(--blue);
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <p>
@@ -859,57 +844,41 @@ variable for the button elements:
      <h3>
       Example
      </h3>
-     <div class="code">
-      :root {
-      <br/>
-      --blue: #1e90ff;
-      <br/>
-      --white: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body {
-      <br/>
-      background-color: var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      border-bottom: 2px solid var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: var(--blue);
-      <br/>
-      background-color: var(--white);
-      <br/>
-      padding: 
-  15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      --blue: #0000ff; /* local variable will 
-  override global */
-      <br/>
-      background-color: var(--white);
-      <br/>
-      color: var(--blue);
-      <br/>
-      border: 1px solid var(--blue);
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">:root {
+--blue: #1e90ff;
+--white: #ffffff;
+}
+body {
+background-color: var(--blue);
+}
+h2 {
+border-bottom: 2px solid var(--blue);
+}
+.container {
+color: var(--blue);
+background-color: var(--white);
+padding:
+15px;
+}
+button {
+--blue: #0000ff; /* local variable will
+override global */
+background-color: var(--white);
+color: var(--blue);
+border: 1px solid var(--blue);
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -923,57 +892,41 @@ variable for the button elements:
      <h3>
       Example
      </h3>
-     <div class="code">
-      :root {
-      <br/>
-      --blue: #1e90ff;
-      <br/>
-      --white: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body {
-      <br/>
-      background-color: var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      border-bottom: 2px solid var(--blue);
-      <br/>
-      }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: var(--blue);
-      <br/>
-      background-color: var(--white);
-      <br/>
-      padding: 
-  15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      --button-blue: #0000ff; /* new local 
-  variable */
-      <br/>
-      background-color: var(--white);
-      <br/>
-      color: var(--button-blue);
-      <br/>
-      border: 1px solid var(--button-blue);
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">:root {
+--blue: #1e90ff;
+--white: #ffffff;
+}
+body {
+background-color: var(--blue);
+}
+h2 {
+border-bottom: 2px solid var(--blue);
+}
+.container {
+color: var(--blue);
+background-color: var(--white);
+padding:
+15px;
+}
+button {
+--button-blue: #0000ff; /* new local
+variable */
+background-color: var(--white);
+color: var(--button-blue);
+border: 1px solid var(--button-blue);
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -991,16 +944,16 @@ variable for the button elements:
      </tr>
      <tr>
       <td>
-        var()
+       var()
       </td>
       <td>
        Inserts the value of a CSS variable
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_variables.html">
       ❮ Previous
      </a>
@@ -1012,8 +965,12 @@ variable for the button elements:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

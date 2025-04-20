@@ -9,6 +9,7 @@
   <title>
    CSS Text Decoration
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -361,7 +362,7 @@
       Text Alignment
      </p>
     </a>
-    <a href="css_text_decoration.html" class="selected">
+    <a class="selected" href="css_text_decoration.html">
      <p>
       Text Decoration
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -836,35 +836,30 @@ underline to display lines both over and under a text.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-decoration-line: overline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-decoration-line: line-through;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      text-decoration-line: 
-  overline underline;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-decoration-line: overline;
+}
+h2 {
+text-decoration-line: line-through;
+}
+h3 {
+text-decoration-line: underline;
+}
+p {
+text-decoration-line:
+overline underline;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -890,46 +885,37 @@ set the color of the decoration line.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-decoration-line: overline;
-      <br/>
-      text-decoration-color: 
-  red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-decoration-line: line-through;
-      <br/>
-      text-decoration-color: 
-  blue;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-color: 
-  green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      text-decoration-line: 
-  overline underline;
-      <br/>
-      text-decoration-color: purple;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-decoration-line: overline;
+text-decoration-color:
+red;
+}
+h2 {
+text-decoration-line: line-through;
+text-decoration-color:
+blue;
+}
+h3 {
+text-decoration-line: underline;
+text-decoration-color:
+green;
+}
+p {
+text-decoration-line:
+overline underline;
+text-decoration-color: purple;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -947,64 +933,44 @@ set the style of the decoration line.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-style: 
-  solid;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-style: double;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-style: dotted;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.ex1 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-style: dashed;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.ex2 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-style: wavy;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.ex3 {
-      <br/>
-      text-decoration-line: 
-  underline;
-      <br/>
-      text-decoration-color: red;
-      <br/>
-      text-decoration-style: wavy;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-decoration-line: underline;
+text-decoration-style:
+solid;
+}
+h2 {
+text-decoration-line: underline;
+text-decoration-style: double;
+}
+h3 {
+text-decoration-line: underline;
+text-decoration-style: dotted;
+}
+p.ex1 {
+text-decoration-line: underline;
+text-decoration-style: dashed;
+}
+p.ex2 {
+text-decoration-line: underline;
+text-decoration-style: wavy;
+}
+p.ex3 {
+text-decoration-line:
+underline;
+text-decoration-color: red;
+text-decoration-style: wavy;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1022,47 +988,36 @@ set the thickness of the decoration line.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-thickness: auto;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-decoration-line: 
-  underline;
-      <br/>
-      text-decoration-thickness: 5px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-thickness: 25%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      text-decoration-line: underline;
-      <br/>
-      text-decoration-color: red;
-      <br/>
-      text-decoration-style: double;
-      <br/>
-      text-decoration-thickness: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-decoration-line: underline;
+text-decoration-thickness: auto;
+}
+h2 {
+text-decoration-line:
+underline;
+text-decoration-thickness: 5px;
+}
+h3 {
+text-decoration-line: underline;
+text-decoration-thickness: 25%;
+}
+p {
+text-decoration-line: underline;
+text-decoration-color: red;
+text-decoration-style: double;
+text-decoration-thickness: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1106,35 +1061,30 @@ property for:
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      text-decoration: underline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      text-decoration: underline red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h3 {
-      <br/>
-      text-decoration: underline 
-  red double;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      text-decoration: underline red double 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+text-decoration: underline;
+}
+h2 {
+text-decoration: underline red;
+}
+h3 {
+text-decoration: underline
+red double;
+}
+p {
+text-decoration: underline red double 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1154,13 +1104,20 @@ like this:
      <h3>
       Example
      </h3>
-     <div class="code">
-      a {
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a {
+text-decoration: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1177,7 +1134,7 @@ like this:
      </tr>
      <tr>
       <td>
-        text-decoration
+       text-decoration
       </td>
       <td>
        Sets all the text-decoration properties in one declaration
@@ -1185,7 +1142,7 @@ like this:
      </tr>
      <tr>
       <td>
-        text-decoration-color
+       text-decoration-color
       </td>
       <td>
        Specifies the color of the text-decoration
@@ -1193,7 +1150,7 @@ like this:
      </tr>
      <tr>
       <td>
-        text-decoration-line
+       text-decoration-line
       </td>
       <td>
        Specifies the kind of text decoration to be used (underline, overline, 
@@ -1202,7 +1159,7 @@ like this:
      </tr>
      <tr>
       <td>
-        text-decoration-style
+       text-decoration-style
       </td>
       <td>
        Specifies the style of the text decoration (solid, dotted, etc.)
@@ -1210,16 +1167,16 @@ like this:
      </tr>
      <tr>
       <td>
-        text-decoration-thickness
+       text-decoration-thickness
       </td>
       <td>
        Specifies the thickness of the text decoration line
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_text_align.html">
       ❮ Previous
      </a>
@@ -1231,8 +1188,12 @@ like this:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

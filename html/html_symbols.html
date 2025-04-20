@@ -8,7 +8,8 @@
   <title>
    HTML Symbols
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -21,35 +22,35 @@
      Craft
     </p>
    </div>
-       <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -201,7 +202,7 @@
       HTML Entities
      </p>
     </a>
-    <a href="html_symbols.html" class="selected">
+    <a class="selected" href="html_symbols.html">
      <p>
       HTML Symbols
      </p>
@@ -430,7 +431,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -470,22 +470,29 @@
      <p>
       Display the euro sign:
      </p>
-     <div class="code">
-      &lt;p&gt;I will display &amp;euro;&lt;/p&gt;
-      <br/>
-      &lt;p&gt;I will display &amp;#8364;&lt;/p&gt;
-      <br/>
-      &lt;p&gt;I will display &amp;#x20AC;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;I will display &amp;euro;&lt;/p&gt;
+&lt;p&gt;I will display &amp;#8364;&lt;/p&gt;
+&lt;p&gt;I will display &amp;#x20AC;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <h3>
       Will display as:
      </h3>
      <div class="w3-white w3-padding">
-      I will display €
+      I will display &euro;
       <br/>
-      I will display €
+      I will display &euro;
       <br/>
-      I will display €
+      I will display &euro;
      </div>
     </div>
     <hr/>
@@ -509,7 +516,7 @@
      </tr>
      <tr>
       <td>
-       ∀
+       &forall;
       </td>
       <td>
        &amp;#8704;
@@ -523,7 +530,7 @@
      </tr>
      <tr>
       <td>
-       ∂
+       &part;
       </td>
       <td>
        &amp;#8706;
@@ -537,7 +544,7 @@
      </tr>
      <tr>
       <td>
-       ∃
+       &exist;
       </td>
       <td>
        &amp;#8707;
@@ -551,7 +558,7 @@
      </tr>
      <tr>
       <td>
-       ∅
+       &empty;
       </td>
       <td>
        &amp;#8709;
@@ -565,7 +572,7 @@
      </tr>
      <tr>
       <td>
-       ∇
+       &nabla;
       </td>
       <td>
        &amp;#8711;
@@ -579,7 +586,7 @@
      </tr>
      <tr>
       <td>
-       ∈
+       &isin;
       </td>
       <td>
        &amp;#8712;
@@ -593,7 +600,7 @@
      </tr>
      <tr>
       <td>
-       ∉
+       &notin;
       </td>
       <td>
        &amp;#8713;
@@ -607,7 +614,7 @@
      </tr>
      <tr>
       <td>
-       ∋
+       &ni;
       </td>
       <td>
        &amp;#8715;
@@ -621,7 +628,7 @@
      </tr>
      <tr>
       <td>
-       ∏
+       &prod;
       </td>
       <td>
        &amp;#8719;
@@ -635,7 +642,7 @@
      </tr>
      <tr>
       <td>
-       ∑
+       &sum;
       </td>
       <td>
        &amp;#8721;
@@ -669,7 +676,7 @@
      </tr>
      <tr>
       <td>
-       Α
+       &Alpha;
       </td>
       <td>
        &amp;#913;
@@ -682,7 +689,7 @@
       </td>
       <tr>
        <td>
-        Β
+        &Beta;
        </td>
        <td>
         &amp;#914;
@@ -696,7 +703,7 @@
       </tr>
       <tr>
        <td>
-        Γ
+        &Gamma;
        </td>
        <td>
         &amp;#915;
@@ -710,7 +717,7 @@
       </tr>
       <tr>
        <td>
-        Δ
+        &Delta;
        </td>
        <td>
         &amp;#916;
@@ -724,7 +731,7 @@
       </tr>
       <tr>
        <td>
-        Ε
+        &Epsilon;
        </td>
        <td>
         &amp;#917;
@@ -738,7 +745,7 @@
       </tr>
       <tr>
        <td>
-        Ζ
+        &Zeta;
        </td>
        <td>
         &amp;#918;
@@ -773,7 +780,7 @@
      </tr>
      <tr>
       <td>
-       ©
+       &copy;
       </td>
       <td>
        &amp;#169;
@@ -787,7 +794,7 @@
      </tr>
      <tr>
       <td>
-       ®
+       &reg;
       </td>
       <td>
        &amp;#174;
@@ -801,7 +808,7 @@
      </tr>
      <tr>
       <td>
-       €
+       &euro;
       </td>
       <td>
        &amp;#8364;
@@ -815,7 +822,7 @@
      </tr>
      <tr>
       <td>
-       ™
+       &trade;
       </td>
       <td>
        &amp;#8482;
@@ -829,7 +836,7 @@
      </tr>
      <tr>
       <td>
-       ←
+       &larr;
       </td>
       <td>
        &amp;#8592;
@@ -843,7 +850,7 @@
      </tr>
      <tr>
       <td>
-       ↑
+       &uarr;
       </td>
       <td>
        &amp;#8593;
@@ -857,7 +864,7 @@
      </tr>
      <tr>
       <td>
-       →
+       &rarr;
       </td>
       <td>
        &amp;#8594;
@@ -871,7 +878,7 @@
      </tr>
      <tr>
       <td>
-       ↓
+       &darr;
       </td>
       <td>
        &amp;#8595;
@@ -885,7 +892,7 @@
      </tr>
      <tr>
       <td>
-       ♠
+       &spades;
       </td>
       <td>
        &amp;#9824;
@@ -899,7 +906,7 @@
      </tr>
      <tr>
       <td>
-       ♣
+       &clubs;
       </td>
       <td>
        &amp;#9827;
@@ -913,7 +920,7 @@
      </tr>
      <tr>
       <td>
-       ♥
+       &hearts;
       </td>
       <td>
        &amp;#9829;
@@ -927,7 +934,7 @@
      </tr>
      <tr>
       <td>
-       ♦
+       &diams;
       </td>
       <td>
        &amp;#9830;
@@ -953,8 +960,10 @@
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

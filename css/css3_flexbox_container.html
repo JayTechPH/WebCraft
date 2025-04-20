@@ -9,6 +9,7 @@
   <title>
    CSS Flexbox Container
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -688,7 +689,7 @@
       Flexbox Intro
      </p>
     </a>
-    <a href="css3_flexbox_container.html" class="selected">
+    <a class="selected" href="css3_flexbox_container.html">
      <p>
       Flex Container
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -827,13 +827,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
      </p>
     </div>
@@ -924,15 +931,21 @@
       value is the default value, and it 
 displays the flex items horizontally (from left to right):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-direction: row;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-direction: row;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -967,15 +980,21 @@ displays the flex items horizontally (from left to right):
       </code>
       value displays the flex items vertically (from top to bottom):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-direction: column;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-direction: column;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1010,15 +1029,21 @@ displays the flex items horizontally (from left to right):
       </code>
       value displays the flex items horizontally (but from right to left):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-direction: row-reverse;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-direction: row-reverse;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1053,15 +1078,21 @@ displays the flex items horizontally (from left to right):
       </code>
       value displays the flex items vertically (but from bottom to top):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-direction: column-reverse;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-direction: column-reverse;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1133,15 +1164,21 @@ if there is not enough room for them on one flex line.
       value specifies that the flex items will not wrap (this 
 is default):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-wrap: nowrap;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-wrap: nowrap;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1206,15 +1243,21 @@ is default):
       </code>
       value specifies that the flex items will wrap if necessary:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-wrap: wrap;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1280,15 +1323,21 @@ is default):
       value specifies that the flex items will wrap 
 if necessary, in reverse order:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-wrap: wrap-reverse;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-wrap: wrap-reverse;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1365,15 +1414,21 @@ if necessary, in reverse order:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      flex-flow: row wrap;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+flex-flow: row wrap;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1437,15 +1492,21 @@ align the flex items when they do not use all available space on the main-axis (
       </code>
       value positions the flex items in the center of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1481,15 +1542,21 @@ align the flex items when they do not use all available space on the main-axis (
       value positions the flex items at the beginning of the container 
 (this is default):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: flex-start;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: flex-start;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1524,15 +1591,21 @@ align the flex items when they do not use all available space on the main-axis (
       </code>
       value positions the flex items at the end of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: flex-end;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: flex-end;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1568,15 +1641,21 @@ align the flex items when they do not use all available space on the main-axis (
       value displays the flex items with space 
 around them:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: space-around;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: space-around;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1611,15 +1690,21 @@ around them:
       </code>
       value displays the flex items with space between them:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: space-between;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: space-between;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1654,15 +1739,21 @@ around them:
       </code>
       value displays the flex items with equal space around them:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: space-evenly;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+justify-content: space-evenly;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1756,17 +1847,22 @@ the cross-axis (vertically).
       </code>
       value positions the flex items in the middle of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 200px;
-      <br/>
-      align-items: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 200px;
+align-items: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1801,17 +1897,22 @@ the cross-axis (vertically).
       </code>
       value positions the flex items at the top of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 200px;
-      <br/>
-      align-items: flex-start;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 200px;
+align-items: flex-start;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1846,17 +1947,22 @@ the cross-axis (vertically).
       </code>
       value positions the flex items at the bottom of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 200px;
-      <br/>
-      align-items: flex-end;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 200px;
+align-items: flex-end;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1892,17 +1998,22 @@ the cross-axis (vertically).
       value stretches the flex items to fill the container 
 (this is equal to "normal" which is default):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 200px;
-      <br/>
-      align-items: stretch;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 200px;
+align-items: stretch;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1938,17 +2049,22 @@ the cross-axis (vertically).
       value positions the flex items 
 at the baseline of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 200px;
-      <br/>
-      align-items: baseline;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 200px;
+align-items: baseline;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       <b>
        Note:
@@ -2077,19 +2193,23 @@ flex items, it aligns the flex lines.
       </code>
       , the flex lines are packed toward the center of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2155,19 +2275,23 @@ flex items, it aligns the flex lines.
       , the flex lines stretch to take 
 up the remaining space of the container (this is default):
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: stretch;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: stretch;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2233,19 +2357,23 @@ up the remaining space of the container (this is default):
       , the flex lines are packed 
 toward the start of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: flex-start;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: flex-start;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2311,19 +2439,23 @@ toward the start of the container:
       , the flex lines are packed 
 toward the end of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: flex-end;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: flex-end;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2390,19 +2522,23 @@ toward the end of the container:
 equal, but the first item is flush with the start edge of the container, and the 
 last item is flush with the end edge of the container:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: space-between;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: space-between;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2469,19 +2605,23 @@ last item is flush with the end edge of the container:
 equal, but the space before the first item and after the last item is set to 
 half of the space between the flex lines:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: space-around;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: space-around;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2547,19 +2687,23 @@ half of the space between the flex lines:
       , the flex lines are evenly distributed in the flex container, with equal space 
 on top, bottom and between:
      </p>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 600px;
-      <br/>
-      flex-wrap: wrap;
-      <br/>
-      align-content: space-evenly;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 600px;
+flex-wrap: wrap;
+align-content: space-evenly;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -2647,23 +2791,24 @@ centering.
      <h3>
       Example
      </h3>
-     <div class="code">
-      .flex-container {
-      <br/>
-      display: flex;
-      <br/>
-      height: 300px;
-      <br/>
-      <b>
-       justify-content: 
-  center;
-       <br/>
-       align-items: center;
-       <br/>
-      </b>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.flex-container {
+display: flex;
+height: 300px;
+justify-content:
+center;
+align-items: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -2683,7 +2828,7 @@ centering.
      </tr>
      <tr>
       <td>
-        align-content
+       align-content
       </td>
       <td>
        Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
@@ -2691,7 +2836,7 @@ centering.
      </tr>
      <tr>
       <td>
-        align-items
+       align-items
       </td>
       <td>
        Vertically aligns the flex items when the items do not use all available space on the cross-axis
@@ -2699,7 +2844,7 @@ centering.
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies the display behavior (the type of rendering box) for an 
@@ -2708,7 +2853,7 @@ centering.
      </tr>
      <tr>
       <td>
-        flex-direction
+       flex-direction
       </td>
       <td>
        Specifies the direction of the flex items inside a flex container
@@ -2716,7 +2861,7 @@ centering.
      </tr>
      <tr>
       <td>
-        flex-flow
+       flex-flow
       </td>
       <td>
        A shorthand property for flex-direction and flex-wrap
@@ -2724,7 +2869,7 @@ centering.
      </tr>
      <tr>
       <td>
-        flex-wrap
+       flex-wrap
       </td>
       <td>
        Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
@@ -2732,16 +2877,16 @@ centering.
      </tr>
      <tr>
       <td>
-        justify-content
+       justify-content
       </td>
       <td>
        Horizontally aligns the flex items when the items do not use all available space on the main-axis
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_flexbox.html">
       ❮ Previous
      </a>
@@ -2753,8 +2898,12 @@ centering.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

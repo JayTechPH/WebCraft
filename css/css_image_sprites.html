@@ -9,6 +9,7 @@
   <title>
    CSS Image Sprites
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -178,7 +179,7 @@
       CSS Image Gallery
      </p>
     </a>
-    <a href="css_image_sprites.html" class="selected">
+    <a class="selected" href="css_image_sprites.html">
      <p>
       CSS Image Sprites
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -815,18 +815,23 @@ image to show:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #home
+     <pre><code class="code language-css">#home
 {
-      <br/>
-      width: 46px;
-      <br/>
-      height: 44px;
-      <br/>
-      background: url(img_navsprites.gif) 0 0;
-      <br/>
-      }
-     </div>
+width: 46px;
+height: 44px;
+background: url(img_navsprites.gif) 0 0;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -872,72 +877,48 @@ using links and hover effects.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #navlist {
-      <br/>
-      position: relative;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #navlist li {
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      list-style: none;
-      <br/>
-      position: absolute;
-      <br/>
-      top: 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #navlist li, #navlist a {
-      <br/>
-      height: 44px;
-      <br/>
-      display: block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #home {
-      <br/>
-      left: 0px;
-      <br/>
-      width: 46px;
-      <br/>
-      background: url('img_navsprites.gif') 
+     <pre><code class="code language-css">#navlist {
+position: relative;
+}
+#navlist li {
+margin: 0;
+padding: 0;
+list-style: none;
+position: absolute;
+top: 0;
+}
+#navlist li, #navlist a {
+height: 44px;
+display: block;
+}
+#home {
+left: 0px;
+width: 46px;
+background: url('img_navsprites.gif')
 0 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #prev {
-      <br/>
-      left: 63px;
-      <br/>
-      width: 43px;
-      <br/>
-      background: url('img_navsprites.gif') -47px 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #next {
-      <br/>
-      left: 129px;
-      <br/>
-      width: 43px;
-      <br/>
-      background: url('img_navsprites.gif') 
+}
+#prev {
+left: 63px;
+width: 43px;
+background: url('img_navsprites.gif') -47px 0;
+}
+#next {
+left: 129px;
+width: 43px;
+background: url('img_navsprites.gif')
 -91px 0;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1058,29 +1039,28 @@ loading delay
      <h3>
       Example
      </h3>
-     <div class="code">
-      #home a:hover {
-      <br/>
-      background: url('img_navsprites_hover.gif') 0 -45px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #prev a:hover {
-      <br/>
-      background: url('img_navsprites_hover.gif') -47px 
+     <pre><code class="code language-css">#home a:hover {
+background: url('img_navsprites_hover.gif') 0 -45px;
+}
+#prev a:hover {
+background: url('img_navsprites_hover.gif') -47px
 -45px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #next a:hover {
-      <br/>
-      background: url('img_navsprites_hover.gif') -91px 
+}
+#next a:hover {
+background: url('img_navsprites_hover.gif') -91px
 -45px;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Example explained:
@@ -1106,8 +1086,12 @@ loading delay
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

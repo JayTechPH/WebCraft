@@ -9,6 +9,7 @@
   <title>
    CSS User Interface
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -601,7 +602,7 @@
       CSS Multiple Columns
      </p>
     </a>
-    <a href="css3_user_interface.html" class="selected">
+    <a class="selected" href="css3_user_interface.html">
      <p>
       CSS User Interface
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -824,16 +824,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      resize: horizontal;
-      <br/>
-      overflow: auto;
-      <br/>
-      }
-     </div>
+resize: horizontal;
+overflow: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example lets the user resize only the height of a &lt;div&gt; element:
@@ -842,16 +848,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      resize: vertical;
-      <br/>
-      overflow: auto;
-      <br/>
-      }
-     </div>
+resize: vertical;
+overflow: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example lets the user resize both the height and width of a &lt;div&gt; element:
@@ -860,16 +872,22 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      resize: both;
-      <br/>
-      overflow: auto;
-      <br/>
-      }
-     </div>
+resize: both;
+overflow: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      In many browsers, &lt;textarea&gt; is resizable by default. Here, we have used the resize property to disable the resizability:
@@ -878,13 +896,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      textarea {
-      <br/>
-      resize: none;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">textarea {
+resize: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -924,33 +949,30 @@ between the border and the outline:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.ex1 {
-      <br/>
-      margin: 20px;
-      <br/>
-      border: 
-  1px solid black;
-      <br/>
-      outline: 4px solid red;
-      <br/>
-      outline-offset: 15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div.ex2 {
-      <br/>
-      margin: 10px;
-      <br/>
-      border: 1px solid black;
-      <br/>
-      outline: 5px dashed blue;
-      <br/>
-      outline-offset: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div.ex1 {
+margin: 20px;
+border:
+1px solid black;
+outline: 4px solid red;
+outline-offset: 15px;
+}
+div.ex2 {
+margin: 10px;
+border: 1px solid black;
+outline: 5px dashed blue;
+outline-offset: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -970,7 +992,7 @@ between the border and the outline:
      </tr>
      <tr>
       <td>
-        outline-offset
+       outline-offset
       </td>
       <td>
        Adds space between an outline and the edge or border of an element
@@ -978,16 +1000,16 @@ between the border and the outline:
      </tr>
      <tr>
       <td>
-        resize
+       resize
       </td>
       <td>
        Specifies whether or not an element is resizable by the user
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_multiple_columns.html">
       ❮ Previous
      </a>
@@ -999,8 +1021,12 @@ between the border and the outline:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

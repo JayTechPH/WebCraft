@@ -8,46 +8,47 @@
   <title>
    HTML - The id attribute
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -143,7 +144,7 @@
       HTML Classes
      </p>
     </a>
-    <a href="html_id.html" class="selected">
+    <a class="selected" href="html_id.html">
      <p>
       HTML Id
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -505,42 +505,34 @@ id name
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      #myHeader {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      color: black;
-      <br/>
-      padding: 40px;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1 id="myHeader"&gt;My 
-  Header&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#myHeader {
+background-color: lightblue;
+color: black;
+padding: 40px;
+text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 id="myHeader"&gt;My
+Header&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -572,71 +564,47 @@ within the page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      /* Style the element with the id "myHeader" 
-  */
-      <br/>
-      <b>
-       #myHeader
-      </b>
-      {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      color: black;
-      <br/>
-      padding: 
-  40px;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Style all 
-  elements with the class name "city" */
-      <br/>
-      <b>
-       .city
-      </b>
-      {
-      <br/>
-      background-color: tomato;
-      <br/>
-      color: white;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      <br/>
-      &lt;!-- An element with a unique id --&gt;
-      <br/>
-      &lt;h1 id="myHeader"&gt;My 
-  Cities&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;!-- Multiple elements with same class --&gt;
-      <br/>
-      &lt;h2 class="city"&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital of England.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2 class="city"&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;style&gt;
+/* Style the element with the id "myHeader"
+*/
+#myHeader
+{
+background-color: lightblue;
+color: black;
+padding:
+40px;
+text-align: center;
+}
+/* Style all
+elements with the class name "city" */
+.city
+{
+background-color: tomato;
+color: white;
+padding: 10px;
+}
+&lt;/style&gt;
+&lt;!-- An element with a unique id --&gt;
+&lt;h1 id="myHeader"&gt;My
+Cities&lt;/h1&gt;
+&lt;!-- Multiple elements with same class --&gt;
+&lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -679,9 +647,18 @@ bookmark.
      attribute:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
@@ -690,17 +667,35 @@ bookmark.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -732,17 +727,22 @@ some tasks for that specific element.
       </code>
       attribute to manipulate text with JavaScript:
      </p>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      function displayResult() {
-      <br/>
-      document.getElementById("myHeader").innerHTML = "Have a nice day!";
-      <br/>
-      }
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script&gt;
+function displayResult() {
+document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -822,8 +822,10 @@ for an HTML element
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Outline Offset
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -343,7 +344,7 @@
       Outline Shorthand
      </p>
     </a>
-    <a href="css_outline_offset.html" class="selected">
+    <a class="selected" href="css_outline_offset.html">
      <p>
       Outline Offset
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -802,20 +802,24 @@ element and its outline is transparent.
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      margin: 30px;
-      <br/>
-      border: 1px solid black;
-      <br/>
-      outline: 
-  1px solid red;
-      <br/>
-      outline-offset: 15px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 30px;
+border: 1px solid black;
+outline:
+1px solid red;
+outline-offset: 15px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows that the space between an element and its outline 
@@ -828,23 +832,26 @@ is transparent:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      margin: 30px;
-      <br/>
-      background: 
-  yellow;
-      <br/>
-      border: 1px solid black;
-      <br/>
-      outline: 
-  1px solid red;
-      <br/>
-      outline-offset: 15px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 30px;
+background:
+yellow;
+border: 1px solid black;
+outline:
+1px solid red;
+outline-offset: 15px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -861,7 +868,7 @@ is transparent:
      </tr>
      <tr>
       <td>
-        outline
+       outline
       </td>
       <td>
        A shorthand property for setting outline-width, outline-style, and 
@@ -870,7 +877,7 @@ is transparent:
      </tr>
      <tr>
       <td>
-        outline-color
+       outline-color
       </td>
       <td>
        Sets the color of an outline
@@ -878,7 +885,7 @@ is transparent:
      </tr>
      <tr>
       <td>
-        outline-offset
+       outline-offset
       </td>
       <td>
        Specifies the space between an outline and the edge or border of an element
@@ -886,7 +893,7 @@ is transparent:
      </tr>
      <tr>
       <td>
-        outline-style
+       outline-style
       </td>
       <td>
        Sets the style of an outline
@@ -894,16 +901,16 @@ is transparent:
      </tr>
      <tr>
       <td>
-        outline-width
+       outline-width
       </td>
       <td>
        Sets the width of an outline
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_outline_shorthand.html">
       ❮ Previous
      </a>
@@ -915,8 +922,12 @@ is transparent:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

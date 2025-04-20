@@ -9,6 +9,7 @@
   <title>
    CSS Animations
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -541,7 +542,7 @@
       CSS Transitions
      </p>
     </a>
-    <a href="css3_animations.html" class="selected">
+    <a class="selected" href="css3_animations.html">
      <p>
       CSS Animations
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -880,34 +880,30 @@ background-color of the &lt;div&gt; element from "red" to "yellow":
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* The animation code */
-      <br/>
-      @keyframes example {
-      <br/>
-      from {background-color: red;}
-      <br/>
-      to {background-color: yellow;}
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* The element to apply the animation to */
-      <br/>
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">/* The animation code */
+@keyframes example {
+from {background-color: red;}
+to {background-color: yellow;}
+}
+/* The element to apply the animation to */
+div {
+width: 100px;
+height: 100px;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -942,39 +938,33 @@ element when the animation is 25% complete, 50% complete, and again when the ani
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* The animation code */
-      <br/>
-      @keyframes example
+     <pre><code class="code language-css">/* The animation code */
+@keyframes example
 {
-      <br/>
-      0%   {background-color: red;}
-      <br/>
-      25%  {background-color: yellow;}
-      <br/>
-      50%  {background-color: blue;}
-      <br/>
-      100% {background-color: green;}
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* The element to apply the animation to */
-      <br/>
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      }
-     </div>
+0%&nbsp;&nbsp; {background-color: red;}
+25%&nbsp; {background-color: yellow;}
+50%&nbsp; {background-color: blue;}
+100% {background-color: green;}
+}
+/* The element to apply the animation to */
+div {
+width: 100px;
+height: 100px;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example will change both the background-color and the position of the &lt;div&gt; 
@@ -984,43 +974,35 @@ element when the animation is 25% complete, 50% complete, and again when the ani
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* The animation code */
-      <br/>
-      @keyframes example
+     <pre><code class="code language-css">/* The animation code */
+@keyframes example
 {
-      <br/>
-      0%   {background-color:red; left:0px; top:0px;}
-      <br/>
-      25%  {background-color:yellow; left:200px; top:0px;}
-      <br/>
-      50%  {background-color:blue; left:200px; top:200px;}
-      <br/>
-      75%  {background-color:green; left:0px; top:200px;}
-      <br/>
-      100% {background-color:red; left:0px; top:0px;}
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* The element to apply the animation to */
-      <br/>
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      }
-     </div>
+0%&nbsp;&nbsp; {background-color:red; left:0px; top:0px;}
+25%&nbsp; {background-color:yellow; left:200px; top:0px;}
+50%&nbsp; {background-color:blue; left:200px; top:200px;}
+75%&nbsp; {background-color:green; left:0px; top:200px;}
+100% {background-color:red; left:0px; top:0px;}
+}
+/* The element to apply the animation to */
+div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1040,25 +1022,26 @@ element when the animation is 25% complete, 50% complete, and again when the ani
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-delay: 2s;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-delay: 2s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Negative values are also allowed. If using negative values, the animation 
@@ -1076,25 +1059,26 @@ playing for 2 seconds:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-delay: -2s;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-delay: -2s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1114,25 +1098,26 @@ playing for 2 seconds:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-iteration-count: 3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example uses the value "infinite" to make the animation 
@@ -1142,26 +1127,27 @@ continue for ever:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-iteration-count: 
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count:
 infinite;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1216,26 +1202,27 @@ backwards first, then forwards
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-direction: 
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-direction:
 reverse;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example uses the value "alternate" to make the animation 
@@ -1245,28 +1232,28 @@ run forwards first, then backwards:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-iteration-count: 2;
-      <br/>
-      animation-direction: 
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: 2;
+animation-direction:
 alternate;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example uses the value "alternate-reverse" to make the animation 
@@ -1276,28 +1263,28 @@ run backwards first, then forwards:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      position: relative;
-      <br/>
-      background-color: red;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 4s;
-      <br/>
-      animation-iteration-count: 2;
-      <br/>
-      animation-direction: 
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+position: relative;
+background-color: red;
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: 2;
+animation-direction:
 alternate-reverse;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1359,20 +1346,25 @@ animation.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #div1 {animation-timing-function: linear;}
-      <br/>
-      #div2 
+     <pre><code class="code language-css">#div1 {animation-timing-function: linear;}
+#div2
 {animation-timing-function: ease;}
-      <br/>
-      #div3 {animation-timing-function: 
+#div3 {animation-timing-function:
 ease-in;}
-      <br/>
-      #div4 {animation-timing-function: ease-out;}
-      <br/>
-      #div5 
-{animation-timing-function: ease-in-out;}
-     </div>
+#div4 {animation-timing-function: ease-out;}
+#div5
+{animation-timing-function: ease-in-out;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1436,25 +1428,26 @@ last keyframe when the animation ends:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background: red;
-      <br/>
-      position: relative;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 3s;
-      <br/>
-      animation-fill-mode: forwards;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+animation-name: example;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example lets the &lt;div&gt; element get the style values set by the 
@@ -1464,27 +1457,27 @@ first keyframe before the animation starts (during the animation-delay period):
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background: red;
-      <br/>
-      position: relative;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 3s;
-      <br/>
-      animation-delay: 2s;
-      <br/>
-      animation-fill-mode: backwards;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+animation-name: example;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-fill-mode: backwards;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example lets the &lt;div&gt; element get the style values set 
@@ -1495,27 +1488,27 @@ from the last keyframe when the animation ends:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background: red;
-      <br/>
-      position: relative;
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 3s;
-      <br/>
-      animation-delay: 2s;
-      <br/>
-      animation-fill-mode: both;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100px;
+height: 100px;
+background: red;
+position: relative;
+animation-name: example;
+animation-duration: 3s;
+animation-delay: 2s;
+animation-fill-mode: both;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1528,24 +1521,26 @@ from the last keyframe when the animation ends:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      animation-name: example;
-      <br/>
-      animation-duration: 5s;
-      <br/>
-      animation-timing-function: linear;
-      <br/>
-      animation-delay: 2s;
-      <br/>
-      animation-iteration-count: infinite;
-      <br/>
-      animation-direction: alternate;
-      <br/>
-      }
-     </div>
+animation-name: example;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The same animation effect as above can be achieved by using the shorthand
@@ -1558,14 +1553,21 @@ from the last keyframe when the animation ends:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      animation: example 5s linear 2s infinite alternate;
-      <br/>
-      }
-     </div>
+animation: example 5s linear 2s infinite alternate;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1585,7 +1587,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        @keyframes
+       @keyframes
       </td>
       <td>
        Specifies the animation code
@@ -1593,7 +1595,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation
+       animation
       </td>
       <td>
        A shorthand property for setting all the animation properties
@@ -1601,7 +1603,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-delay
+       animation-delay
       </td>
       <td>
        Specifies a delay for the start of an animation
@@ -1609,7 +1611,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-direction
+       animation-direction
       </td>
       <td>
        Specifies whether an animation should be played forwards, backwards or 
@@ -1618,7 +1620,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-duration
+       animation-duration
       </td>
       <td>
        Specifies how long time an animation should take to complete one cycle
@@ -1626,7 +1628,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-fill-mode
+       animation-fill-mode
       </td>
       <td>
        Specifies a style for the element when the animation is not playing 
@@ -1635,7 +1637,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-iteration-count
+       animation-iteration-count
       </td>
       <td>
        Specifies the number of times an animation should be played
@@ -1643,7 +1645,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-name
+       animation-name
       </td>
       <td>
        Specifies the name of the @keyframes animation
@@ -1651,7 +1653,7 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-play-state
+       animation-play-state
       </td>
       <td>
        Specifies whether the animation is running or paused
@@ -1659,16 +1661,16 @@ from the last keyframe when the animation ends:
      </tr>
      <tr>
       <td>
-        animation-timing-function
+       animation-timing-function
       </td>
       <td>
        Specifies the speed curve of the animation
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_transitions.html">
       ❮ Previous
      </a>
@@ -1680,8 +1682,12 @@ from the last keyframe when the animation ends:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

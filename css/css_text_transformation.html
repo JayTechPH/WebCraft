@@ -9,6 +9,7 @@
   <title>
    CSS Text Transformation
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -366,7 +367,7 @@
       Text Decoration
      </p>
     </a>
-    <a href="css_text_transformation.html" class="selected">
+    <a class="selected" href="css_text_transformation.html">
      <p>
       Text Transformation
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -798,27 +798,26 @@ capitalize the first letter of each word:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.uppercase {
-      <br/>
-      text-transform: uppercase;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.lowercase {
-      <br/>
-      text-transform: lowercase;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.capitalize {
-      <br/>
-      text-transform: capitalize;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.uppercase {
+text-transform: uppercase;
+}
+p.lowercase {
+text-transform: lowercase;
+}
+p.capitalize {
+text-transform: capitalize;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -835,16 +834,16 @@ capitalize the first letter of each word:
      </tr>
      <tr>
       <td>
-        text-transform
+       text-transform
       </td>
       <td>
        Controls the capitalization of text
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_text_decoration.html">
       ❮ Previous
      </a>
@@ -856,8 +855,12 @@ capitalize the first letter of each word:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Background Shorthand
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -269,7 +270,7 @@
       Background Attachment
      </p>
     </a>
-    <a href="css_background_shorthand.html" class="selected">
+    <a class="selected" href="css_background_shorthand.html">
      <p>
       Background Shorthand
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -791,20 +791,24 @@ single property. This is called a shorthand property.
      Instead of writing:
     </p>
     <div class="code-container">
-     <div class="code">
-      body {
-      <br/>
-      background-color: #ffffff;
-      <br/>
-      background-image: 
-  url("img_tree.png");
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      background-position: right top;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-color: #ffffff;
+background-image:
+url("img_tree.png");
+background-repeat: no-repeat;
+background-position: right top;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You can use the shorthand property
@@ -821,13 +825,20 @@ single property. This is called a shorthand property.
       Use the shorthand property to set the background properties in one 
   declaration:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background: #ffffff url("img_tree.png") no-repeat right top;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background: #ffffff url("img_tree.png") no-repeat right top;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      When using the shorthand property the order of the property values is:
@@ -878,7 +889,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background
+       background
       </td>
       <td>
        Sets all the background properties in one declaration
@@ -886,7 +897,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-attachment
+       background-attachment
       </td>
       <td>
        Sets whether a background image is fixed or scrolls with the rest of the page
@@ -894,7 +905,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-clip
+       background-clip
       </td>
       <td>
        Specifies the painting area of the background
@@ -902,7 +913,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-color
+       background-color
       </td>
       <td>
        Sets the background color of an element
@@ -910,7 +921,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-image
+       background-image
       </td>
       <td>
        Sets the background image for an element
@@ -918,7 +929,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-origin
+       background-origin
       </td>
       <td>
        Specifies where the background image(s) is/are positioned
@@ -926,7 +937,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-position
+       background-position
       </td>
       <td>
        Sets the starting position of a background image
@@ -934,7 +945,7 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-repeat
+       background-repeat
       </td>
       <td>
        Sets how a background image will be repeated
@@ -942,14 +953,14 @@ other ones are in this order. Note that we do not use the background-attachment 
      </tr>
      <tr>
       <td>
-        background-size
+       background-size
       </td>
       <td>
        Specifies the size of the background image(s)
       </td>
      </tr>
     </table>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_background_attachment.html">
       ❮ Previous
@@ -962,8 +973,12 @@ other ones are in this order. Note that we do not use the background-attachment 
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

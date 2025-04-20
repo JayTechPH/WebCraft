@@ -9,6 +9,7 @@
   <title>
    CSS Grid Layout
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -706,7 +707,7 @@
     <p>
      CSS Grid
     </p>
-    <a href="css_grid.html" class="selected">
+    <a class="selected" href="css_grid.html">
      <p>
       Grid Intro
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -886,28 +886,28 @@ grid items.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;div 
-  class="container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;div&gt;5&lt;/div&gt;
-      <br/>
-      &lt;div&gt;6&lt;/div&gt;
-      <br/>
-      &lt;div&gt;7&lt;/div&gt;
-      <br/>
-      &lt;div&gt;8&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div
+class="container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;div&gt;5&lt;/div&gt;
+&lt;div&gt;6&lt;/div&gt;
+&lt;div&gt;7&lt;/div&gt;
+&lt;div&gt;8&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -968,13 +968,20 @@ is set to
      <h3>
       Example
      </h3>
-     <div class="code">
-      .container {
-      <br/>
-      display: grid;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: grid;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1011,13 +1018,20 @@ is set to
      <h3>
       Example
      </h3>
-     <div class="code">
-      .container {
-      <br/>
-      display: inline-grid;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: inline-grid;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1065,7 +1079,7 @@ is set to
      </tr>
      <tr>
       <td>
-        align-content
+       align-content
       </td>
       <td>
        Vertically aligns the whole grid inside the container (when total grid 
@@ -1074,7 +1088,7 @@ is set to
      </tr>
      <tr>
       <td>
-        align-items
+       align-items
       </td>
       <td>
        Aligns content in a grid item along the column axis
@@ -1082,7 +1096,7 @@ is set to
      </tr>
      <tr>
       <td>
-        align-self
+       align-self
       </td>
       <td>
        Aligns the content for a specific grid item along the column axis
@@ -1090,7 +1104,7 @@ is set to
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies the display behavior (the type of rendering box) of an element
@@ -1098,7 +1112,7 @@ is set to
      </tr>
      <tr>
       <td>
-        column-gap
+       column-gap
       </td>
       <td>
        Specifies the gap between the columns
@@ -1106,7 +1120,7 @@ is set to
      </tr>
      <tr>
       <td>
-        gap
+       gap
       </td>
       <td>
        A shorthand property for the
@@ -1122,7 +1136,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid
+       grid
       </td>
       <td>
        A shorthand property for the
@@ -1140,7 +1154,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-area
+       grid-area
       </td>
       <td>
        Either specifies a name for the grid item, or this property is a shorthand property for the
@@ -1164,7 +1178,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-auto-columns
+       grid-auto-columns
       </td>
       <td>
        Specifies a default column size
@@ -1172,7 +1186,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-auto-flow
+       grid-auto-flow
       </td>
       <td>
        Specifies how auto-placed items are inserted in the grid
@@ -1180,7 +1194,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-auto-rows
+       grid-auto-rows
       </td>
       <td>
        Specifies a default row size
@@ -1188,7 +1202,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-column
+       grid-column
       </td>
       <td>
        A shorthand property for the
@@ -1204,7 +1218,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-column-end
+       grid-column-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1212,7 +1226,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-column-start
+       grid-column-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1220,7 +1234,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-row
+       grid-row
       </td>
       <td>
        A shorthand property for the
@@ -1236,7 +1250,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-row-end
+       grid-row-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1244,7 +1258,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-row-start
+       grid-row-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1252,7 +1266,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-template
+       grid-template
       </td>
       <td>
        A shorthand property for the
@@ -1272,7 +1286,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-template-areas
+       grid-template-areas
       </td>
       <td>
        Specifies how to display columns and rows, using named grid items
@@ -1280,7 +1294,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-template-columns
+       grid-template-columns
       </td>
       <td>
        Specifies the size of the columns, and how many columns in a grid layout
@@ -1288,7 +1302,7 @@ is set to
      </tr>
      <tr>
       <td>
-        grid-template-rows
+       grid-template-rows
       </td>
       <td>
        Specifies the size of the rows in a grid layout
@@ -1296,7 +1310,7 @@ is set to
      </tr>
      <tr>
       <td>
-        justify-content
+       justify-content
       </td>
       <td>
        Horizontally aligns the whole grid inside the container (when total grid 
@@ -1305,7 +1319,7 @@ is set to
      </tr>
      <tr>
       <td>
-        justify-self
+       justify-self
       </td>
       <td>
        Aligns the content for a specific grid item along the row axis
@@ -1313,7 +1327,7 @@ is set to
      </tr>
      <tr>
       <td>
-        place-self
+       place-self
       </td>
       <td>
        A shorthand property for the
@@ -1329,7 +1343,7 @@ is set to
      </tr>
      <tr>
       <td>
-        place-content
+       place-content
       </td>
       <td>
        A shorthand property for the
@@ -1345,16 +1359,16 @@ is set to
      </tr>
      <tr>
       <td>
-        row-gap
+       row-gap
       </td>
       <td>
        Specifies the gap between the grid rows
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_flexbox_responsive.html">
       ❮ Previous
      </a>
@@ -1366,8 +1380,12 @@ is set to
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

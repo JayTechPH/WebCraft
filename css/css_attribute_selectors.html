@@ -9,6 +9,7 @@
   <title>
    CSS Attribute Selector
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -183,7 +184,7 @@
       CSS Image Sprites
      </p>
     </a>
-    <a href="css_attribute_selectors.html" class="selected">
+    <a class="selected" href="css_attribute_selectors.html">
      <p>
       CSS Attr Selectors
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -806,13 +806,20 @@ attribute.
      <h3>
       Example
      </h3>
-     <div class="code">
-      a[target] {
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a[target] {
+background-color: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -833,13 +840,20 @@ attribute and value.
      <h3>
       Example
      </h3>
-     <div class="code">
-      a[target="_blank"] {
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a[target="_blank"] {
+background-color: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -861,13 +875,20 @@ contains a space-separated list of words, one of which is "flower":
      <h3>
       Example
      </h3>
-     <div class="code">
-      [title~="flower"] {
-      <br/>
-      border: 5px solid yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">[title~="flower"] {
+border: 5px solid yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The example above will match elements with title="flower", title="summer 
@@ -897,13 +918,20 @@ class="top", or followed by a hyphen( - ), like class="top-text".
      <h3>
       Example
      </h3>
-     <div class="code">
-      [class|="top"] {
-      <br/>
-      background: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">[class|="top"] {
+background: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -932,13 +960,20 @@ starts with "top":
      <h3>
       Example
      </h3>
-     <div class="code">
-      [class^="top"] {
-      <br/>
-      background: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">[class^="top"] {
+background: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -966,13 +1001,20 @@ ends with "test":
      <h3>
       Example
      </h3>
-     <div class="code">
-      [class$="test"] {
-      <br/>
-      background: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">[class$="test"] {
+background: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1000,13 +1042,20 @@ contains "te":
      <h3>
       Example
      </h3>
-     <div class="code">
-      [class*="te"] {
-      <br/>
-      background: yellow;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">[class*="te"] {
+background: yellow;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1019,32 +1068,30 @@ contains "te":
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type="text"]
+     <pre><code class="code language-css">input[type="text"]
 {
-      <br/>
-      width: 150px;
-      <br/>
-      display: block;
-      <br/>
-      margin-bottom: 10px;
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-      <br/>
-      <br/>
-      input[type="button"]
+width: 150px;
+display: block;
+margin-bottom: 10px;
+background-color: yellow;
+}
+input[type="button"]
 {
-      <br/>
-      width: 120px;
-      <br/>
-      margin-left: 35px;
-      <br/>
-      display: block;
-      <br/>
-      }
-     </div>
+width: 120px;
+margin-left: 35px;
+display: block;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1075,11 +1122,11 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        ]
        </td>
        <td class="notranslate">
         [target]
@@ -1090,15 +1137,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         =
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        =
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td class="notranslate">
         [target="_blank"]
@@ -1109,15 +1156,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         ~=
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        ~=
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td class="notranslate">
         [title~="flower"]
@@ -1129,15 +1176,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         |=
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        |=
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td class="notranslate">
         [lang|="en"]
@@ -1148,15 +1195,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         ^=
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        ^=
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td>
         a[href^="https"]
@@ -1167,15 +1214,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         $=
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        $=
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td>
         a[href$=".pdf"]
@@ -1186,15 +1233,15 @@ contains "te":
       </tr>
       <tr>
        <td>
-         [
-         <i>
-          attribute
-         </i>
-         *=
-         <i>
-          value
-         </i>
-         ]
+        [
+        <i>
+         attribute
+        </i>
+        *=
+        <i>
+         value
+        </i>
+        ]
        </td>
        <td>
         a[href*="w3schools"]
@@ -1218,8 +1265,12 @@ contains "te":
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

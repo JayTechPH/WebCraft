@@ -9,6 +9,7 @@
   <title>
    Responsive Web Design Images
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -749,7 +750,7 @@
       RWD Media Queries
      </p>
     </a>
-    <a href="css_rwd_images.html" class="selected">
+    <a class="selected" href="css_rwd_images.html">
      <p>
       RWD Images
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -807,15 +807,21 @@ responsive and scale up and down:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 100%;
-      <br/>
-      height: auto;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 100%;
+height: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Notice that in the example above, the image can be scaled up to be larger 
@@ -841,15 +847,21 @@ original size:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      max-width: 100%;
-      <br/>
-      height: auto;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+max-width: 100%;
+height: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -859,15 +871,21 @@ original size:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      width: 100%;
-      <br/>
-      height: auto;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+width: 100%;
+height: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -899,23 +917,25 @@ between the image's width and height):
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100%;
-      <br/>
-      height: 400px;
-      <br/>
-      background-image: url('img_flowers.jpg');
-      <br/>
-      background-repeat: no-repeat;
-      <br/>
-      background-size: contain;
-      <br/>
-      border: 1px solid red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100%;
+height: 400px;
+background-image: url('img_flowers.jpg');
+background-repeat: no-repeat;
+background-size: contain;
+border: 1px solid red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <p>
@@ -935,21 +955,24 @@ between the image's width and height):
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100%;
-      <br/>
-      height: 400px;
-      <br/>
-      background-image: url('img_flowers.jpg');
-      <br/>
-      background-size: 100% 100%;
-      <br/>
-      border: 1px solid red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100%;
+height: 400px;
+background-image: url('img_flowers.jpg');
+background-size: 100% 100%;
+border: 1px solid red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <p>
@@ -972,21 +995,24 @@ clipped:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      width: 100%;
-      <br/>
-      height: 400px;
-      <br/>
-      background-image: url('img_flowers.jpg');
-      <br/>
-      background-size: cover;
-      <br/>
-      border: 1px solid red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 100%;
+height: 400px;
+background-image: url('img_flowers.jpg');
+background-size: cover;
+border: 1px solid red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1012,31 +1038,30 @@ you have to scale it down anyway? To reduce the load, or for any other reasons, 
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* For width smaller than 400px: */
-      <br/>
-      body {
-      <br/>
-      background-image: 
+     <pre><code class="code language-css">/* For width smaller than 400px: */
+body {
+background-image:
 url('img_smallflower.jpg');
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* 
+}
+/*
 For width 400px and larger: */
-      <br/>
-      @media only screen and (min-width: 400px) 
+@media only screen and (min-width: 400px)
 {
-      <br/>
-      body {
-      <br/>
-      background-image: url('img_flowers.jpg');
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+body {
+background-image: url('img_flowers.jpg');
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You can use the media query
@@ -1054,31 +1079,30 @@ checks the device width, instead of the browser width. Then the image will not c
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* For devices smaller than 400px: */
-      <br/>
-      body {
-      <br/>
-      background-image: 
+     <pre><code class="code language-css">/* For devices smaller than 400px: */
+body {
+background-image:
 url('img_smallflower.jpg');
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* 
+}
+/*
 For devices 400px and larger: */
-      <br/>
-      @media only screen and (min-device-width: 400px) 
+@media only screen and (min-device-width: 400px)
 {
-      <br/>
-      body {
-      <br/>
-      background-image: url('img_flowers.jpg');
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+body {
+background-image: url('img_flowers.jpg');
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1121,19 +1145,24 @@ preferences is the one being used:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;picture&gt;
-      <br/>
-      &lt;source srcset="img_smallflower.jpg" media="(max-width: 
+     <pre><code class="code language-css">&lt;picture&gt;
+&lt;source srcset="img_smallflower.jpg" media="(max-width:
 400px)"&gt;
-      <br/>
-      &lt;source srcset="img_flowers.jpg"&gt;
-      <br/>
-      &lt;img 
+&lt;source srcset="img_flowers.jpg"&gt;
+&lt;img
 src="img_flowers.jpg" alt="Flowers"&gt;
-      <br/>
-      &lt;/picture&gt;
-     </div>
+&lt;/picture&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The
@@ -1174,8 +1203,12 @@ src="img_flowers.jpg" alt="Flowers"&gt;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Colors
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -506,7 +507,7 @@
       CSS Backgrounds
      </p>
     </a>
-    <a href="css3_colors.html" class="selected">
+    <a class="selected" href="css3_colors.html">
      <p>
       CSS Colors
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -819,15 +819,22 @@ for a color.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #p1 {background-color: rgba(255, 0, 0, 0.3);}  /* red 
+     <pre><code class="code language-css">#p1 {background-color: rgba(255, 0, 0, 0.3);}&nbsp; /* red
 with opacity */
-      <br/>
-      #p2 {background-color: rgba(0, 255, 0, 0.3);}  /* green with opacity */
-      <br/>
-      #p3 {background-color: rgba(0, 0, 255, 0.3);}  /* blue 
-with opacity */
-     </div>
+#p2 {background-color: rgba(0, 255, 0, 0.3);}&nbsp;&nbsp;/* green with opacity */
+#p3 {background-color: rgba(0, 0, 255, 0.3);}&nbsp;&nbsp;/* blue
+with opacity */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -880,16 +887,22 @@ with opacity */
      <h3>
       Example
      </h3>
-     <div class="code">
-      #p1 {background-color: hsl(120, 100%, 50%);}  /* green */
-      <br/>
-      #p2 {background-color: hsl(120, 100%, 75%);}  /* light green */
-      <br/>
-      #p3 {background-color: hsl(120, 100%, 25%);}  /* dark 
+     <pre><code class="code language-css">#p1 {background-color: hsl(120, 100%, 50%);}&nbsp; /* green */
+#p2 {background-color: hsl(120, 100%, 75%);}&nbsp;&nbsp;/* light green */
+#p3 {background-color: hsl(120, 100%, 25%);}&nbsp;&nbsp;/* dark
 green */
-      <br/>
-      #p4 {background-color: hsl(120, 60%, 70%);}   /* pastel green */
-     </div>
+#p4 {background-color: hsl(120, 60%, 70%);}&nbsp;&nbsp;&nbsp;/* pastel green */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -922,17 +935,23 @@ alpha parameter defines the opacity. The alpha parameter is a number between 0.0
      <h3>
       Example
      </h3>
-     <div class="code">
-      #p1 {background-color: hsla(120, 100%, 50%, 0.3);}  /* green with opacity */
-      <br/>
-      #p2 {background-color: hsla(120, 100%, 75%, 0.3);}  /* light green with opacity */
-      <br/>
-      #p3 {background-color: hsla(120, 100%, 25%, 0.3);}  /* dark 
+     <pre><code class="code language-css">#p1 {background-color: hsla(120, 100%, 50%, 0.3);}&nbsp; /* green with opacity */
+#p2 {background-color: hsla(120, 100%, 75%, 0.3);}&nbsp;&nbsp;/* light green with opacity */
+#p3 {background-color: hsla(120, 100%, 25%, 0.3);}&nbsp;&nbsp;/* dark
 green with opacity */
-      <br/>
-      #p4 {background-color: hsla(120, 60%, 70%, 0.3);}   /* pastel green 
-with opacity */
-     </div>
+#p4 {background-color: hsla(120, 60%, 70%, 0.3);}&nbsp;&nbsp;&nbsp;/* pastel green
+with opacity */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -976,16 +995,23 @@ transparent/opaque!
      <h3>
       Example
      </h3>
-     <div class="code">
-      #p1 {background-color:rgb(255,0,0);opacity:0.6;}  /* red with opacity 
+     <pre><code class="code language-css">#p1 {background-color:rgb(255,0,0);opacity:0.6;}&nbsp; /* red with opacity
 */
-      <br/>
-      #p2 {background-color:rgb(0,255,0);opacity:0.6;}  /* green with 
+#p2 {background-color:rgb(0,255,0);opacity:0.6;}&nbsp; /* green with
 opacity */
-      <br/>
-      #p3 {background-color:rgb(0,0,255);opacity:0.6;}  /* blue 
-with opacity */
-     </div>
+#p3 {background-color:rgb(0,0,255);opacity:0.6;}&nbsp; /* blue
+with opacity */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1001,8 +1027,12 @@ with opacity */
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

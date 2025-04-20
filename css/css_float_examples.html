@@ -9,6 +9,7 @@
   <title>
    CSS Layout - Float Examples
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -465,7 +466,7 @@
       Clear
      </p>
     </a>
-    <a href="css_float_examples.html" class="selected">
+    <a class="selected" href="css_float_examples.html">
      <p>
       Float Examples
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -828,26 +828,27 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      * {
-      <br/>
-      box-sizing: border-box;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .box {
-      <br/>
-      float: left;
-      <br/>
-      width: 33.33%; /* three 
-  boxes (use 25% for four, and 50% for two, etc) */
-      <br/>
-      padding: 
-  50px; /* if you want space between the images */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">* {
+box-sizing: border-box;
+}
+.box {
+float: left;
+width: 33.33%; /* three
+boxes (use 25% for four, and 50% for two, etc) */
+padding:
+50px; /* if you want space between the images */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -892,19 +893,24 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      .img-container {
-      <br/>
-      float: left;
-      <br/>
-      width: 33.33%; /* three 
-  containers (use 25% for four, and 50% for two, etc) */
-      <br/>
-      padding: 
-  5px; /* if you want space between the images */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.img-container {
+float: left;
+width: 33.33%; /* three
+containers (use 25% for four, and 50% for two, etc) */
+padding:
+5px; /* if you want space between the images */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -942,13 +948,20 @@ however, is to set a fixed height, like in the example below:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .box {
-      <br/>
-      height: 500px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.box {
+height: 500px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1039,54 +1052,40 @@ boxes to be as long as the longest box:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .header, .footer {
-      <br/>
-      background-color: grey;
-      <br/>
-      color: white;
-      <br/>
-      padding: 15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .column {
-      <br/>
-      float: left;
-      <br/>
-      padding: 15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .clearfix::after {
-      <br/>
-      content: 
-  "";
-      <br/>
-      clear: both;
-      <br/>
-      display: table;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .menu {
-      <br/>
-      width: 25%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .content {
-      <br/>
-      width: 75%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.header, .footer {
+background-color: grey;
+color: white;
+padding: 15px;
+}
+.column {
+float: left;
+padding: 15px;
+}
+.clearfix::after {
+content:
+"";
+clear: both;
+display: table;
+}
+.menu {
+width: 25%;
+}
+.content {
+width: 75%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
-    <hr>
+    <hr/>
     <h2>
      All CSS Float Properties
     </h2>
@@ -1101,7 +1100,7 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        box-sizing
+       box-sizing
       </td>
       <td>
        Defines how the width and height of an element are calculated: should they include padding and borders, or not
@@ -1109,7 +1108,7 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        clear
+       clear
       </td>
       <td>
        Specifies what should happen with the element that is next to a floating 
@@ -1118,7 +1117,7 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        float
+       float
       </td>
       <td>
        Specifies whether an element should float to the left, right, or not at 
@@ -1127,7 +1126,7 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        overflow
+       overflow
       </td>
       <td>
        Specifies what happens if content overflows an element's box
@@ -1135,7 +1134,7 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        overflow-x
+       overflow-x
       </td>
       <td>
        Specifies what to do with the left/right edges of the content if it overflows the element's content area
@@ -1143,16 +1142,16 @@ boxes to be as long as the longest box:
      </tr>
      <tr>
       <td>
-        overflow-y
+       overflow-y
       </td>
       <td>
        Specifies what to do with the top/bottom edges of the content if it overflows the element's content area
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_float_clear.html">
       ❮ Previous
      </a>
@@ -1164,8 +1163,12 @@ boxes to be as long as the longest box:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

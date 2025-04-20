@@ -9,6 +9,7 @@
   <title>
    CSS Variables - The var() function
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -660,7 +661,7 @@
     <p>
      CSS Variables
     </p>
-    <a href="css3_variables.html" class="selected">
+    <a class="selected" href="css3_variables.html">
      <p>
       The var() Function
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -812,38 +812,32 @@ place them in variables.
      <h3>
       Example
      </h3>
-     <div class="code">
-      body { background-color: #1e90ff; }
-      <br/>
-      <br/>
-      h2 { border-bottom: 2px solid #1e90ff; }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: 
-  #1e90ff;
-      <br/>
-      background-color: #ffffff;
-      <br/>
-      padding: 15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      background-color: #ffffff;
-      <br/>
-      color: #1e90ff;
-      <br/>
-      border: 1px 
-  solid #1e90ff;
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body { background-color: #1e90ff; }
+h2 { border-bottom: 2px solid #1e90ff; }
+.container {
+color:
+#1e90ff;
+background-color: #ffffff;
+padding: 15px;
+}
+button {
+background-color: #ffffff;
+color: #1e90ff;
+border: 1px
+solid #1e90ff;
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -929,7 +923,7 @@ local variables can be used only inside the selector where it is declared.
      </code>
      selector. The
      <code class="codespan">
-       :root
+      :root
      </code>
      selector matches the document's root element.
     </p>
@@ -954,46 +948,35 @@ local variables can be used only inside the selector where it is declared.
      <h3>
       Example
      </h3>
-     <div class="code">
-      :root {
-      <br/>
-      --blue: #1e90ff;
-      <br/>
-      --white: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body { background-color: var(--blue); }
-      <br/>
-      <br/>
-      h2 { border-bottom: 2px solid var(--blue); }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: var(--blue);
-      <br/>
-      background-color: var(--white);
-      <br/>
-      padding: 
-  15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      background-color: var(--white);
-      <br/>
-      color: var(--blue);
-      <br/>
-      border: 1px solid var(--blue);
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">:root {
+--blue: #1e90ff;
+--white: #ffffff;
+}
+body { background-color: var(--blue); }
+h2 { border-bottom: 2px solid var(--blue); }
+.container {
+color: var(--blue);
+background-color: var(--white);
+padding:
+15px;
+}
+button {
+background-color: var(--white);
+color: var(--blue);
+border: 1px solid var(--blue);
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <p>
@@ -1015,46 +998,35 @@ to change the two variable values:
      <h3>
       Example
      </h3>
-     <div class="code">
-      :root {
-      <br/>
-      --blue: #6495ed;
-      <br/>
-      --white: #faf0e6;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body { background-color: var(--blue); }
-      <br/>
-      <br/>
-      h2 { border-bottom: 2px solid var(--blue); }
-      <br/>
-      <br/>
-      .container {
-      <br/>
-      color: var(--blue);
-      <br/>
-      background-color: var(--white);
-      <br/>
-      padding: 
-  15px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      button {
-      <br/>
-      background-color: var(--white);
-      <br/>
-      color: var(--blue);
-      <br/>
-      border: 1px solid var(--blue);
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">:root {
+--blue: #6495ed;
+--white: #faf0e6;
+}
+body { background-color: var(--blue); }
+h2 { border-bottom: 2px solid var(--blue); }
+.container {
+color: var(--blue);
+background-color: var(--white);
+padding:
+15px;
+}
+button {
+background-color: var(--white);
+color: var(--blue);
+border: 1px solid var(--blue);
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1072,16 +1044,16 @@ to change the two variable values:
      </tr>
      <tr>
       <td>
-        var()
+       var()
       </td>
       <td>
        Inserts the value of a CSS variable
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_shadows_box.html">
       ❮ Previous
      </a>
@@ -1093,8 +1065,12 @@ to change the two variable values:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

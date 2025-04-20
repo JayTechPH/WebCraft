@@ -9,6 +9,7 @@
   <title>
    CSS Borders
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -277,7 +278,7 @@
     <p>
      CSS Borders
     </p>
-    <a href="css_border.html" class="selected">
+    <a class="selected" href="css_border.html">
      <p>
       Borders
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -899,33 +899,32 @@ the top border, right border, bottom border, and the left border).
      <p>
       Demonstration of the different border styles:
      </p>
-     <div class="code">
-      p.dotted {border-style: dotted;}
-      <br/>
-      p.dashed 
+     <pre><code class="code language-css">p.dotted {border-style: dotted;}
+p.dashed
 {border-style: dashed;}
-      <br/>
-      p.solid {border-style: solid;}
-      <br/>
-      p.double 
+p.solid {border-style: solid;}
+p.double
 {border-style: double;}
-      <br/>
-      p.groove {border-style: groove;}
-      <br/>
-      p.ridge 
+p.groove {border-style: groove;}
+p.ridge
 {border-style: ridge;}
-      <br/>
-      p.inset {border-style: inset;}
-      <br/>
-      p.outset 
+p.inset {border-style: inset;}
+p.outset
 {border-style: outset;}
-      <br/>
-      p.none {border-style: none;}
-      <br/>
-      p.hidden {border-style: hidden;}
-      <br/>
-      p.mix {border-style: dotted dashed solid double;}
-     </div>
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -991,8 +990,12 @@ the top border, right border, bottom border, and the left border).
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

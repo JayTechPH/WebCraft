@@ -9,6 +9,7 @@
   <title>
    CSS Height, Width and Max-width
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -88,7 +89,7 @@
       CSS Padding
      </p>
     </a>
-    <a href="css_dimension.html" class="selected">
+    <a class="selected" href="css_dimension.html">
      <p>
       CSS Height/Width
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -892,18 +892,23 @@ default value
      <p>
       Set the height and width of a &lt;div&gt; element:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      height: 
+     <pre><code class="code language-css">div {
+height:
 200px;
-      <br/>
-      width: 50%;
-      <br/>
-      background-color: powderblue;
-      <br/>
-      }
-     </div>
+width: 50%;
+background-color: powderblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-theme-border" style="height:100px;width:500px;padding:10px;background-color:powderblue;color:black">
      This element has a height of 100 pixels and a width of 500 pixels.
@@ -915,18 +920,23 @@ default value
      <p>
       Set the height and width of another &lt;div&gt; element:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      height: 
+     <pre><code class="code language-css">div {
+height:
 100px;
-      <br/>
-      width: 500px;
-      <br/>
-      background-color: powderblue;
-      <br/>
-      }
-     </div>
+width: 500px;
+background-color: powderblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1031,18 +1041,23 @@ the two divs!
       This &lt;div&gt; element has a height of 100 pixels and a 
 max-width of 500 pixels:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      max-width: 500px;
-      <br/>
-      height: 
+     <pre><code class="code language-css">div {
+max-width: 500px;
+height:
 100px;
-      <br/>
-      background-color: powderblue;
-      <br/>
-      }
-     </div>
+background-color: powderblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1059,7 +1074,7 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        height
+       height
       </td>
       <td>
        Sets the height of an element
@@ -1067,7 +1082,7 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        max-height
+       max-height
       </td>
       <td>
        Sets the maximum height of an element
@@ -1075,7 +1090,7 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        max-width
+       max-width
       </td>
       <td>
        Sets the maximum width of an element
@@ -1083,7 +1098,7 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        min-height
+       min-height
       </td>
       <td>
        Sets the minimum height of an element
@@ -1091,7 +1106,7 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        min-width
+       min-width
       </td>
       <td>
        Sets the minimum width of an element
@@ -1099,16 +1114,16 @@ max-width of 500 pixels:
      </tr>
      <tr>
       <td>
-        width
+       width
       </td>
       <td>
        Sets the width of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_padding.html">
       ❮ Previous
      </a>
@@ -1120,8 +1135,12 @@ max-width of 500 pixels:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

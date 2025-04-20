@@ -20,7 +20,7 @@ main {
 }
 .main1 {
     position: relative;
-    background: rgb(32, 35, 116);
+    background: #202374;
     background: radial-gradient(circle, rgba(32, 35, 116, 1) 0%, rgba(3, 5, 66, 1) 100%);
     width: 100%;
     display: flex;
@@ -263,4 +263,20 @@ video {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.playbutton {
+    position: absolute;
+    bottom: 1.5vw;
+    right: 3.5vw;
+    background: #4B4E55;
+    color: white;
+    border: none;
+    padding: 1vw;
+    border-radius: 50%;
+}
+
+.playbutton svg {
+    width: 2.2vw;
+    height: 2vw;
 }

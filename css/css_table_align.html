@@ -9,6 +9,7 @@
   <title>
    CSS Table Alignment
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -437,7 +438,7 @@
       Table Size
      </p>
     </a>
-    <a href="css_table_align.html" class="selected">
+    <a class="selected" href="css_table_align.html">
      <p>
       Table Alignment
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -796,7 +796,7 @@ of the content in &lt;th&gt; or &lt;td&gt;.
 content of &lt;td&gt; elements are left-aligned.
     </p>
     <p>
-     To center-align the content of  &lt;td&gt; elements as well, use
+     To center-align the content of&nbsp; &lt;td&gt; elements as well, use
      <code class="codespan">
       text-align: center
      </code>
@@ -852,14 +852,21 @@ content of &lt;td&gt; elements are left-aligned.
      <h3>
       Example
      </h3>
-     <div class="code">
-      td
+     <pre><code class="code language-css">td
 {
-      <br/>
-      text-align: center;
-      <br/>
-      }
-     </div>
+text-align: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      To left-align the content, force the alignment of &lt;th&gt; elements to be 
@@ -919,14 +926,21 @@ left-aligned, with the
      <h3>
       Example
      </h3>
-     <div class="code">
-      th
+     <pre><code class="code language-css">th
 {
-      <br/>
-      text-align: left;
-      <br/>
-      }
-     </div>
+text-align: left;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -997,16 +1011,22 @@ and &lt;td&gt; elements).
      <h3>
       Example
      </h3>
-     <div class="code">
-      td
+     <pre><code class="code language-css">td
 {
-      <br/>
-      height: 50px;
-      <br/>
-      vertical-align: bottom;
-      <br/>
-      }
-     </div>
+height: 50px;
+vertical-align: bottom;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1022,8 +1042,12 @@ and &lt;td&gt; elements).
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

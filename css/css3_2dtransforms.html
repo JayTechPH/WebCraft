@@ -9,6 +9,7 @@
   <title>
    CSS 2D Transforms
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -526,7 +527,7 @@
       CSS Web Fonts
      </p>
     </a>
-    <a href="css3_2dtransforms.html" class="selected">
+    <a class="selected" href="css3_2dtransforms.html">
      <p>
       CSS 2D Transforms
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -896,14 +896,21 @@ and 100 pixels down from its current position:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: translate(50px, 100px);
-      <br/>
-      }
-     </div>
+transform: translate(50px, 100px);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -924,14 +931,21 @@ and 100 pixels down from its current position:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: rotate(20deg);
-      <br/>
-      }
-     </div>
+transform: rotate(20deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Using negative values will rotate the element counter-clockwise.
@@ -943,14 +957,21 @@ and 100 pixels down from its current position:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: rotate(-20deg);
-      <br/>
-      }
-     </div>
+transform: rotate(-20deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -975,14 +996,21 @@ and 100 pixels down from its current position:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scale(2, 3);
-      <br/>
-      }
-     </div>
+transform: scale(2, 3);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example decreases the &lt;div&gt; element to be half of its original width and height:
@@ -991,14 +1019,21 @@ and 100 pixels down from its current position:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scale(0.5, 0.5);
-      <br/>
-      }
-     </div>
+transform: scale(0.5, 0.5);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1019,14 +1054,21 @@ width of an element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scaleX(2);
-      <br/>
-      }
-     </div>
+transform: scaleX(2);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example decreases the &lt;div&gt; element to be half of its original width:
@@ -1035,14 +1077,21 @@ width of an element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scaleX(0.5);
-      <br/>
-      }
-     </div>
+transform: scaleX(0.5);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1064,14 +1113,21 @@ height:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scaleY(3);
-      <br/>
-      }
-     </div>
+transform: scaleY(3);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example decreases the &lt;div&gt; element to be half of its original 
@@ -1081,14 +1137,21 @@ height:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: scaleY(0.5);
-      <br/>
-      }
-     </div>
+transform: scaleY(0.5);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1109,14 +1172,21 @@ X-axis:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: skewX(20deg);
-      <br/>
-      }
-     </div>
+transform: skewX(20deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1136,14 +1206,21 @@ X-axis:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: skewY(20deg);
-      <br/>
-      }
-     </div>
+transform: skewY(20deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1163,14 +1240,21 @@ X-axis:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: skew(20deg, 10deg);
-      <br/>
-      }
-     </div>
+transform: skew(20deg, 10deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the second parameter is not specified, it has a zero value. So, the following example skews the &lt;div&gt; element 20 degrees along the X-axis:
@@ -1179,14 +1263,21 @@ X-axis:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: skew(20deg);
-      <br/>
-      }
-     </div>
+transform: skew(20deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1212,14 +1303,21 @@ which allows you to rotate, scale, move (translate), and skew elements.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transform: matrix(1, -0.3, 0, 1, 0, 0);
-      <br/>
-      }
-     </div>
+transform: matrix(1, -0.3, 0, 1, 0, 0);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1239,7 +1337,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        transform
+       transform
       </td>
       <td>
        Applies a 2D or 3D transformation to an element
@@ -1247,7 +1345,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        transform-origin
+       transform-origin
       </td>
       <td>
        Allows you to change the position on transformed elements
@@ -1268,7 +1366,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        matrix()
+       matrix()
       </td>
       <td>
        Defines a 2D transformation, using a matrix of six values
@@ -1276,7 +1374,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        translate()
+       translate()
       </td>
       <td>
        Defines a 2D translation, moving the element along the X- and the Y-axis
@@ -1284,7 +1382,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        translateX()
+       translateX()
       </td>
       <td>
        Defines a 2D translation, moving the element along the X-axis
@@ -1292,7 +1390,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        translateY()
+       translateY()
       </td>
       <td>
        Defines a 2D translation, moving the element along the Y-axis
@@ -1300,7 +1398,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        scale()
+       scale()
       </td>
       <td>
        Defines a 2D scale transformation, scaling the elements width and height
@@ -1308,7 +1406,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        scaleX()
+       scaleX()
       </td>
       <td>
        Defines a 2D scale transformation, scaling the element's width
@@ -1316,7 +1414,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        scaleY()
+       scaleY()
       </td>
       <td>
        Defines a 2D scale transformation, scaling the element's height
@@ -1324,7 +1422,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        rotate()
+       rotate()
       </td>
       <td>
        Defines a 2D rotation, the angle is specified in the parameter
@@ -1332,7 +1430,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        skew()
+       skew()
       </td>
       <td>
        Defines a 2D skew transformation along the X- and the Y-axis
@@ -1340,7 +1438,7 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        skewX()
+       skewX()
       </td>
       <td>
        Defines a 2D skew transformation along the X-axis
@@ -1348,16 +1446,16 @@ which allows you to rotate, scale, move (translate), and skew elements.
      </tr>
      <tr>
       <td>
-        skewY()
+       skewY()
       </td>
       <td>
        Defines a 2D skew transformation along the Y-axis
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_fonts.html">
       ❮ Previous
      </a>
@@ -1369,8 +1467,12 @@ which allows you to rotate, scale, move (translate), and skew elements.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

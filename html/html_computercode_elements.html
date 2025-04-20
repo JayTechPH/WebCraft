@@ -8,46 +8,47 @@
   <title>
    HTML Computer Code Elements
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -178,7 +179,7 @@
       HTML Responsive
      </p>
     </a>
-    <a href="html_computercode_elements.html" class="selected">
+    <a class="selected" href="html_computercode_elements.html">
      <p>
       HTML Computercode
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -452,17 +452,22 @@ computer code.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;code&gt;
-      <br/>
-      x = 5;
-      <br/>
-      y = 6;
-      <br/>
-      z = x + y;
-      <br/>
-      &lt;/code&gt;
-     </div>
+     <pre><code class="code language-html">&lt;code&gt;
+x = 5;
+y = 6;
+z = x + y;
+&lt;/code&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -484,9 +489,18 @@ default monospace font.
      <p>
       Define some text as keyboard input in a document:
      </p>
-     <div class="code">
-      &lt;p&gt;Save the document by pressing &lt;kbd&gt;Ctrl + S&lt;/kbd&gt;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Save the document by pressing &lt;kbd&gt;Ctrl + S&lt;/kbd&gt;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <p>
       Result:
      </p>
@@ -517,12 +531,20 @@ the browser's default monospace font.
      <p>
       Define some text as sample output from a computer program in a document:
      </p>
-     <div class="code">
-      &lt;p&gt;Message from my computer:&lt;/p&gt;
-      <br/>
-      &lt;p&gt;&lt;samp&gt;File not found.&lt;br&gt;Press F1 to 
-  continue&lt;/samp&gt;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Message from my computer:&lt;/p&gt;
+&lt;p&gt;&lt;samp&gt;File not found.&lt;br&gt;Press F1 to
+continue&lt;/samp&gt;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <p>
       Result:
      </p>
@@ -546,7 +568,7 @@ the browser's default monospace font.
      <code class="codespan">
       &lt;code&gt;
      </code>
-     element  is used 
+     element&nbsp; is used 
 to define a piece of computer code. The content inside is displayed in the 
 browser's default monospace font.
     </p>
@@ -557,17 +579,22 @@ browser's default monospace font.
      <p>
       Define some text as computer code in a document:
      </p>
-     <div class="code">
-      &lt;code&gt;
-      <br/>
-      x = 5;
-      <br/>
-      y = 6;
-      <br/>
-      z = x + y;
-      <br/>
-      &lt;/code&gt;
-     </div>
+     <pre><code class="code language-html">&lt;code&gt;
+x = 5;
+y = 6;
+z = x + y;
+&lt;/code&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <p>
       Result:
      </p>
@@ -606,21 +633,24 @@ NOT preserve extra whitespace and line-breaks.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;pre&gt;
-      <br/>
-      &lt;code&gt;
-      <br/>
-      x = 5;
-      <br/>
-      y = 6;
-      <br/>
-      z = x + y;
-      <br/>
-      &lt;/code&gt;
-      <br/>
-      &lt;/pre&gt;
-     </div>
+     <pre><code class="code language-html">&lt;pre&gt;
+&lt;code&gt;
+x = 5;
+y = 6;
+z = x + y;
+&lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <p>
       Result:
      </p>
@@ -643,7 +673,7 @@ NOT preserve extra whitespace and line-breaks.
      <code class="codespan">
       &lt;var&gt;
      </code>
-     element  is used 
+     element&nbsp; is used 
 to define a variable in programming or in a mathematical expression. The 
 content inside is typically displayed in italic.
     </p>
@@ -654,10 +684,19 @@ content inside is typically displayed in italic.
      <p>
       Define some text as variables in a document:
      </p>
-     <div class="code">
-      &lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;, where &lt;var&gt;b&lt;/var&gt; 
-  is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;The area of a triangle is: 1/2 x &lt;var&gt;b&lt;/var&gt; x &lt;var&gt;h&lt;/var&gt;, where &lt;var&gt;b&lt;/var&gt;
+is the base, and &lt;var&gt;h&lt;/var&gt; is the vertical height.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      <p>
       Result:
      </p>
@@ -707,14 +746,14 @@ keyboard input
       <code class="codespan">
        &lt;code&gt;
       </code>
-      element defines a piece of computer code
+      element&nbsp;defines a piece of computer code
      </li>
      <li>
       The
       <code class="codespan">
        &lt;var&gt;
       </code>
-      element defines a variable in programming or in a mathematical expression
+      element&nbsp;defines a variable in programming or in a mathematical expression
      </li>
      <li>
       The
@@ -740,7 +779,7 @@ keyboard input
      </tr>
      <tr>
       <td>
-        &lt;code&gt;
+       &lt;code&gt;
       </td>
       <td>
        Defines programming code
@@ -748,7 +787,7 @@ keyboard input
      </tr>
      <tr>
       <td>
-        &lt;kbd&gt;
+       &lt;kbd&gt;
       </td>
       <td>
        Defines keyboard input
@@ -756,7 +795,7 @@ keyboard input
      </tr>
      <tr>
       <td>
-        &lt;samp&gt;
+       &lt;samp&gt;
       </td>
       <td>
        Defines computer output
@@ -764,7 +803,7 @@ keyboard input
      </tr>
      <tr>
       <td>
-        &lt;var&gt;
+       &lt;var&gt;
       </td>
       <td>
        Defines a variable
@@ -772,14 +811,14 @@ keyboard input
      </tr>
      <tr>
       <td>
-        &lt;pre&gt;
+       &lt;pre&gt;
       </td>
       <td>
        Defines preformatted text
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_responsive.html">
@@ -793,8 +832,10 @@ keyboard input
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

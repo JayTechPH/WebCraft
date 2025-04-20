@@ -9,6 +9,7 @@
   <title>
    CSS Flexbox Items
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -693,7 +694,7 @@
       Flex Container
      </p>
     </a>
-    <a href="css3_flexbox_items.html" class="selected">
+    <a class="selected" href="css3_flexbox_items.html">
      <p>
       Flex Items
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -816,19 +816,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The CSS properties we use for flex items are:
@@ -916,19 +920,23 @@ the flex items inside the flex container.
       </em>
       property can change the order of the flex items:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div style="order: 3"&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div style="order: 2"&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="order: 4"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div style="order: 1"&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div style="order: 3"&gt;1&lt;/div&gt;
+&lt;div style="order: 2"&gt;2&lt;/div&gt;
+&lt;div style="order: 4"&gt;3&lt;/div&gt;
+&lt;div style="order: 1"&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -968,18 +976,23 @@ the flex items inside the flex container.
      <p>
       Make the third flex item grow eight times faster than the other flex items:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div style="flex-grow: 1"&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div style="flex-grow: 1"&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="flex-grow: 
-  8"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div style="flex-grow: 1"&gt;1&lt;/div&gt;
+&lt;div style="flex-grow: 1"&gt;2&lt;/div&gt;
+&lt;div style="flex-grow:
+8"&gt;3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1054,32 +1067,30 @@ the flex items inside the flex container.
      <p>
       Do not let the third flex item shrink as much as the other flex items:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="flex-shrink: 
-  0"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;div&gt;5&lt;/div&gt;
-      <br/>
-      &lt;div&gt;6&lt;/div&gt;
-      <br/>
-      &lt;div&gt;7&lt;/div&gt;
-      <br/>
-      &lt;div&gt;8&lt;/div&gt;
-      <br/>
-      &lt;div&gt;9&lt;/div&gt;
-      <br/>
-      &lt;div&gt;10&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div style="flex-shrink:
+0"&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;div&gt;5&lt;/div&gt;
+&lt;div&gt;6&lt;/div&gt;
+&lt;div&gt;7&lt;/div&gt;
+&lt;div&gt;8&lt;/div&gt;
+&lt;div&gt;9&lt;/div&gt;
+&lt;div&gt;10&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1121,19 +1132,23 @@ the flex items inside the flex container.
      <p>
       Set the initial length of the third flex item to 200 pixels:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="flex-basis: 200px"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div style="flex-basis: 200px"&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1166,20 +1181,24 @@ the flex items inside the flex container.
       Make the third flex item not growable (0), not shrinkable (0), and with an 
 initial length of 200 pixels:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="flex: 
-  0 0 200px"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div style="flex:
+0 0 200px"&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1241,20 +1260,24 @@ container's
      <p>
       Align the third flex item in the middle of the container:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="align-self: 
-  center"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div&gt;2&lt;/div&gt;
+&lt;div style="align-self:
+center"&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -1264,21 +1287,25 @@ container's
       Align the second flex item at the top of the container, and the third flex item at the 
 bottom of the container:
      </p>
-     <div class="code">
-      &lt;div class="flex-container"&gt;
-      <br/>
-      &lt;div&gt;1&lt;/div&gt;
-      <br/>
-      &lt;div style="align-self: 
-  flex-start"&gt;2&lt;/div&gt;
-      <br/>
-      &lt;div style="align-self: 
-  flex-end"&gt;3&lt;/div&gt;
-      <br/>
-      &lt;div&gt;4&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="flex-container"&gt;
+&lt;div&gt;1&lt;/div&gt;
+&lt;div style="align-self:
+flex-start"&gt;2&lt;/div&gt;
+&lt;div style="align-self:
+flex-end"&gt;3&lt;/div&gt;
+&lt;div&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1298,7 +1325,7 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        align-self
+       align-self
       </td>
       <td>
        Specifies the alignment for a flex item (overrides the flex container's align-items property)
@@ -1306,7 +1333,7 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        flex
+       flex
       </td>
       <td>
        A shorthand property for the flex-grow, flex-shrink, and the flex-basis 
@@ -1315,7 +1342,7 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        flex-basis
+       flex-basis
       </td>
       <td>
        Specifies the initial length of a flex item
@@ -1323,7 +1350,7 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        flex-grow
+       flex-grow
       </td>
       <td>
        Specifies how much a flex item will grow relative to the rest of the flex items inside the container
@@ -1331,7 +1358,7 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        flex-shrink
+       flex-shrink
       </td>
       <td>
        Specifies how much a flex item will shrink relative to the rest of the flex items inside the container
@@ -1339,16 +1366,16 @@ bottom of the container:
      </tr>
      <tr>
       <td>
-        order
+       order
       </td>
       <td>
        Specifies the order of the flex items inside the container
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_flexbox_container.html">
       ❮ Previous
      </a>
@@ -1360,8 +1387,12 @@ bottom of the container:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Plug-Ins
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -417,7 +418,7 @@
       HTML Audio
      </p>
     </a>
-    <a href="html_object.html" class="selected">
+    <a class="selected" href="html_object.html">
      <p>
       HTML Plug-ins
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -514,9 +514,18 @@ but can also be used to include HTML in HTML:
       <h3>
        Example
       </h3>
-      <div class="code">
-       &lt;object width="100%" height="500px" data="snippet.html"&gt;&lt;/object&gt;
-      </div>
+      <pre><code class="code language-html">&lt;object width="100%" height="500px" data="snippet.html"&gt;&lt;/object&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <p>
       Or images if you like:
@@ -525,9 +534,18 @@ but can also be used to include HTML in HTML:
       <h3>
        Example
       </h3>
-      <div class="code">
-       &lt;object data="audi.jpeg"&gt;&lt;/object&gt;
-      </div>
+      <pre><code class="code language-html">&lt;object data="audi.jpeg"&gt;&lt;/object&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <hr/>
      <h2>
@@ -556,9 +574,18 @@ specification before HTML5.
       <h3>
        Example
       </h3>
-      <div class="code">
-       &lt;embed src="audi.jpeg"&gt;
-      </div>
+      <pre><code class="code language-html">&lt;embed src="audi.jpeg"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <div class="note">
       <p>
@@ -577,9 +604,18 @@ contain alternative text.
       <h3>
        Example
       </h3>
-      <div class="code">
-       &lt;embed width="100%" height="500px" src="snippet.html"&gt;
-      </div>
+      <pre><code class="code language-html">&lt;embed width="100%" height="500px" src="snippet.html"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <hr/>
      <div class="nextprev">
@@ -595,8 +631,10 @@ contain alternative text.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

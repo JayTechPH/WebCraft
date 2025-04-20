@@ -9,6 +9,7 @@
   <title>
    Responsive Web Design Media Queries
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -744,7 +745,7 @@
       RWD Grid View
      </p>
     </a>
-    <a href="css_rwd_mediaqueries.html" class="selected">
+    <a class="selected" href="css_rwd_mediaqueries.html">
      <p>
       RWD Media Queries
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -801,18 +801,22 @@ certain condition is true.
      <p>
       If the browser window is 600px or smaller, the background color will be lightblue:
      </p>
-     <div class="code">
-      @media only screen and (max-width: 600px) {
-      <br/>
-      body {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">@media only screen and (max-width: 600px) {
+body {
+background-color: lightblue;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -847,24 +851,26 @@ breakpoint.
      <p>
       Here we use a media query to add a breakpoint at 600px:
      </p>
-     <div class="code">
-      @media only screen and (max-width: 600px) {
-      <br/>
-      .item1 {grid-area: 1 / 
-  span 6;}
-      <br/>
-      .item2 {grid-area: 2 / span 6;}
-      <br/>
-      .item3 
-  {grid-area: 3 / span 6;}
-      <br/>
-      .item4 {grid-area: 4 / span 6;}
-      <br/>
-      .item5 {grid-area: 5 / span 6;}
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">@media only screen and (max-width: 600px) {
+.item1 {grid-area: 1 /
+span 6;}
+.item2 {grid-area: 2 / span 6;}
+.item3
+{grid-area: 3 / span 6;}
+.item4 {grid-area: 4 / span 6;}
+.item5 {grid-area: 5 / span 6;}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -902,56 +908,42 @@ breakpoint.
       Here we use media queries to add breakpoints when screen is max 600px, when 
 screen is min 600px, and when screen is min 768px :
      </p>
-     <div class="code">
-      @media only screen and (max-width: 600px) {
-      <br/>
-      .item1 {grid-area: 1 / 
-  span 6;}
-      <br/>
-      .item2 {grid-area: 2 / span 6;}
-      <br/>
-      .item3 
-  {grid-area: 3 / span 6;}
-      <br/>
-      .item4 {grid-area: 4 / span 6;}
-      <br/>
-      .item5 {grid-area: 5 / span 6;}
-      <br/>
-      }
-      <br/>
-      <br/>
-      @media 
-  only screen and (min-width: 600px) {
-      <br/>
-      .item1 {grid-area: 1 / span 6;}
-      <br/>
-      .item2 {grid-area: 2 / span 1;}
-      <br/>
-      .item3 {grid-area: 2 / span 4;}
-      <br/>
-      .item4 {grid-area: 3 / span 6;}
-      <br/>
-      .item5 {grid-area: 4 / span 6;}
-      <br/>
-      }
-      <br/>
-      <br/>
-      @media 
-  only screen and (min-width: 768px) {
-      <br/>
-      .item1 {grid-area: 1 / span 6;}
-      <br/>
-      .item2 {grid-area: 2 / span 1;}
-      <br/>
-      .item3 {grid-area: 2 / span 4;}
-      <br/>
-      .item4 {grid-area: 2 / span 1;}
-      <br/>
-      .item5 {grid-area: 3 / span 6;}
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">@media only screen and (max-width: 600px) {
+.item1 {grid-area: 1 /
+span 6;}
+.item2 {grid-area: 2 / span 6;}
+.item3
+{grid-area: 3 / span 6;}
+.item4 {grid-area: 4 / span 6;}
+.item5 {grid-area: 5 / span 6;}
+}
+@media
+only screen and (min-width: 600px) {
+.item1 {grid-area: 1 / span 6;}
+.item2 {grid-area: 2 / span 1;}
+.item3 {grid-area: 2 / span 4;}
+.item4 {grid-area: 3 / span 6;}
+.item5 {grid-area: 4 / span 6;}
+}
+@media
+only screen and (min-width: 768px) {
+.item1 {grid-area: 1 / span 6;}
+.item2 {grid-area: 2 / span 1;}
+.item3 {grid-area: 2 / span 4;}
+.item4 {grid-area: 2 / span 1;}
+.item5 {grid-area: 3 / span 6;}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -965,37 +957,33 @@ five groups:
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* 
-  Extra small devices (phones, 600px and down) */
-      <br/>
-      @media only screen and (max-width: 600px) 
-  {...}
-      <br/>
-      <br/>
-      /* Small devices (portrait tablets and large phones, 600px and up) 
-  */
-      <br/>
-      @media only screen and (min-width: 600px) {...}
-      <br/>
-      <br/>
-      /* Medium devices (landscape tablets, 768px and up) */
-      <br/>
-      @media only screen and (min-width: 768px) {...}
-      <br/>
-      <br/>
-      /* Large devices (laptops/desktops, 992px and up) 
-  */
-      <br/>
-      @media only screen and (min-width: 992px) {...}
-      <br/>
-      <br/>
-      /* Extra large devices (large 
-  laptops and desktops, 
-  1200px and up) */
-      <br/>
-      @media only screen and (min-width: 1200px) {...}
-     </div>
+     <pre><code class="code language-css">/*
+Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{...}
+/* Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up)
+*/
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large
+laptops and desktops,
+1200px and up) */
+@media only screen and (min-width: 1200px) {...}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1017,18 +1005,23 @@ orientation:
      <p>
       The web page will have a lightblue background if the orientation is in landscape mode:
      </p>
-     <div class="code">
-      @media only screen and (orientation: 
+     <pre><code class="code language-css">@media only screen and (orientation:
 landscape) {
-      <br/>
-      body {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+body {
+background-color: lightblue;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1044,21 +1037,24 @@ landscape) {
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* If the screen size is 600px wide or less, hide the element */
-      <br/>
-      @media 
-  only screen and (max-width: 600px) {
-      <br/>
-      div.example {
-      <br/>
-      display: none;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">/* If the screen size is 600px wide or less, hide the element */
+@media
+only screen and (max-width: 600px) {
+div.example {
+display: none;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1077,37 +1073,33 @@ different screen sizes:
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* If the screen size is 601px or 
-  more, set the font-size of &lt;div&gt; to 80px */
-      <br/>
-      @media only screen and (min-width: 
-  601px) {
-      <br/>
-      div.example {
-      <br/>
-      font-size: 80px;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* If the screen size is 600px or 
-  less, 
-  set the font-size of &lt;div&gt; to 30px */
-      <br/>
-      @media only screen and (max-width: 600px) {
-      <br/>
-      div.example {
-      <br/>
-      font-size: 30px;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">/* If the screen size is 601px or
+more, set the font-size of &lt;div&gt; to 80px */
+@media only screen and (min-width:
+601px) {
+div.example {
+font-size: 80px;
+}
+}
+/* If the screen size is 600px or
+less,
+set the font-size of &lt;div&gt; to 30px */
+@media only screen and (max-width: 600px) {
+div.example {
+font-size: 30px;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1129,8 +1121,12 @@ different screen sizes:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

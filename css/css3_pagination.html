@@ -9,6 +9,7 @@
   <title>
    CSS Pagination Examples
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -591,7 +592,7 @@
       CSS Buttons
      </p>
     </a>
-    <a href="css3_pagination.html" class="selected">
+    <a class="selected" href="css3_pagination.html">
      <p>
       CSS Pagination
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -796,7 +796,7 @@ pagination to each page:
       <ul class="pagination">
        <li>
         <a href="javascript:void(0)">
-         «
+         &laquo;
         </a>
        </li>
        <li>
@@ -831,7 +831,7 @@ pagination to each page:
        </li>
        <li>
         <a href="javascript:void(0)">
-         »
+         &raquo;
         </a>
        </li>
       </ul>
@@ -855,28 +855,28 @@ pagination to each page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination {
-      <br/>
-      display: inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .pagination a {
-      <br/>
-      color: 
+     <pre><code class="code language-css">.pagination {
+display: inline-block;
+}
+.pagination a {
+color:
 black;
-      <br/>
-      float: left;
-      <br/>
-      padding: 8px 
+float: left;
+padding: 8px
 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-     </div>
+text-decoration: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -885,7 +885,7 @@ black;
     <ul class="pagination2">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -925,7 +925,7 @@ black;
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -944,19 +944,23 @@ black;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a.active {
-      <br/>
-      background-color: 
+     <pre><code class="code language-css">.pagination a.active {
+background-color:
 #4CAF50;
-      <br/>
-      color: white;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .pagination a:hover:not(.active) {background-color: #ddd;}
-     </div>
+color: white;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Rounded Active and Hoverable Buttons
@@ -964,7 +968,7 @@ black;
     <ul class="pagination2 btnround">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1004,7 +1008,7 @@ black;
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1019,20 +1023,23 @@ black;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a {
-      <br/>
-      border-radius: 5px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .pagination a.active {
-      <br/>
-      border-radius: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.pagination a {
+border-radius: 5px;
+}
+.pagination a.active {
+border-radius: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Hoverable Transition Effect
@@ -1040,7 +1047,7 @@ black;
     <ul class="pagination2 hover">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1080,7 +1087,7 @@ black;
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1095,13 +1102,20 @@ black;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a {
-      <br/>
-      transition: background-color .3s;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.pagination a {
+transition: background-color .3s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1110,7 +1124,7 @@ black;
     <ul class="pagination2 border">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1150,7 +1164,7 @@ black;
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1165,15 +1179,21 @@ black;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a {
-      <br/>
-      border: 1px solid #ddd; /* Gray 
+     <pre><code class="code language-css">.pagination a {
+border: 1px solid #ddd; /* Gray
 */
-      <br/>
-      }
-      <br/>
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Rounded Borders
@@ -1188,7 +1208,7 @@ pagination:
     <ul class="pagination3 border">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1228,7 +1248,7 @@ pagination:
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1236,27 +1256,27 @@ pagination:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a:first-child {
-      <br/>
-      border-top-left-radius: 
+     <pre><code class="code language-css">.pagination a:first-child {
+border-top-left-radius:
 5px;
-      <br/>
-      border-bottom-left-radius: 5px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .pagination 
-  a:last-child {
-      <br/>
-      border-top-right-radius: 5px;
-      <br/>
-      border-bottom-right-radius: 5px;
-      <br/>
-      }
-      <br/>
-     </div>
+border-bottom-left-radius: 5px;
+}
+.pagination
+a:last-child {
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Space Between Links
@@ -1274,7 +1294,7 @@ pagination:
     <ul class="pagination2 border margin">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1314,7 +1334,7 @@ pagination:
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1322,15 +1342,21 @@ pagination:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a {
-      <br/>
-      margin: 0 4px; /* 0 is for top 
+     <pre><code class="code language-css">.pagination a {
+margin: 0 4px; /* 0 is for top
 and bottom. Feel free to change it */
-      <br/>
-      }
-      <br/>
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1339,7 +1365,7 @@ and bottom. Feel free to change it */
     <ul class="pagination2 border size">
      <li>
       <a href="#">
-       «
+       &laquo;
       </a>
      </li>
      <li>
@@ -1379,7 +1405,7 @@ and bottom. Feel free to change it */
      </li>
      <li>
       <a href="#">
-       »
+       &raquo;
       </a>
      </li>
     </ul>
@@ -1394,14 +1420,20 @@ and bottom. Feel free to change it */
      <h3>
       Example
      </h3>
-     <div class="code">
-      .pagination a {
-      <br/>
-      font-size: 22px;
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.pagination a {
+font-size: 22px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1411,7 +1443,7 @@ and bottom. Feel free to change it */
      <ul class="pagination2 border">
       <li>
        <a href="#">
-        «
+        &laquo;
        </a>
       </li>
       <li>
@@ -1451,7 +1483,7 @@ and bottom. Feel free to change it */
       </li>
       <li>
        <a href="#">
-        »
+        &raquo;
        </a>
       </li>
      </ul>
@@ -1466,14 +1498,20 @@ and bottom. Feel free to change it */
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.center {
+text-align: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1487,7 +1525,6 @@ and bottom. Feel free to change it */
       <iframe src="trycss_ex_pagination_nav.htm" style="border:none;width:100%;height:200px;">
       </iframe>
      </div>
-
     </div>
     <hr/>
     <h2>
@@ -1520,32 +1557,28 @@ and bottom. Feel free to change it */
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul.breadcrumb {
-      <br/>
-      padding: 8px 16px;
-      <br/>
-      list-style: none;
-      <br/>
-      background-color: #eee;
-      <br/>
-      }
-      <br/>
-      <br/>
-      ul.breadcrumb li {display: inline;}
-      <br/>
-      <br/>
-      ul.breadcrumb li+li:before {
-      <br/>
-      padding: 8px;
-      <br/>
-      color: black;
-      <br/>
-      content: "/\00a0";
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">ul.breadcrumb {
+padding: 8px 16px;
+list-style: none;
+background-color: #eee;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+padding: 8px;
+color: black;
+content: "/\00a0";
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <br/>
     <div class="nextprev">
@@ -1560,8 +1593,12 @@ and bottom. Feel free to change it */
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

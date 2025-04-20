@@ -9,6 +9,7 @@
   <title>
    CSS Margin
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -310,7 +311,7 @@
     <p>
      CSS Margins
     </p>
-    <a href="css_margin.html" class="selected">
+    <a class="selected" href="css_margin.html">
      <p>
       Margins
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -869,19 +869,23 @@ side of an element:
      <p>
       Set different margins for all four sides of a &lt;p&gt; element:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      margin-top: 100px;
-      <br/>
-      margin-bottom: 100px;
-      <br/>
-      margin-right: 150px;
-      <br/>
-      margin-left: 80px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -958,13 +962,20 @@ one property.
      <p>
       Use the margin shorthand property with four values:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      margin: 25px 50px 75px 100px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 25px 50px 75px 100px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -998,13 +1009,20 @@ one property.
      <p>
       Use the margin shorthand property with three values:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      margin: 25px 50px 75px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 25px 50px 75px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -1035,13 +1053,20 @@ one property.
      <p>
       Use the margin shorthand property with two values:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      margin: 25px 50px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 25px 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -1069,13 +1094,20 @@ one property.
      <p>
       Use the margin shorthand property with one value:
      </p>
-     <div class="code">
-      p {
-      <br/>
-      margin: 25px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+margin: 25px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1099,18 +1131,23 @@ will be split equally between the left and right margins.
      <p>
       Use margin: auto:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      width: 300px;
-      <br/>
-      margin: 
+     <pre><code class="code language-css">div {
+width: 300px;
+margin:
 auto;
-      <br/>
-      border: 1px solid red;
-      <br/>
-      }
-     </div>
+border: 1px solid red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1127,23 +1164,25 @@ auto;
      <p>
       Use of the inherit value:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      border: 1px solid red;
-      <br/>
-      margin-left: 100px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.ex1 {
-      <br/>
-      margin-left: 
+     <pre><code class="code language-css">div {
+border: 1px solid red;
+margin-left: 100px;
+}
+p.ex1 {
+margin-left:
 inherit;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1160,7 +1199,7 @@ inherit;
      </tr>
      <tr>
       <td>
-        margin
+       margin
       </td>
       <td>
        A shorthand property for setting all the margin properties in one declaration
@@ -1168,7 +1207,7 @@ inherit;
      </tr>
      <tr>
       <td>
-        margin-bottom
+       margin-bottom
       </td>
       <td>
        Sets the bottom margin of an element
@@ -1176,7 +1215,7 @@ inherit;
      </tr>
      <tr>
       <td>
-        margin-left
+       margin-left
       </td>
       <td>
        Sets the left margin of an element
@@ -1184,7 +1223,7 @@ inherit;
      </tr>
      <tr>
       <td>
-        margin-right
+       margin-right
       </td>
       <td>
        Sets the right margin of an element
@@ -1192,16 +1231,16 @@ inherit;
      </tr>
      <tr>
       <td>
-        margin-top
+       margin-top
       </td>
       <td>
        Sets the top margin of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_border_rounded.html">
       ❮ Previous
      </a>
@@ -1213,8 +1252,12 @@ inherit;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

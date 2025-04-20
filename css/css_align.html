@@ -9,6 +9,7 @@
   <title>
    CSS Layout - Horizontal &amp; Vertical Align
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -143,7 +144,7 @@
       CSS Inline-block
      </p>
     </a>
-    <a href="css_align.html" class="selected">
+    <a class="selected" href="css_align.html">
      <p>
       CSS Align
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -828,20 +828,24 @@ will be split equally between the two margins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center
+     <pre><code class="code language-css">.center
 {
-      <br/>
-      margin: auto;
-      <br/>
-      width: 50%;
-      <br/>
-      border: 3px solid green;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-     </div>
+margin: auto;
+width: 50%;
+border: 3px solid green;
+padding: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -873,15 +877,21 @@ will be split equally between the two margins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      text-align: center;
-      <br/>
-      border: 3px solid green;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.center {
+text-align: center;
+border: 3px solid green;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -913,20 +923,24 @@ will be split equally between the two margins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img
+     <pre><code class="code language-css">img
 {
-      <br/>
-      display: block;
-      <br/>
-      margin-left: auto;
-      <br/>
-      margin-right: auto;
-      <br/>
-      width: 40%;
-      <br/>
-      }
-     </div>
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 40%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -950,22 +964,25 @@ will be split equally between the two margins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .right
+     <pre><code class="code language-css">.right
 {
-      <br/>
-      position: absolute;
-      <br/>
-      right: 0px;
-      <br/>
-      width: 300px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-     </div>
+position: absolute;
+right: 0px;
+width: 300px;
+border: 3px solid #73AD21;
+padding: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -988,20 +1005,24 @@ will be split equally between the two margins:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .right
+     <pre><code class="code language-css">.right
 {
-      <br/>
-      float: right;
-      <br/>
-      width: 300px;
-      <br/>
-      border: 3px solid #73AD21;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-     </div>
+float: right;
+width: 300px;
+border: 3px solid #73AD21;
+padding: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1040,17 +1061,22 @@ this problem:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .clearfix::after {
-      <br/>
-      content: "";
-      <br/>
-      clear: both;
-      <br/>
-      display: table;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1072,16 +1098,22 @@ this problem:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      padding: 70px 0;
-      <br/>
-      border: 3px solid 
+     <pre><code class="code language-css">.center {
+padding: 70px 0;
+border: 3px solid
 green;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      To center both vertically and horizontally, use
@@ -1103,18 +1135,23 @@ green;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      padding: 70px 0;
-      <br/>
-      border: 3px solid 
+     <pre><code class="code language-css">.center {
+padding: 70px 0;
+border: 3px solid
 green;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-     </div>
+text-align: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1141,33 +1178,30 @@ to the
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      line-height: 200px;
-      <br/>
-      height: 200px;
-      <br/>
-      border: 3px solid green;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* If the text has multiple lines, add the 
+     <pre><code class="code language-css">.center {
+line-height: 200px;
+height: 200px;
+border: 3px solid green;
+text-align: center;
+}
+/* If the text has multiple lines, add the
 following: */
-      <br/>
-      .center p {
-      <br/>
-      line-height: 1.5;
-      <br/>
-      display: inline-block;
-      <br/>
-      vertical-align: middle;
-      <br/>
-      }
-     </div>
+.center p {
+line-height: 1.5;
+display: inline-block;
+vertical-align: middle;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1197,32 +1231,29 @@ following: */
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      height: 200px;
-      <br/>
-      position: relative;
-      <br/>
-      border: 3px solid green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .center p {
-      <br/>
-      margin: 0;
-      <br/>
-      position: absolute;
-      <br/>
-      top: 50%;
-      <br/>
-      left: 50%;
-      <br/>
-      transform: translate(-50%, -50%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.center {
+height: 200px;
+position: relative;
+border: 3px solid green;
+}
+.center p {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1253,22 +1284,25 @@ Chapter
      <h3>
       Example
      </h3>
-     <div class="code">
-      .center {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: center;
-      <br/>
-      align-items: center;
-      <br/>
-      height: 200px;
-      <br/>
-      border: 3px solid 
-  green;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.center {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 200px;
+border: 3px solid
+green;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1284,8 +1318,12 @@ Chapter
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Conic Gradients
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -639,7 +640,7 @@
       Radial Gradients
      </p>
     </a>
-    <a href="css3_gradients_conic.html" class="selected">
+    <a class="selected" href="css3_gradients_conic.html">
      <p>
       Conic Gradients
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -860,13 +860,20 @@ the center point.
      <p>
       A conic gradient with three colors:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(red, yellow, green);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(red, yellow, green);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -884,13 +891,20 @@ the center point.
      <p>
       A conic gradient with five colors:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(red, yellow, green, blue, black);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(red, yellow, green, blue, black);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -908,14 +922,21 @@ the center point.
      <p>
       A conic gradient with three colors and a degree for each color:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(red 45deg, yellow 
-    90deg, green 210deg);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(red 45deg, yellow
+90deg, green 210deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -934,16 +955,22 @@ the center point.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(red, yellow, green, blue, 
-    black);
-      <br/>
-      border-radius: 50%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(red, yellow, green, blue,
+black);
+border-radius: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Here is another pie chart with defined degrees for all the colors:
@@ -954,16 +981,22 @@ the center point.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 
-    180deg, green 180deg, green 270deg, blue 270deg);
-      <br/>
-      border-radius: 50%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow
+180deg, green 180deg, green 270deg, blue 270deg);
+border-radius: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -989,14 +1022,21 @@ rotated by.
      <p>
       A conic gradient with a from angle:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(from 90deg, red, yellow, 
-    green);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(from 90deg, red, yellow,
+green);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1022,14 +1062,21 @@ rotated by.
      <p>
       A conic gradient with a specified center position:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: conic-gradient(at 60% 45%, red, yellow, 
-    green);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: conic-gradient(at 60% 45%, red, yellow,
+green);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1051,16 +1098,22 @@ rotated by.
      <p>
       A repeating conic gradient:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: 
+     <pre><code class="code language-css">#grad {
+background-image:
 repeating-conic-gradient(red 10%, yellow 20%);
-      <br/>
-      border-radius: 50%;
-      <br/>
-      }
-     </div>
+border-radius: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Here is a repeating conic gradient with defined color-starts and color-stops:
@@ -1074,16 +1127,22 @@ repeating-conic-gradient(red 10%, yellow 20%);
      <p>
       A repeating conic gradient with defined color-starts and color-stops:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: 
+     <pre><code class="code language-css">#grad {
+background-image:
 repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
-      <br/>
-      border-radius: 50%;
-      <br/>
-      }
-     </div>
+border-radius: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1104,7 +1163,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         conic-gradient()
+        conic-gradient()
        </td>
        <td>
         Creates a conic gradient. Define at least two 
@@ -1113,7 +1172,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         linear-gradient()
+        linear-gradient()
        </td>
        <td>
         Creates a linear gradient. Define at least two 
@@ -1122,7 +1181,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         radial-gradient()
+        radial-gradient()
        </td>
        <td>
         Creates a radial gradient. Define at least two 
@@ -1131,7 +1190,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         repeating-conic-gradient()
+        repeating-conic-gradient()
        </td>
        <td>
         Repeats a conic gradient
@@ -1139,7 +1198,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         repeating-linear-gradient()
+        repeating-linear-gradient()
        </td>
        <td>
         Repeats a linear gradient
@@ -1147,7 +1206,7 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
       </tr>
       <tr>
        <td>
-         repeating-radial-gradient()
+        repeating-radial-gradient()
        </td>
        <td>
         Repeats a radial gradient
@@ -1168,8 +1227,12 @@ repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

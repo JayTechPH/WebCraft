@@ -8,46 +8,47 @@
   <title>
    HTML Forms
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -356,7 +357,7 @@
     <p>
      HTML Forms
     </p>
-    <a href="html_forms.html" class="selected">
+    <a class="selected" href="html_forms.html">
      <p>
       HTML Forms
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -453,7 +453,7 @@ most often sent to a server for processing.
       Example
      </h3>
      <div class="w3-white w3-padding notranslate">
-      <form  target="_blank">
+      <form target="_blank">
        <label for="fname">
         First name:
        </label>
@@ -484,20 +484,22 @@ most often sent to a server for processing.
 create an HTML form for user input:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      .
-      <br/>
-      <i>
-       form elements
-      </i>
-      <br/>
-      .
-      <br/>
-      &lt;/form&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+.
+form elements
+.
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -619,21 +621,25 @@ text input.
      <p>
       A form with input fields for text:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="text" id="fname" name="fname"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="text" id="fname" name="fname"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -740,30 +746,30 @@ be equal to the
      <p>
       A form with radio buttons:
      </p>
-     <div class="code">
-      &lt;p&gt;Choose your favorite Web language:&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;form&gt;
-      <br/>
-      &lt;input type="radio" id="html" name="fav_language" 
-  value="HTML"&gt;
-      <br/>
-      &lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="radio" id="css" name="fav_language" value="CSS"&gt;
-      <br/>
-      &lt;label 
-  for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="radio" id="javascript" 
-  name="fav_language" value="JavaScript"&gt;
-      <br/>
-      &lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Choose your favorite Web language:&lt;/p&gt;
+&lt;form&gt;
+&lt;input type="radio" id="html" name="fav_language"
+value="HTML"&gt;
+&lt;label for="html"&gt;HTML&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="radio" id="css" name="fav_language" value="CSS"&gt;
+&lt;label
+for="css"&gt;CSS&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="javascript"
+name="fav_language" value="JavaScript"&gt;
+&lt;label for="javascript"&gt;JavaScript&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -810,27 +816,29 @@ be equal to the
      <p>
       A form with checkboxes:
      </p>
-     <div class="code">
-      &lt;form&gt;
-      <br/>
-      &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
-      <br/>
-      &lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input 
-  type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
-      <br/>
-      &lt;label for="vehicle2"&gt; 
-  I have a car&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="checkbox" 
-  id="vehicle3" name="vehicle3" 
-  value="Boat"&gt;
-      <br/>
-      &lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form&gt;
+&lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+&lt;label for="vehicle1"&gt; I have a bike&lt;/label&gt;&lt;br&gt;
+&lt;input
+type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+&lt;label for="vehicle2"&gt;
+I have a car&lt;/label&gt;&lt;br&gt;
+&lt;input type="checkbox"
+id="vehicle3" name="vehicle3"
+value="Boat"&gt;
+&lt;label for="vehicle3"&gt; I have a boat&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
@@ -878,28 +886,31 @@ input data.
      <p>
       A form with a submit button:
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname" 
-  value="John"&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"
+value="John"&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is how the HTML code above will be displayed in a browser:
     </p>
-    <form  target="_blank">
+    <form target="_blank">
      First name:
      <br/>
      <input name="firstname" type="text" value="John"/>
@@ -936,18 +947,23 @@ input data.
      <p>
       This example will not submit the value of the "First name" input field:
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-  name:&lt;/label&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="text" id="fname" value="John"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" value="John"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <div class="nextprev">
@@ -962,8 +978,10 @@ input data.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Table Borders
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -272,7 +273,7 @@
       HTML Tables
      </p>
     </a>
-    <a href="html_table_borders.html" class="selected">
+    <a class="selected" href="html_table_borders.html">
      <p>
       Table Borders
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -473,14 +473,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      table, th, td
+     <pre><code class="code language-html">table, th, td
 {
-      <br/>
-      border: 1px solid black;
-      <br/>
-      }
-     </div>
+border: 1px solid black;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -504,15 +511,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      table, th, td {
-      <br/>
-      border: 1px solid black;
-      <br/>
-      border-collapse: collapse;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -527,21 +540,24 @@ you get the impression of an invisible border:
      <h3>
       Example
      </h3>
-     <div class="code">
-      table, th, td {
-      <br/>
-      border: 1px solid white;
-      <br/>
-      border-collapse: collapse;
-      <br/>
-      }
-      <br/>
-      th, td {
-      <br/>
-      background-color: #96D4D4;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">table, th, td {
+border: 1px solid white;
+border-collapse: collapse;
+}
+th, td {
+background-color: #96D4D4;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -558,16 +574,22 @@ you get the impression of an invisible border:
      <h3>
       Example
      </h3>
-     <div class="code">
-      table, th, td {
-      <br/>
-      border: 1px solid 
-  black;
-      <br/>
-      border-radius: 10px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">table, th, td {
+border: 1px solid
+black;
+border-radius: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <p>
@@ -581,16 +603,22 @@ you get the impression of an invisible border:
      <h3>
       Example
      </h3>
-     <div class="code">
-      th, td {
-      <br/>
-      border: 1px solid 
-  black;
-      <br/>
-      border-radius: 10px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">th, td {
+border: 1px solid
+black;
+border-radius: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -703,13 +731,20 @@ appearance of the border.
      <h3>
       Example
      </h3>
-     <div class="code">
-      th, td {
-      <br/>
-      border-style: dotted;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">th, td {
+border-style: dotted;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -726,13 +761,20 @@ appearance of the border.
      <h3>
       Example
      </h3>
-     <div class="code">
-      th, td {
-      <br/>
-      border-color: #96D4D4;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">th, td {
+border-color: #96D4D4;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -748,8 +790,10 @@ appearance of the border.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

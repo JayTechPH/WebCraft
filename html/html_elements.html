@@ -8,46 +8,47 @@
   <title>
    HTML Elements
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -73,7 +74,7 @@
       HTML Basic
      </p>
     </a>
-    <a href="html_elements.html" class="selected">
+    <a class="selected" href="html_elements.html">
      <p>
       HTML Elements
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -458,7 +458,7 @@ end tag.
      </b>
      is everything from the start tag to the end tag:
     </p>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -482,7 +482,7 @@ end tag.
     <p>
      Examples of some HTML elements:
     </p>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -504,7 +504,7 @@ end tag.
       </span>
      </span>
     </div>
-    <div >
+    <div>
      <span class="spes_tagname">
       <span class="spes_tag">
        &lt;
@@ -617,23 +617,24 @@ element). These elements are called empty elements. Empty elements do not have a
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;My First Heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;My first paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -670,17 +671,21 @@ a
      element:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;My First Heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;My first paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-     </div>
+     <pre><code class="code language-html">&lt;body&gt;
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -718,11 +723,19 @@ are two other elements:
      :
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;h1&gt;My First Heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;My first paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -743,9 +756,18 @@ are two other elements:
      :
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;h1&gt;My First Heading&lt;/h1&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h1&gt;My First Heading&lt;/h1&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -766,9 +788,18 @@ are two other elements:
      :
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;p&gt;My first paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -781,21 +812,23 @@ are two other elements:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;This is a paragraph
-      <br/>
-      &lt;p&gt;This is a paragraph
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;body&gt;
+&lt;p&gt;This is a paragraph
+&lt;p&gt;This is a paragraph
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -821,9 +854,18 @@ is an empty element without a closing tag:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -874,7 +916,7 @@ is an empty element without a closing tag:
      </tr>
      <tr>
       <td>
-        &lt;html&gt;
+       &lt;html&gt;
       </td>
       <td>
        Defines the root of an HTML document
@@ -882,7 +924,7 @@ is an empty element without a closing tag:
      </tr>
      <tr>
       <td>
-        &lt;body&gt;
+       &lt;body&gt;
       </td>
       <td>
        Defines the document's body
@@ -890,7 +932,7 @@ is an empty element without a closing tag:
      </tr>
      <tr>
       <td>
-        &lt;h1&gt; to &lt;h6&gt;
+       &lt;h1&gt; to &lt;h6&gt;
       </td>
       <td>
        Defines HTML headings
@@ -910,8 +952,10 @@ is an empty element without a closing tag:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

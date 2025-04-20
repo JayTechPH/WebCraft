@@ -8,46 +8,47 @@
   <title>
    HTML Table Styling
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -297,7 +298,7 @@
       Colspan &amp; Rowspan
      </p>
     </a>
-    <a href="html_table_styling.html" class="selected">
+    <a class="selected" href="html_table_styling.html">
      <p>
       Table Styling
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -536,13 +536,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr:nth-child(even) {
-      <br/>
-      background-color: #D6EEEE;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">tr:nth-child(even) {
+background-color: #D6EEEE;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -658,14 +665,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      td:nth-child(even),
-  th:nth-child(even) {
-      <br/>
-      background-color: #D6EEEE;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">td:nth-child(even),
+th:nth-child(even) {
+background-color: #D6EEEE;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -812,21 +826,24 @@ cells.
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr:nth-child(even) {
-      <br/>
-      background-color: rgba(150, 212, 212, 0.4);
-      <br/>
-      }
-      <br/>
-      <br/>
-      th:nth-child(even),td:nth-child(even) {
-      <br/>
-      background-color: rgba(150, 
-  212, 212, 0.4);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">tr:nth-child(even) {
+background-color: rgba(150, 212, 212, 0.4);
+}
+th:nth-child(even),td:nth-child(even) {
+background-color: rgba(150,
+212, 212, 0.4);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -900,13 +917,20 @@ cells.
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr {
-      <br/>
-      border-bottom: 1px solid #ddd;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-html">tr {
+border-bottom: 1px solid #ddd;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -974,9 +998,18 @@ over:
      <h3>
       Example
      </h3>
-     <div class="code">
-      tr:hover {background-color: #D6EEEE;}
-     </div>
+     <pre><code class="code language-html">tr:hover {background-color: #D6EEEE;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -992,8 +1025,10 @@ over:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

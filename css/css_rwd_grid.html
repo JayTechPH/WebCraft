@@ -9,6 +9,7 @@
   <title>
    Responsive Web Design Grid
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -739,7 +740,7 @@
       RWD Viewport
      </p>
     </a>
-    <a href="css_rwd_grid.html" class="selected">
+    <a class="selected" href="css_rwd_grid.html">
      <p>
       RWD Grid View
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -852,78 +852,53 @@ Menu, item3 = Main content, item4 = right, item5 = Footer):
      <p>
       Here is the complete HTML:
      </p>
-     <div class="code">
-      &lt;div class="grid-container"&gt;
-      <br/>
-      <br/>
-      &lt;div class="item1"&gt;
-      <br/>
-      &lt;h1&gt;Chania&lt;/h1&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="item2"&gt;
-      <br/>
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;The Flight&lt;/li&gt;
-      <br/>
-      &lt;li&gt;The City&lt;/li&gt;
-      <br/>
-      &lt;li&gt;The Island&lt;/li&gt;
-      <br/>
-      &lt;li&gt;The Food&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div 
-  class="item3"&gt;
-      <br/>
-      &lt;h1&gt;The City&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;Chania is the capital of the Chania 
-  region on the island of Crete.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;The city can be divided in two parts, 
-  the old town and the modern city. The old town is situated next to the old 
-  harbour and is the matrix around which the whole urban area was developed.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;Chania lies along the north west coast of the island Crete.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="item4"&gt;
-      <br/>
-      &lt;h2&gt;Facts:&lt;/h2&gt;
-      <br/>
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;Chania is a city 
-  on the island of Crete&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Crete is a Greek island in the 
-  Mediterranean Sea&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="item5"&gt;
-      <br/>
-      &lt;p&gt;Resize 
-  the browser window to see how the content respond to the resizing.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div class="grid-container"&gt;
+&lt;div class="item1"&gt;
+&lt;h1&gt;Chania&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div class="item2"&gt;
+&lt;ul&gt;
+&lt;li&gt;The Flight&lt;/li&gt;
+&lt;li&gt;The City&lt;/li&gt;
+&lt;li&gt;The Island&lt;/li&gt;
+&lt;li&gt;The Food&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div
+class="item3"&gt;
+&lt;h1&gt;The City&lt;/h1&gt;
+&lt;p&gt;Chania is the capital of the Chania
+region on the island of Crete.&lt;/p&gt;
+&lt;p&gt;The city can be divided in two parts,
+the old town and the modern city. The old town is situated next to the old
+harbour and is the matrix around which the whole urban area was developed.&lt;/p&gt;
+&lt;p&gt;Chania lies along the north west coast of the island Crete.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="item4"&gt;
+&lt;h2&gt;Facts:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chania is a city
+on the island of Crete&lt;/li&gt;
+&lt;li&gt;Crete is a Greek island in the
+Mediterranean Sea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="item5"&gt;
+&lt;p&gt;Resize
+the browser window to see how the content respond to the resizing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -948,186 +923,102 @@ when you resize the browser window to a very small width. In the next chapter yo
      <p>
       Here is the complete CSS:
      </p>
-     <div class="code">
-      * {
-      <br/>
-      margin: 0;
-      <br/>
-      box-sizing: border-box;
-      <br/>
-      }
-      <br/>
-      <br/>
-      body {
-      <br/>
-      font-family: "Lucida Sans", sans-serif;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .grid-container {
-      <br/>
-      display: grid;
-      <br/>
-      grid-template-areas:
-      <br/>
-      'header 
-  header header header header header'
-      <br/>
-      'menu main main main 
-  main right'
-      <br/>
-      'footer footer footer footer footer footer';
-      <br/>
-      gap: 10px;
-      <br/>
-      background-color: white;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .grid-container &gt; div {
-      <br/>
-      padding: 10px;
-      <br/>
-      font-size: 
-  16px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item1 {
-      <br/>
-      grid-area: header;
-      <br/>
-      background-color: purple;
-      <br/>
-      text-align: center;
-      <br/>
-      color: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item1 &gt; h1 {
-      <br/>
-      font-size: 
-  40px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item2 {
-      <br/>
-      grid-area: menu;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item2 ul {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item2 li {
-      <br/>
-      padding: 
-  8px;
-      <br/>
-      margin-bottom: 7px;
-      <br/>
-      background-color: #33b5e5;
-      <br/>
-      color: #ffffff;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item2 li:hover {
-      <br/>
-      background-color: #0099cc;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item3 
-  {
-      <br/>
-      grid-area: main;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item3 &gt; h1 {
-      <br/>
-      font-size: 30px;
-      <br/>
-      margin-bottom: 7px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item3 &gt; p {
-      <br/>
-      margin-bottom: 7px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item4 {
-      <br/>
-      grid-area: right;
-      <br/>
-      border: 2px solid #0099cc;
-      <br/>
-      background-color: white;
-      <br/>
-      padding: 15px;
-      <br/>
-      color: #000000;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item4 &gt; h2 {
-      <br/>
-      font-size: 20px;
-      <br/>
-      padding-bottom: 10px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item4 
-  li {
-      <br/>
-      padding: 5px;
-      <br/>
-      margin-bottom: 5px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .item5 {
-      <br/>
-      grid-area: footer;
-      <br/>
-      background-color: #0099cc;
-      <br/>
-      color: #ffffff;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">* {
+margin: 0;
+box-sizing: border-box;
+}
+body {
+font-family: "Lucida Sans", sans-serif;
+}
+.grid-container {
+display: grid;
+grid-template-areas:
+'header
+header header header header header'
+'menu main main main
+main right'
+'footer footer footer footer footer footer';
+gap: 10px;
+background-color: white;
+padding: 10px;
+}
+.grid-container &gt; div {
+padding: 10px;
+font-size:
+16px;
+}
+.item1 {
+grid-area: header;
+background-color: purple;
+text-align: center;
+color: #ffffff;
+}
+.item1 &gt; h1 {
+font-size:
+40px;
+}
+.item2 {
+grid-area: menu;
+}
+.item2 ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.item2 li {
+padding:
+8px;
+margin-bottom: 7px;
+background-color: #33b5e5;
+color: #ffffff;
+}
+.item2 li:hover {
+background-color: #0099cc;
+}
+.item3
+{
+grid-area: main;
+}
+.item3 &gt; h1 {
+font-size: 30px;
+margin-bottom: 7px;
+}
+.item3 &gt; p {
+margin-bottom: 7px;
+}
+.item4 {
+grid-area: right;
+border: 2px solid #0099cc;
+background-color: white;
+padding: 15px;
+color: #000000;
+}
+.item4 &gt; h2 {
+font-size: 20px;
+padding-bottom: 10px;
+}
+.item4
+li {
+padding: 5px;
+margin-bottom: 5px;
+}
+.item5 {
+grid-area: footer;
+background-color: #0099cc;
+color: #ffffff;
+text-align: center;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1143,8 +1034,12 @@ when you resize the browser window to a very small width. In the next chapter yo
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

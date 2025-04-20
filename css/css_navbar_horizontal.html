@@ -9,6 +9,7 @@
   <title>
    CSS Horizontal Navigation Bar
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -483,7 +484,7 @@
       Vertical Navbar
      </p>
     </a>
-    <a href="css_navbar_horizontal.html" class="selected">
+    <a class="selected" href="css_navbar_horizontal.html">
      <p>
       Horizontal Navbar
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -827,14 +827,21 @@ as inline, in addition to the "standard" code from the previous page:
      <h3>
       Example
      </h3>
-     <div class="code">
-      li
+     <pre><code class="code language-css">li
 {
-      <br/>
-      display: inline;
-      <br/>
-      }
-     </div>
+display: inline;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Example explained:
@@ -859,27 +866,28 @@ elements, and specify a layout for the navigation links:
      <h3>
       Example
      </h3>
-     <div class="code">
-      li
+     <pre><code class="code language-css">li
 {
-      <br/>
-      float: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a
+float: left;
+}
+a
 {
-      <br/>
-      display: block;
-      <br/>
-      padding: 8px;
-      <br/>
-      background-color: 
+display: block;
+padding: 8px;
+background-color:
 #dddddd;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Example explained:
@@ -927,14 +935,21 @@ a full-width background color:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul
+     <pre><code class="code language-css">ul
 {
-      <br/>
-      background-color: #dddddd;
-      <br/>
-      }
-     </div>
+background-color: #dddddd;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -971,54 +986,40 @@ them:
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      list-style-type: none;
-      <br/>
-      margin: 0;
-      <br/>
-      padding: 0;
-      <br/>
-      overflow: 
+     <pre><code class="code language-css">ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow:
 hidden;
-      <br/>
-      background-color: #333;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li {
-      <br/>
-      float: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li a {
-      <br/>
-      display: block;
-      <br/>
-      color: white;
-      <br/>
-      text-align: center;
-      <br/>
-      padding: 14px 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Change the link color to #111 (black) on hover */
-      <br/>
-      li a:hover {
-      <br/>
-      background-color: 
+background-color: #333;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color:
 #111;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Active/Current Navigation Link
@@ -1052,13 +1053,20 @@ hidden;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .active {
-      <br/>
-      background-color: #04AA6D;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.active {
+background-color: #04AA6D;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Right-Align Links
@@ -1096,20 +1104,24 @@ hidden;
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;li style="float:right"&gt;&lt;a 
+     <pre><code class="code language-css">&lt;ul&gt;
+&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#news"&gt;News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li style="float:right"&gt;&lt;a
 class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Border Dividers
@@ -1147,23 +1159,25 @@ class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* Add a gray right border to all list items, except the last item 
+     <pre><code class="code language-css">/* Add a gray right border to all list items, except the last item
 (last-child) */
-      <br/>
-      li {
-      <br/>
-      border-right: 1px solid #bbb;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li:last-child {
-      <br/>
-      border-right: none;
-      <br/>
-      }
-     </div>
+li {
+border-right: 1px solid #bbb;
+}
+li:last-child {
+border-right: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:35px;">
      Fixed Navigation Bar
@@ -1180,17 +1194,22 @@ class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
         <h3>
          Fixed Top
         </h3>
-        <div class="code">
-         ul {
-         <br/>
-         position: fixed;
-         <br/>
-         top: 0;
-         <br/>
-         width: 100%;
-         <br/>
-         }
-        </div>
+        <pre><code class="code language-css">ul {
+position: fixed;
+top: 0;
+width: 100%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
        </div>
       </div>
      </div>
@@ -1202,17 +1221,22 @@ class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
         <h3>
          Fixed Bottom
         </h3>
-        <div class="code">
-         ul {
-         <br/>
-         position: fixed;
-         <br/>
-         bottom: 0;
-         <br/>
-         width: 100%;
-         <br/>
-         }
-        </div>
+        <pre><code class="code language-css">ul {
+position: fixed;
+bottom: 0;
+width: 100%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
        </div>
       </div>
      </div>
@@ -1257,24 +1281,25 @@ class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      border: 1px solid #e7e7e7;
-      <br/>
-      background-color: #f3f3f3;
-      <br/>
-      }
-      <br/>
-      <br/>
-      li a {
-      <br/>
-      color: 
+     <pre><code class="code language-css">ul {
+border: 1px solid #e7e7e7;
+background-color: #f3f3f3;
+}
+li a {
+color:
 #666;
-      <br/>
-      }
-      <br/>
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3 style="margin-top:30px;">
      Sticky Navbar
@@ -1295,17 +1320,22 @@ class="active" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
      <h3>
       Example
      </h3>
-     <div class="code">
-      ul {
-      <br/>
-      position: -webkit-sticky; /* Safari */
-      <br/>
-      position: sticky;
-      <br/>
-      top: 0;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">ul {
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -1402,8 +1432,12 @@ sticky positioning to work.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

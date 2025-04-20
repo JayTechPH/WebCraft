@@ -9,6 +9,7 @@
   <title>
    CSS Background Image
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -254,7 +255,7 @@
       Background Color
      </p>
     </a>
-    <a href="css_background_image.html" class="selected">
+    <a class="selected" href="css_background_image.html">
      <p>
       Background Image
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -800,13 +800,20 @@
      <p>
       Set the background image for a page:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background-image: url("paper.gif");
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-image: url("paper.gif");
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -820,13 +827,20 @@
       of text and background image. The text is 
 hardly readable:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background-image: url("bgdesert.jpg");
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-image: url("bgdesert.jpg");
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -843,13 +857,20 @@ hardly readable:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      background-image: url("paper.gif");
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+background-image: url("paper.gif");
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -866,14 +887,14 @@ hardly readable:
      </tr>
      <tr>
       <td>
-        background-image
+       background-image
       </td>
       <td>
        Sets the background image for an element
       </td>
      </tr>
     </table>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_background.html">
       ❮ Previous
@@ -886,8 +907,12 @@ hardly readable:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

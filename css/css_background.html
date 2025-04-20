@@ -9,6 +9,7 @@
   <title>
    CSS Backgrounds
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -249,7 +250,7 @@
     <p>
      CSS Backgrounds
     </p>
-    <a href="css_background.html" class="selected">
+    <a class="selected" href="css_background.html">
      <p>
       Background Color
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -841,13 +841,20 @@ for elements.
      <p>
       The background color of a page is set like this:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-color: lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      With CSS, a color is most often specified by:
@@ -883,28 +890,27 @@ list of possible color values.
      <p>
       Here, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements will have different background colors:
      </p>
-     <div class="code">
-      h1 {
-      <br/>
-      background-color: green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      background-color: 
+     <pre><code class="code language-css">h1 {
+background-color: green;
+}
+div {
+background-color: lightblue;
+}
+p {
+background-color:
 yellow;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -951,15 +957,21 @@ yellow;
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      background-color: green;
-      <br/>
-      opacity: 0.3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+background-color: green;
+opacity: 0.3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -1057,13 +1069,20 @@ you can use an RGB color value with an
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1080,14 +1099,14 @@ you can use an RGB color value with an
      </tr>
      <tr>
       <td>
-        background-color
+       background-color
       </td>
       <td>
        Sets the background color of an element
       </td>
      </tr>
     </table>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_colors_hsl.html">
       ❮ Previous
@@ -1100,8 +1119,12 @@ you can use an RGB color value with an
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

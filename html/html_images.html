@@ -8,46 +8,47 @@
   <title>
    HTML Images
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -333,7 +334,7 @@
     <p>
      HTML Images
     </p>
-    <a href="html_images.html" class="selected">
+    <a class="selected" href="html_images.html">
      <p>
       Images
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -451,30 +451,55 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="pic_trulli.jpg" 
-alt="Italian Trulli"&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;img src="pic_trulli.jpg"
+alt="Italian Trulli"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg" 
-alt="Girl in a jacket"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg"
+alt="Girl in a jacket"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_chania.jpg" 
-alt="Flowers in Chania"&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_chania.jpg"
+alt="Flowers in Chania"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -502,7 +527,7 @@ space for the referenced image.
      <code class="codespan">
       &lt;img&gt;
      </code>
-     tag is empty, it contains attributes only, and does not 
+     tag&nbsp;is empty, it contains attributes only, and does not 
 have a closing tag.
     </p>
     <p>
@@ -525,17 +550,22 @@ attributes:
      <h3>
       Syntax
      </h3>
-     <div class="code">
-      &lt;img src="
-      <i>
-       url
-      </i>
-      " alt="
-      <em>
-       alternatetext
-      </em>
-      "&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="
+url
+" alt="
+alternatetext
+"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -566,10 +596,19 @@ link icon and the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_chania.jpg" alt="Flowers 
-  in Chania"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_chania.jpg" alt="Flowers
+in Chania"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -595,10 +634,19 @@ attribute, or if the user uses a screen reader).
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_chania.jpg" alt="Flowers 
-  in Chania"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_chania.jpg" alt="Flowers
+in Chania"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      If a browser cannot find an image, it will display the value of the
@@ -611,10 +659,19 @@ attribute, or if the user uses a screen reader).
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="wrongname.gif" alt="Flowers 
-  in Chania"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="wrongname.gif" alt="Flowers
+in Chania"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -641,9 +698,18 @@ height of an image.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Alternatively, you can use the
@@ -660,9 +726,18 @@ height of an image.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -718,38 +793,31 @@ the size of images:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      img {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;
-      <br/>
-      <br/>
-      &lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+img {
+width: 100%;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt;
+&lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -767,10 +835,19 @@ name in the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="/images/html5.gif" 
-alt="HTML5 Icon" style="width:128px;height:128px;"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="/images/html5.gif"
+alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -791,9 +868,18 @@ URL in the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="https://www.webcraft.com/images/w3schools_green.jpg" alt="WebCraft.com"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="https://www.webcraft.com/images/w3schools_green.jpg" alt="WebCraft.com"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      <b>
@@ -815,9 +901,18 @@ be removed or changed.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -838,14 +933,21 @@ be removed or changed.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="default.asp"&gt;
-      <br/>
-      &lt;img src="smiley.gif" alt="HTML tutorial" 
+     <pre><code class="code language-html">&lt;a href="default.asp"&gt;
+&lt;img src="smiley.gif" alt="HTML tutorial"
 style="width:42px;height:42px;"&gt;
-      <br/>
-      &lt;/a&gt;
-     </div>
+&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -862,20 +964,25 @@ style="width:42px;height:42px;"&gt;
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face"
+     <pre><code class="code language-html">&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face"
 style="float:right;width:42px;height:42px;"&gt;
-      <br/>
-      The image will float to the right of 
+The image will float to the right of
 the text.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face"
+&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face"
 style="float:left;width:42px;height:42px;"&gt;
-      <br/>
-      The image will float to the left of 
-the text.&lt;/p&gt;
-     </div>
+The image will float to the left of
+the text.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -1056,38 +1163,37 @@ the text.&lt;/p&gt;
      </tr>
      <tr>
       <td>
-        &lt;img&gt;
-       </td>
+       &lt;img&gt;
+      </td>
       <td>
        Defines an image
       </td>
      </tr>
      <tr>
       <td>
-        &lt;map&gt;
-       </td>
+       &lt;map&gt;
+      </td>
       <td>
        Defines an image map
       </td>
      </tr>
      <tr>
       <td>
-        &lt;area&gt;
-       </td>
+       &lt;area&gt;
+      </td>
       <td>
        Defines a clickable area inside an image map
       </td>
      </tr>
      <tr>
       <td>
-        &lt;picture&gt;
-       </td>
+       &lt;picture&gt;
+      </td>
       <td>
        Defines a container for multiple image resources
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_links_bookmarks.html">
@@ -1101,8 +1207,10 @@ the text.&lt;/p&gt;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Table Sizes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -277,7 +278,7 @@
       Table Borders
      </p>
     </a>
-    <a href="html_table_sizes.html" class="selected">
+    <a class="selected" href="html_table_sizes.html">
      <p>
       Table Sizes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -559,41 +559,34 @@ the entire table.
       <p>
        Set the width of the table to 100%:
       </p>
-      <div class="code">
-       &lt;table style="width:100%"&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;th&gt;Firstname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Lastname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Age&lt;/th&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;td&gt;Jill&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Smith&lt;/td&gt;
-       <br/>
-       &lt;td&gt;50&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;td&gt;Eve&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Jackson&lt;/td&gt;
-       <br/>
-       &lt;td&gt;94&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;/table&gt;
-      </div>
+      <pre><code class="code language-html">&lt;table style="width:100%"&gt;
+&lt;tr&gt;
+&lt;th&gt;Firstname&lt;/th&gt;
+&lt;th&gt;Lastname&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jill&lt;/td&gt;
+&lt;td&gt;Smith&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Eve&lt;/td&gt;
+&lt;td&gt;Jackson&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <div class="note">
       <p>
@@ -661,41 +654,34 @@ is the
       <p>
        Set the width of the first column to 70%:
       </p>
-      <div class="code">
-       &lt;table style="width:100%"&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;th style="width:70%"&gt;Firstname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Lastname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Age&lt;/th&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;td&gt;Jill&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Smith&lt;/td&gt;
-       <br/>
-       &lt;td&gt;50&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;td&gt;Eve&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Jackson&lt;/td&gt;
-       <br/>
-       &lt;td&gt;94&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;/table&gt;
-      </div>
+      <pre><code class="code language-html">&lt;table style="width:100%"&gt;
+&lt;tr&gt;
+&lt;th style="width:70%"&gt;Firstname&lt;/th&gt;
+&lt;th&gt;Lastname&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jill&lt;/td&gt;
+&lt;td&gt;Smith&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Eve&lt;/td&gt;
+&lt;td&gt;Jackson&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <hr/>
      <h2>
@@ -741,41 +727,34 @@ is the
       <p>
        Set the height of the second row to 200 pixels:
       </p>
-      <div class="code">
-       &lt;table style="width:100%"&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;th&gt;Firstname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Lastname&lt;/th&gt;
-       <br/>
-       &lt;th&gt;Age&lt;/th&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr style="height:200px"&gt;
-       <br/>
-       &lt;td&gt;Jill&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Smith&lt;/td&gt;
-       <br/>
-       &lt;td&gt;50&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;tr&gt;
-       <br/>
-       &lt;td&gt;Eve&lt;/td&gt;
-       <br/>
-       &lt;td&gt;Jackson&lt;/td&gt;
-       <br/>
-       &lt;td&gt;94&lt;/td&gt;
-       <br/>
-       &lt;/tr&gt;
-       <br/>
-       &lt;/table&gt;
-      </div>
+      <pre><code class="code language-html">&lt;table style="width:100%"&gt;
+&lt;tr&gt;
+&lt;th&gt;Firstname&lt;/th&gt;
+&lt;th&gt;Lastname&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr style="height:200px"&gt;
+&lt;td&gt;Jill&lt;/td&gt;
+&lt;td&gt;Smith&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Eve&lt;/td&gt;
+&lt;td&gt;Jackson&lt;/td&gt;
+&lt;td&gt;94&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
      </div>
      <hr/>
      <br/>
@@ -792,8 +771,10 @@ is the
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

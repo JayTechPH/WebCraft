@@ -9,6 +9,7 @@
   <title>
    CSS Font Size
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -404,7 +405,7 @@
       Font Style
      </p>
     </a>
-    <a href="css_font_size.html" class="selected">
+    <a class="selected" href="css_font_size.html">
      <p>
       Font Size
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -847,27 +847,26 @@ an absolute, or relative size.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      font-size: 40px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      font-size: 30px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      font-size: 14px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+font-size: 40px;
+}
+h2 {
+font-size: 30px;
+}
+p {
+font-size: 14px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -901,27 +900,26 @@ developers use em instead of pixels.
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      font-size: 2.5em; /* 40px/16=2.5em */
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      font-size: 1.875em; /* 30px/16=1.875em */
-      <br/>
-      }
-      <br/>
-      <br/>
-      p {
-      <br/>
-      font-size: 0.875em; /* 14px/16=0.875em */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+font-size: 2.5em; /* 40px/16=2.5em */
+}
+h2 {
+font-size: 1.875em; /* 30px/16=1.875em */
+}
+p {
+font-size: 0.875em; /* 14px/16=0.875em */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      In the example above, the text size in em is the same as the previous example 
@@ -945,34 +943,29 @@ percent for the &lt;body&gt; element:
       <h3>
        Example
       </h3>
-      <div class="code">
-       body {
-       <br/>
-       font-size: 100%;
-       <br/>
-       }
-       <br/>
-       <br/>
-       h1 {
-       <br/>
-       font-size: 2.5em;
-       <br/>
-       }
-       <br/>
-       <br/>
-       h2 {
-       <br/>
-       font-size: 1.875em;
-       <br/>
-       }
-       <br/>
-       <br/>
-       p {
-       <br/>
-       font-size: 0.875em;
-       <br/>
-       }
-      </div>
+      <pre><code class="code language-css">body {
+font-size: 100%;
+}
+h1 {
+font-size: 2.5em;
+}
+h2 {
+font-size: 1.875em;
+}
+p {
+font-size: 0.875em;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      </div>
      <p>
       Our code now works great! It shows the same text size in 
@@ -1004,13 +997,20 @@ all browsers, and allows all browsers to zoom or resize the text!
       <h3>
        Example
       </h3>
-      <div class="code">
-       &lt;h1 style="
-       <b>
-        font-size:10vw
-       </b>
-       "&gt;Hello World&lt;/h1&gt;
-      </div>
+      <pre><code class="code language-css">&lt;h1 style="
+font-size:10vw
+"&gt;Hello World&lt;/h1&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      </div>
      <div class="ws-note w3-panel">
       <p>
@@ -1032,8 +1032,12 @@ all browsers, and allows all browsers to zoom or resize the text!
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

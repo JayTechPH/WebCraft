@@ -8,46 +8,47 @@
   <title>
    HTML Style Guide and Coding Conventions
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -188,7 +189,7 @@
       HTML Semantics
      </p>
     </a>
-    <a href="html5_syntax.html" class="selected">
+    <a class="selected" href="html5_syntax.html">
      <p>
       HTML Style Guide
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -460,9 +460,18 @@
      The correct document type for HTML is:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -492,25 +501,39 @@
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;body&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      &lt;/body&gt;
-     </div>
+     <pre><code class="code language-html">&lt;body&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;BODY&gt;
-      <br/>
-      &lt;P&gt;This is a paragraph.&lt;/P&gt;
-      <br/>
-      &lt;/BODY&gt;
-     </div>
+     <pre><code class="code language-html">&lt;BODY&gt;
+&lt;P&gt;This is a paragraph.&lt;/P&gt;
+&lt;/BODY&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -530,29 +553,41 @@
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;section&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      &lt;/section&gt;
-     </div>
+     <pre><code class="code language-html">&lt;section&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;section&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.
-      <br/>
-      &lt;p&gt;This is a paragraph.
-      <br/>
-      &lt;/section&gt;
-     </div>
+     <pre><code class="code language-html">&lt;section&gt;
+&lt;p&gt;This is a paragraph.
+&lt;p&gt;This is a paragraph.
+&lt;/section&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -582,17 +617,35 @@
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;a HREF="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a HREF="https://www.webcraft.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -619,18 +672,36 @@
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;table 
-    class="striped"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table
+class="striped"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;table class=striped&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table class=striped&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -639,9 +710,18 @@
      <p>
       This will not work, because the value contains spaces:
      </p>
-     <div class="code">
-      &lt;table class=table striped&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table class=table striped&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -671,19 +751,37 @@ the image before loading.
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;img 
-    src="html5.gif" alt="HTML5" style="width:128px;height:128px"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img
+src="html5.gif" alt="HTML5" style="width:128px;height:128px"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;img 
-    src="html5.gif"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img
+src="html5.gif"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -697,18 +795,36 @@ groups entities better together.
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;link rel="stylesheet" href="styles.css"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;link 
-    rel = "stylesheet" href = "styles.css"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;link
+rel = "stylesheet" href = "styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -737,107 +853,108 @@ groups entities better together.
      <h3>
       Good:
      </h3>
-     <div class="code">
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;Famous Cities&lt;/h1&gt;
-      <br/>
-      <br/>
-      &lt;h2&gt;Tokyo&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Tokyo is the capital of Japan, the 
-    center of the Greater Tokyo Area, and the most 
-    populous metropolitan area in the world.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital city of England. It is the most populous city 
-  in the United Kingdom.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2&gt;Paris&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;Paris is the capital of France. The Paris area is one of the 
-  largest population centers in Europe.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-     </div>
+     <pre><code class="code language-html">&lt;body&gt;
+&lt;h1&gt;Famous Cities&lt;/h1&gt;
+&lt;h2&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan, the
+center of the Greater Tokyo Area, and the most
+populous metropolitan area in the world.&lt;/p&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital city of England. It is the most populous city
+in the United Kingdom.&lt;/p&gt;
+&lt;h2&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France. The Paris area is one of the
+largest population centers in Europe.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Bad:
      </h3>
-     <div class="code">
-      &lt;body&gt;
-      <br/>
-      &lt;h1&gt;Famous Cities&lt;/h1&gt;
-      <br/>
-      &lt;h2&gt;Tokyo&lt;/h2&gt;&lt;p&gt;Tokyo is the capital of Japan, the 
-    center of the Greater Tokyo Area, and the most 
-    populous metropolitan area in the world.&lt;/p&gt;
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;&lt;p&gt;London 
-  is the capital city of England. It is the most populous city in the United 
-  Kingdom.&lt;/p&gt;
-      <br/>
-      &lt;h2&gt;Paris&lt;/h2&gt;&lt;p&gt;Paris is the capital 
-  of France. The Paris area is one of the largest population centers in Europe.&lt;/p&gt;
-      <br/>
-      &lt;/body&gt;
-     </div>
+     <pre><code class="code language-html">&lt;body&gt;
+&lt;h1&gt;Famous Cities&lt;/h1&gt;
+&lt;h2&gt;Tokyo&lt;/h2&gt;&lt;p&gt;Tokyo is the capital of Japan, the
+center of the Greater Tokyo Area, and the most
+populous metropolitan area in the world.&lt;/p&gt;
+&lt;h2&gt;London&lt;/h2&gt;&lt;p&gt;London
+is the capital city of England. It is the most populous city in the United
+Kingdom.&lt;/p&gt;
+&lt;h2&gt;Paris&lt;/h2&gt;&lt;p&gt;Paris is the capital
+of France. The Paris area is one of the largest population centers in Europe.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Good Table Example:
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;Name&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Description&lt;/th&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;A&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Description of A&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;B&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Description of B&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;Description of A&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;Description of B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Good List Example:
      </h3>
-     <div class="code">
-      &lt;ul&gt;
-      <br/>
-      &lt;li&gt;London&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Paris&lt;/li&gt;
-      <br/>
-      &lt;li&gt;Tokyo&lt;/li&gt;
-      <br/>
-      &lt;/ul&gt;
-     </div>
+     <pre><code class="code language-html">&lt;ul&gt;
+&lt;li&gt;London&lt;/li&gt;
+&lt;li&gt;Paris&lt;/li&gt;
+&lt;li&gt;Tokyo&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -877,10 +994,19 @@ when listing pages in search results.
      So, try to make the title as accurate and meaningful as possible:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;title&gt;HTML 
-    Style Guide and Coding Conventions&lt;/title&gt;
-     </div>
+     <pre><code class="code language-html">&lt;title&gt;HTML
+Style Guide and Coding Conventions&lt;/title&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -901,20 +1027,23 @@ when listing pages in search results.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;title&gt;Page Title&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      However, we strongly recommend to always add the
@@ -968,25 +1097,25 @@ be omitted.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;title&gt;Page Title&lt;/title&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      However, we recommend using the
@@ -1006,18 +1135,36 @@ be omitted.
      <h3>
       Allowed:
      </h3>
-     <div class="code">
-      &lt;meta 
-    charset="utf-8"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta
+charset="utf-8"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
       Also Allowed:
      </h3>
-     <div class="code">
-      &lt;meta charset="utf-8" /&gt;
-     </div>
+     <pre><code class="code language-html">&lt;meta charset="utf-8" /&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      If you expect XML/XHTML software to access your page, keep the 
@@ -1044,30 +1191,28 @@ language of the Web page. This is meant to assist search engines and browsers.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html lang="en-us"&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;title&gt;Page Title&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h1&gt;This is a 
-    heading&lt;/h1&gt;
-      <br/>
-      &lt;p&gt;This is a paragraph.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-us"&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;This is a
+heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1086,20 +1231,24 @@ the character encoding
      should be defined as early as possible in an HTML document:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html 
-    lang="en-us"&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;meta charset="UTF-8"&gt;
-      <br/>
-      &lt;title&gt;Page Title&lt;/title&gt;
-      <br/>
-      &lt;/head&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html
+lang="en-us"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1195,25 +1344,40 @@ viewport meta tag
      Short comments should be written on one line, like this:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!-- This is a comment --&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!-- This is a comment --&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Comments that spans more than one line, should be written like this:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;!--
-      <br/>
-      This is a long comment example. This is 
-  a long comment example.
-      <br/>
-      This is a 
-  long comment example. This is a long comment example.
-      <br/>
-      --&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!--
+This is a long comment example. This is
+a long comment example.
+This is a
+long comment example. This is a long comment example.
+--&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Long comments are easier to observe if they are indented with two spaces.
@@ -1230,37 +1394,59 @@ viewport meta tag
      attribute is not necessary):
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;link rel="stylesheet" href="styles.css"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Short CSS rules can be written compressed, like this:
     </p>
     <div class="code-container">
-     <div class="code">
-      p.intro {font-family:Verdana;font-size:16em;}
-     </div>
+     <pre><code class="code language-html">p.intro {font-family:Verdana;font-size:16em;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Long CSS rules should be written over multiple lines:
     </p>
     <div class="code-container">
-     <div class="code">
-      body {
-      <br/>
-      background-color: lightgrey;
-      <br/>
-      font-family: "Arial 
+     <pre><code class="code language-html">body {
+background-color: lightgrey;
+font-family: "Arial
 Black", Helvetica, sans-serif;
-      <br/>
-      font-size: 16em;
-      <br/>
-      color: 
+font-size: 16em;
+color:
 black;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <ul>
      <li>
@@ -1294,9 +1480,18 @@ black;
      attribute is not necessary):
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;script src="myscript.js"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script src="myscript.js"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1418,8 +1613,10 @@ usually you can set up as many default filenames as you want.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

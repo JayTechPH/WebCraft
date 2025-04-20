@@ -9,6 +9,7 @@
   <title>
    CSS Text Indentation and Spacing
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -371,7 +372,7 @@
       Text Transformation
      </p>
     </a>
-    <a href="css_text_spacing.html" class="selected">
+    <a class="selected" href="css_text_spacing.html">
      <p>
       Text Spacing
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -828,13 +828,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      text-indent: 50px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+text-indent: 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -854,20 +861,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      h1 {
-      <br/>
-      letter-spacing: 5px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h2 {
-      <br/>
-      letter-spacing: -2px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">h1 {
+letter-spacing: 5px;
+}
+h2 {
+letter-spacing: -2px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -884,20 +894,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.small {
-      <br/>
-      line-height: 0.8;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.big {
-      <br/>
-      line-height: 1.8;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.small {
+line-height: 0.8;
+}
+p.big {
+line-height: 1.8;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -919,20 +932,23 @@ words:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.one {
-      <br/>
-      word-spacing: 10px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.two {
-      <br/>
-      word-spacing: -2px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.one {
+word-spacing: 10px;
+}
+p.two {
+word-spacing: -2px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -952,13 +968,20 @@ words:
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      white-space: nowrap;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+white-space: nowrap;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -975,7 +998,7 @@ words:
      </tr>
      <tr>
       <td>
-        letter-spacing
+       letter-spacing
       </td>
       <td>
        Specifies the space between characters in a text
@@ -983,7 +1006,7 @@ words:
      </tr>
      <tr>
       <td>
-        line-height
+       line-height
       </td>
       <td>
        Specifies the line height
@@ -991,7 +1014,7 @@ words:
      </tr>
      <tr>
       <td>
-        text-indent
+       text-indent
       </td>
       <td>
        Specifies the indentation of the first line in a text-block
@@ -999,7 +1022,7 @@ words:
      </tr>
      <tr>
       <td>
-        white-space
+       white-space
       </td>
       <td>
        Specifies how to handle white-space inside an element
@@ -1007,16 +1030,16 @@ words:
      </tr>
      <tr>
       <td>
-        word-spacing
+       word-spacing
       </td>
       <td>
        Specifies the space between words in a text
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_text_transformation.html">
       ❮ Previous
      </a>
@@ -1028,8 +1051,12 @@ words:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

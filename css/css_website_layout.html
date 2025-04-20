@@ -9,6 +9,7 @@
   <title>
    CSS Website Layout
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -198,7 +199,7 @@
       CSS Counters
      </p>
     </a>
-    <a href="css_website_layout.html" class="selected">
+    <a class="selected" href="css_website_layout.html">
      <p>
       CSS Website Layout
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -828,18 +828,23 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      .header {
-      <br/>
-      background-color: #F1F1F1;
-      <br/>
-      text-align: 
-   center;
-      <br/>
-      padding: 20px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.header {
+background-color: #F1F1F1;
+text-align:
+center;
+padding: 20px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result
      </p>
@@ -862,49 +867,38 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* The navbar container */
-      <br/>
-      .topnav {
-      <br/>
-      overflow: hidden;
-      <br/>
-      background-color: #333;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Navbar links */
-      <br/>
-      .topnav a {
-      <br/>
-      float: 
-   left;
-      <br/>
-      display: block;
-      <br/>
-      color: 
-   #f2f2f2;
-      <br/>
-      text-align: center;
-      <br/>
-      padding: 14px 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Links - change color on hover */
-      <br/>
-      .topnav a:hover {
-      <br/>
-      background-color: #ddd;
-      <br/>
-      color: black;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">/* The navbar container */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+/* Navbar links */
+.topnav a {
+float:
+left;
+display: block;
+color:
+#f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Links - change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result
      </p>
@@ -1018,48 +1012,39 @@ one (or combining them) of the following:
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* Create three equal columns that float next to each other */
-      <br/>
-      .column {
-      <br/>
-      float: left;
-      <br/>
-      width: 33.33%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Clear floats after the 
-   columns */
-      <br/>
-      .row:after {
-      <br/>
-      content: "";
-      <br/>
-      display: table;
-      <br/>
-      clear: both;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Responsive 
-   layout - makes the three columns stack on top of each other instead of next 
-   to each other on smaller screens (600px wide or less) */
-      <br/>
-      @media screen and (max-width: 
-   600px) {
-      <br/>
-      .column 
-   {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">/* Create three equal columns that float next to each other */
+.column {
+float: left;
+width: 33.33%;
+}
+/* Clear floats after the
+columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* Responsive
+layout - makes the three columns stack on top of each other instead of next
+to each other on smaller screens (600px wide or less) */
+@media screen and (max-width:
+600px) {
+.column
+{
+width: 100%;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result
      </p>
@@ -1147,47 +1132,37 @@ navigation or to specify information relevant to the main content. Change the wi
      <h3>
       Example
      </h3>
-     <div class="code">
-      .column {
-      <br/>
-      float: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Left and right column */
-      <br/>
-      .column.side {
-      <br/>
-      width: 25%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Middle column */
-      <br/>
-      .column.middle 
-   {
-      <br/>
-      width: 50%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Responsive layout - makes 
-   the three columns stack on top of each other instead of next to each other */
-      <br/>
-      @media screen and (max-width: 600px) {
-      <br/>
-      .column.side, .column.middle 
-   {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.column {
+float: left;
+}
+/* Left and right column */
+.column.side {
+width: 25%;
+}
+/* Middle column */
+.column.middle
+{
+width: 50%;
+}
+/* Responsive layout - makes
+the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column.side, .column.middle
+{
+width: 100%;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result
      </p>
@@ -1232,18 +1207,23 @@ information like copyright and contact info:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .footer {
-      <br/>
-      background-color: #F1F1F1;
-      <br/>
-      text-align: 
-   center;
-      <br/>
-      padding: 10px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.footer {
+background-color: #F1F1F1;
+text-align:
+center;
+padding: 10px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result
      </p>
@@ -1267,8 +1247,12 @@ information like copyright and contact info:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

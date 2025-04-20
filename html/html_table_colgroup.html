@@ -8,46 +8,47 @@
   <title>
    HTML Table Colgroup
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -302,7 +303,7 @@
       Table Styling
      </p>
     </a>
-    <a href="html_table_colgroup.html" class="selected">
+    <a class="selected" href="html_table_colgroup.html">
      <p>
       Table Colgroup
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -631,28 +631,28 @@ specifications.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;colgroup&gt;
-      <br/>
-      &lt;col span="2" 
-  style="background-color: #D6EEEE"&gt;
-      <br/>
-      &lt;/colgroup&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;MON&lt;/th&gt;
-      <br/>
-      &lt;th&gt;TUE&lt;/th&gt;
-      <br/>
-      &lt;th&gt;WED&lt;/th&gt;
-      <br/>
-      &lt;th&gt;THU&lt;/th&gt;
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col span="2"
+style="background-color: #D6EEEE"&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;th&gt;MON&lt;/th&gt;
+&lt;th&gt;TUE&lt;/th&gt;
+&lt;th&gt;WED&lt;/th&gt;
+&lt;th&gt;THU&lt;/th&gt;
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -700,22 +700,22 @@ present.
     </p>
     <p>
      <code class="codespan">
-       width
+      width
      </code>
      property
      <br/>
      <code class="codespan">
-       visibility
+      visibility
      </code>
      property
      <br/>
      <code class="codespan">
-       background
+      background
      </code>
      properties
      <br/>
      <code class="codespan">
-       border
+      border
      </code>
      properties
     </p>
@@ -742,31 +742,30 @@ one
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;colgroup&gt;
-      <br/>
-      &lt;col span="2" 
-  style="background-color: #D6EEEE"&gt;
-      <br/>
-      &lt;col span="3" 
-  style="background-color: pink"&gt;
-      <br/>
-      &lt;/colgroup&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;MON&lt;/th&gt;
-      <br/>
-      &lt;th&gt;TUE&lt;/th&gt;
-      <br/>
-      &lt;th&gt;WED&lt;/th&gt;
-      <br/>
-      &lt;th&gt;THU&lt;/th&gt;
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col span="2"
+style="background-color: #D6EEEE"&gt;
+&lt;col span="3"
+style="background-color: pink"&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;th&gt;MON&lt;/th&gt;
+&lt;th&gt;TUE&lt;/th&gt;
+&lt;th&gt;WED&lt;/th&gt;
+&lt;th&gt;THU&lt;/th&gt;
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -785,31 +784,30 @@ styles) for the columns before:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;colgroup&gt;
-      <br/>
-      &lt;col span="3"&gt;
-      <br/>
-      &lt;col 
-  span="2" 
-  style="background-color: pink"&gt;
-      <br/>
-      &lt;/colgroup&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;MON&lt;/th&gt;
-      <br/>
-      &lt;th&gt;TUE&lt;/th&gt;
-      <br/>
-      &lt;th&gt;WED&lt;/th&gt;
-      <br/>
-      &lt;th&gt;THU&lt;/th&gt;
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col span="3"&gt;
+&lt;col
+span="2"
+style="background-color: pink"&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;th&gt;MON&lt;/th&gt;
+&lt;th&gt;TUE&lt;/th&gt;
+&lt;th&gt;WED&lt;/th&gt;
+&lt;th&gt;THU&lt;/th&gt;
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -826,30 +824,29 @@ styles) for the columns before:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;colgroup&gt;
-      <br/>
-      &lt;col span="2"&gt;
-      <br/>
-      &lt;col span="3" 
-  style="visibility: collapse"&gt;
-      <br/>
-      &lt;/colgroup&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;MON&lt;/th&gt;
-      <br/>
-      &lt;th&gt;TUE&lt;/th&gt;
-      <br/>
-      &lt;th&gt;WED&lt;/th&gt;
-      <br/>
-      &lt;th&gt;THU&lt;/th&gt;
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col span="2"&gt;
+&lt;col span="3"
+style="visibility: collapse"&gt;
+&lt;/colgroup&gt;
+&lt;tr&gt;
+&lt;th&gt;MON&lt;/th&gt;
+&lt;th&gt;TUE&lt;/th&gt;
+&lt;th&gt;WED&lt;/th&gt;
+&lt;th&gt;THU&lt;/th&gt;
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -865,8 +862,10 @@ styles) for the columns before:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

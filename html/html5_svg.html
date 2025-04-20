@@ -8,46 +8,47 @@
   <title>
    HTML SVG
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -394,7 +395,7 @@
       HTML Canvas
      </p>
     </a>
-    <a href="html5_svg.html" class="selected">
+    <a class="selected" href="html5_svg.html">
      <p>
       HTML SVG
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -526,27 +526,27 @@ much more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;svg 
- width="100" height="100"&gt;
-      <br/>
-      &lt;circle cx="50" cy="50" r="40" stroke="green" 
- stroke-width="4" fill="yellow" /&gt;
-      <br/>
-      &lt;/svg&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;svg
+width="100" height="100"&gt;
+&lt;circle cx="50" cy="50" r="40" stroke="green"
+stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -561,17 +561,23 @@ much more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;svg width="400" height="120"&gt;
-      <br/>
-      &lt;rect 
-  x="10" y="10" width="200" height="100" 
-  stroke="red" stroke-width="6" fill="blue" 
- /&gt;
-      <br/>
-      &lt;/svg&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;svg width="400" height="120"&gt;
+&lt;rect
+x="10" y="10" width="200" height="100"
+stroke="red" stroke-width="6" fill="blue"
+/&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -586,17 +592,22 @@ much more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;svg width="400" height="180"&gt;
-      <br/>
-      &lt;rect x="50" y="20" rx="20" ry="20" 
- width="150" height="150"
-      <br/>
-      style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /&gt;
-      <br/>
-      &lt;/svg&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;svg width="400" height="180"&gt;
+&lt;rect x="50" y="20" rx="20" ry="20"
+width="150" height="150"
+style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -611,16 +622,21 @@ much more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;svg width="300" height="200"&gt;
-      <br/>
-      &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
-      <br/>
-      style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" /&gt;
-      <br/>
-      &lt;/svg&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;svg width="300" height="200"&gt;
+&lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" /&gt;
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -646,34 +662,32 @@ much more.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;svg height="130" width="500"&gt;
-      <br/>
-      &lt;defs&gt;
-      <br/>
-      &lt;linearGradient id="grad1"&gt;
-      <br/>
-      &lt;stop offset="0%" stop-color="yellow" 
- /&gt;
-      <br/>
-      &lt;stop offset="100%" stop-color="red" /&gt;
-      <br/>
-      &lt;/linearGradient&gt;
-      <br/>
-      &lt;/defs&gt;
-      <br/>
-      &lt;ellipse cx="100" cy="70" rx="85" ry="55" 
- fill="url(#grad1)" /&gt;
-      <br/>
-      &lt;text fill="#ffffff" font-size="45" 
- font-family="Verdana" x="50" y="86"&gt;SVG&lt;/text&gt;
-      <br/>
-      Sorry, your browser does not 
- support inline SVG.
-      <br/>
-      &lt;/svg&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;svg height="130" width="500"&gt;
+&lt;defs&gt;
+&lt;linearGradient id="grad1"&gt;
+&lt;stop offset="0%" stop-color="yellow"
+/&gt;
+&lt;stop offset="100%" stop-color="red" /&gt;
+&lt;/linearGradient&gt;
+&lt;/defs&gt;
+&lt;ellipse cx="100" cy="70" rx="85" ry="55"
+fill="url(#grad1)" /&gt;
+&lt;text fill="#ffffff" font-size="45"
+font-family="Verdana" x="50" y="86"&gt;SVG&lt;/text&gt;
+Sorry, your browser does not
+support inline SVG.
+&lt;/svg&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -766,8 +780,10 @@ objects that might have been covered by the graphic.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

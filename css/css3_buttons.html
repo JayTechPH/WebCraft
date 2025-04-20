@@ -9,6 +9,7 @@
   <title>
    CSS Buttons
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -586,7 +587,7 @@
       CSS Masking
      </p>
     </a>
-    <a href="css3_buttons.html" class="selected">
+    <a class="selected" href="css3_buttons.html">
      <p>
       CSS Buttons
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -799,27 +799,27 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button {
-      <br/>
-      background-color: #04AA6D; /* Green */
-      <br/>
-      border: none;
-      <br/>
-      color: white;
-      <br/>
-      padding: 15px 32px;
-      <br/>
-      text-align: center;
-      <br/>
-      text-decoration: none;
-      <br/>
-      display: inline-block;
-      <br/>
-      font-size: 16px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.button {
+background-color: #04AA6D; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -853,20 +853,25 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {background-color: #04AA6D;} /* Green */
-      <br/>
-      .button2 
+     <pre><code class="code language-css">.button1 {background-color: #04AA6D;} /* Green */
+.button2
 {background-color: #008CBA;} /* Blue */
-      <br/>
-      .button3 {background-color: 
+.button3 {background-color:
 #f44336;} /* Red */
-      <br/>
-      .button4 {background-color: #e7e7e7; color: black;} /* Gray */
-      <br/>
-      .button5 
-{background-color: #555555;} /* Black */
-     </div>
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5
+{background-color: #555555;} /* Black */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -898,18 +903,23 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {font-size: 10px;}
-      <br/>
-      .button2 {font-size: 12px;}
-      <br/>
-      .button3 
+     <pre><code class="code language-css">.button1 {font-size: 10px;}
+.button2 {font-size: 12px;}
+.button3
 {font-size: 16px;}
-      <br/>
-      .button4 {font-size: 20px;}
-      <br/>
-      .button5 {font-size: 24px;}
-     </div>
+.button4 {font-size: 20px;}
+.button5 {font-size: 24px;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p style="margin-top:35px">
      Use the
@@ -937,18 +947,23 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {padding: 10px 
+     <pre><code class="code language-css">.button1 {padding: 10px
 24px;}
-      <br/>
-      .button2 {padding: 12px 28px;}
-      <br/>
-      .button3 {padding: 14px 40px;}
-      <br/>
-      .button4 {padding: 32px 16px;}
-      <br/>
-      .button5 {padding: 16px;}
-     </div>
+.button2 {padding: 12px 28px;}
+.button3 {padding: 14px 40px;}
+.button4 {padding: 32px 16px;}
+.button5 {padding: 16px;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -980,18 +995,23 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {border-radius: 2px;}
-      <br/>
-      .button2 {border-radius: 4px;}
-      <br/>
-      .button3 
+     <pre><code class="code language-css">.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3
 {border-radius: 8px;}
-      <br/>
-      .button4 {border-radius: 12px;}
-      <br/>
-      .button5 {border-radius: 50%;}
-     </div>
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1023,19 +1043,23 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {
-      <br/>
-      background-color: white;
-      <br/>
-      color: black;
-      <br/>
-      border: 2px solid #04AA6D; /* Green */
-      <br/>
-      }
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-css">.button1 {
+background-color: white;
+color: black;
+border: 2px solid #04AA6D; /* Green */
+}
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1095,24 +1119,25 @@ speed of the "hover" effect:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button {
-      <br/>
-      transition-duration: 0.4s;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .button:hover {
-      <br/>
-      background-color: #04AA6D; /* Green */
-      <br/>
-      color: white;
-      <br/>
-      }
-      <br/>
-      ...
-     </div>
+     <pre><code class="code language-css">.button {
+transition-duration: 0.4s;
+}
+.button:hover {
+background-color: #04AA6D; /* Green */
+color: white;
+}
+...</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1135,22 +1160,25 @@ speed of the "hover" effect:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {
-      <br/>
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 
+     <pre><code class="code language-css">.button1 {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0
 rgba(0,0,0,0.19);
-      <br/>
-      }
-      <br/>
-      <br/>
-      .button2:hover {
-      <br/>
-      box-shadow: 0 12px 
+}
+.button2:hover {
+box-shadow: 0 12px
 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1186,15 +1214,21 @@ button:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .disabled {
-      <br/>
-      opacity: 0.6;
-      <br/>
-      cursor: not-allowed;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.disabled {
+opacity: 0.6;
+cursor: not-allowed;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1222,14 +1256,21 @@ content). Use the
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button1 {width: 250px;}
-      <br/>
-      .button2 {width: 50%;}
-      <br/>
-      .button3 {width: 
-100%;}
-     </div>
+     <pre><code class="code language-css">.button1 {width: 250px;}
+.button2 {width: 50%;}
+.button3 {width:
+100%;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1259,13 +1300,20 @@ content). Use the
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button {
-      <br/>
-      float: left;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.button {
+float: left;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1296,16 +1344,22 @@ group:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button {
-      <br/>
-      float: left;
-      <br/>
-      border: 1px 
+     <pre><code class="code language-css">.button {
+float: left;
+border: 1px
 solid green;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1339,13 +1393,20 @@ solid green;
      <h3>
       Example
      </h3>
-     <div class="code">
-      .button {
-      <br/>
-      display: block;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.button {
+display: block;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1434,8 +1495,12 @@ solid green;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Media Queries
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -616,7 +617,7 @@
       CSS Box Sizing
      </p>
     </a>
-    <a href="css3_mediaqueries.html" class="selected">
+    <a class="selected" href="css3_mediaqueries.html">
      <p>
       CSS Media Queries
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -1062,18 +1062,22 @@ viewport is 480 pixels wide or wider (if the viewport is less than
      <h3>
       Example
      </h3>
-     <div class="code">
-      @media screen and (min-width: 480px) {
-      <br/>
-      body {
-      <br/>
-      background-color: lightgreen;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">@media screen and (min-width: 480px) {
+body {
+background-color: lightgreen;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows a menu that will float to the left of the page if 
@@ -1084,18 +1088,23 @@ the viewport is 480 pixels wide or wider (if the viewport is less than
      <h3>
       Example
      </h3>
-     <div class="code">
-      @media screen and (min-width: 480px) {
-      <br/>
-      #leftsidebar 
+     <pre><code class="code language-css">@media screen and (min-width: 480px) {
+#leftsidebar
 {width: 200px; float: left;}
-      <br/>
-      #main 
+#main
 {margin-left: 216px;}
-      <br/>
-      }
-      <br/>
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <h2>
@@ -1129,8 +1138,12 @@ the viewport is 480 pixels wide or wider (if the viewport is less than
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

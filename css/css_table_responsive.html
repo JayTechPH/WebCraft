@@ -9,6 +9,7 @@
   <title>
    CSS Responsive Table
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -447,7 +448,7 @@
       Table Style
      </p>
     </a>
-    <a href="css_table_responsive.html" class="selected">
+    <a class="selected" href="css_table_responsive.html">
      <p>
       Table Responsive
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -978,19 +978,22 @@ small to display the full content:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;div style="overflow-x:auto;"&gt;
-      <br/>
-      <br/>
-      &lt;table&gt;
-      <br/>
-      ... table content ...
-      <br/>
-      &lt;/table&gt;
-      <br/>
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-css">&lt;div style="overflow-x:auto;"&gt;
+&lt;table&gt;
+... table content ...
+&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -1015,7 +1018,7 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        border
+       border
       </td>
       <td>
        Sets all the border properties in one declaration
@@ -1023,7 +1026,7 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        border-collapse
+       border-collapse
       </td>
       <td>
        Specifies whether or not table borders should be collapsed
@@ -1031,7 +1034,7 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        border-spacing
+       border-spacing
       </td>
       <td>
        Specifies the distance between the borders of adjacent cells
@@ -1039,7 +1042,7 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        caption-side
+       caption-side
       </td>
       <td>
        Specifies the placement of a table caption
@@ -1047,7 +1050,7 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        empty-cells
+       empty-cells
       </td>
       <td>
        Specifies whether or not to display borders and background on empty cells in a table
@@ -1055,16 +1058,16 @@ small to display the full content:
      </tr>
      <tr>
       <td>
-        table-layout
+       table-layout
       </td>
       <td>
        Sets the layout algorithm to be used for a table
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_table_style.html">
       ❮ Previous
      </a>
@@ -1076,8 +1079,12 @@ small to display the full content:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -8,46 +8,47 @@
   <title>
    HTML Links Hyperlinks
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -249,7 +250,7 @@
     <p>
      HTML Links
     </p>
-    <a href="html_links.html" class="selected">
+    <a class="selected" href="html_links.html">
      <p>
       Links
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -481,17 +481,22 @@
 It has the following syntax:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;a href="
-      <i>
-       url
-      </i>
-      "&gt;
-      <i>
-       link text
-      </i>
-      &lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="
+url
+"&gt;
+link text
+&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The most important attribute of the
@@ -523,9 +528,18 @@ It has the following syntax:
      <p>
       This example shows how to create a link to WebCraft.com:
      </p>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/"&gt;Visit WebCraft.com!&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/"&gt;Visit WebCraft.com!&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      By default, links will appear as follows in all browsers:
@@ -606,10 +620,19 @@ To change this, you must specify another target for the link.
      <p>
       Use target="_blank" to open the linked document in a new browser window or tab:
      </p>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/"
-target="_blank"&gt;Visit WebCraft!&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/"
+target="_blank"&gt;Visit WebCraft!&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -639,22 +662,25 @@ the "https://www" part):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;h2&gt;Absolute URLs&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;&lt;a href="https://www.w3.org/"&gt;WebCraft&lt;/a&gt;&lt;/p&gt;
-      <br/>
-      &lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;h2&gt;Relative 
-  URLs&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
-      <br/>
-      &lt;p&gt;&lt;a href="/css/default.asp"&gt;CSS 
-  Tutorial&lt;/a&gt;&lt;/p&gt;
-     </div>
+     <pre><code class="code language-html">&lt;h2&gt;Absolute URLs&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.w3.org/"&gt;WebCraft&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Relative
+URLs&lt;/h2&gt;
+&lt;p&gt;&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/css/default.asp"&gt;CSS
+Tutorial&lt;/a&gt;&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -675,13 +701,20 @@ the "https://www" part):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="default.asp"&gt;
-      <br/>
-      &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
-      <br/>
-      &lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="default.asp"&gt;
+&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -703,9 +736,18 @@ let them send a new email):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -721,10 +763,19 @@ let them send a new email):
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;button 
-  onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
-     </div>
+     <pre><code class="code language-html">&lt;button
+onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -754,10 +805,19 @@ The information is most often shown as a tooltip text when the mouse moves over 
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/html/" title="Go to WebCraft HTML 
-  section"&gt;Visit our HTML Tutorial&lt;/a&gt;
-     </div>
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/html/" title="Go to WebCraft HTML
+section"&gt;Visit our HTML Tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -770,10 +830,18 @@ The information is most often shown as a tooltip text when the mouse moves over 
      <p>
       Use a full URL to link to a web page:
      </p>
-     <div class="code">
-      &lt;a href="https://www.webcraft.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;a href="https://www.webcraft.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -782,10 +850,18 @@ The information is most often shown as a tooltip text when the mouse moves over 
      <p>
       Link to a page located in the html folder on the current web site:
      </p>
-     <div class="code">
-      &lt;a href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;a href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -794,10 +870,18 @@ The information is most often shown as a tooltip text when the mouse moves over 
      <p>
       Link to a page located in the same folder as the current page:
      </p>
-     <div class="code">
-      &lt;a href="default.asp"&gt;HTML tutorial&lt;/a&gt;
-     </div>
-
+     <pre><code class="code language-html">&lt;a href="default.asp"&gt;HTML tutorial&lt;/a&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -874,14 +958,13 @@ File Paths
      </tr>
      <tr>
       <td>
-        &lt;a&gt;
-       </td>
+       &lt;a&gt;
+      </td>
       <td>
        Defines a hyperlink
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_colors_hsl.html">
@@ -895,8 +978,10 @@ File Paths
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Layout - clear and clearfix
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -460,7 +461,7 @@
       Float
      </p>
     </a>
-    <a href="css_float_clear.html" class="selected">
+    <a class="selected" href="css_float_clear.html">
      <p>
       Clear
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -862,20 +862,23 @@ page.
       This example clears the float to the left. Here, it means that the &lt;div2&gt; 
 element is pushed below the left floated &lt;div1&gt; element:
      </p>
-     <div class="code">
-      div1 {
-      <br/>
-      float: left;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div2 {
-      <br/>
-      clear: left;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div1 {
+float: left;
+}
+div2 {
+clear: left;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -906,13 +909,20 @@ solve this problem:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .clearfix {
-      <br/>
-      overflow: auto;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.clearfix {
+overflow: auto;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The
@@ -930,17 +940,22 @@ might see scrollbars). The
      <h3>
       Example
      </h3>
-     <div class="code">
-      .clearfix::after {
-      <br/>
-      content: "";
-      <br/>
-      clear: both;
-      <br/>
-      display: table;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -966,7 +981,7 @@ might see scrollbars). The
      </tr>
      <tr>
       <td>
-        clear
+       clear
       </td>
       <td>
        Specifies what should happen with the element that is next to a floating 
@@ -975,7 +990,7 @@ might see scrollbars). The
      </tr>
      <tr>
       <td>
-        float
+       float
       </td>
       <td>
        Specifies whether an element should float to the left, right, or not at 
@@ -983,9 +998,9 @@ might see scrollbars). The
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_float.html">
       ❮ Previous
      </a>
@@ -997,8 +1012,12 @@ might see scrollbars). The
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

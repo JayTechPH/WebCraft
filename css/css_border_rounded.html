@@ -9,6 +9,7 @@
   <title>
    CSS Rounded Borders
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -302,7 +303,7 @@
       Border Shorthand
      </p>
     </a>
-    <a href="css_border_rounded.html" class="selected">
+    <a class="selected" href="css_border_rounded.html">
      <p>
       Rounded Borders
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -806,15 +806,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      p {
-      <br/>
-      border: 2px solid red;
-      <br/>
-      border-radius: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p {
+border: 2px solid red;
+border-radius: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -831,7 +837,7 @@
      </tr>
      <tr>
       <td>
-        border
+       border
       </td>
       <td>
        Sets all the border properties in one declaration
@@ -839,7 +845,7 @@
      </tr>
      <tr>
       <td>
-        border-bottom
+       border-bottom
       </td>
       <td>
        Sets all the bottom border properties in one declaration
@@ -847,7 +853,7 @@
      </tr>
      <tr>
       <td>
-        border-bottom-color
+       border-bottom-color
       </td>
       <td>
        Sets the color of the bottom border
@@ -855,7 +861,7 @@
      </tr>
      <tr>
       <td>
-        border-bottom-style
+       border-bottom-style
       </td>
       <td>
        Sets the style of the bottom border
@@ -863,7 +869,7 @@
      </tr>
      <tr>
       <td>
-        border-bottom-width
+       border-bottom-width
       </td>
       <td>
        Sets the width of the bottom border
@@ -871,7 +877,7 @@
      </tr>
      <tr>
       <td>
-        border-color
+       border-color
       </td>
       <td>
        Sets the color of the four borders
@@ -879,7 +885,7 @@
      </tr>
      <tr>
       <td>
-        border-left
+       border-left
       </td>
       <td>
        Sets all the left border properties in one declaration
@@ -887,7 +893,7 @@
      </tr>
      <tr>
       <td>
-        border-left-color
+       border-left-color
       </td>
       <td>
        Sets the color of the left border
@@ -895,7 +901,7 @@
      </tr>
      <tr>
       <td>
-        border-left-style
+       border-left-style
       </td>
       <td>
        Sets the style of the left border
@@ -903,7 +909,7 @@
      </tr>
      <tr>
       <td>
-        border-left-width
+       border-left-width
       </td>
       <td>
        Sets the width of the left border
@@ -911,7 +917,7 @@
      </tr>
      <tr>
       <td>
-        border-radius
+       border-radius
       </td>
       <td>
        Sets all the four border-*-radius properties for rounded corners
@@ -919,7 +925,7 @@
      </tr>
      <tr>
       <td>
-        border-right
+       border-right
       </td>
       <td>
        Sets all the right border properties in one declaration
@@ -927,7 +933,7 @@
      </tr>
      <tr>
       <td>
-        border-right-color
+       border-right-color
       </td>
       <td>
        Sets the color of the right border
@@ -935,7 +941,7 @@
      </tr>
      <tr>
       <td>
-        border-right-style
+       border-right-style
       </td>
       <td>
        Sets the style of the right border
@@ -943,7 +949,7 @@
      </tr>
      <tr>
       <td>
-        border-right-width
+       border-right-width
       </td>
       <td>
        Sets the width of the right border
@@ -951,7 +957,7 @@
      </tr>
      <tr>
       <td>
-        border-style
+       border-style
       </td>
       <td>
        Sets the style of the four borders
@@ -959,7 +965,7 @@
      </tr>
      <tr>
       <td>
-        border-top
+       border-top
       </td>
       <td>
        Sets all the top border properties in one declaration
@@ -967,7 +973,7 @@
      </tr>
      <tr>
       <td>
-        border-top-color
+       border-top-color
       </td>
       <td>
        Sets the color of the top border
@@ -975,7 +981,7 @@
      </tr>
      <tr>
       <td>
-        border-top-style
+       border-top-style
       </td>
       <td>
        Sets the style of the top border
@@ -983,7 +989,7 @@
      </tr>
      <tr>
       <td>
-        border-top-width
+       border-top-width
       </td>
       <td>
        Sets the width of the top border
@@ -991,16 +997,16 @@
      </tr>
      <tr>
       <td>
-        border-width
+       border-width
       </td>
       <td>
        Sets the width of the four borders
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_border_shorthand.html">
       ❮ Previous
      </a>
@@ -1012,8 +1018,12 @@
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

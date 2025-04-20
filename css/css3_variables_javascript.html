@@ -9,6 +9,7 @@
   <title>
    CSS Change Variables With JavaScript
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -670,7 +671,7 @@
       Overriding Variables
      </p>
     </a>
-    <a href="css3_variables_javascript.html" class="selected">
+    <a class="selected" href="css3_variables_javascript.html">
      <p>
       Variables and JavaScript
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -798,47 +798,39 @@ more about JavaScript in our
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      // Get the root element
-      <br/>
-      var r = document.querySelector(':root');
-      <br/>
-      <br/>
-      // Create a function for getting a variable value
-      <br/>
-      function 
-  myFunction_get() {
-      <br/>
-      // Get the styles (properties and values) for the 
-  root
-      <br/>
-      var rs = getComputedStyle(r);
-      <br/>
-      // Alert the value of 
-  the --blue variable
-      <br/>
-      alert("The value of --blue is: " + 
-  rs.getPropertyValue('--blue'));
-      <br/>
-      }
-      <br/>
-      <br/>
-      // Create a function for setting a 
-  variable value
-      <br/>
-      function myFunction_set() {
-      <br/>
-      // Set the value of 
-  variable --blue to another value (in this case "lightblue")
-      <br/>
-      r.style.setProperty('--blue', 'lightblue');
-      <br/>
-      }
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-css">&lt;script&gt;
+// Get the root element
+var r = document.querySelector(':root');
+// Create a function for getting a variable value
+function
+myFunction_get() {
+// Get the styles (properties and values) for the
+root
+var rs = getComputedStyle(r);
+// Alert the value of
+the --blue variable
+alert("The value of --blue is: " +
+rs.getPropertyValue('--blue'));
+}
+// Create a function for setting a
+variable value
+function myFunction_set() {
+// Set the value of
+variable --blue to another value (in this case "lightblue")
+r.style.setProperty('--blue', 'lightblue');
+}
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -856,16 +848,16 @@ more about JavaScript in our
      </tr>
      <tr>
       <td>
-        var()
+       var()
       </td>
       <td>
        Inserts the value of a CSS variable
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_variables_overriding.html">
       ❮ Previous
      </a>
@@ -877,8 +869,12 @@ more about JavaScript in our
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

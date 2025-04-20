@@ -9,6 +9,7 @@
   <title>
    CSS Image Gallery
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -173,7 +174,7 @@
       CSS Dropdowns
      </p>
     </a>
-    <a href="css_image_gallery.html" class="selected">
+    <a class="selected" href="css_image_gallery.html">
      <p>
       CSS Image Gallery
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -838,113 +838,66 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      div.gallery {
-      <br/>
-      margin: 5px;
-      <br/>
-      border: 1px solid #ccc;
-      <br/>
-      float: left;
-      <br/>
-      width: 180px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div.gallery:hover {
-      <br/>
-      border: 1px solid #777;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div.gallery img {
-      <br/>
-      width: 100%;
-      <br/>
-      height: auto;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div.desc {
-      <br/>
-      padding: 15px;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;div class="gallery"&gt;
-      <br/>
-      &lt;a target="_blank" href="img_5terre.jpg"&gt;
-      <br/>
-      &lt;img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400"&gt;
-      <br/>
-      &lt;/a&gt;
-      <br/>
-      &lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="gallery"&gt;
-      <br/>
-      &lt;a target="_blank" href="img_forest.jpg"&gt;
-      <br/>
-      &lt;img src="img_forest.jpg" alt="Forest" width="600" height="400"&gt;
-      <br/>
-      &lt;/a&gt;
-      <br/>
-      &lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="gallery"&gt;
-      <br/>
-      &lt;a target="_blank" href="img_lights.jpg"&gt;
-      <br/>
-      &lt;img src="img_lights.jpg" alt="Northern Lights" width="600" height="400"&gt;
-      <br/>
-      &lt;/a&gt;
-      <br/>
-      &lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;div class="gallery"&gt;
-      <br/>
-      &lt;a target="_blank" href="img_mountains.jpg"&gt;
-      <br/>
-      &lt;img src="img_mountains.jpg" alt="Mountains" width="600" height="400"&gt;
-      <br/>
-      &lt;/a&gt;
-      <br/>
-      &lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-     </div>
+     <pre><code class="code language-html">&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+div.gallery {
+margin: 5px;
+border: 1px solid #ccc;
+float: left;
+width: 180px;
+}
+div.gallery:hover {
+border: 1px solid #777;
+}
+div.gallery img {
+width: 100%;
+height: auto;
+}
+div.desc {
+padding: 15px;
+text-align: center;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="gallery"&gt;
+&lt;a target="_blank" href="img_5terre.jpg"&gt;
+&lt;img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400"&gt;
+&lt;/a&gt;
+&lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="gallery"&gt;
+&lt;a target="_blank" href="img_forest.jpg"&gt;
+&lt;img src="img_forest.jpg" alt="Forest" width="600" height="400"&gt;
+&lt;/a&gt;
+&lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="gallery"&gt;
+&lt;a target="_blank" href="img_lights.jpg"&gt;
+&lt;img src="img_lights.jpg" alt="Northern Lights" width="600" height="400"&gt;
+&lt;/a&gt;
+&lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="gallery"&gt;
+&lt;a target="_blank" href="img_mountains.jpg"&gt;
+&lt;img src="img_mountains.jpg" alt="Mountains" width="600" height="400"&gt;
+&lt;/a&gt;
+&lt;div class="desc"&gt;Add a description of the image here&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -975,8 +928,12 @@ look good on desktops, tablets and smart phones.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

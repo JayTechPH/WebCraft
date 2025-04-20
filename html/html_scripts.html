@@ -8,46 +8,47 @@
   <title>
    HTML JavaScript
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -153,7 +154,7 @@
       HTML Iframes
      </p>
     </a>
-    <a href="html_scripts.html" class="selected">
+    <a class="selected" href="html_scripts.html">
      <p>
       HTML JavaScript
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -461,7 +461,6 @@
       <p id="demo">
       </p>
      </div>
-
     </div>
     <hr/>
     <h2>
@@ -505,13 +504,20 @@ dynamic changes of content.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script&gt;
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -587,15 +593,21 @@ scripts:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;script&gt;
-      <br/>
-      document.getElementById("demo").innerHTML = "Hello JavaScript!";
-      <br/>
-      &lt;/script&gt;
-      <br/>
-      &lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;
-     </div>
+     <pre><code class="code language-html">&lt;script&gt;
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script&gt;
+&lt;noscript&gt;Sorry, your browser does not support JavaScript!&lt;/noscript&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -612,23 +624,22 @@ scripts:
      </tr>
      <tr>
       <td>
-        &lt;script&gt;
-       </td>
+       &lt;script&gt;
+      </td>
       <td>
        Defines a client-side script
       </td>
      </tr>
      <tr>
       <td>
-        &lt;noscript&gt;
-       </td>
+       &lt;noscript&gt;
+      </td>
       <td>
        Defines an alternate content for users that do not support client-side 
 scripts
       </td>
      </tr>
     </table>
-
     <hr/>
     <div class="nextprev">
      <a class="btn" href="html_iframe.html">
@@ -642,8 +653,10 @@ scripts
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

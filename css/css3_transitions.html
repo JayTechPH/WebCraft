@@ -9,6 +9,7 @@
   <title>
    CSS Transitions
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -536,7 +537,7 @@
       CSS 3D Transforms
      </p>
     </a>
-    <a href="css3_transitions.html" class="selected">
+    <a class="selected" href="css3_transitions.html">
      <p>
       CSS Transitions
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -855,20 +855,24 @@ element has also specified a transition effect for the width property, with a du
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      width: 100px;
-      <br/>
-      height: 100px;
-      <br/>
-      background: red;
-      <br/>
-      transition: width 2s;
-      <br/>
-      }
-     </div>
+width: 100px;
+height: 100px;
+background: red;
+transition: width 2s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <p>
@@ -881,14 +885,21 @@ element has also specified a transition effect for the width property, with a du
      <h3>
       Example
      </h3>
-     <div class="code">
-      div:hover
+     <pre><code class="code language-css">div:hover
 {
-      <br/>
-      width: 300px;
-      <br/>
-      }
-     </div>
+width: 300px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Notice that when the cursor mouses out of the element, it will gradually change back to its original style.
@@ -905,14 +916,21 @@ of 2 seconds for the width and 4 seconds for the height:
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transition: width 2s, height 4s;
-      <br/>
-      }
-     </div>
+transition: width 2s, height 4s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -973,20 +991,25 @@ of 2 seconds for the width and 4 seconds for the height:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #div1 {transition-timing-function: linear;}
-      <br/>
-      #div2 
+     <pre><code class="code language-css">#div1 {transition-timing-function: linear;}
+#div2
 {transition-timing-function: ease;}
-      <br/>
-      #div3 {transition-timing-function: 
+#div3 {transition-timing-function:
 ease-in;}
-      <br/>
-      #div4 {transition-timing-function: ease-out;}
-      <br/>
-      #div5 
-{transition-timing-function: ease-in-out;}
-     </div>
+#div4 {transition-timing-function: ease-out;}
+#div5
+{transition-timing-function: ease-in-out;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1006,13 +1029,20 @@ ease-in;}
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      transition-delay: 1s;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+transition-delay: 1s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1025,14 +1055,21 @@ ease-in;}
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      transition: 
+     <pre><code class="code language-css">div {
+transition:
 width 2s, height 2s, transform 2s;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1045,20 +1082,24 @@ width 2s, height 2s, transform 2s;
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transition-property: width;
-      <br/>
-      transition-duration: 2s;
-      <br/>
-      transition-timing-function: linear;
-      <br/>
-      transition-delay: 1s;
-      <br/>
-      }
-     </div>
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      or by using the shorthand property
@@ -1071,14 +1112,21 @@ width 2s, height 2s, transform 2s;
      <h3>
       Example
      </h3>
-     <div class="code">
-      div
+     <pre><code class="code language-css">div
 {
-      <br/>
-      transition: width 2s linear 1s;
-      <br/>
-      }
-     </div>
+transition: width 2s linear 1s;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1098,7 +1146,7 @@ width 2s, height 2s, transform 2s;
      </tr>
      <tr>
       <td>
-        transition
+       transition
       </td>
       <td>
        A shorthand property for setting the four transition properties into a single property
@@ -1106,7 +1154,7 @@ width 2s, height 2s, transform 2s;
      </tr>
      <tr>
       <td>
-        transition-delay
+       transition-delay
       </td>
       <td>
        Specifies a delay (in seconds) for the transition effect
@@ -1114,7 +1162,7 @@ width 2s, height 2s, transform 2s;
      </tr>
      <tr>
       <td>
-        transition-duration
+       transition-duration
       </td>
       <td>
        Specifies how many seconds or milliseconds a transition effect takes to complete
@@ -1122,7 +1170,7 @@ width 2s, height 2s, transform 2s;
      </tr>
      <tr>
       <td>
-        transition-property
+       transition-property
       </td>
       <td>
        Specifies the name of the CSS property the transition effect is for
@@ -1130,16 +1178,16 @@ width 2s, height 2s, transform 2s;
      </tr>
      <tr>
       <td>
-        transition-timing-function
+       transition-timing-function
       </td>
       <td>
        Specifies the speed curve of the transition effect
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_3dtransforms.html">
       ❮ Previous
      </a>
@@ -1151,8 +1199,12 @@ width 2s, height 2s, transform 2s;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

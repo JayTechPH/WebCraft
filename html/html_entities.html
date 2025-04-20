@@ -8,46 +8,47 @@
   <title>
    HTML Character Entities
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -193,7 +194,7 @@
       HTML Style Guide
      </p>
     </a>
-    <a href="html_entities.html" class="selected">
+    <a class="selected" href="html_entities.html">
      <p>
       HTML Entities
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -477,25 +477,39 @@
      Entity names look like this:
     </p>
     <div class="code-container">
-     <div class="code">
-      &amp;
-      <i>
-       entity_name
-      </i>
-      ;
-     </div>
+     <pre><code class="code language-html">&amp;
+entity_name
+;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Entity numbers look like this:
     </p>
     <div class="code-container">
-     <div class="code">
-      &amp;#
-      <i>
-       entity_number
-      </i>
-      ;
-     </div>
+     <pre><code class="code language-html">&amp;#
+entity_number
+;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      To display a less than sign (&lt;) we must write:
@@ -539,7 +553,7 @@ is handy when breaking the words might be disruptive.
     </p>
     <ul>
      <li>
-      § 10
+      &sect; 10
      </li>
      <li>
       10 km/h
@@ -674,7 +688,7 @@ line.
      </tr>
      <tr>
       <td>
-       ¢
+       &cent;
       </td>
       <td>
        cent
@@ -688,7 +702,7 @@ line.
      </tr>
      <tr>
       <td>
-       £
+       &pound;
       </td>
       <td>
        pound
@@ -702,7 +716,7 @@ line.
      </tr>
      <tr>
       <td>
-       ¥
+       &yen;
       </td>
       <td>
        yen
@@ -716,7 +730,7 @@ line.
      </tr>
      <tr>
       <td>
-       €
+       &euro;
       </td>
       <td>
        euro
@@ -730,7 +744,7 @@ line.
      </tr>
      <tr>
       <td>
-       ©
+       &copy;
       </td>
       <td>
        copyright
@@ -744,7 +758,7 @@ line.
      </tr>
      <tr>
       <td>
-       ®
+       &reg;
       </td>
       <td>
        registered trademark
@@ -758,7 +772,7 @@ line.
      </tr>
      <tr>
       <td>
-       ™
+       &trade;
       </td>
       <td>
        trademark
@@ -787,7 +801,7 @@ line.
      A diacritical mark is a "glyph" added to a letter.
     </p>
     <p>
-     Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.
+     Some diacritical marks, like grave (&nbsp; ̀) and acute (&nbsp; ́) are called accents.
     </p>
     <p>
      Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in 
@@ -942,8 +956,10 @@ the character set (encoding) used in the page.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

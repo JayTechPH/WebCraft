@@ -9,6 +9,7 @@
   <title>
    CSS Styling Links
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -103,7 +104,7 @@
       CSS Icons
      </p>
     </a>
-    <a href="css_link.html" class="selected">
+    <a class="selected" href="css_link.html">
      <p>
       CSS Links
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -819,13 +819,20 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      a {
-      <br/>
-      color: hotpink;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a {
+color: hotpink;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      In addition, links can be styled 
@@ -868,43 +875,34 @@ differently depending on what
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* unvisited link */
-      <br/>
-      a:link {
-      <br/>
-      color: red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* visited 
+     <pre><code class="code language-css">/* unvisited link */
+a:link {
+color: red;
+}
+/* visited
 link */
-      <br/>
-      a:visited {
-      <br/>
-      color: green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* mouse over link */
-      <br/>
-      a:hover {
-      <br/>
-      color: hotpink;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* selected link */
-      <br/>
-      a:active {
-      <br/>
-      color: blue;
-      <br/>
-      }
-     </div>
+a:visited {
+color: green;
+}
+/* mouse over link */
+a:hover {
+color: hotpink;
+}
+/* selected link */
+a:active {
+color: blue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      When setting the style for several link states, there are some order rules:
@@ -932,34 +930,29 @@ link */
      <h3>
       Example
      </h3>
-     <div class="code">
-      a:link {
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:visited {
-      <br/>
-      text-decoration: none;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover {
-      <br/>
-      text-decoration: underline;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:active {
-      <br/>
-      text-decoration: underline;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+a:active {
+text-decoration: underline;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -976,34 +969,29 @@ link */
      <h3>
       Example
      </h3>
-     <div class="code">
-      a:link {
-      <br/>
-      background-color: yellow;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:visited {
-      <br/>
-      background-color: cyan;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover {
-      <br/>
-      background-color: lightgreen;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:active {
-      <br/>
-      background-color: hotpink;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a:link {
+background-color: yellow;
+}
+a:visited {
+background-color: cyan;
+}
+a:hover {
+background-color: lightgreen;
+}
+a:active {
+background-color: hotpink;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1016,30 +1004,28 @@ link */
      <h3>
       Example
      </h3>
-     <div class="code">
-      a:link, a:visited {
-      <br/>
-      background-color: #f44336;
-      <br/>
-      color: white;
-      <br/>
-      padding: 14px 25px;
-      <br/>
-      text-align: center;
-      <br/>
-      text-decoration: none;
-      <br/>
-      display: inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover, a:active {
-      <br/>
-      background-color: red;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a:link, a:visited {
+background-color: #f44336;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover, a:active {
+background-color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1052,48 +1038,39 @@ link */
      <p>
       This example demonstrates how to add other styles to hyperlinks:
      </p>
-     <div class="code">
-      a.one:link {color: #ff0000;}
-      <br/>
-      a.one:visited {color: #0000ff;}
-      <br/>
-      a.one:hover 
-  {color: #ffcc00;}
-      <br/>
-      <br/>
-      a.two:link {color: #ff0000;}
-      <br/>
-      a.two:visited {color: 
-  #0000ff;}
-      <br/>
-      a.two:hover {font-size: 150%;}
-      <br/>
-      <br/>
-      a.three:link {color: 
-  #ff0000;}
-      <br/>
-      a.three:visited {color: #0000ff;}
-      <br/>
-      a.three:hover {background: 
-  #66ff66;}
-      <br/>
-      <br/>
-      a.four:link {color: #ff0000;}
-      <br/>
-      a.four:visited {color: 
-  #0000ff;}
-      <br/>
-      a.four:hover {font-family: monospace;}
-      <br/>
-      <br/>
-      a.five:link {color: 
-  #ff0000; text-decoration: none;}
-      <br/>
-      a.five:visited {color: #0000ff; 
-  text-decoration: none;}
-      <br/>
-      a.five:hover {text-decoration: underline;}
-     </div>
+     <pre><code class="code language-css">a.one:link {color: #ff0000;}
+a.one:visited {color: #0000ff;}
+a.one:hover
+{color: #ffcc00;}
+a.two:link {color: #ff0000;}
+a.two:visited {color:
+#0000ff;}
+a.two:hover {font-size: 150%;}
+a.three:link {color:
+#ff0000;}
+a.three:visited {color: #0000ff;}
+a.three:hover {background:
+#66ff66;}
+a.four:link {color: #ff0000;}
+a.four:visited {color:
+#0000ff;}
+a.four:hover {font-family: monospace;}
+a.five:link {color:
+#ff0000; text-decoration: none;}
+a.five:visited {color: #0000ff;
+text-decoration: none;}
+a.five:hover {text-decoration: underline;}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -1102,36 +1079,32 @@ link */
      <p>
       Another example of how to create link boxes/buttons:
      </p>
-     <div class="code">
-      a:link, a:visited {
-      <br/>
-      background-color: white;
-      <br/>
-      color: black;
-      <br/>
-      border: 2px solid green;
-      <br/>
-      padding: 10px 20px;
-      <br/>
-      text-align: 
-  center;
-      <br/>
-      text-decoration: none;
-      <br/>
-      display: inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      a:hover, a:active 
-  {
-      <br/>
-      background-color: green;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">a:link, a:visited {
+background-color: white;
+color: black;
+border: 2px solid green;
+padding: 10px 20px;
+text-align:
+center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover, a:active
+{
+background-color: green;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -1140,48 +1113,41 @@ link */
      <p>
       This example demonstrates the different types of cursors (can be useful for links):
      </p>
-     <div class="code">
-      &lt;span style="cursor: auto"&gt;auto&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  crosshair"&gt;crosshair&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  default"&gt;default&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: e-resize"&gt;e-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: help"&gt;help&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  move"&gt;move&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: n-resize"&gt;n-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: ne-resize"&gt;ne-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  nw-resize"&gt;nw-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  pointer"&gt;pointer&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: progress"&gt;progress&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: s-resize"&gt;s-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  se-resize"&gt;se-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: sw-resize"&gt;sw-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: text"&gt;text&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: 
-  w-resize"&gt;w-resize&lt;/span&gt;&lt;br&gt;
-      <br/>
-      &lt;span style="cursor: wait"&gt;wait&lt;/span&gt;
-     </div>
+     <pre><code class="code language-html">&lt;span style="cursor: auto"&gt;auto&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+crosshair"&gt;crosshair&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+default"&gt;default&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: e-resize"&gt;e-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: help"&gt;help&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+move"&gt;move&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: n-resize"&gt;n-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: ne-resize"&gt;ne-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+nw-resize"&gt;nw-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+pointer"&gt;pointer&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: progress"&gt;progress&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: s-resize"&gt;s-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+se-resize"&gt;se-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: sw-resize"&gt;sw-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: text"&gt;text&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor:
+w-resize"&gt;w-resize&lt;/span&gt;&lt;br&gt;
+&lt;span style="cursor: wait"&gt;wait&lt;/span&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1197,8 +1163,12 @@ link */
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

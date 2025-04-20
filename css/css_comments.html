@@ -9,6 +9,7 @@
   <title>
    CSS Comments
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -78,7 +79,7 @@
       CSS How To
      </p>
     </a>
-    <a href="css_comments.html" class="selected">
+    <a class="selected" href="css_comments.html">
      <p>
       CSS Comments
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -813,16 +813,22 @@ help document your source code.
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* This is a single-line comment */
-      <br/>
-      p
+     <pre><code class="code language-css">/* This is a single-line comment */
+p
 {
-      <br/>
-      color: red;
-      <br/>
-      }
-     </div>
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You can add comments wherever you want in the code:
@@ -831,15 +837,22 @@ help document your source code.
      <h3>
       Example
      </h3>
-     <div class="code">
-      p
+     <pre><code class="code language-css">p
 {
-      <br/>
-      color: red; 
-  /* Set text color to red */
-      <br/>
-      }
-     </div>
+color: red;
+/* Set text color to red */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Even in the middle of a code line:
@@ -848,14 +861,21 @@ help document your source code.
      <h3>
       Example
      </h3>
-     <div class="code">
-      p
+     <pre><code class="code language-css">p
 {
-      <br/>
-      color: /*red*/blue;
-      <br/>
-      }
-     </div>
+color: /*red*/blue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Comments can also span 
@@ -865,22 +885,24 @@ multiple lines:
      <h3>
       Example
      </h3>
-     <div class="code">
-      /* This is
-      <br/>
-      a multi-line
-      <br/>
-      comment */
-      <br/>
-      <br/>
-      p
+     <pre><code class="code language-css">/* This is
+a multi-line
+comment */
+p
 {
-      <br/>
-      color: red;
-      <br/>
-      }
-      <br/>
-     </div>
+color: red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -900,52 +922,41 @@ multiple lines:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;!DOCTYPE html&gt;
-      <br/>
-      &lt;html&gt;
-      <br/>
-      &lt;head&gt;
-      <br/>
-      &lt;style&gt;
-      <br/>
-      p {
-      <br/>
-      color: red; /* Set 
-  text color to red */
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      &lt;/head&gt;
-      <br/>
-      &lt;body&gt;
-      <br/>
-      <br/>
-      &lt;h2&gt;My 
-  Heading&lt;/h2&gt;
-      <br/>
-      <br/>
-      &lt;!-- These paragraphs will be red --&gt;
-      <br/>
-      &lt;p&gt;Hello 
-  World!&lt;/p&gt;
-      <br/>
-      &lt;p&gt;This paragraph is styled with CSS.&lt;/p&gt;
-      <br/>
-      &lt;p&gt;HTML 
-  and CSS comments are 
-  not shown in the output.&lt;/p&gt;
-      <br/>
-      <br/>
-      &lt;/body&gt;
-      <br/>
-      &lt;/html&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+p {
+color: red; /* Set
+text color to red */
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;My
+Heading&lt;/h2&gt;
+&lt;!-- These paragraphs will be red --&gt;
+&lt;p&gt;Hello
+World!&lt;/p&gt;
+&lt;p&gt;This paragraph is styled with CSS.&lt;/p&gt;
+&lt;p&gt;HTML
+and CSS comments are
+not shown in the output.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
-     <hr/>
+    <hr/>
     <div class="nextprev">
      <a class="btn" href="css_howto.html">
       ❮ Previous
@@ -958,8 +969,12 @@ multiple lines:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

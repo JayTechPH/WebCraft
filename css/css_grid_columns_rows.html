@@ -9,6 +9,7 @@
   <title>
    CSS Grid Columns, Rows and Gaps
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -711,7 +712,7 @@
       Grid Intro
      </p>
     </a>
-    <a href="css_grid_columns_rows.html" class="selected">
+    <a class="selected" href="css_grid_columns_rows.html">
      <p>
       Grid Columns/Rows
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -854,17 +854,21 @@ between the columns in a grid.
      <p>
       Specify a 50 pixels gap between the columns in the grid:
      </p>
-     <div class="code">
-      .container {
-      <br/>
-      display: grid;
-      <br/>
-      <b>
-      </b>
-      column-gap: 50px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: grid;
+column-gap: 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -916,19 +920,21 @@ between the rows in a grid.
      <p>
       Specify a 50 pixels gap between the rows in the grid:
      </p>
-     <div class="code">
-      .container {
-      <br/>
-      display: grid;
-      <br/>
-      <b>
-      </b>
-      row-gap: 50px;
-      <b>
-       <br/>
-      </b>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: grid;
+row-gap: 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -987,19 +993,21 @@ between the rows in a grid.
      <p>
       Set the gap between rows to 50px, and the gap between columns to 100px in the grid:
      </p>
-     <div class="code">
-      .container {
-      <br/>
-      display: grid;
-      <br/>
-      <b>
-      </b>
-      gap: 50px 100px;
-      <b>
-       <br/>
-      </b>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: grid;
+gap: 50px 100px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1039,19 +1047,21 @@ between the rows in a grid.
      <p>
       Set the gap between rows and the columns to 50px in the grid:
      </p>
-     <div class="code">
-      .container {
-      <br/>
-      display: grid;
-      <br/>
-      <b>
-      </b>
-      gap: 50px;
-      <b>
-       <br/>
-      </b>
-      }
-     </div>
+     <pre><code class="code language-css">.container {
+display: grid;
+gap: 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1168,17 +1178,21 @@ end a grid item.
      <p>
       Place the first grid item at column-line 1, and let it end on column-line 3:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-column-start: 1;
-      <br/>
-      grid-column-end: 3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-column-start: 1;
+grid-column-end: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1237,16 +1251,21 @@ end a grid item.
      <p>
       Place the first grid item at column-line 1, and let it span 2 columns:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-column: 1 / span 
-  2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-column: 1 / span
+2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1306,17 +1325,21 @@ end a grid item.
      <p>
       Place the first grid item at row line 1, and let it end on row line 3:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-row-start: 1;
-      <br/>
-      grid-row-end: 3;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-row-start: 1;
+grid-row-end: 3;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1375,15 +1398,20 @@ end a grid item.
      <p>
       Place the first grid item at row-line 1, and let it span 2 rows:
      </p>
-     <div class="code">
-      .item1 {
-      <br/>
-      <b>
-      </b>
-      grid-row: 1 / span 2;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.item1 {
+grid-row: 1 / span 2;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -1431,7 +1459,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        display
+       display
       </td>
       <td>
        Specifies the display behavior (the type of rendering box) of an element
@@ -1439,7 +1467,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        column-gap
+       column-gap
       </td>
       <td>
        Specifies the gap between the columns
@@ -1447,7 +1475,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        gap
+       gap
       </td>
       <td>
        A shorthand property for the
@@ -1463,7 +1491,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-column
+       grid-column
       </td>
       <td>
        A shorthand property for the
@@ -1479,7 +1507,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-column-end
+       grid-column-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1487,7 +1515,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-column-start
+       grid-column-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1495,7 +1523,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-row
+       grid-row
       </td>
       <td>
        A shorthand property for the
@@ -1511,7 +1539,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-row-end
+       grid-row-end
       </td>
       <td>
        Specifies where to end the grid item
@@ -1519,7 +1547,7 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        grid-row-start
+       grid-row-start
       </td>
       <td>
        Specifies where to start the grid item
@@ -1527,16 +1555,16 @@ end a grid item.
      </tr>
      <tr>
       <td>
-        row-gap
+       row-gap
       </td>
       <td>
        Specifies the gap between the grid rows
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_grid.html">
       ❮ Previous
      </a>
@@ -1548,8 +1576,12 @@ end a grid item.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Padding
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -83,7 +84,7 @@
       CSS Comments
      </p>
     </a>
-    <a href="css_padding.html" class="selected">
+    <a class="selected" href="css_padding.html">
      <p>
       CSS Padding
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -867,19 +867,23 @@ side of an element:
      <p>
       Set different padding for all four sides of a &lt;div&gt; element:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      padding-top: 50px;
-      <br/>
-      padding-right: 30px;
-      <br/>
-      padding-bottom: 50px;
-      <br/>
-      padding-left: 80px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -957,13 +961,20 @@ padding properties:
      <p>
       Use the padding shorthand property with four values:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      padding: 25px 50px 75px 100px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+padding: 25px 50px 75px 100px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -997,13 +1008,20 @@ padding properties:
      <p>
       Use the padding shorthand property with three values:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      padding: 25px 50px 75px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+padding: 25px 50px 75px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -1034,13 +1052,20 @@ padding properties:
      <p>
       Use the padding shorthand property with two values:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      padding: 25px 50px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+padding: 25px 50px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If the
@@ -1068,13 +1093,20 @@ padding properties:
      <p>
       Use the padding shorthand property with one value:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      padding: 25px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+padding: 25px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1106,15 +1138,21 @@ be added to the total width of the element. This is often an undesirable result.
 However, the actual width of the &lt;div&gt; element will be 350px (300px + 
 25px of left padding + 25px of right padding):
      </p>
-     <div class="code">
-      div {
-      <br/>
-      width: 300px;
-      <br/>
-      padding: 25px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 300px;
+padding: 25px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      To keep the width at 300px, no matter the amount of padding, you can use the
@@ -1132,39 +1170,44 @@ you increase the padding, the available content space will decrease.
       Use the box-sizing property to keep the width at 300px, no matter the 
   amount of padding:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      width: 300px;
-      <br/>
-      padding: 25px;
-      <br/>
-      box-sizing: border-box;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+width: 300px;
+padding: 25px;
+box-sizing: border-box;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
      More Examples
     </h2>
     <p>
-      Set the left padding
+     Set the left padding
      <br/>
      This example demonstrates how to set the left padding of a &lt;p&gt; element.
     </p>
     <p>
-      Set the right padding
+     Set the right padding
      <br/>
      This example demonstrates how to set the right padding of a &lt;p&gt; element.
     </p>
     <p>
-      Set the top padding
+     Set the top padding
      <br/>
      This example demonstrates how to set the top padding of a &lt;p&gt; element.
     </p>
     <p>
-      Set the bottom padding
+     Set the bottom padding
      <br/>
      This example demonstrates how to set the bottom padding of a &lt;p&gt; element.
     </p>
@@ -1183,7 +1226,7 @@ you increase the padding, the available content space will decrease.
      </tr>
      <tr>
       <td>
-        padding
+       padding
       </td>
       <td>
        A shorthand property for setting all the padding properties in one declaration
@@ -1191,7 +1234,7 @@ you increase the padding, the available content space will decrease.
      </tr>
      <tr>
       <td>
-        padding-bottom
+       padding-bottom
       </td>
       <td>
        Sets the bottom padding of an element
@@ -1199,7 +1242,7 @@ you increase the padding, the available content space will decrease.
      </tr>
      <tr>
       <td>
-        padding-left
+       padding-left
       </td>
       <td>
        Sets the left padding of an element
@@ -1207,7 +1250,7 @@ you increase the padding, the available content space will decrease.
      </tr>
      <tr>
       <td>
-        padding-right
+       padding-right
       </td>
       <td>
        Sets the right padding of an element
@@ -1215,16 +1258,16 @@ you increase the padding, the available content space will decrease.
      </tr>
      <tr>
       <td>
-        padding-top
+       padding-top
       </td>
       <td>
        Sets the top padding of an element
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_comments.html">
       ❮ Previous
      </a>
@@ -1236,8 +1279,12 @@ you increase the padding, the available content space will decrease.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

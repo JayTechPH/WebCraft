@@ -8,46 +8,47 @@
   <title>
    HTML Picture Element
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -348,7 +349,7 @@
       Background Images
      </p>
     </a>
-    <a href="html_images_picture.html" class="selected">
+    <a class="selected" href="html_images_picture.html">
      <p>
       The Picture Element
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -505,17 +505,22 @@ most suitable.
      <p>
       Show different images for different screen sizes:
      </p>
-     <div class="code">
-      &lt;picture&gt;
-      <br/>
-      &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
-      <br/>
-      &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
-      <br/>
-      &lt;img src="img_girl.jpg"&gt;
-      <br/>
-      &lt;/picture&gt;
-     </div>
+     <pre><code class="code language-html">&lt;picture&gt;
+&lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
+&lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
+&lt;img src="img_girl.jpg"&gt;
+&lt;/picture&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -589,18 +594,23 @@ of the following elements.
      <p>
       The browser will use the first image format it recognizes:
      </p>
-     <div class="code">
-      &lt;picture&gt;
-      <br/>
-      &lt;source srcset="img_avatar.png"&gt;
-      <br/>
-      &lt;source srcset="img_girl.jpg"&gt;
-      <br/>
-      &lt;img src="img_beatles.gif" 
-  alt="Beatles" style="width:auto;"&gt;
-      <br/>
-      &lt;/picture&gt;
-     </div>
+     <pre><code class="code language-html">&lt;picture&gt;
+&lt;source srcset="img_avatar.png"&gt;
+&lt;source srcset="img_girl.jpg"&gt;
+&lt;img src="img_beatles.gif"
+alt="Beatles" style="width:auto;"&gt;
+&lt;/picture&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -634,7 +644,7 @@ values, and ignore any following
      </tr>
      <tr>
       <td>
-        &lt;img&gt;
+       &lt;img&gt;
       </td>
       <td>
        Defines an image
@@ -642,7 +652,7 @@ values, and ignore any following
      </tr>
      <tr>
       <td>
-        &lt;map&gt;
+       &lt;map&gt;
       </td>
       <td>
        Defines an image map
@@ -650,7 +660,7 @@ values, and ignore any following
      </tr>
      <tr>
       <td>
-        &lt;area&gt;
+       &lt;area&gt;
       </td>
       <td>
        Defines a clickable area inside an image map
@@ -658,14 +668,14 @@ values, and ignore any following
      </tr>
      <tr>
       <td>
-        &lt;picture&gt;
+       &lt;picture&gt;
       </td>
       <td>
        Defines a container for multiple image resources
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_images_background.html">
@@ -679,8 +689,10 @@ values, and ignore any following
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

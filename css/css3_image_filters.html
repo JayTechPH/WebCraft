@@ -9,6 +9,7 @@
   <title>
    CSS Image Filter Effects
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -561,7 +562,7 @@
       CSS Image Centering
      </p>
     </a>
-    <a href="css3_image_filters.html" class="selected">
+    <a class="selected" href="css3_image_filters.html">
      <p>
       CSS Image Filters
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -793,7 +793,7 @@
     <p>
      The CSS
      <code class="codespan">
-       filter
+      filter
      </code>
      property is used to add visual effects (like blur and saturation) to elements.
     </p>
@@ -870,21 +870,24 @@
      <p>
       Apply different blur effects to &lt;img&gt; elements:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: 
-  blur(2px);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: blur(6px);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter:
+blur(2px);
+}
+#img2 {
+filter: blur(6px);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -920,20 +923,23 @@ brightness of an element.
      <p>
       Make an image brighter and darker than the original:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: brightness(150%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: brightness(50%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: brightness(150%);
+}
+#img2 {
+filter: brightness(50%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -969,21 +975,24 @@ contrast of an element.
      <p>
       Increase and decrease the contrast for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: contrast(150%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  contrast(50%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: contrast(150%);
+}
+#img2 {
+filter:
+contrast(50%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1005,20 +1014,23 @@ a drop-shadow effect to an image.
      <p>
       Add different drop-shadow effects to an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: drop-shadow(8px 8px 10px gray);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: drop-shadow(10px 10px 7px lightblue);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: drop-shadow(8px 8px 10px gray);
+}
+#img2 {
+filter: drop-shadow(10px 10px 7px lightblue);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1048,28 +1060,27 @@ an image to grayscale.
      <p>
       Set various grayscale for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: grayscale(1);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  grayscale(60%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: grayscale(0.4);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: grayscale(1);
+}
+#img2 {
+filter:
+grayscale(60%);
+}
+#img3 {
+filter: grayscale(0.4);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1096,28 +1107,27 @@ hue value. 0deg represents the original image.
      <p>
       Set various color rotations for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: hue-rotate(200deg);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  hue-rotate(90deg);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: hue-rotate(-90deg);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: hue-rotate(200deg);
+}
+#img2 {
+filter:
+hue-rotate(90deg);
+}
+#img3 {
+filter: hue-rotate(-90deg);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1146,28 +1156,27 @@ hue value. 0deg represents the original image.
      <p>
       Invert the colors of an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: invert(0.3);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  invert(70%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: invert(100%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: invert(0.3);
+}
+#img2 {
+filter:
+invert(70%);
+}
+#img3 {
+filter: invert(100%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1199,28 +1208,27 @@ hue value. 0deg represents the original image.
      <p>
       Set various opacity for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: opacity(80%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  opacity(50%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: opacity(0.2);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: opacity(80%);
+}
+#img2 {
+filter:
+opacity(50%);
+}
+#img3 {
+filter: opacity(0.2);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1252,28 +1260,27 @@ hue value. 0deg represents the original image.
      <p>
       Set various saturations for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: saturate(0);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: 
-  saturate(100%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: saturate(200%);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: saturate(0);
+}
+#img2 {
+filter:
+saturate(100%);
+}
+#img3 {
+filter: saturate(200%);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1302,27 +1309,26 @@ hue value. 0deg represents the original image.
      <p>
       Set various sepia for an image:
      </p>
-     <div class="code">
-      #img1 {
-      <br/>
-      filter: sepia(1);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img2 {
-      <br/>
-      filter: sepia(60%);
-      <br/>
-      }
-      <br/>
-      <br/>
-      #img3 {
-      <br/>
-      filter: sepia(0.4);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#img1 {
+filter: sepia(1);
+}
+#img2 {
+filter: sepia(60%);
+}
+#img3 {
+filter: sepia(0.4);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1343,7 +1349,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        blur()
+       blur()
       </td>
       <td>
        Applies a blur effect to an element
@@ -1351,7 +1357,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        brightness()
+       brightness()
       </td>
       <td>
        Adjusts the brightness of an element
@@ -1359,7 +1365,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        contrast()
+       contrast()
       </td>
       <td>
        Adjusts the contrast of an element
@@ -1367,7 +1373,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        drop-shadow()
+       drop-shadow()
       </td>
       <td>
        Applies a drop-shadow effect to an image
@@ -1375,7 +1381,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        grayscale()
+       grayscale()
       </td>
       <td>
        Converts an image to grayscale
@@ -1383,7 +1389,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        hue-rotate()
+       hue-rotate()
       </td>
       <td>
        Applies a color rotation to an element
@@ -1391,7 +1397,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        invert()
+       invert()
       </td>
       <td>
        Inverts the color of an image
@@ -1399,7 +1405,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        opacity()
+       opacity()
       </td>
       <td>
        Applies an opacity effect to an element
@@ -1407,7 +1413,7 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        saturate()
+       saturate()
       </td>
       <td>
        Adjusts the saturation (color intensity) of an element
@@ -1415,16 +1421,16 @@ hue value. 0deg represents the original image.
      </tr>
      <tr>
       <td>
-        sepia()
+       sepia()
       </td>
       <td>
        Converts an image to sepia
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_image_center.html">
       ❮ Previous
      </a>
@@ -1436,8 +1442,12 @@ hue value. 0deg represents the original image.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

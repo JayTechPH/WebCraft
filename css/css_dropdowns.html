@@ -9,6 +9,7 @@
   <title>
    CSS Dropdowns
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -168,7 +169,7 @@
       CSS Opacity
      </p>
     </a>
-    <a href="css_dropdowns.html" class="selected">
+    <a class="selected" href="css_dropdowns.html">
      <p>
       CSS Dropdowns
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -852,61 +852,44 @@ element.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      .dropdown {
-      <br/>
-      position: relative;
-      <br/>
-      display: inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .dropdown-content {
-      <br/>
-      display: 
-none;
-      <br/>
-      position: absolute;
-      <br/>
-      background-color: #f9f9f9;
-      <br/>
-      min-width: 160px;
-      <br/>
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      <br/>
-      padding: 
-12px 16px;
-      <br/>
-      z-index: 1;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .dropdown:hover 
+     <pre><code class="code language-css">&lt;style&gt;
+.dropdown {
+position: relative;
+display: inline-block;
+}
 .dropdown-content {
-      <br/>
-      display: block;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      <br/>
-      &lt;div class="dropdown"&gt;
-      <br/>
-      &lt;span&gt;Mouse over me&lt;/span&gt;
-      <br/>
-      &lt;div class="dropdown-content"&gt;
-      <br/>
-      &lt;p&gt;Hello World!&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+display:
+none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding:
+12px 16px;
+z-index: 1;
+}
+.dropdown:hover
+.dropdown-content {
+display: block;
+}
+&lt;/style&gt;
+&lt;div class="dropdown"&gt;
+&lt;span&gt;Mouse over me&lt;/span&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3>
      Example Explained
@@ -1018,121 +1001,74 @@ mouse over the dropdown button.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;style&gt;
-      <br/>
-      /* Style The Dropdown Button */
-      <br/>
-      .dropbtn {
-      <br/>
-      background-color: #4CAF50;
-      <br/>
-      color: white;
-      <br/>
-      padding: 16px;
-      <br/>
-      font-size: 16px;
-      <br/>
-      border: none;
-      <br/>
-      cursor: pointer;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* The 
+     <pre><code class="code language-css">&lt;style&gt;
+/* Style The Dropdown Button */
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+/* The
 container &lt;div&gt; - needed to position the dropdown content */
-      <br/>
-      .dropdown {
-      <br/>
-      position: relative;
-      <br/>
-      display: 
+.dropdown {
+position: relative;
+display:
 inline-block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Dropdown Content (Hidden by Default) */
-      <br/>
-      .dropdown-content {
-      <br/>
-      display: none;
-      <br/>
-      position: 
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position:
 absolute;
-      <br/>
-      background-color: #f9f9f9;
-      <br/>
-      min-width: 160px;
-      <br/>
-      box-shadow: 
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow:
 0px 8px 16px 0px rgba(0,0,0,0.2);
-      <br/>
-      z-index: 1;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Links inside the dropdown */
-      <br/>
-      .dropdown-content a {
-      <br/>
-      color: black;
-      <br/>
-      padding: 12px 16px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      display: block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Change color of dropdown links on hover */
-      <br/>
-      .dropdown-content a:hover {background-color: #f1f1f1}
-      <br/>
-      <br/>
-      /* Show the 
+z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+/* Show the
 dropdown menu on hover */
-      <br/>
-      .dropdown:hover .dropdown-content {
-      <br/>
-      display: block;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Change the background color of the dropdown 
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/* Change the background color of the dropdown
 button when the dropdown content is shown */
-      <br/>
-      .dropdown:hover .dropbtn {
-      <br/>
-      background-color: #3e8e41;
-      <br/>
-      }
-      <br/>
-      &lt;/style&gt;
-      <br/>
-      <br/>
-      &lt;div class="dropdown"&gt;
-      <br/>
-      &lt;button class="dropbtn"&gt;Dropdown&lt;/button&gt;
-      <br/>
-      &lt;div class="dropdown-content"&gt;
-      <br/>
-      &lt;a href="#"&gt;Link 
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+&lt;/style&gt;
+&lt;div class="dropdown"&gt;
+&lt;button class="dropbtn"&gt;Dropdown&lt;/button&gt;
+&lt;div class="dropdown-content"&gt;
+&lt;a href="#"&gt;Link
 1&lt;/a&gt;
-      <br/>
-      &lt;a href="#"&gt;Link 2&lt;/a&gt;
-      <br/>
-      &lt;a href="#"&gt;Link 3&lt;/a&gt;
-      <br/>
-      &lt;/div&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+&lt;a href="#"&gt;Link 2&lt;/a&gt;
+&lt;a href="#"&gt;Link 3&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1182,14 +1118,20 @@ button when the dropdown content is shown */
      <h3>
       Example
      </h3>
-     <div class="code">
-      .dropdown-content {
-      <br/>
-      right: 0;
-      <br/>
-      }
-      <br/>
-     </div>
+     <pre><code class="code language-css">.dropdown-content {
+right: 0;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1244,8 +1186,12 @@ button when the dropdown content is shown */
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

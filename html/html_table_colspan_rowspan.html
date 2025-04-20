@@ -8,46 +8,47 @@
   <title>
    HTML Table Colspan &amp; Rowspan
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -292,7 +293,7 @@
       Padding &amp; Spacing
      </p>
     </a>
-    <a href="html_table_colspan_rowspan.html" class="selected">
+    <a class="selected" href="html_table_colspan_rowspan.html">
      <p>
       Colspan &amp; Rowspan
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -578,39 +578,33 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th colspan="2"&gt;Name&lt;/th&gt;
-      <br/>
-      &lt;th&gt;Age&lt;/th&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Jill&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Smith&lt;/td&gt;
-      <br/>
-      &lt;td&gt;43&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;Eve&lt;/td&gt;
-      <br/>
-      &lt;td&gt;Jackson&lt;/td&gt;
-      <br/>
-      &lt;td&gt;57&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;th colspan="2"&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jill&lt;/td&gt;
+&lt;td&gt;Smith&lt;/td&gt;
+&lt;td&gt;43&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Eve&lt;/td&gt;
+&lt;td&gt;Jackson&lt;/td&gt;
+&lt;td&gt;57&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -639,33 +633,30 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;table&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th&gt;Name&lt;/th&gt;
-      <br/>
-      &lt;td&gt;Jill&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;th rowspan="2"&gt;Phone&lt;/th&gt;
-      <br/>
-      &lt;td&gt;555-1234&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;tr&gt;
-      <br/>
-      &lt;td&gt;555-8745&lt;/td&gt;
-      <br/>
-      &lt;/tr&gt;
-      <br/>
-      &lt;/table&gt;
-     </div>
+     <pre><code class="code language-html">&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;td&gt;Jill&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th rowspan="2"&gt;Phone&lt;/th&gt;
+&lt;td&gt;555-1234&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;555-8745&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -694,8 +685,10 @@ rows to span.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Gradients
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -629,7 +630,7 @@
     <p>
      CSS Gradients
     </p>
-    <a href="css3_gradients.html" class="selected">
+    <a class="selected" href="css3_gradients.html">
      <p>
       Linear Gradients
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -850,13 +850,20 @@ with the gradient effect.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(red, yellow);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(red, yellow);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -874,13 +881,20 @@ yellow:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(to right, red , yellow);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(to right, red , yellow);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -901,13 +915,20 @@ goes to bottom right). It starts red, transitioning to yellow:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(to bottom right, red, yellow);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(to bottom right, red, yellow);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -950,13 +971,20 @@ top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(180deg, red, yellow);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(180deg, red, yellow);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -972,13 +1000,20 @@ multiple color stops:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(red, yellow, green);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(red, yellow, green);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The following example shows how to create a linear gradient (from left to 
@@ -991,13 +1026,20 @@ right) with the color of the rainbow and some text:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1021,14 +1063,21 @@ indicates full color (no transparency).
      <h3>
       Example
      </h3>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: linear-gradient(to right, rgba(255,0,0,0), 
+     <pre><code class="code language-css">#grad {
+background-image: linear-gradient(to right, rgba(255,0,0,0),
 rgba(255,0,0,1));
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1046,14 +1095,21 @@ rgba(255,0,0,1));
      <p>
       A repeating linear gradient:
      </p>
-     <div class="code">
-      #grad {
-      <br/>
-      background-image: 
+     <pre><code class="code language-css">#grad {
+background-image:
 repeating-linear-gradient(red, yellow 10%, green 20%);
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1069,8 +1125,12 @@ repeating-linear-gradient(red, yellow 10%, green 20%);
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

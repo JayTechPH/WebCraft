@@ -9,6 +9,7 @@
   <title>
    CSS Color Keywords
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -511,7 +512,7 @@
       CSS Colors
      </p>
     </a>
-    <a href="css_colors_keywords.html" class="selected">
+    <a class="selected" href="css_colors_keywords.html">
      <p>
       CSS Color Keywords
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -817,20 +817,23 @@ an element.
       Here, the background color of the &lt;div&gt; element will be fully 
  transparent, and the background image will show through:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background-image: url("paper.gif");
-      <br/>
-      }
-      <br/>
-      <br/>
-      div {
-      <br/>
-      background-color: transparent;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-image: url("paper.gif");
+}
+div {
+background-color: transparent;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -879,15 +882,21 @@ element or a page.
       In this example the border color of the &lt;div&gt; element will be blue, because the 
  text color of the &lt;div&gt; element is blue:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      color: blue;
-      <br/>
-      border: 10px solid currentcolor;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+color: blue;
+border: 10px solid currentcolor;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -897,21 +906,24 @@ element or a page.
       In this example the &lt;div&gt;'s background color is set to the current color 
  value of the body element:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      color: purple;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div {
-      <br/>
-      background-color: 
-  currentcolor;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+color: purple;
+}
+div {
+background-color:
+currentcolor;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="code-container">
      <h3>
@@ -921,23 +933,25 @@ element or a page.
       In this example the &lt;div&gt;'s border color and shadow color is set to 
  the current color value of the body element:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      color: green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      div {
-      <br/>
-      box-shadow: 0px 0px 
-  15px currentcolor;
-      <br/>
-      border: 5px solid currentcolor;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+color: green;
+}
+div {
+box-shadow: 0px 0px
+15px currentcolor;
+border: 5px solid currentcolor;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -967,21 +981,24 @@ property, and on any HTML element.
       In this example the &lt;span&gt;'s border settings will be inherited from 
  the parent element:
      </p>
-     <div class="code">
-      div {
-      <br/>
-      border: 2px solid red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      span {
-      <br/>
-      border: 
-  inherit;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+border: 2px solid red;
+}
+span {
+border:
+inherit;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -997,8 +1014,12 @@ property, and on any HTML element.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

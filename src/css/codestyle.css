@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #ffffff;
+    color: var(--text-color);
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 h2 {
     font-size: 2vw;
-    margin-top: 2vw; /* Adjusted for consistency in vw scale */
+    margin-top: 2vw;
 }
 
 h3 {
@@ -62,19 +62,23 @@ table tr:nth-child(even) {
     overflow-x: auto;
 }
 
-.code {
-    font-family: "Courier New", Courier, monospace;
-    background-color: #363636;
-    color: #dcdcdc;
+.code-container pre {
+    border-radius: 0.4vw;
+    line-height: 1.5;
     padding: 1vw;
     font-size: 1vw;
-    line-height: 1.5;
-    border-radius: 0.4vw;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  background: #363636 !important;
+  color: var(--text-color) !important;
+  text-shadow: none !important;
 }
 
 .codespan {
     background-color: #1e1e1e;
-    color: #569cd6;
+    color: #1F6FEB;
 }
 
 .deprecated {
@@ -96,7 +100,6 @@ table tr:nth-child(even) {
     padding: 1.5vw;
     margin: 2vw 0;
     border-radius: 0.5vw;
-    
 }
 
 .note p {
@@ -106,7 +109,7 @@ table tr:nth-child(even) {
 }
 
 .spes_tagname {
-    color: #569cd6;
+    color: #1F6FEB;
 }
 
 .spes_tag {
@@ -158,4 +161,28 @@ table tr:nth-child(even) {
 
 .ws-hover-black:hover {
     background-color: #8b8b8b;
+}
+
+.token.tag {
+    color: #1F6FEB !important;
+}
+
+.token.selector {
+    color: #1F6FEB  !important;
+}
+
+.token.property {
+    color: #ff9800 !important;
+  }
+
+.copy-btn {
+    position: relative;
+    background-color: #454545;
+    color: white;
+    padding: 0.3vw;
+    width: 8vw;
+    font-size: 1vw;
+    right: -65vw;
+    border-radius: 0.6vw;
+    border: none;
 }

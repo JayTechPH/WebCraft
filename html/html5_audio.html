@@ -8,46 +8,47 @@
   <title>
    HTML Audio
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -412,7 +413,7 @@
       HTML Video
      </p>
     </a>
-    <a href="html5_audio.html" class="selected">
+    <a class="selected" href="html5_audio.html">
      <p>
       HTML Audio
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -466,17 +466,22 @@ play an audio file on a web page.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;audio controls&gt;
-      <br/>
-      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-      <br/>
-      &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-      <br/>
-      Your browser does not support the audio element.
-      <br/>
-      &lt;/audio&gt;
-     </div>
+     <pre><code class="code language-html">&lt;audio controls&gt;
+&lt;source src="horse.ogg" type="audio/ogg"&gt;
+&lt;source src="horse.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -529,17 +534,22 @@ support the
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;audio controls autoplay&gt;
-      <br/>
-      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-      <br/>
-      &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-      <br/>
-      Your browser does not support the audio element.
-      <br/>
-      &lt;/audio&gt;
-     </div>
+     <pre><code class="code language-html">&lt;audio controls autoplay&gt;
+&lt;source src="horse.ogg" type="audio/ogg"&gt;
+&lt;source src="horse.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <div class="note">
      <p>
@@ -565,17 +575,22 @@ allow autoplay in most cases. However, muted autoplay is always allowed.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;audio controls autoplay muted&gt;
-      <br/>
-      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-      <br/>
-      &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-      <br/>
-      Your browser does not support the audio element.
-      <br/>
-      &lt;/audio&gt;
-     </div>
+     <pre><code class="code language-html">&lt;audio controls autoplay muted&gt;
+&lt;source src="horse.ogg" type="audio/ogg"&gt;
+&lt;source src="horse.mp3" type="audio/mpeg"&gt;
+Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -798,23 +813,23 @@ allow autoplay in most cases. However, muted autoplay is always allowed.
      </tr>
      <tr>
       <td>
-        &lt;audio&gt;
-       </td>
+       &lt;audio&gt;
+      </td>
       <td>
        Defines sound content
       </td>
      </tr>
      <tr>
       <td>
-        &lt;source&gt;
-       </td>
+       &lt;source&gt;
+      </td>
       <td>
        Defines multiple media resources for media elements, such as &lt;video&gt; and 
 &lt;audio&gt;
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html5_video.html">
@@ -828,8 +843,10 @@ allow autoplay in most cases. However, muted autoplay is always allowed.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

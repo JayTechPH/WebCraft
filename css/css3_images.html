@@ -9,6 +9,7 @@
   <title>
    CSS Styling Images
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -551,7 +552,7 @@
       CSS Tooltips
      </p>
     </a>
-    <a href="css3_images.html" class="selected">
+    <a class="selected" href="css3_images.html">
      <p>
       CSS Image Styling
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -805,13 +805,20 @@
        <p>
         Rounded Image:
        </p>
-       <div class="code">
-        img {
-        <br/>
-        border-radius: 8px;
-        <br/>
-        }
-       </div>
+       <pre><code class="code language-css">img {
+border-radius: 8px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
       </div>
      </div>
      <div class="w3-half">
@@ -823,13 +830,20 @@
        <p>
         Circled Image:
        </p>
-       <div class="code">
-        img {
-        <br/>
-        border-radius: 50%;
-        <br/>
-        }
-       </div>
+       <pre><code class="code language-css">img {
+border-radius: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
       </div>
      </div>
     </div>
@@ -942,16 +956,22 @@ scale up to be larger than its original size, add the following:
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      max-width: 100%;
-      <br/>
-      height: 
+     <pre><code class="code language-css">img {
+max-width: 100%;
+height:
 auto;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -993,30 +1013,28 @@ auto;
      <h3>
       Example
      </h3>
-     <div class="code">
-      div.polaroid {
-      <br/>
-      width: 80%;
-      <br/>
-      background-color: white;
-      <br/>
-      box-shadow: 0 4px 8px 0 rgba(0, 
+     <pre><code class="code language-css">div.polaroid {
+width: 80%;
+background-color: white;
+box-shadow: 0 4px 8px 0 rgba(0,
 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      <br/>
-      }
-      <br/>
-      <br/>
-      img {width: 100%}
-      <br/>
-      <br/>
-      div.container {
-      <br/>
-      text-align: center;
-      <br/>
-      padding: 10px 20px;
-      <br/>
-      }
-     </div>
+}
+img {width: 100%}
+div.container {
+text-align: center;
+padding: 10px 20px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1055,13 +1073,20 @@ auto;
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      opacity: 0.5;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+opacity: 0.5;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Also look at the
@@ -1239,13 +1264,20 @@ etc.) to images.
      <h3>
       Example
      </h3>
-     <div class="code">
-      img:hover {
-      <br/>
-      transform: scaleX(-1);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img:hover {
+transform: scaleX(-1);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1302,43 +1334,35 @@ browser window to see the effect:
      <h3>
       Example
      </h3>
-     <div class="code">
-      .responsive {
-      <br/>
-      padding: 0 6px;
-      <br/>
-      float: left;
-      <br/>
-      width: 24.99999%;
-      <br/>
-      }
-      <br/>
-      <br/>
-      @media only screen and 
+     <pre><code class="code language-css">.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+@media only screen and
 (max-width: 700px){
-      <br/>
-      .responsive {
-      <br/>
-      width: 49.99999%;
-      <br/>
-      margin: 6px 
+.responsive {
+width: 49.99999%;
+margin: 6px
 0;
-      <br/>
-      }
-      <br/>
-      }
-      <br/>
-      <br/>
-      @media only screen and (max-width: 500px){
-      <br/>
-      .responsive {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-      <br/>
-      }
-     </div>
+}
+}
+@media only screen and (max-width: 500px){
+.responsive {
+width: 100%;
+}
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      <b>
@@ -1418,7 +1442,7 @@ on &lt;span&gt; (x), close the modal
     </div>
     <div class="modal" id="myModal2">
      <span class="close" onclick="document.getElementById('myModal2').style.display='none'">
-      ×
+      &times;
      </span>
      <img class="modal-content" id="img01"/>
      <div id="caption">
@@ -1451,8 +1475,12 @@ images.onclick = function(){
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

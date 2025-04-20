@@ -9,6 +9,7 @@
   <title>
    CSS Great Font Pairings
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -414,7 +415,7 @@
       Font Google
      </p>
     </a>
-    <a href="css_font_pairings.html" class="selected">
+    <a class="selected" href="css_font_pairings.html">
      <p>
       Font Pairings
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -836,32 +836,30 @@ your page. This can be achieved by varying the size, weight and color.
      <p>
       No doubt "Georgia" is the boss here:
      </p>
-     <div class="code">
-      body {
-      <br/>
-      background-color: black;
-      <br/>
-      font-family: Verdana, 
-  sans-serif;
-      <br/>
-      font-size: 16px;
-      <br/>
-      color: gray;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1 
-  {
-      <br/>
-      font-family: Georgia, serif;
-      <br/>
-      font-size: 60px;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">body {
+background-color: black;
+font-family: Verdana,
+sans-serif;
+font-size: 16px;
+color: gray;
+}
+h1
+{
+font-family: Georgia, serif;
+font-size: 60px;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Below, we have shown some popular font pairings that will suit many brands and contexts.
@@ -1146,8 +1144,12 @@ Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, wi
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

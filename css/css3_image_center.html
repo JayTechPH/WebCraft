@@ -9,6 +9,7 @@
   <title>
    CSS Centering Images
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -556,7 +557,7 @@
       CSS Image Styling
      </p>
     </a>
-    <a href="css3_image_center.html" class="selected">
+    <a class="selected" href="css3_image_center.html">
      <p>
       CSS Image Centering
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -829,17 +829,22 @@ width of the image must be smaller than the width of the page.
      <h3>
       Example
      </h3>
-     <div class="code">
-      img {
-      <br/>
-      display: block;
-      <br/>
-      margin: auto;
-      <br/>
-      width: 50%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">img {
+display: block;
+margin: auto;
+width: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h3>
      2. Using display: flex
@@ -891,22 +896,24 @@ width of the image must be smaller than the width of the page.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img {
-      <br/>
-      width: 50%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+display: flex;
+justify-content: center;
+}
+img {
+width: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -972,31 +979,29 @@ width of the image must be smaller than the width of the page.
      <h3>
       Example
      </h3>
-     <div class="code">
-      div {
-      <br/>
-      display: flex;
-      <br/>
-      justify-content: center;
-      <br/>
-      align-items: center;
-      <br/>
-      height: 600px;
-      <br/>
-      border: 1px solid 
-  black;
-      <br/>
-      }
-      <br/>
-      <br/>
-      img {
-      <br/>
-      width: 50%;
-      <br/>
-      height: 50%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">div {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px;
+border: 1px solid
+black;
+}
+img {
+width: 50%;
+height: 50%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1012,8 +1017,12 @@ width of the image must be smaller than the width of the page.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

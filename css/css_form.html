@@ -9,6 +9,7 @@
   <title>
    CSS Forms
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -188,7 +189,7 @@
       CSS Attr Selectors
      </p>
     </a>
-    <a href="css_form.html" class="selected">
+    <a class="selected" href="css_form.html">
      <p>
       CSS Forms
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -828,14 +828,21 @@
      <h3>
       Example
      </h3>
-     <div class="code">
-      input
+     <pre><code class="code language-css">input
 {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-     </div>
+width: 100%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      The example above applies to all &lt;input&gt; elements. If you only want to 
@@ -899,20 +906,24 @@ outside of them:
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text]
+     <pre><code class="code language-css">input[type=text]
 {
-      <br/>
-      width: 100%;
-      <br/>
-      padding: 12px 20px;
-      <br/>
-      margin: 8px 0;
-      <br/>
-      box-sizing: border-box;
-      <br/>
-      }
-     </div>
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -962,16 +973,22 @@ use the
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text]
+     <pre><code class="code language-css">input[type=text]
 {
-      <br/>
-      border: 2px solid red;
-      <br/>
-      border-radius: 4px;
-      <br/>
-      }
-     </div>
+border: 2px solid red;
+border-radius: 4px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      If you only want a bottom border, use the
@@ -988,16 +1005,22 @@ use the
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text]
+     <pre><code class="code language-css">input[type=text]
 {
-      <br/>
-      border: none;
-      <br/>
-      border-bottom: 2px solid red;
-      <br/>
-      }
-     </div>
+border: none;
+border-bottom: 2px solid red;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1020,16 +1043,22 @@ the
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text]
+     <pre><code class="code language-css">input[type=text]
 {
-      <br/>
-      background-color: #3CBC8D;
-      <br/>
-      color: white;
-      <br/>
-      }
-     </div>
+background-color: #3CBC8D;
+color: white;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1057,14 +1086,21 @@ focus (clicked on). You can remove this behavior by adding
        <h3>
         Example
        </h3>
-       <div class="code">
-        input[type=text]:focus
+       <pre><code class="code language-css">input[type=text]:focus
 {
-        <br/>
-        background-color: lightblue;
-        <br/>
-        }
-       </div>
+background-color: lightblue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
       </div>
      </div>
      <div class="w3-half">
@@ -1073,14 +1109,21 @@ focus (clicked on). You can remove this behavior by adding
        <h3>
         Example
        </h3>
-       <div class="code">
-        input[type=text]:focus
+       <pre><code class="code language-css">input[type=text]:focus
 {
-        <br/>
-        border: 3px solid #555;
-        <br/>
-        }
-       </div>
+border: 3px solid #555;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
       </div>
      </div>
     </div>
@@ -1107,23 +1150,26 @@ large left padding to reserve the space of the icon:
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text]
+     <pre><code class="code language-css">input[type=text]
 {
-      <br/>
-      background-color: white;
-      <br/>
-      background-image: url('searchicon.png');
-      <br/>
-      background-position: 10px 10px;
-      <br/>
-      background-repeat: 
+background-color: white;
+background-image: url('searchicon.png');
+background-position: 10px 10px;
+background-repeat:
 no-repeat;
-      <br/>
-      padding-left: 40px;
-      <br/>
-      }
-     </div>
+padding-left: 40px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1150,20 +1196,23 @@ the width of the search input when it gets focus. You will learn more about the
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=text] {
-      <br/>
-      transition: width 0.4s ease-in-out;
-      <br/>
-      }
-      <br/>
-      <br/>
-      input[type=text]:focus {
-      <br/>
-      width: 100%;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">input[type=text] {
+transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+width: 100%;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1186,28 +1235,28 @@ Some text...
      <h3>
       Example
      </h3>
-     <div class="code">
-      textarea
+     <pre><code class="code language-css">textarea
 {
-      <br/>
-      width: 100%;
-      <br/>
-      height: 150px;
-      <br/>
-      padding: 12px 20px;
-      <br/>
-      box-sizing: border-box;
-      <br/>
-      border: 2px solid #ccc;
-      <br/>
-      border-radius: 4px;
-      <br/>
-      background-color: #f8f8f8;
-      <br/>
-      resize: none;
-      <br/>
-      }
-     </div>
+width: 100%;
+height: 150px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+resize: none;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1230,22 +1279,25 @@ Some text...
      <h3>
       Example
      </h3>
-     <div class="code">
-      select
+     <pre><code class="code language-css">select
 {
-      <br/>
-      width: 100%;
-      <br/>
-      padding: 16px 20px;
-      <br/>
-      border: none;
-      <br/>
-      border-radius: 4px;
-      <br/>
-      background-color: #f1f1f1;
-      <br/>
-      }
-     </div>
+width: 100%;
+padding: 16px 20px;
+border: none;
+border-radius: 4px;
+background-color: #f1f1f1;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1257,35 +1309,32 @@ Some text...
      <h3>
       Example
      </h3>
-     <div class="code">
-      input[type=button], input[type=submit], input[type=reset]
+     <pre><code class="code language-css">input[type=button], input[type=submit], input[type=reset]
 {
-      <br/>
-      background-color: #04AA6D;
-      <br/>
-      border: 
+background-color: #04AA6D;
+border:
 none;
-      <br/>
-      color: white;
-      <br/>
-      padding: 
+color: white;
+padding:
 16px 32px;
-      <br/>
-      text-decoration: none;
-      <br/>
-      margin: 4px 2px;
-      <br/>
-      cursor: pointer;
-      <br/>
-      }
-      <br/>
-      <br/>
-      /* Tip: use
-      <b>
-       width: 100%
-      </b>
-      for full-width buttons */
-     </div>
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+/* Tip: use
+width: 100%
+for full-width buttons */</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      For more information about how to style buttons with CSS, read our
@@ -1308,8 +1357,12 @@ none;
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Math Functions
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -218,7 +219,7 @@
       CSS !important
      </p>
     </a>
-    <a href="css_math_functions.html" class="selected">
+    <a class="selected" href="css_math_functions.html">
      <p>
       CSS Math Functions
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -851,23 +851,25 @@ used as property values. Here, we will explain the
      <p>
       Use calc() to calculate the width of a &lt;div&gt; element:
      </p>
-     <div class="code">
-      #div1 {
-      <br/>
-      position: absolute;
-      <br/>
-      left: 50px;
-      <br/>
-      width: calc(100% - 100px);
-      <br/>
-      border: 1px solid black;
-      <br/>
-      background-color: yellow;
-      <br/>
-      padding: 5px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#div1 {
+position: absolute;
+left: 50px;
+width: calc(100% - 100px);
+border: 1px solid black;
+background-color: yellow;
+padding: 5px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -935,17 +937,22 @@ from a comma-separated list of values, as the property value.
       Use max() to set the width of #div1 to whichever value is largest, 50% or 
 300px:
      </p>
-     <div class="code">
-      #div1 {
-      <br/>
-      background-color: yellow;
-      <br/>
-      height: 100px;
-      <br/>
-      width: max(50%, 300px);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#div1 {
+background-color: yellow;
+height: 100px;
+width: max(50%, 300px);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1013,17 +1020,22 @@ from a comma-separated list of values, as the property value.
       Use min() to set the width of #div1 to whichever value is smallest, 50% or 
 300px:
      </p>
-     <div class="code">
-      #div1 {
-      <br/>
-      background-color: yellow;
-      <br/>
-      height: 100px;
-      <br/>
-      width: min(50%, 300px);
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#div1 {
+background-color: yellow;
+height: 100px;
+width: min(50%, 300px);
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <br/>
     </div>
     <hr/>
@@ -1040,8 +1052,12 @@ from a comma-separated list of values, as the property value.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

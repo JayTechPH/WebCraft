@@ -9,6 +9,7 @@
   <title>
    CSS Border Color
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -287,7 +288,7 @@
       Border Width
      </p>
     </a>
-    <a href="css_border_color.html" class="selected">
+    <a class="selected" href="css_border_color.html">
      <p>
       Border Color
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -827,36 +827,32 @@
      <p>
       Demonstration of the different border colors:
      </p>
-     <div class="code">
-      p.one
+     <pre><code class="code language-css">p.one
 {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: red;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.two
+border-style: solid;
+border-color: red;
+}
+p.two
 {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: green;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p.three {
-      <br/>
-      border-style: dotted;
-      <br/>
-      border-color: 
-  blue;
-      <br/>
-      }
-     </div>
+border-style: solid;
+border-color: green;
+}
+p.three {
+border-style: dotted;
+border-color:
+blue;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
      <p>
       Result:
      </p>
@@ -888,16 +884,22 @@ the top border, right border, bottom border, and the left border).
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.one {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: red green blue yellow; 
-  /* red top, green right, blue bottom and yellow left */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.one {
+border-style: solid;
+border-color: red green blue yellow;
+/* red top, green right, blue bottom and yellow left */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -910,16 +912,22 @@ the top border, right border, bottom border, and the left border).
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.one {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: #ff0000; /* red 
-  */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.one {
+border-style: solid;
+border-color: #ff0000; /* red
+*/
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -932,16 +940,22 @@ the top border, right border, bottom border, and the left border).
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.one {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: rgb(255, 0, 0); 
-  /* red */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.one {
+border-style: solid;
+border-color: rgb(255, 0, 0);
+/* red */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -954,16 +968,22 @@ the top border, right border, bottom border, and the left border).
      <h3>
       Example
      </h3>
-     <div class="code">
-      p.one {
-      <br/>
-      border-style: solid;
-      <br/>
-      border-color: hsl(0, 100%, 50%); 
-  /* red */
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">p.one {
+border-style: solid;
+border-color: hsl(0, 100%, 50%);
+/* red */
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="ws-note w3-panel">
      <p>
@@ -988,8 +1008,12 @@ the top border, right border, bottom border, and the left border).
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

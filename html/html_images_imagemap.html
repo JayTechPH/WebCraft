@@ -8,46 +8,47 @@
   <title>
    HTML Image Maps
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -338,7 +339,7 @@
       Images
      </p>
     </a>
-    <a href="html_images_imagemap.html" class="selected">
+    <a class="selected" href="html_images_imagemap.html">
      <p>
       Image Map
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -478,23 +478,26 @@ clickable areas. The areas are defined with one or more
      <p>
       Here is the HTML source code for the image map above:
      </p>
-     <div class="code">
-      &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
-      <br/>
-      <br/>
-      &lt;map name="workmap"&gt;
-      <br/>
-      &lt;area shape="rect" coords="34,44,270,350" 
-  alt="Computer" href="computer.htm"&gt;
-      <br/>
-      &lt;area shape="rect" coords="290,172,333,250" 
-  alt="Phone" href="phone.htm"&gt;
-      <br/>
-      &lt;area shape="circle" coords="337,300,44" 
-  alt="Coffee" href="coffee.htm"&gt;
-      <br/>
-      &lt;/map&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+&lt;map name="workmap"&gt;
+&lt;area shape="rect" coords="34,44,270,350"
+alt="Computer" href="computer.htm"&gt;
+&lt;area shape="rect" coords="290,172,333,250"
+alt="Phone" href="phone.htm"&gt;
+&lt;area shape="circle" coords="337,300,44"
+alt="Coffee" href="coffee.htm"&gt;
+&lt;/map&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -525,9 +528,18 @@ add a
      attribute:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -573,9 +585,18 @@ required
      attribute:
     </p>
     <div class="code-container">
-     <div class="code">
-      &lt;map name="workmap"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;map name="workmap"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      The
@@ -696,9 +717,18 @@ pixels from the left margin and 350 pixels from the top:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;area shape="rect" coords="34, 44, 270, 350" href="computer.htm"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;area shape="rect" coords="34, 44, 270, 350" href="computer.htm"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is the area that becomes clickable and will send the user to the page "computer.htm":
@@ -753,9 +783,18 @@ pixels from the left margin and 350 pixels from the top:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;area shape="circle" coords="337, 300, 44" href="coffee.htm"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;area shape="circle" coords="337, 300, 44" href="coffee.htm"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is the area that becomes clickable and will send the user to the page "coffee.htm":
@@ -799,9 +838,18 @@ croissant:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm"&gt;
-     </div>
+     <pre><code class="code language-html">&lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      This is the area that becomes clickable and will send the user to the page "croissant.htm":
@@ -835,26 +883,27 @@ to execute a JavaScript function:
       Here, we use the onclick attribute to execute a JavaScript function when the 
   area is clicked:
      </p>
-     <div class="code">
-      &lt;map name="workmap"&gt;
-      <br/>
-      &lt;area shape="circle" coords="337,300,44" 
-  href="coffee.htm" onclick="myFunction()"&gt;
-      <br/>
-      &lt;/map&gt;
-      <br/>
-      <br/>
-      &lt;script&gt;
-      <br/>
-      function 
-  myFunction() {
-      <br/>
-      alert("You clicked the coffee cup!");
-      <br/>
-      }
-      <br/>
-      &lt;/script&gt;
-     </div>
+     <pre><code class="code language-html">&lt;map name="workmap"&gt;
+&lt;area shape="circle" coords="337,300,44"
+href="coffee.htm" onclick="myFunction()"&gt;
+&lt;/map&gt;
+&lt;script&gt;
+function
+myFunction() {
+alert("You clicked the coffee cup!");
+}
+&lt;/script&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -902,38 +951,38 @@ to execute a JavaScript function:
      </tr>
      <tr>
       <td>
-        &lt;img&gt;
-       </td>
+       &lt;img&gt;
+      </td>
       <td>
        Defines an image
       </td>
      </tr>
      <tr>
       <td>
-        &lt;map&gt;
-       </td>
+       &lt;map&gt;
+      </td>
       <td>
        Defines an image map
       </td>
      </tr>
      <tr>
       <td>
-        &lt;area&gt;
-       </td>
+       &lt;area&gt;
+      </td>
       <td>
        Defines a clickable area inside an image map
       </td>
      </tr>
      <tr>
       <td>
-        &lt;picture&gt;
-       </td>
+       &lt;picture&gt;
+      </td>
       <td>
        Defines a container for multiple image resources
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_images.html">
@@ -947,8 +996,10 @@ to execute a JavaScript function:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

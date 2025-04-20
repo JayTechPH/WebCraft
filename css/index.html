@@ -9,6 +9,7 @@
   <title>
    CSS Tutorial
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,41 +20,41 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
     <p>
      CSS Tutorial
     </p>
-    <a href="index.html" class="selected">
+    <a class="selected" href="index.html">
      <p>
       CSS HOME
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -807,34 +807,32 @@
      <h3>
       CSS Example
      </h3>
-     <div class="code">
-      body
+     <pre><code class="code language-css">body
 {
-      <br/>
-      background-color: lightblue;
-      <br/>
-      }
-      <br/>
-      <br/>
-      h1
+background-color: lightblue;
+}
+h1
 {
-      <br/>
-      color: white;
-      <br/>
-      text-align: center;
-      <br/>
-      }
-      <br/>
-      <br/>
-      p
+color: white;
+text-align: center;
+}
+p
 {
-      <br/>
-      font-family: verdana;
-      <br/>
-      font-size: 20px;
-      <br/>
-      }
-     </div>
+font-family: verdana;
+font-size: 20px;
+}</code>
+</pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <h2>
      CSS Examples
@@ -859,7 +857,7 @@
      </span>
      .
     </p>
-     <hr/>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="../index.html">
@@ -873,8 +871,12 @@
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

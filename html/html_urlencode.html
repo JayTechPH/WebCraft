@@ -8,46 +8,47 @@
   <title>
    HTML URL Encoding
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -213,7 +214,7 @@
       HTML Charsets
      </p>
     </a>
-    <a href="html_urlencode.html" class="selected">
+    <a class="selected" href="html_urlencode.html">
      <p>
       HTML URL Encode
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -470,9 +470,18 @@
      follows these syntax rules:
     </p>
     <div class="code-container">
-     <div class="code">
-      scheme://prefix.domain:port/path/filename
-     </div>
+     <pre><code class="code language-html">scheme://prefix.domain:port/path/filename</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Explanation:
@@ -636,7 +645,7 @@ converted.
      Try It Yourself
     </h2>
     <form action="/action_page2.php" method="get" name="input" target="_blank">
-     <input name="text" size="30" type="text" value="Hello GÃ¼nter"/>
+     <input name="text" size="30" type="text" value="Hello G&Atilde;&frac14;nter"/>
      <input type="submit" value="Submit"/>
     </form>
     <p>
@@ -672,7 +681,7 @@ converted.
      </tr>
      <tr>
       <td>
-       â¬
+       &acirc;&not;
       </td>
       <td>
        %80
@@ -683,7 +692,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Â£
+       &Acirc;&pound;
       </td>
       <td>
        %A3
@@ -694,7 +703,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Â©
+       &Acirc;&copy;
       </td>
       <td>
        %A9
@@ -705,7 +714,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Â®
+       &Acirc;&reg;
       </td>
       <td>
        %AE
@@ -716,7 +725,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C0
@@ -727,7 +736,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C1
@@ -738,7 +747,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C2
@@ -749,7 +758,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C3
@@ -760,7 +769,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C4
@@ -771,7 +780,7 @@ converted.
      </tr>
      <tr>
       <td>
-       Ã
+       &Atilde;
       </td>
       <td>
        %C5
@@ -801,8 +810,10 @@ converted.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

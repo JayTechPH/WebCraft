@@ -8,45 +8,46 @@
   <title>
    HTML Block and Inline Elements
   </title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -127,7 +128,7 @@
       HTML Page Title
      </p>
     </a>
-    <a href="html_blocks.html" class="selected">
+    <a class="selected" href="html_blocks.html">
      <p>
       HTML Block &amp; Inline
      </p>
@@ -497,104 +498,110 @@ or a section in an HTML document.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;Hello World&lt;/p&gt;
-      <br/>
-      &lt;div&gt;Hello World&lt;/div&gt;
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;Hello World&lt;/p&gt;
+&lt;div&gt;Hello World&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Here are the block-level elements in HTML:
     </p>
     <div class="w3-row htmlHigh w3-code" style="line-height:25px;border-left:none;">
      <div class="mylist">
-       &lt;address&gt;
+      &lt;address&gt;
      </div>
      <div class="mylist">
-       &lt;article&gt;
+      &lt;article&gt;
      </div>
      <div class="mylist">
-       &lt;aside&gt;
+      &lt;aside&gt;
      </div>
      <div class="mylist">
-       &lt;blockquote&gt;
+      &lt;blockquote&gt;
      </div>
      <div class="mylist">
-       &lt;canvas&gt;
+      &lt;canvas&gt;
      </div>
      <div class="mylist">
-       &lt;dd&gt;
+      &lt;dd&gt;
      </div>
      <div class="mylist">
-       &lt;div&gt;
-      </a>
+      &lt;div&gt;
      </div>
      <div class="mylist">
-       &lt;dl&gt;
+      &lt;dl&gt;
      </div>
      <div class="mylist">
-       &lt;dt&gt;
+      &lt;dt&gt;
      </div>
      <div class="mylist">
-       &lt;fieldset&gt;
+      &lt;fieldset&gt;
      </div>
      <div class="mylist">
-       &lt;figcaption&gt;
+      &lt;figcaption&gt;
      </div>
      <div class="mylist">
-       &lt;figure&gt;
+      &lt;figure&gt;
      </div>
      <div class="mylist">
-       &lt;footer&gt;
+      &lt;footer&gt;
      </div>
      <div class="mylist">
-       &lt;form&gt;
+      &lt;form&gt;
      </div>
      <div class="mylist">
-       &lt;h1&gt;-&lt;h6&gt;
+      &lt;h1&gt;-&lt;h6&gt;
      </div>
      <div class="mylist">
-       &lt;header&gt;
+      &lt;header&gt;
      </div>
      <div class="mylist">
-       &lt;hr&gt;
+      &lt;hr&gt;
      </div>
      <div class="mylist">
-       &lt;li&gt;
+      &lt;li&gt;
      </div>
      <div class="mylist">
-       &lt;main&gt;
+      &lt;main&gt;
      </div>
      <div class="mylist">
-       &lt;nav&gt;
+      &lt;nav&gt;
      </div>
      <div class="mylist">
-       &lt;noscript&gt;
+      &lt;noscript&gt;
      </div>
      <div class="mylist">
-       &lt;ol&gt;
+      &lt;ol&gt;
      </div>
      <div class="mylist">
-       &lt;p&gt;
+      &lt;p&gt;
      </div>
      <div class="mylist">
-       &lt;pre&gt;
+      &lt;pre&gt;
      </div>
      <div class="mylist">
-       &lt;section&gt;
-      </a>
+      &lt;section&gt;
      </div>
      <div class="mylist">
-       &lt;table&gt;
+      &lt;table&gt;
      </div>
      <div class="mylist">
-       &lt;tfoot&gt;
+      &lt;tfoot&gt;
      </div>
      <div class="mylist">
-       &lt;ul&gt;
+      &lt;ul&gt;
      </div>
      <div class="mylist">
-       &lt;video&gt;
+      &lt;video&gt;
      </div>
     </div>
     <hr/>
@@ -619,113 +626,121 @@ inside
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;span&gt;Hello World&lt;/span&gt;
-     </div>
+     <pre><code class="code language-html">&lt;span&gt;Hello World&lt;/span&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      Here are the inline elements in HTML:
     </p>
     <div class="w3-row htmlHigh w3-code" style="line-height:25px;border-left:none;">
      <div class="mylist">
-       &lt;a&gt;
+      &lt;a&gt;
      </div>
      <div class="mylist">
-       &lt;abbr&gt;
+      &lt;abbr&gt;
      </div>
      <div class="mylist">
-       &lt;acronym&gt;
+      &lt;acronym&gt;
      </div>
      <div class="mylist">
-       &lt;b&gt;
+      &lt;b&gt;
      </div>
      <div class="mylist">
-       &lt;bdo&gt;
+      &lt;bdo&gt;
      </div>
      <div class="mylist">
-       &lt;big&gt;
+      &lt;big&gt;
      </div>
      <div class="mylist">
-       &lt;br&gt;
+      &lt;br&gt;
      </div>
      <div class="mylist">
-       &lt;button&gt;
+      &lt;button&gt;
      </div>
      <div class="mylist">
-       &lt;cite&gt;
+      &lt;cite&gt;
      </div>
      <div class="mylist">
-       &lt;code&gt;
+      &lt;code&gt;
      </div>
      <div class="mylist">
-       &lt;dfn&gt;
+      &lt;dfn&gt;
      </div>
      <div class="mylist">
-       &lt;em&gt;
+      &lt;em&gt;
      </div>
      <div class="mylist">
-       &lt;i&gt;
+      &lt;i&gt;
      </div>
      <div class="mylist">
-       &lt;img&gt;
+      &lt;img&gt;
      </div>
      <div class="mylist">
-       &lt;input&gt;
+      &lt;input&gt;
      </div>
      <div class="mylist">
-       &lt;kbd&gt;
+      &lt;kbd&gt;
      </div>
      <div class="mylist">
-       &lt;label&gt;
+      &lt;label&gt;
      </div>
      <div class="mylist">
-       &lt;map&gt;
+      &lt;map&gt;
      </div>
      <div class="mylist">
-       &lt;object&gt;
+      &lt;object&gt;
      </div>
      <div class="mylist">
-       &lt;output&gt;
+      &lt;output&gt;
      </div>
      <div class="mylist">
-       &lt;q&gt;
+      &lt;q&gt;
      </div>
      <div class="mylist">
-       &lt;samp&gt;
+      &lt;samp&gt;
      </div>
      <div class="mylist">
-       &lt;script&gt;
+      &lt;script&gt;
      </div>
      <div class="mylist">
-       &lt;select&gt;
+      &lt;select&gt;
      </div>
      <div class="mylist">
-       &lt;small&gt;
+      &lt;small&gt;
      </div>
      <div class="mylist">
-       &lt;span&gt;
+      &lt;span&gt;
      </div>
      <div class="mylist">
-       &lt;strong&gt;
+      &lt;strong&gt;
      </div>
      <div class="mylist">
-       &lt;sub&gt;
+      &lt;sub&gt;
      </div>
      <div class="mylist">
-       &lt;sup&gt;
+      &lt;sup&gt;
      </div>
      <div class="mylist">
-       &lt;textarea&gt;
+      &lt;textarea&gt;
      </div>
      <div class="mylist">
-       &lt;time&gt;
+      &lt;time&gt;
      </div>
      <div class="mylist">
-       &lt;tt&gt;
-      </a>
+      &lt;tt&gt;
      </div>
      <div class="mylist">
-       &lt;var&gt;
+      &lt;var&gt;
      </div>
     </div>
     <div class="note">
@@ -780,15 +795,21 @@ content:
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;div style="background-color:black;color:white;padding:20px;"&gt;
-      <br/>
-      &lt;h2&gt;London&lt;/h2&gt;
-      <br/>
-      &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
-      <br/>
-      &lt;/div&gt;
-     </div>
+     <pre><code class="code language-html">&lt;div style="background-color:black;color:white;padding:20px;"&gt;
+&lt;h2&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <p>
      You will learn more about the
@@ -843,12 +864,20 @@ an inline container used to mark up a part of a text, or a part of a document.
      <h3>
       Example
      </h3>
-     <div class="code">
-      &lt;p&gt;My mother has &lt;span style="color:blue;font-weight:bold;"&gt;blue&lt;/span&gt; eyes 
-  and my father has &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;dark 
-  green&lt;/span&gt; eyes.&lt;/p&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;p&gt;My mother has &lt;span style="color:blue;font-weight:bold;"&gt;blue&lt;/span&gt; eyes
+and my father has &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;dark
+green&lt;/span&gt; eyes.&lt;/p&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -895,7 +924,7 @@ an inline container used to mark up a part of a text, or a part of a document.
      </tr>
      <tr>
       <td>
-        &lt;div&gt;
+       &lt;div&gt;
       </td>
       <td>
        Defines a section in a document (block-level)
@@ -903,7 +932,7 @@ an inline container used to mark up a part of a text, or a part of a document.
      </tr>
      <tr>
       <td>
-        &lt;span&gt;
+       &lt;span&gt;
       </td>
       <td>
        Defines a section in a document (inline)
@@ -923,8 +952,10 @@ an inline container used to mark up a part of a text, or a part of a document.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

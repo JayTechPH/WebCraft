@@ -9,6 +9,7 @@
   <title>
    CSS Rounded Corners
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -491,7 +492,7 @@
     <p>
      CSS Advanced
     </p>
-    <a href="css3_borders.html" class="selected">
+    <a class="selected" href="css3_borders.html">
      <p>
       CSS Rounded Corners
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -839,57 +839,42 @@ elements!
      <h3>
       Example
      </h3>
-     <div class="code">
-      #rcorners1 {
-      <br/>
-      border-radius: 25px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners2 {
-      <br/>
-      border-radius: 25px;
-      <br/>
-      border: 2px solid #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners3 {
-      <br/>
-      border-radius: 25px;
-      <br/>
-      background: url(paper.gif);
-      <br/>
-      background-position: left top;
-      <br/>
-      background-repeat: 
+     <pre><code class="code language-css">#rcorners1 {
+border-radius: 25px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners2 {
+border-radius: 25px;
+border: 2px solid #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners3 {
+border-radius: 25px;
+background: url(paper.gif);
+background-position: left top;
+background-repeat:
 repeat;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 
+padding: 20px;
+width:
 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-     </div>
+height: 150px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -978,66 +963,45 @@ four corners, which are rounded equally:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #rcorners1 {
-      <br/>
-      border-radius: 15px 50px 30px 5px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners2 {
-      <br/>
-      border-radius: 15px 50px 30px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners3 {
-      <br/>
-      border-radius: 15px 50px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners4 {
-      <br/>
-      border-radius: 15px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#rcorners1 {
+border-radius: 15px 50px 30px 5px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners2 {
+border-radius: 15px 50px 30px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners3 {
+border-radius: 15px 50px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners4 {
+border-radius: 15px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      You could also create elliptical corners:
@@ -1046,51 +1010,38 @@ four corners, which are rounded equally:
      <h3>
       Example
      </h3>
-     <div class="code">
-      #rcorners1 {
-      <br/>
-      border-radius: 50px / 15px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners2 {
-      <br/>
-      border-radius: 15px / 50px;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #rcorners3 {
-      <br/>
-      border-radius: 50%;
-      <br/>
-      background: #73AD21;
-      <br/>
-      padding: 20px;
-      <br/>
-      width: 200px;
-      <br/>
-      height: 150px;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">#rcorners1 {
+border-radius: 50px / 15px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners2 {
+border-radius: 15px / 50px;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}
+#rcorners3 {
+border-radius: 50%;
+background: #73AD21;
+padding: 20px;
+width: 200px;
+height: 150px;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1107,7 +1058,7 @@ four corners, which are rounded equally:
      </tr>
      <tr>
       <td>
-        border-radius
+       border-radius
       </td>
       <td>
        A shorthand property for setting all the four border-*-*-radius properties
@@ -1115,7 +1066,7 @@ four corners, which are rounded equally:
      </tr>
      <tr>
       <td>
-        border-top-left-radius
+       border-top-left-radius
       </td>
       <td>
        Defines the shape of the border of the top-left corner
@@ -1123,7 +1074,7 @@ four corners, which are rounded equally:
      </tr>
      <tr>
       <td>
-        border-top-right-radius
+       border-top-right-radius
       </td>
       <td>
        Defines the shape of the border of the top-right corner
@@ -1131,7 +1082,7 @@ four corners, which are rounded equally:
      </tr>
      <tr>
       <td>
-        border-bottom-right-radius
+       border-bottom-right-radius
       </td>
       <td>
        Defines the shape of the border of the bottom-right corner
@@ -1139,16 +1090,16 @@ four corners, which are rounded equally:
      </tr>
      <tr>
       <td>
-        border-bottom-left-radius
+       border-bottom-left-radius
       </td>
       <td>
        Defines the shape of the border of the bottom-left corner
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css_navbar_horizontal.html">
       ❮ Previous
      </a>
@@ -1160,8 +1111,12 @@ four corners, which are rounded equally:
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

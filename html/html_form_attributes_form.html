@@ -8,46 +8,47 @@
   <title>
    HTML Input form* Attributes
   </title>
-  <link rel="shortcut icon" href="../src/img/icon.ico" type="image/x-icon">
+  <link href="../src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
-    <div class="header-title">
-     <img alt="logo" src="../src/img/icon.png"/>
-     <p style="color: white;">
-      WebCraft
-     </p>
-    </div>
-    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a class="selected">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a href="../css/index.html">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </header>
+   <div class="header-title">
+    <img alt="logo" src="../src/img/icon.png"/>
+    <p style="color: white;">
+     WebCraft
+    </p>
+   </div>
+   <nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a href="../css/index.html">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
   <main>
    <div class="leftmenu">
     <p>
@@ -381,7 +382,7 @@
       HTML Input Attributes
      </p>
     </a>
-    <a href="html_form_attributes_form.html" class="selected">
+    <a class="selected" href="html_form_attributes_form.html">
      <p>
       Input Form Attributes
      </p>
@@ -427,7 +428,6 @@
       HTML YouTube
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -481,26 +481,27 @@ element it belongs to.
      <p>
       An input field located outside of the HTML form (but still a part of the form):
      </p>
-     <div class="code">
-      &lt;form  id="form1"&gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-      <br/>
-      <br/>
-      &lt;label for="lname"&gt;Last 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" 
-    name="lname" form="form1"&gt;
-      <br/>
-     </div>
+     <pre><code class="code language-html">&lt;form  id="form1"&gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+&lt;label for="lname"&gt;Last
+name:&lt;/label&gt;
+&lt;input type="text" id="lname"
+name="lname" form="form1"&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -543,25 +544,27 @@ following input types: submit and image.
      <p>
       An HTML form with two submit buttons, with different actions:
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" 
-    name="lname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;input type="submit" formaction="/action_page2.php" value="Submit as Admin"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname"
+name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="submit" formaction="/action_page2.php" value="Submit as Admin"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -600,24 +603,27 @@ following input types: submit and image.
       A form with two submit buttons. The first sends the form-data with default encoding, 
 the second sends the form-data encoded as "multipart/form-data":
      </p>
-     <div class="code">
-      &lt;form action="/action_page_binary.asp" method="post"&gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;input type="submit" 
-    formenctype="multipart/form-data"
-      <br/>
-      value="Submit as 
-    Multipart/form-data"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form action="/action_page_binary.asp" method="post"&gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="submit"
+formenctype="multipart/form-data"
+value="Submit as
+Multipart/form-data"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -700,27 +706,29 @@ transaction (method="post").
       A form with two submit buttons. The first sends the form-data with 
 method="get". The second sends the form-data with method="post":
      </p>
-     <div class="code">
-      &lt;form  method="get"&gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" 
-    name="lname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit using 
-    GET"&gt;
-      <br/>
-      &lt;input type="submit" formmethod="post" value="Submit using 
-    POST"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  method="get"&gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname"
+name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit using
+GET"&gt;
+&lt;input type="submit" formmethod="post" value="Submit using
+POST"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -759,25 +767,27 @@ following input types: submit and image.
      <p>
       A form with two submit buttons, with different target windows:
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="fname"&gt;First 
-    name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;label for="lname"&gt;Last name:&lt;/label&gt;
-      <br/>
-      &lt;input type="text" id="lname" 
-    name="lname"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;input type="submit" formtarget="_blank" value="Submit to a new window/tab"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="fname"&gt;First
+name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname"
+name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="submit" formtarget="_blank" value="Submit to a new window/tab"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -816,23 +826,26 @@ following input types: submit.
      <p>
       A form with two submit buttons (with and without validation):
      </p>
-     <div class="code">
-      &lt;form &gt;
-      <br/>
-      &lt;label for="email"&gt;Enter your 
-    email:&lt;/label&gt;
-      <br/>
-      &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" value="Submit"&gt;
-      <br/>
-      &lt;input type="submit" 
-    formnovalidate="formnovalidate"
-      <br/>
-      value="Submit without validation"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form &gt;
+&lt;label for="email"&gt;Enter your
+email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="submit"
+formnovalidate="formnovalidate"
+value="Submit without validation"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -859,20 +872,25 @@ following input types: submit.
      <p>
       Specify that no form-data should be validated on submit:
      </p>
-     <div class="code">
-      &lt;form  novalidate&gt;
-      <br/>
-      &lt;label 
-    for="email"&gt;Enter your email:&lt;/label&gt;
-      <br/>
-      &lt;input type="email" 
-    id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
-      <br/>
-      &lt;input type="submit" 
-    value="Submit"&gt;
-      <br/>
-      &lt;/form&gt;
-     </div>
+     <pre><code class="code language-html">&lt;form  novalidate&gt;
+&lt;label
+for="email"&gt;Enter your email:&lt;/label&gt;
+&lt;input type="email"
+id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit"
+value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+    <span id="copy">
+     📋 Copy
+    </span>
+    <span id="sucess" style="display:none;">
+     ✅ Copied!
+    </span>
+    <span id="failed" style="display:none;">
+     ❌ Failed!
+    </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -889,24 +907,22 @@ following input types: submit.
      </tr>
      <tr>
       <td>
-       
-        &lt;form&gt;
-       </td>
+       &lt;form&gt;
+      </td>
       <td>
        Defines an HTML form for user input
       </td>
      </tr>
      <tr>
       <td>
-       
-        &lt;input&gt;
-       </td>
+       &lt;input&gt;
+      </td>
       <td>
        Defines an input control
       </td>
      </tr>
     </table>
-    <hr>
+    <hr/>
     <br/>
     <div class="nextprev">
      <a class="btn" href="html_form_attributes.html">
@@ -920,8 +936,10 @@ following input types: submit.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+ <script src="../src/js/index.js"></script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Fonts
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -384,7 +385,7 @@
     <p>
      CSS Fonts
     </p>
-    <a href="css_font.html" class="selected">
+    <a class="selected" href="css_font.html">
      <p>
       Font Family
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -998,27 +998,26 @@ fallback fonts in the
      <p>
       Specify some different fonts for three paragraphs:
      </p>
-     <div class="code">
-      .p1 {
-      <br/>
-      font-family: "Times New Roman", Times, serif;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .p2 {
-      <br/>
-      font-family: Arial, Helvetica, sans-serif;
-      <br/>
-      }
-      <br/>
-      <br/>
-      .p3 {
-      <br/>
-      font-family: "Lucida Console", "Courier New", monospace;
-      <br/>
-      }
-     </div>
+     <pre><code class="code language-css">.p1 {
+font-family: "Times New Roman", Times, serif;
+}
+.p2 {
+font-family: Arial, Helvetica, sans-serif;
+}
+.p3 {
+font-family: "Lucida Console", "Courier New", monospace;
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <br/>
@@ -1034,8 +1033,12 @@ fallback fonts in the
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>

@@ -9,6 +9,7 @@
   <title>
    CSS Border Images
   </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
@@ -19,34 +20,34 @@
     </p>
    </div>
    <nav>
-     <ul>
-      <li>
-       <a href="../index.html#home">
-        HOME
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#about">
-        ABOUT
-       </a>
-      </li>
-      <li>
-       <a href="../index.html#services">
-        SERVICES
-       </a>
-      </li>
-      <li>
-        <a href="../html/index.html">
-        HTML
-       </a>
-      </li>
-      <li>
-       <a class="selected">
-        CSS
-       </a>
-      </li>
-     </ul>
-    </nav>
+    <ul>
+     <li>
+      <a href="../index.html#home">
+       HOME
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#about">
+       ABOUT
+      </a>
+     </li>
+     <li>
+      <a href="../index.html#services">
+       SERVICES
+      </a>
+     </li>
+     <li>
+      <a href="../html/index.html">
+       HTML
+      </a>
+     </li>
+     <li>
+      <a class="selected">
+       CSS
+      </a>
+     </li>
+    </ul>
+   </nav>
   </header>
   <main>
    <div class="leftmenu">
@@ -496,7 +497,7 @@
       CSS Rounded Corners
      </p>
     </a>
-    <a href="css3_border_images.html" class="selected">
+    <a class="selected" href="css3_border_images.html">
      <p>
       CSS Border Images
      </p>
@@ -764,7 +765,6 @@
       RWD Frameworks
      </p>
     </a>
-    
    </div>
    <div class="main">
     <h1>
@@ -859,19 +859,24 @@ middle sections are repeated or stretched as you specify.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #borderimg
+     <pre><code class="code language-css">#borderimg
 {
-      <br/>
-      border: 10px solid transparent;
-      <br/>
-      padding: 15px;
-      <br/>
-      border-image: url(border.png) 
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png)
 30 round;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <p>
      Here, the middle sections of the image are stretched to create the border:
@@ -886,19 +891,24 @@ middle sections are repeated or stretched as you specify.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #borderimg
+     <pre><code class="code language-css">#borderimg
 {
-      <br/>
-      border: 10px solid transparent;
-      <br/>
-      padding: 15px;
-      <br/>
-      border-image: url(border.png) 
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png)
 30 stretch;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <div class="w3-panel ws-note">
      <p>
@@ -964,41 +974,34 @@ middle sections are repeated or stretched as you specify.
      <h3>
       Example
      </h3>
-     <div class="code">
-      #borderimg1 {
-      <br/>
-      border: 10px solid transparent;
-      <br/>
-      padding: 15px;
-      <br/>
-      border-image: url(border.png) 
+     <pre><code class="code language-css">#borderimg1 {
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png)
 50 round;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #borderimg2 {
-      <br/>
-      border: 10px solid transparent;
-      <br/>
-      padding: 15px;
-      <br/>
-      border-image: url(border.png) 20% round;
-      <br/>
-      }
-      <br/>
-      <br/>
-      #borderimg3 {
-      <br/>
-      border: 10px solid transparent;
-      <br/>
-      padding: 15px;
-      <br/>
-      border-image: url(border.png) 
+}
+#borderimg2 {
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png) 20% round;
+}
+#borderimg3 {
+border: 10px solid transparent;
+padding: 15px;
+border-image: url(border.png)
 30% round;
-      <br/>
-      }
-     </div>
+}</code></pre>
+<button class="copy-btn" onclick="copyCode(this)">
+      <span id="copy">
+       📋 Copy
+      </span>
+      <span id="sucess" style="display:none;">
+       ✅ Copied!
+      </span>
+      <span id="failed" style="display:none;">
+       ❌ Failed!
+      </span>
+</button>
     </div>
     <hr/>
     <h2>
@@ -1015,7 +1018,7 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image
+       border-image
       </td>
       <td>
        A shorthand property for setting all the border-image-* properties
@@ -1023,7 +1026,7 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image-source
+       border-image-source
       </td>
       <td>
        Specifies the path to the image to be used as a border
@@ -1031,7 +1034,7 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image-slice
+       border-image-slice
       </td>
       <td>
        Specifies how to slice the border image
@@ -1039,7 +1042,7 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image-width
+       border-image-width
       </td>
       <td>
        Specifies the widths of the border image
@@ -1047,7 +1050,7 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image-outset
+       border-image-outset
       </td>
       <td>
        Specifies the amount by which the border image area extends beyond the border box
@@ -1055,16 +1058,16 @@ middle sections are repeated or stretched as you specify.
      </tr>
      <tr>
       <td>
-        border-image-repeat
+       border-image-repeat
       </td>
       <td>
        Specifies whether the border image should be repeated, rounded or stretched
       </td>
      </tr>
     </table>
-<hr>
-<br/>
-<div class="nextprev">
+    <hr/>
+    <br/>
+    <div class="nextprev">
      <a class="btn" href="css3_borders.html">
       ❮ Previous
      </a>
@@ -1076,8 +1079,12 @@ middle sections are repeated or stretched as you specify.
   </main>
   <footer>
    <p>
-    © 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
+    &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
    </p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js">
+  </script>
+  <script src="../src/js/index.js">
+  </script>
  </body>
 </html>
