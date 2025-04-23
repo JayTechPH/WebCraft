@@ -3,47 +3,47 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="src/css/dark.css" rel="stylesheet"/>
   <link href="src/css/style.css" rel="stylesheet"/>
-  <link href="src/css/codestyle.css" rel="stylesheet"/>
   <link href="src/css/homepage.css" rel="stylesheet"/>
   <title>
    WebCraft | Homepage
   </title>
   <link href="src/img/icon.ico" rel="shortcut icon" type="image/x-icon"/>
- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet"/>
+ <link href="../src/css/prism.css" rel="stylesheet"/>
  </head>
  <body>
   <header>
    <div class="header-title">
     <img alt="logo" src="src/img/icon.png"/>
-    <p style="color: white;">
+    <p>
      WebCraft
     </p>
    </div>
    <nav>
     <ul>
      <li>
-      <a class="selected" href="#home">
+      <a id="selected" class="nav-link selected" href="#home">
        HOME
       </a>
      </li>
      <li>
-      <a href="#about">
+      <a href="#about" class="nav-link">
        ABOUT
       </a>
      </li>
      <li>
-      <a href="#services">
+      <a href="#services" class="nav-link">
        SERVICES
       </a>
      </li>
      <li>
-      <a href="html/index.html">
+      <a href="html/index.html" class="nav-link">
        HTML
       </a>
      </li>
      <li>
-      <a href="css/index.html">
+      <a href="css/index.html" class="nav-link">
        CSS
       </a>
      </li>
@@ -122,7 +122,7 @@
        <br/>
        Free
       </h1>
-      <a href="#contact">
+      <a onclick="showPopup()">
        Choose Plan
       </a>
       <br/>
@@ -165,7 +165,7 @@
       <h1>
        Price: $9.99/month
       </h1>
-      <a href="#contact">
+      <a onclick="showPopup()">
        Choose Plan
       </a>
       <br/>
@@ -200,7 +200,7 @@
       <h1>
        Price: $19.99/month
       </h1>
-      <a href="#contact">
+      <a onclick="showPopup()">
        Choose Plan
       </a>
       <br/>
@@ -236,16 +236,92 @@
      </div>
     </div>
    </section>
+   <section class="main3" id="services">
+    <div class="sec-title block">
+     <img src="src/img/keyboard.png"/>
+     <h2>
+        What Our Clients Say?
+     </h2>
+    </div>
+    <div id="feedback">
+        <div class="item block2">
+            <p class="feedback">Webcraft has been a game changer for my business! Their web design is top-notch.</p>
+            <h3 class="name">- Sarah Miller</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">The attention to detail in their designs is incredible. Highly recommend Webcraft!</p>
+            <h3 class="name">- John Patel</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">Webcraft created a stunning website for my company. I'm beyond impressed with their work.</p>
+            <h3 class="name">- Emily Zhang</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">Thanks to Webcraft, our online presence has never been stronger. Truly outstanding service!</p>
+            <h3 class="name">- Liam Johnson</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">Their team worked with us every step of the way. We couldn't be happier with the results!</p>
+            <h3 class="name">- Claire Davies</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">I love how Webcraft understands our needs. The website they built is exactly what we envisioned!</p>
+            <h3 class="name">- James Smith</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">Webcraft’s expertise in web design is unmatched. My new website is both functional and beautiful.</p>
+            <h3 class="name">- Ava Thompson</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">I can't thank Webcraft enough for the work they did. They made the process seamless and easy!</p>
+            <h3 class="name">- William Carter</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">From start to finish, Webcraft was incredible. Their communication and design skills are exceptional!</p>
+            <h3 class="name">- Mia Jackson</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+        <div class="item block2">
+            <p class="feedback">Webcraft delivered exactly what we wanted and more. They are truly a trusted partner for web development.</p>
+            <h3 class="name">- Ethan Clark</h3>
+            <img src="src/img/5star.png" alt="5 Star Rating">
+        </div>
+    </div>
+   </section>
+   <div id="popup">
+    <div class="popup-info">
+        <div id="popup-enter">
+            <h3>Contact Us</h3>
+            <p>Enter your email:</p>
+            <input type="email" id="email" placeholder="example@email.com">
+            <a class="submit" onclick="submitEmail()">Submit</a>
+        </div>
+        <a class="close-btn" onclick="closePopup()">×</a>
+        <p class="message" id="message">Thank you for contacting us! We’ll get back to you as soon as possible.</p>
+    </div>
+  </div>
   </main>
   <footer>
-   <p>
+    <p>
     &copy; 2025 Web Craft. All rights reserved. Crafting elegant and responsive websites with care and precision.
-   </p>
-  </footer>
+    </p>
+</footer>
   <script>
-   const video = document.getElementById("advertisment");
+        const video = document.getElementById("advertisment");
         const playIcon = document.getElementById("play");
         const pauseIcon = document.getElementById("pause");
+        const links = document.querySelectorAll('.nav-link');
+        const carousel = document.getElementById("feedback");
+        let position = 0;
+        const total = 10;
         
         function togglePlay() {
             if (video.paused) {
@@ -276,9 +352,62 @@
             threshold: 0.5
         });
 
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            const element = document.getElementById('selected'); 
+            const triggerPoint = window.innerWidth * 0.01;
+
+            if (window.scrollY > triggerPoint) {
+                header.classList.add('scrolled');
+                element.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                element.classList.remove('scrolled');
+            }
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', function () {
+                links.forEach(l => l.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+
         observer.observe(video);
+
+        function updateCarousel() {
+            const offset = -position * (10);
+            carousel.style.transform = `translateX(${offset}vw)`;
+        }
+
+        setInterval(() => {
+            const firstItem = carousel.children[0];
+            carousel.appendChild(firstItem);
+            position++;
+
+            if (position >= total) {
+                position = 0;
+            }
+
+            updateCarousel();
+        }, 2000);
+
+        function showPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+        
+        function submitEmail() {
+          let email = document.getElementById("email").value;
+          if (email) {
+            document.getElementById("popup-enter").style.display = "none";
+            document.getElementById("message").style.display = "block";
+          } else {
+            alert("Please enter a valid email.");
+          }
+        }
   </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
- <script src="../src/js/index.js"></script>
  </body>
 </html>

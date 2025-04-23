@@ -1,23 +1,6 @@
-body {
-    font-size: 1.2vw;
-}
-
-h1, h2, h3 {
-    color: var(--text-color);
-}
-
-h1 {
-    font-size: 2.5vw;
-    margin-bottom: 0.5vw;
-}
-
-h2 {
-    font-size: 2vw;
-    margin-top: 2vw;
-}
-
-h3 {
-    font-size: 1.8vw;
+main {
+    display: flex;
+    height: calc(100vh - 10vh);
 }
 
 .w3-image {
@@ -59,7 +42,19 @@ table tr:nth-child(even) {
     padding: 0.8vw;
     border-radius: 0.8vw;
     margin-top: 0.8vw;
-    overflow-x: auto;
+    overflow-x: hidden;
+}
+
+.code-container h1 {
+    color: white;
+}
+
+.code-container h2 {
+    color: white;
+}
+
+.code-container h3 {
+    color: white;
 }
 
 .code-container pre {
@@ -72,12 +67,12 @@ table tr:nth-child(even) {
 code[class*="language-"],
 pre[class*="language-"] {
   background: #363636 !important;
-  color: var(--text-color) !important;
+  color: white !important;
   text-shadow: none !important;
 }
 
 .codespan {
-    background-color: #1e1e1e;
+    background-color: var(--highlight-color);
     color: #1F6FEB;
 }
 
@@ -126,12 +121,13 @@ pre[class*="language-"] {
     padding: 1vw;
     border: 0.2vw solid #444;
     text-align: left;
+    color: white;
 }
 
 .table th {
     background-color: #333;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
 }
 
 .w3-row-padding {
@@ -157,6 +153,7 @@ pre[class*="language-"] {
 
 .ws-grey {
     background-color: #5e606c;
+    color: white;
 }
 
 .ws-hover-black:hover {
